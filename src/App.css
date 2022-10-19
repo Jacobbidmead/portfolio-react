@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "druk";
+  src: url("/public/fonts/druk-wide-bold.woff2") format("woff2"),
+    url("/public/fonts/druk-wide-bold.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  height: 100vh;
+}
+
+.nav-pic {
+  margin: 20px;
+  border: solid red 1px;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.color {
+  color: rgba(167, 252, 0);
+  font-family: druk;
+  -webkit-animation: fadein 1.5s;
+  cursor: pointer;
+}
+
+.color:hover {
+  color: rgba(224, 176, 255);
+  font-family: druk;
+  background-color: black;
+}
+
+.name-text {
+  margin: 20px 60px 0px 0px;
+  text-align: right;
+}
+
+.name-box {
+  margin: 50px 70px 50px 0px;
+  padding-bottom: 20px;
+}
+
+.description {
+  font-family: monospace;
+  color: rgba(167, 252, 0);
+  text-align: right;
+  margin: 0px 70px 60px 0px;
+  cursor: pointer;
+}
+
+.description:hover {
+  color: rgba(224, 176, 255);
+  font-family: monospace;
+  text-align: right;
+  margin-right: 70px;
+  background-color: black;
+  padding-bottom: 20px;
+}
+
+/* .link1 {
+  -webkit-animation: fadein 2s;
+}
+
+.link2 {
+  -webkit-animation: fadein 2.5s;
+}
+
+.link3 {
+  -webkit-animation: fadein 3s;
+} */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
