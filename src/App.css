@@ -34,6 +34,7 @@ body {
   color: rgba(224, 176, 255);
   font-family: druk;
   background-color: black;
+	
 }
 
 .name-text {
@@ -57,7 +58,7 @@ body {
 .description:hover {
   color: rgba(224, 176, 255);
   font-family: monospace;
-  text-align: right;
+  text-align: left;
   margin-right: 70px;
   background-color: black;
   padding-bottom: 20px;
