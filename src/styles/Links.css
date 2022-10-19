@@ -1,0 +1,15 @@
+.links {
+	margin: 20px;
+	text-align: center;
+	font-family: monospace;
+  color: rgba(167, 252, 0);
+  cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+.links:hover {
+	color: rgba(224, 176, 255);
+	font-family: monospace;
+	background-color: black;
+}
