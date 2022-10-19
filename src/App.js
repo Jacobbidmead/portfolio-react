@@ -1,27 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React from 'react'
+import Sidebar from './components/Sidebar.js'
+import Display from './components/Display.js'
 
 class App extends React.Component {
 	render() {
 		return (
-			<div class="background main-layout">
-      <div class="nav-pic">
-        <img src="images/japan2.png" alt="" />
-      </div>
-      <div class="">
-        <div class="color name-text name-box">
-          <h1>Jacob Bidmead</h1>
-        </div>
-        <div class="description link1">
-          <h3>./projects</h3>
-        </div>
-        <div class="description link2">
-          <h3>./photography</h3>
-        </div>
-        <div class="description link3">
-          <h3>./links</h3>
-        </div>
+			<div className="background main-layout">
+       <Display />
+      <div className="">
+       <Sidebar />
       </div>
     </div>
 		)
