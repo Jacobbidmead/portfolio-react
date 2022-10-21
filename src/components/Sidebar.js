@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class Sidebar extends React.Component {
 	render() {
 		return (
@@ -8,13 +9,13 @@ class Sidebar extends React.Component {
 				<h1>Jacob Bidmead</h1>
 			</div>
 			<div className="description link1">
-				<h3>./projects</h3>
+				<h1>Projects</h1>
 			</div>
 			<div className="description link2">
-				<h3>./photography</h3>
+				<h1>Photography</h1>
 			</div>
-			<div className="description link3">
-				<h3>./links</h3>
+			<div onClick={e => this.props.showLinks(e)}className="description link3">
+				<h1>Links</h1>
 			</div>
 		</>
 		)

@@ -1,15 +1,32 @@
+
 .links {
 	margin: 20px;
 	text-align: center;
-	font-family: monospace;
-  color: rgba(167, 252, 0);
+	font-family: druk;
   cursor: pointer;
 	display: flex;
 	justify-content: center;
+	border: 1px black solid;
+	box-shadow: 5px 5px 0 0 #343434;
+	border-radius: 6px;
+	-webkit-animation: fadein 1.5s;
+	background-color: rgba(224, 176, 255);
+	color: rgba(167, 252, 0);
+	width: 60%
 }
 
 .links:hover {
 	color: rgba(224, 176, 255);
-	font-family: monospace;
+	font-family: druk;
 	background-color: black;
+	border: 1px black solid;
+  box-shadow: 5px 5px 0 0 rgba(167, 252, 0);
+	border-radius: 6px;
+	-webkit-animation: fadein 1.5s;
+	background-color: black;
+}
+
+.gitlink {
+	text-decoration: none;
+	color: inherit;
 }

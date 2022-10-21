@@ -3,12 +3,23 @@ import '../styles/Links.css'
 import Links from './Links.js'
 
 class Display extends React.Component {
+	state = {
+		showAllLinks: false
+	}
+
+	showLinks = (e) => {
+		this.setState({
+			showAllLinks: true
+		})
+	}
+
+
 	render() {
 		return (
 		<>
-			<div className="nav-pic">
+			{this.state.showAllLinks ? <div className="main-display">
         <Links/>
-      </div>
+      </div> : null}
 		</>
 		)
 
