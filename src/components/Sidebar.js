@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
 				<h1>Projects</h1>
 			</div>
 			<div className="description link2">
-				<h1>Photography</h1>
+				<h1>Photo</h1>
 			</div>
 			<div onClick={e => this.props.showLinks(e)} className="description link3">
 				<h1>Links</h1>
