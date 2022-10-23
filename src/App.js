@@ -14,7 +14,7 @@ class App extends React.Component {
 		showPhotos: false,
 		showProject: false
 	}
-  
+
 
 	toggleShowHome = () => {
 		this.setState({
@@ -46,12 +46,9 @@ class App extends React.Component {
 			<div className="background main-layout">
 
 		<div>
-       {this.state.showHome  && <div className="main-display"><Home /></div>}
+      {this.state.showHome  && <div className="main-display"><Home /></div>}
 
-         {this.state.showLinks &&
-       <div className="main-display">
-					 <Links/>
-			 </div>}
+      {this.state.showLinks && <Links/>}
 
 			{this.state.showAbout && <div className="main-display"><About /></div>}
 		</div>

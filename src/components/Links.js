@@ -6,7 +6,8 @@ import '../styles/Links.css'
 class Links extends React.Component {
 	render() {
 		return (
-			<div>
+			<>
+		 <div className="link-container">
 			  <span className="links"> <div></div>Email://<div>jacob.bidmead.fullstack"outlook.com</div>
 				</span>
 			<div>
@@ -14,6 +15,7 @@ class Links extends React.Component {
 			  </span>
 			</div>
 		</div>
+		</>
 		)
 	}
 }
