@@ -5,7 +5,8 @@ import React from 'react'
 class Sidebar extends React.Component {
 	render() {
 		return (
-		<>
+	<>
+		<div className="button-container">
 			<div className="color name-text name-box">
 				<h1>Jacob Bidmead</h1>
 			</div>
@@ -18,7 +19,8 @@ class Sidebar extends React.Component {
 			<div onClick={e => this.props.showLinks(e)} className="description link3">
 				<h1>Links</h1>
 			</div>
-		</>
+		</div>
+	</>
 		)
 	}
 }

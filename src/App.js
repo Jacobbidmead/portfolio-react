@@ -6,15 +6,23 @@ import Links from './components/Links.js'
 
 class App extends React.Component {
 	state = {
-		showAllLinks: false
+		showAllLinks: false,
+		showAllAbout: false
 	}
 
 	showLinks = () => {
-		console.log('showing links')
 		this.setState({
 			showAllLinks: true
 		})
 	}
+
+	showAbout = () => {
+    this.setState({
+			showAllAbout: true
+		})
+	}
+
+	
 
 	render() {
 		return (

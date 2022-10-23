@@ -90,18 +90,6 @@ body {
 
 }
 
-/* .link1 {
-  -webkit-animation: fadein 2s;
-}
-
-.link2 {
-  -webkit-animation: fadein 2.5s;
-}
-
-.link3 {
-  -webkit-animation: fadein 3s;
-} */
-
 @keyframes fadein {
   from {
     opacity: 0;
