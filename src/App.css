@@ -11,14 +11,11 @@ body {
 
 .background {
   height: 100vh;
-	background-image: url("/public/images/geezer.png");
-	background-size: cover;
-	/* background-color: #eed6eb; */
 }
 
 .main-display {
   margin: 20px;
-	
+
 
 }
 
@@ -49,7 +46,7 @@ body {
 }
 
 .color {
-  color: rgba(167, 252, 0);
+  color: black;
   font-family: druk;
   -webkit-animation: fadein 1.5s;
   cursor: pointer;
@@ -82,7 +79,7 @@ body {
 
 .description {
   font-family: druk;
-  color: rgba(167, 252, 0);
+  color: black;
   text-align: center;
   margin: 0px 70px 30px 0px;
   cursor: pointer;
@@ -103,7 +100,10 @@ body {
   border: 1px black solid;
 	box-shadow: 5px 5px 0 0 rgba(167, 252, 0);
 	border-radius: 6px;
+}
 
+.disk {
+	width: 10%;
 }
 
 @keyframes fadein {

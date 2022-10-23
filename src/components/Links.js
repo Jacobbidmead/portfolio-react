@@ -14,6 +14,12 @@ class Links extends React.Component {
 			  <span className="links">GitHub:// <a href="https://github.com/Jacobbidmead" className="gitlink">github.com/Jacobbidmead</a>
 			  </span>
 			</div>
+			<div>
+				<span className="links">
+				CV
+				</span>
+
+			</div>
 		</div>
 		</>
 		)
