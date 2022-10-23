@@ -11,6 +11,8 @@ body {
 
 .background {
   height: 100vh;
+	background-image: url("/public/images/geezer.png");
+	background-size: cover;
 	/* background-color: #eed6eb; */
 }
 
@@ -36,6 +38,12 @@ body {
     -webkit-line-clamp: 7;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+}
+
+.button-container {
+	position: fixed;
+	right: 0;
+	bottom: 30px;
 }
 
 .color {
@@ -68,8 +76,6 @@ body {
 
 .name-box {
   margin: 50px 70px 30px 0px;
-  padding-bottom: 20px;
-
 }
 
 .description {
@@ -83,6 +89,9 @@ body {
 	border-radius: 6px;
 	-webkit-animation: fadein 1.5s;
 	background-color: rgba(224, 176, 255);
+	padding: 0px 30px 0px 30px;
+	
+
 
 }
 
@@ -92,8 +101,7 @@ body {
   text-align: center;
   margin-right: 70px;
   background-color: black;
-  padding-bottom: 20px;
-	border: 1px black solid;
+  border: 1px black solid;
 	box-shadow: 5px 5px 0 0 rgba(167, 252, 0);
 	border-radius: 6px;
 
