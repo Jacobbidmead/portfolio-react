@@ -7,7 +7,7 @@ class Sidebar extends React.Component {
 		return (
 	<>
 		<div className="button-container">
-			<div className="color name-text name-box">
+			<div onClick={e => this.props.showAbout(e)} className="color name-text name-box">
 				<h1>Jacob Bidmead</h1>
 			</div>
 			<div className="description link1">
