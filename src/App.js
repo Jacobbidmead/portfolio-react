@@ -8,20 +8,27 @@ import Home from './components/Home.js'
 
 class App extends React.Component {
 	state = {
-		showAllLinks: false,
-		showAllAbout: false
+		showHome: true,
+		showLinks: false,
+		showAbout: false
 	}
 
-	showLinks = () => {
+	toggleShowHome = () => {
 		this.setState({
-			showAllLinks: this.state.showAllLinks ? false : true
+			showHome: false
+		})
+	}
+
+	toggleShowLinks = () => {
+		this.setState({
+			showLinks: this.state.showLinks ? false : true
 		})
 
 	}
 
-	showAbout = () => {
+	toggleShowAbout = () => {
     this.setState({
-			showAllAbout: this.state.showAllAbout ? false : true
+			showAbout: this.state.showAbout ? false : true
 		})
 	}
 
@@ -32,18 +39,22 @@ class App extends React.Component {
 			<div className="background main-layout">
 
 <div>
-         {this.state.showAllLinks ?
+       {this.showHome ? <Home />}
+
+         {this.state.showLinks &&
        <div className="main-display">
 					 <Links/>
-			 </div> : <Home />}
+			 </div>}
 
-			 {this.state.showAllAbout ? <About /> : <Home />}
+
+
+			 {this.state.showAbout && <About />}
 
 </div>
 
 
       <div className="">
-       <Sidebar showLinks={this.showLinks} showAbout={this.showAbout}/>
+       <Sidebar toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout}/>
       </div>
 
 

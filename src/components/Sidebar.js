@@ -7,7 +7,7 @@ class Sidebar extends React.Component {
 		return (
 	<>
 		<div className="button-container">
-			<div onClick={e => this.props.showAbout(e)} className="color name-text name-box">
+			<div onClick={e => this.props.toggleShowAbout(e)} className="color name-text name-box">
 				<h1>Jacob Bidmead</h1>
 			</div>
 			<div className="description link1">
@@ -16,7 +16,7 @@ class Sidebar extends React.Component {
 			<div className="description link2">
 				<h1>Photo</h1>
 			</div>
-			<div onClick={e => this.props.showLinks(e)} className="description link3">
+			<div onClick={e => this.props.toggleShowLinks(e)} className="description link3">
 				<h1>Links</h1>
 			</div>
 		</div>
