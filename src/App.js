@@ -10,7 +10,9 @@ class App extends React.Component {
 	state = {
 		showHome: true,
 		showLinks: false,
-		showAbout: false
+		showAbout: false,
+		showPhotos: false,
+		showProject: false
 	}
 
 	toggleShowHome = () => {
@@ -21,14 +23,18 @@ class App extends React.Component {
 
 	toggleShowLinks = () => {
 		this.setState({
-			showLinks: this.state.showLinks ? false : true
+			showLinks: this.state.showLinks ? false : true,
+			showHome: false,
+			showAbout: false
 		})
 
 	}
 
 	toggleShowAbout = () => {
     this.setState({
-			showAbout: this.state.showAbout ? false : true
+			showAbout: this.state.showAbout ? false : true,
+			showHome: false,
+			showLinks: false
 		})
 	}
 
@@ -39,7 +45,7 @@ class App extends React.Component {
 			<div className="background main-layout">
 
 <div>
-       {this.showHome ? <Home />}
+       {this.state.showHome  && <Home />  }
 
          {this.state.showLinks &&
        <div className="main-display">
@@ -54,7 +60,7 @@ class App extends React.Component {
 
 
       <div className="">
-       <Sidebar toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout}/>
+       <Sidebar toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}/>
       </div>
 
 
