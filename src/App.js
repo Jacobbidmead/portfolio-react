@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar.js'
 import Links from './components/Links.js'
 import About from './components/About.js'
 import Home from './components/Home.js'
+import Top from './components/Top.js'
 
 
 class App extends React.Component {
@@ -44,7 +45,7 @@ class App extends React.Component {
 	render() {
 		return (
 <>
-			<div className="top-bar"><h1 className="top-bar">://JacobBidmead</h1></div>
+    <div><Top/></div>
 			<div className="background main-layout">
 
 

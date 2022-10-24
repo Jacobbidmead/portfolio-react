@@ -1,0 +1,6 @@
+.top-bar {
+	background-color: ;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	border: 1px black solid;
+}

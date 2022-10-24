@@ -6,25 +6,15 @@
 body {
   margin: 0;
   padding: 0;
-	height: 100vh;
+
 }
 
 .background {
-  height: 100vh;
 	background-color: #5415fa;
 }
 
-.top-bar {
-	background-color: ;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	border: 1px black solid;
-
-
-}
-
 .main-display {
-
+	background-color: #5415fa;
 	
 }
 
@@ -47,17 +37,14 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
 		padding: 10px;
-
 }
 
-.disk {
-	border-radius: 50%;
-}
 
 .button-container {
 	position: fixed;
 	right: 0;
 	bottom: 30px;
+
 }
 
 .color {
