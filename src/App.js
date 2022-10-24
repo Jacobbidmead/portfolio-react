@@ -44,11 +44,11 @@ class App extends React.Component {
 	render() {
 		return (
 <>
-			<div className="top-bar">hello world</div>
+			<div className="top-bar"><h1 className="top-bar">://JacobBidmead</h1></div>
 			<div className="background main-layout">
 
 
-		<div>
+		<div className="main-display">
       {this.state.showHome  && <div className="main-display"><Home /></div>}
 
       {this.state.showLinks && <Links/>}
