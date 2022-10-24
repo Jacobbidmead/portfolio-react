@@ -6,8 +6,13 @@ class Top extends React.Component {
 		return (
 		<>
 		<div className="top-bar">
-			<div className="top-left"></div>
-			<div className="top-right"><h1 className="top-name">://JacobBidmead</h1></div>
+     <div></div>
+			<div className="top-right">
+			 <div>
+				<h1 className="top-name">://JacobBidmead
+				</h1>
+				</div>
+			</div>
 		</div>
 		</>
 		)

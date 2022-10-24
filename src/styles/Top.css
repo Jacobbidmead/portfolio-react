@@ -1,23 +1,16 @@
 .top-bar {
 	background-color: ;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
-	border: 1px black solid;
+	grid-template-columns: 1fr 1fr;
   background-color: rgb(255, 227, 109);
 	font-family: PolySans;
 	width: 100%;
+	border: black 1px solid;
 }
 
 .top-name {
 	text-align: right;
-	padding: 30px;
-	border-bottom: 1px black solid;
-}
+	padding: 10px;
+	letter-spacing: 30px;
 
-.top-right {
-	border: black solid 1px;
-}
-
-.top-left {
-	background-color: white;
 }

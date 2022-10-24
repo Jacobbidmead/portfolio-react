@@ -23,6 +23,16 @@ class App extends React.Component {
 		})
 	}
 
+	returnHome = () => {
+		this.setState({
+			showHome: true,
+			showLinks: false,
+			showAbout: false,
+			showPhotos: false,
+			showProject: false
+		})
+	}
+
 	toggleShowLinks = () => {
 		this.setState({
 			showLinks: this.state.showLinks ? false : true,
@@ -45,7 +55,7 @@ class App extends React.Component {
 	render() {
 		return (
 <>
-    <div><Top/></div>
+    <div><Top returnHome={this.returnHome}/></div>
 			<div className="background main-layout">
 
 

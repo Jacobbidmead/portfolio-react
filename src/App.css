@@ -10,12 +10,13 @@ body {
 }
 
 .background {
-	background-color: #5415fa;
+	background-color: #89cff0;
 }
 
 .main-display {
-	background-color: #5415fa;
+	background-color: #89cff0;
 	height: 100vh;
+
 }
 
 .main-layout {
@@ -28,13 +29,17 @@ body {
 	font-size: 80px;
 	text-align: left;
 	-webkit-animation: fadein 1.5s;
-	 color: white;
+	 color: black;
+   margin: 10px;
+	border-bottom: 3px solid rgb(255, 227, 109);
+	padding-bottom: 50px;
+	font-style: italic;
+}
 
-		margin: 10px;
-		border-bottom: 1px solid black;
-		padding-bottom: 50px;
-		font-style: italic;
-
+.main-page:hover {
+	color: #5415fa;
+	background-color: white;
+	border-bottom: 3px solid #5415fa;
 }
 
 
@@ -70,7 +75,7 @@ body {
 	box-shadow: 5px 5px 0 0 rgb(255, 227, 109);
 	border-radius: 6px;
 	text-align: center;
-	background-color: black;
+	background-color: #5415fa;
 
 
 }
@@ -96,6 +101,7 @@ body {
 	-webkit-animation: fadein 1.5s;
 	background-color: rgb(255, 227, 109);
 	padding: 0px 30px 0px 30px;
+
 }
 
 .description:hover {
@@ -103,10 +109,11 @@ body {
   font-family: PolySans;
   text-align: center;
   margin-right: 70px;
-  background-color: black;
+  background-color: #5415fa;
   border: 1px black solid;
 	box-shadow: 5px 5px 0 0 rgb(255, 227, 109);
 	border-radius: 6px;
+	
 }
 
 @keyframes fadein {
