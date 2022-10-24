@@ -5,7 +5,7 @@
 	text-align: center;
 	-webkit-animation: fadein 1.5s;
 	padding-top: 5%;
-	height: 100vh;
+	
 
 
 }
@@ -38,6 +38,6 @@ p {
 .about-text-bg {
 	background-color: black;
 	color: rgb(255, 227, 109);
-	
+
 
 }

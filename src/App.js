@@ -5,6 +5,7 @@ import Links from './components/Links.js'
 import About from './components/About.js'
 import Home from './components/Home.js'
 import Top from './components/Top.js'
+import Projects from './components/Projects'
 
 
 class App extends React.Component {

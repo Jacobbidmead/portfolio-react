@@ -13,7 +13,7 @@ class About extends React.Component {
 							<p>Ive recently completed Tortuga Coders 11 week fullstack coding bootcamp in Koh Phangan - Thailand, where I gained experience of JavaScript, HTML, CSS, Node.js & React, amoung other languages and frameworks </p>
 					 </div>
 					 <div className="about-text-bg">
-							 <p>Im currently looking for a junior position as Web Developer, whilst working on a number of personal projects that can be viewed in the <span className="underline">projects</span>,section and on my <span className="underline">GitHub </span>repository. </p>
+							 <p>Im currently looking for a junior position as Web Developer, whilst working on a number of personal projects that can be viewed in the <span className="underline">projects</span> section and on my <span className="underline">GitHub </span>repository. </p>
 						</div>
 						<div className="about-text-bg">
 							<p>

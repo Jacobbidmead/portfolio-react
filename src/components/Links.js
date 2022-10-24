@@ -8,12 +8,12 @@ class Links extends React.Component {
 		return (
 			<>
 		 <div className="link-container">
-			  <span className="links"> <i class="fa-solid fa-envelope"></i>
+			  <span className="links"> <i className="fa-solid fa-envelope"></i>
 				Email://<div>jacob.bidmead.fullstack"outlook.com</div>
 				</span>
 			<div>
 
-				  <span className="links"><i class="fa-brands fa-github"></i><span>://</span>
+				  <span className="links"><i className="fa-brands fa-github"></i><span>://</span>
 
 
 						<a href="https://github.com/Jacobbidmead" className="gitlink">github.com/Jacobbidmead</a>
@@ -21,7 +21,7 @@ class Links extends React.Component {
 			</div>
 			<div>
 				<span className="links">
-				  <i class="fa-regular fa-user"></i>
+				  <i className="fa-regular fa-user"></i>
 				CV
 				</span>
 

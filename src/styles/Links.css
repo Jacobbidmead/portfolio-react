@@ -18,7 +18,7 @@
 .links:hover {
 	color: #5415fa;
 	font-family: PolySans;
-	border: 1px black solid;
+	border: 1px #5415fa solid;
   box-shadow: 5px 5px 0 0 #5415fa;
 	border-radius: 6px;
 	-webkit-animation: fadein 1.5s;
@@ -29,8 +29,8 @@
 	margin: auto;
   width: 90%;
 	padding-left: 25%;
-	padding-top: 25%;
-	height: 100vh;
+	padding-top: 20%;
+
 }
 
 
