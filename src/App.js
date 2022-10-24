@@ -43,7 +43,10 @@ class App extends React.Component {
 
 	render() {
 		return (
+<>
+			<div className="top-bar">hello world</div>
 			<div className="background main-layout">
+
 
 		<div>
       {this.state.showHome  && <div className="main-display"><Home /></div>}
@@ -61,6 +64,7 @@ class App extends React.Component {
 
 
     </div>
+</>
 		)
 	}
 }

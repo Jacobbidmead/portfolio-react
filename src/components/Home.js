@@ -12,9 +12,6 @@ class Home extends React.Component {
 							<div>
 							  <h1 className="main-page">Photographer.</h1>
 						  </div>
-							<div className="disk">
-							  <img src="/images/diskdrive.gif"/>
-							</div>
 					</div>
 				 </>
 		)

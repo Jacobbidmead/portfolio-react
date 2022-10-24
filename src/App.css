@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "druk";
-  src: url("/public/fonts/druk-wide-bold.woff2") format("woff2"),
-    url("/public/fonts/druk-wide-bold.woff") format("woff");
+	font-family: 'PolySans';
+	src: url("/public/fonts/PolySansNeutralWide.woff") format("woff");
 }
 
 body {
@@ -11,12 +10,15 @@ body {
 
 .background {
   height: 100vh;
+	background-color: rgb(247, 246, 243);
+}
+
+.top-bar {
+	background-color: rgb(247, 246, 243);
 }
 
 .main-display {
   margin: 20px;
-
-
 }
 
 .main-layout {
@@ -25,8 +27,8 @@ body {
 }
 
 .main-page {
-	font-family: druk;
-	font-size: 50px;
+	font-family: PolySans;
+	font-size: 100px;
 	text-align: left;
 	-webkit-animation: fadein 1.5s;
 	background-image: linear-gradient(70deg,rgb(243, 127, 4) 35%,rgb(48, 222, 51) 60%,rgb(191, 224, 192));
@@ -39,6 +41,10 @@ body {
     -webkit-box-orient: vertical;
 }
 
+.disk {
+	border-radius: 50%;
+}
+
 .button-container {
 	position: fixed;
 	right: 0;
@@ -47,7 +53,7 @@ body {
 
 .color {
   color: black;
-  font-family: druk;
+  font-family: PolySans;
   -webkit-animation: fadein 1.5s;
   cursor: pointer;
 	border: 1px black solid;
@@ -59,7 +65,7 @@ body {
 
 .color:hover {
   color: rgba(224, 176, 255);
-  font-family: druk;
+  font-family: PolySans;
 	border: 1px black solid;
 	box-shadow: 5px 5px 0 0 rgba(167, 252, 0);
 	border-radius: 6px;
@@ -78,7 +84,7 @@ body {
 }
 
 .description {
-  font-family: druk;
+  font-family: PolySans;
   color: black;
   text-align: center;
   margin: 0px 70px 30px 0px;
@@ -93,17 +99,13 @@ body {
 
 .description:hover {
   color: rgba(224, 176, 255);
-  font-family: druk;
+  font-family: PolySans;
   text-align: center;
   margin-right: 70px;
   background-color: black;
   border: 1px black solid;
 	box-shadow: 5px 5px 0 0 rgba(167, 252, 0);
 	border-radius: 6px;
-}
-
-.disk {
-	width: 10%;
 }
 
 @keyframes fadein {
