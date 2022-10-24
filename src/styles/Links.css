@@ -16,14 +16,13 @@
 }
 
 .links:hover {
-	color: rgb(255, 227, 109);
+	color: #5415fa;
 	font-family: PolySans;
-	background-color: black;
 	border: 1px black solid;
-  box-shadow: 5px 5px 0 0 rgb(255, 227, 109);
+  box-shadow: 5px 5px 0 0 #5415fa;
 	border-radius: 6px;
 	-webkit-animation: fadein 1.5s;
-	background-color: #5415fa;
+	background-color: #ffffed;
 }
 
 .link-container {

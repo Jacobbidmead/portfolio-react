@@ -1,8 +1,7 @@
 .top-bar {
-	background-color: ;
+	background-color: #ffffed;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-  background-color: rgb(255, 227, 109);
 	font-family: PolySans;
 	width: 100%;
 	border: black 1px solid;
@@ -12,5 +11,5 @@
 	text-align: right;
 	padding: 10px;
 	letter-spacing: 30px;
-
+	color:#5415fa;
 }

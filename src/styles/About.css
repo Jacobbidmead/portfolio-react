@@ -7,6 +7,7 @@
 	padding-top: 5%;
 	height: 100vh;
 
+
 }
 
 .name {
@@ -37,4 +38,6 @@ p {
 .about-text-bg {
 	background-color: black;
 	color: rgb(255, 227, 109);
+	
+
 }
