@@ -58,7 +58,7 @@ class App extends React.Component {
 		</div>
 
 
-      <div>
+      <div className="buttons">
         <Sidebar
 					 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}/>
       </div>
