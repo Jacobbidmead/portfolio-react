@@ -10,7 +10,7 @@ class Sidebar extends React.Component {
 			<div onClick={e => this.props.toggleShowAbout(e)} className="color name-text name-box">
 				<h1>://About</h1>
 			</div>
-			<div className="description link1">
+			<div onClick={e => this.props.toggleShowProjects(e)}  className="description link1">
 				<h1>://Projects</h1>
 			</div>
 			<div className="description link2">

@@ -5,7 +5,7 @@ import Links from './components/Links.js'
 import About from './components/About.js'
 import Home from './components/Home.js'
 import Top from './components/Top.js'
-import Projects from './components/Projects'
+import Projects from './components/Projects.js'
 
 
 class App extends React.Component {
@@ -14,7 +14,7 @@ class App extends React.Component {
 		showLinks: false,
 		showAbout: false,
 		showPhotos: false,
-		showProject: false
+		showProjects: false
 	}
 
 
@@ -24,21 +24,13 @@ class App extends React.Component {
 		})
 	}
 
-	returnHome = () => {
-		this.setState({
-			showHome: true,
-			showLinks: false,
-			showAbout: false,
-			showPhotos: false,
-			showProject: false
-		})
-	}
 
 	toggleShowLinks = () => {
 		this.setState({
 			showLinks: this.state.showLinks ? false : true,
 			showHome: false,
-			showAbout: false
+			showAbout: false,
+			showProjects: false
 		})
 
 	}
@@ -47,16 +39,25 @@ class App extends React.Component {
     this.setState({
 			showAbout: this.state.showAbout ? false : true,
 			showHome: false,
-			showLinks: false
+			showLinks: false,
+			showProjects: false
 		})
 	}
 
+ toggleShowProjects = () => {
+	 this.setState({
+		 showProjects: this.state.showProjects ? false : true,
+		 showHome: false,
+		 showLinks: false,
+		 showAbout: false
+	 })
+ }
 
 
 	render() {
 		return (
 <>
-    <div><Top returnHome={this.returnHome}/></div>
+    <div><Top /></div>
 			<div className="background main-layout">
 
 
@@ -66,12 +67,15 @@ class App extends React.Component {
       {this.state.showLinks && <Links/>}
 
 			{this.state.showAbout && <div><About /></div>}
+
+			{this.state.showProjects && <div><Projects /></div>}
 		</div>
 
 
       <div className="buttons">
         <Sidebar
-					 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}/>
+					 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}
+					 toggleShowProjects={this.toggleShowProjects}/>
       </div>
 
 

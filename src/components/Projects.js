@@ -2,7 +2,7 @@ import React from 'react'
 
 class Projects extends React.Component {
 	render() {
-		return
+		return (<div>Hello World</div>)
 	}
 }
 
