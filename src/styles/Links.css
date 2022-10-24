@@ -10,7 +10,7 @@
 	-webkit-animation: fadein 1.5s;
 	background-color: rgb(255, 227, 109);
 	color: black;
-	width: 60%;
+	width: 50%;
 	padding: 30px 0px 30px 0px;
 
 }
@@ -38,4 +38,19 @@
 .gitlink {
 	text-decoration: none;
 	color: inherit;
+}
+
+.fa-github {
+	padding-right: 8px;
+	margin-top: 2px;
+}
+
+.fa-envelope {
+	padding-right: 8px;
+	margin-top: 2px;
+}
+
+.fa-user {
+	padding-right: 8px;
+	margin-top: 2px;
 }

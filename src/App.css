@@ -31,9 +31,10 @@ body {
 	-webkit-animation: fadein 1.5s;
 	 color: black;
    margin: 10px;
-	border-bottom: 3px solid rgb(255, 227, 109);
+
 	padding-bottom: 50px;
 	font-style: italic;
+	letter-spacing: 12px;
 }
 
 .main-page:hover {
@@ -69,13 +70,13 @@ body {
 }
 
 .color:hover {
-  color: rgb(255, 227, 109);
+  color: #5415fa;
   font-family: PolySans;
 	border: 1px black solid;
-	box-shadow: 5px 5px 0 0 rgb(255, 227, 109);
+	box-shadow: 5px 5px 0 0 #5415fa;
 	border-radius: 6px;
 	text-align: center;
-	background-color: #5415fa;
+	background-color: white;
 
 
 }
@@ -105,13 +106,13 @@ body {
 }
 
 .description:hover {
-  color: rgb(255, 227, 109);
+  color: #5415fa;
   font-family: PolySans;
   text-align: center;
   margin-right: 70px;
-  background-color: #5415fa;
+  background-color: white;
   border: 1px black solid;
-	box-shadow: 5px 5px 0 0 rgb(255, 227, 109);
+	box-shadow: 5px 5px 0 0 #5415fa;
 	border-radius: 6px;
 
 }
