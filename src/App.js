@@ -49,7 +49,7 @@ class App extends React.Component {
 			<div className="background main-layout">
 
 
-		<div className="main-display">
+		<div>
       {this.state.showHome  && <div className="main-display"><Home /></div>}
 
       {this.state.showLinks && <Links/>}

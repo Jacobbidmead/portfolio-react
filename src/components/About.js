@@ -10,14 +10,14 @@ class About extends React.Component {
 							 <p>Hi, I'm a Web Developer, Designer and Photographer based in London.</p>
 					 </div>
 					 <div>
-					  <img src="images/dancer.png" className="about-image"/>
+					  <img src="images/portrait.png" className="about-image"/>
 					 </div>
 					 <div className="about-text-bg">
 							 <p>Im currently looking for a junior position as Web Developer,  please check out my <span className="underline">projects</span>, <span className="underline">GitHub repository</span>, and CV - located in the <span className="underline">links</span> section.</p>
 						</div>
 						<div className="about-text-bg">
 							<p>
-							Im passionate about Web Desin and would love a role where i could be involved in the design process; aswell as gaining more knowledge and skills with React & JavaScript.
+							Im passionate about design and would love a role at an innovtive and creative company where I could be involved in the design process; aswell as gaining more knowledge and skills using React & JavaScript.
               </p>
 						</div>
 						<div className="about-text-bg">
@@ -25,7 +25,7 @@ class About extends React.Component {
 						</div>
 						<div className="about-text-bg">
 							 <p>
-							 A passionate photographer, Ive documentend my travels in South America, the USA, Asia & Australia over the last 8 years
+							 A passionate photographer, Ive documentend my travels in South America, the USA, Asia & Australia over the last 8 years.
 							 </p>
 						</div>
 						<div>

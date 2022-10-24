@@ -1,7 +1,3 @@
-body {
-  background: 100vh;
-}
-
 .about-container {
 	margin: auto;
   width: 50%;
@@ -29,12 +25,13 @@ p {
 
 .about-image {
 	object-fit: cover;
-	width: 80%;
+  width: 100%;
 	border: 1px white solid;
 	box-shadow: 5px 5px 0 0 black;
-	border-radius: 6px;
-
+	border-radius: 40px;
 }
+
+
 
 .about-text-bg {
 	background-color: black;
