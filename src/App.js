@@ -56,11 +56,12 @@ class App extends React.Component {
 	render() {
 		return (
 <>
+  <div className="bg-fill">
     <div><Top /></div>
 			<div className="background main-layout">
 
 
-		
+
       {this.state.showHome  && <div className="main-display"><Home /></div>}
 
       {this.state.showLinks && <Links/>}
@@ -77,6 +78,7 @@ class App extends React.Component {
 					 toggleShowProjects={this.toggleShowProjects}/>
       </div>
     </div>
+	</div>
 </>
 		)
 	}

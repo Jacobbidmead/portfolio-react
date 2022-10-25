@@ -3,22 +3,21 @@
 	src: url("/public/fonts/PolySansNeutralWide.woff") format("woff");
 }
 
-body {
-  margin: 0;
-  padding: 0;
-
+html, body {
+    margin: 0;
+    height: 100vh;
 }
 
-.background {
 
- display: 100vh;
+
+.background {
+ background-color: rgba(255, 16, 240, 0.2);
+ height: 100vh;
 }
 
 
 .main-display {
 	padding-top: 0px;
-	height: 100vh;
-	
 
 }
 
@@ -100,12 +99,7 @@ body {
 	position: fixed;
 	right: 0;
 	bottom: 30px;
-
 }
-
-
-
-
 
 .color {
   color: black;
@@ -128,7 +122,6 @@ body {
 	border-radius: 6px;
 	text-align: center;
 	background-color: rgba(255, 16, 240, 0.2);
-
 }
 
 .name-text {

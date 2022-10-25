@@ -5,7 +5,8 @@ class Projects extends React.Component {
 	render() {
 		return (
 	<>
-			 <div className="img-container">
+	  <div className="bg-fill">
+			 <div >
 			  <img src="./images/project-img/MK1.png" className="img-container"/>
 			 </div>
 
@@ -23,7 +24,7 @@ class Projects extends React.Component {
 			<div><img src="./images/project-img/abnb6.png" className="img-container"/></div>
 			<div><img src="./images/project-img/google.png" className="img-container"/></div>
 
-
+  </div>
 	</>
 		)
 	}
