@@ -15,7 +15,6 @@ body {
 
 .main-display {
 	background-color: white;
-	height: 100vh;
 	padding-top: 20px;
 
 }
@@ -30,16 +29,72 @@ body {
 	font-size: 80px;
 	text-align: left;
 	-webkit-animation: fadein 1.5s;
-	 color: black;
+	 color: #5415fa;
    margin: 10px;
-
 	padding-bottom: 50px;
 	font-style: italic;
 	letter-spacing: 12px;
+	background-color: #ffffed;
+	border-bottom: solid 2px black;
+	margin-bottom: 70px;
+}
+
+.glitch {
+	text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+	-0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+	0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+
+}
+
+.glitch:hover {
+	animation: glitch 1000ms infinite;
+
+}
+
+@keyframes glitch {
+ 0% {
+	 text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+ 	-0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+ 	-0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+ }
+ 14% {
+	 text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+ 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+ 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+ }
+ 15% {
+	 text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+ 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+ 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+ }
+ 49% {
+	 text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+ 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+ 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+ }
+
+ 50% {
+	 text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+ 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+ 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+ }
+
+ 99% {
+	 text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+ 	-0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+ 	-0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+ }
+ 100% {
+ 	text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+  -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+  -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+ }
+
 }
 
 .main-page:hover {
-	color: #5415fa;
+	color: white;
 	background-color: #ffffed;
 	border-bottom: 3px solid #5415fa;
 	border-right: 3px solid #5415fa;
@@ -69,6 +124,7 @@ body {
 	border-radius: 6px;
 	text-align: center;
 	background-color: #ffffed;
+
 }
 
 .color:hover {
@@ -79,7 +135,6 @@ body {
 	border-radius: 6px;
 	text-align: center;
 	background-color: white;
-
 
 }
 
@@ -116,6 +171,12 @@ body {
   border: 1px #5415fa solid;
 	box-shadow: 5px 5px 0 0 #5415fa;
 	border-radius: 6px;
+}
+
+.skate-photo {
+ background-image: cover;
+ width: 40%;
+ padding-left: 150px;
 
 }
 

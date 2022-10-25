@@ -17,7 +17,6 @@ class App extends React.Component {
 		showProjects: false
 	}
 
-
 	toggleShowHome = () => {
 		this.setState({
 			showHome: false
@@ -44,14 +43,14 @@ class App extends React.Component {
 		})
 	}
 
- toggleShowProjects = () => {
-	 this.setState({
-		 showProjects: this.state.showProjects ? false : true,
-		 showHome: false,
-		 showLinks: false,
-		 showAbout: false
-	 })
- }
+	 toggleShowProjects = () => {
+		 this.setState({
+			 showProjects: this.state.showProjects ? false : true,
+			 showHome: false,
+			 showLinks: false,
+			 showAbout: false
+		 })
+	 }
 
 
 	render() {
@@ -77,8 +76,6 @@ class App extends React.Component {
 					 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}
 					 toggleShowProjects={this.toggleShowProjects}/>
       </div>
-
-
     </div>
 </>
 		)
