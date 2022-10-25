@@ -10,14 +10,16 @@ body {
 }
 
 .background {
-	background-color: white;
+
+ display: 100vh;
 }
 
 
 .main-display {
-	padding-top: 20px;
+	padding-top: 0px;
 	height: 100vh;
 	
+
 }
 
 .main-layout {
@@ -30,11 +32,10 @@ body {
 	font-size: 80px;
 	text-align: left;
 	 color: black;
-   margin: 10px;
+
 	padding-bottom: 50px;
 	font-style: italic;
 	letter-spacing: 12px;
-	background-color: #ffffed;
 	margin-bottom: 70px;
 }
 
@@ -92,7 +93,6 @@ body {
 
 .main-page:hover {
 	color: white;
-	background-color: rgba(255, 16, 240, 0.2);
 }
 
 
@@ -103,9 +103,7 @@ body {
 
 }
 
-.button {
-	background-color: rgb(255, 227, 109);
-}
+
 
 
 
@@ -166,13 +164,6 @@ body {
   border: 1px #5415fa solid;
 	box-shadow: 5px 5px 0 0 #5415fa;
 	border-radius: 6px;
-}
-
-.skate-photo {
- background-image: cover;
- width: 40%;
- padding-left: 150px;
-
 }
 
 @keyframes fadein {
