@@ -7,6 +7,7 @@ class Home extends React.Component {
 				  <div className="main-display">
 					    <div>
 						    <h1 className="main-page glitch">://Web Developer</h1>
+
 							</div>
 							<div>
 								 <h1 className="main-page glitch">://Designer</h1>

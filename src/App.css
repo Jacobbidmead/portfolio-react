@@ -13,10 +13,11 @@ body {
 	background-color: white;
 }
 
-.main-display {
-	background-color: white;
-	padding-top: 20px;
 
+.main-display {
+	padding-top: 20px;
+	height: 100vh;
+	
 }
 
 .main-layout {
@@ -28,24 +29,20 @@ body {
 	font-family: PolySans;
 	font-size: 80px;
 	text-align: left;
-	-webkit-animation: fadein 1.5s;
-	 color: #5415fa;
+	 color: black;
    margin: 10px;
 	padding-bottom: 50px;
 	font-style: italic;
 	letter-spacing: 12px;
 	background-color: #ffffed;
-	border-bottom: solid 2px black;
 	margin-bottom: 70px;
 }
 
-.glitch {
+/* .glitch {
 	text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
 	-0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
 	0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-
-
-}
+} */
 
 .glitch:hover {
 	animation: glitch 1000ms infinite;
@@ -95,9 +92,7 @@ body {
 
 .main-page:hover {
 	color: white;
-	background-color: #ffffed;
-	border-bottom: 3px solid #5415fa;
-	border-right: 3px solid #5415fa;
+	background-color: rgba(255, 16, 240, 0.2);
 }
 
 
@@ -134,7 +129,7 @@ body {
 	box-shadow: 5px 5px 0 0 #5415fa;
 	border-radius: 6px;
 	text-align: center;
-	background-color: white;
+	background-color: rgba(255, 16, 240, 0.2);
 
 }
 
