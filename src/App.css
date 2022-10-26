@@ -10,8 +10,8 @@ html, body {
 
 
 
-.background {
- background-color: rgba(255, 16, 240, 0.2);
+.background-main {
+ background-color: #f6b7f1;
  height: 100vh;
 }
 
@@ -30,22 +30,18 @@ html, body {
 	font-family: PolySans;
 	font-size: 80px;
 	text-align: left;
-	 color: black;
-
-	padding-bottom: 50px;
+	color: white;
+	padding-bottom: 0px;
 	font-style: italic;
 	letter-spacing: 12px;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	background-color: black;
 }
-
-/* .glitch {
-	text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-	-0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-	0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-} */
 
 .glitch:hover {
 	animation: glitch 1000ms infinite;
+	background-color: black;
 
 }
 
@@ -87,13 +83,11 @@ html, body {
   -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
   -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
  }
-
 }
 
 .main-page:hover {
 	color: white;
 }
-
 
 .button-container {
 	position: fixed;
@@ -101,27 +95,8 @@ html, body {
 	bottom: 30px;
 }
 
-.color {
-  color: black;
-  font-family: PolySans;
-  -webkit-animation: fadein 1.5s;
-  cursor: pointer;
-	border: 1px black solid;
-	box-shadow: 5px 5px 0 0 #343434;
-	border-radius: 6px;
-	text-align: center;
-	background-color: #ffffed;
-
-}
-
-.color:hover {
-  color: #5415fa;
-  font-family: PolySans;
-	border: 1px #5415fa solid;
-	box-shadow: 5px 5px 0 0 #5415fa;
-	border-radius: 6px;
-	text-align: center;
-	background-color: rgba(255, 16, 240, 0.2);
+.buttons {
+	background-color: #f6b7f1;
 }
 
 .name-text {
@@ -130,33 +105,37 @@ html, body {
 }
 
 .name-box {
-  margin: 50px 70px 30px 0px;
+  margin: 50px 70px 50px 0px;
 }
 
-.description {
+.button-style {
   font-family: PolySans;
   color: black;
   text-align: center;
-  margin: 0px 70px 30px 0px;
+  margin: 0px 70px 50px 0px;
   cursor: pointer;
 	border: 1px black solid;
 	box-shadow: 5px 5px 0 0 #343434;
 	border-radius: 6px;
-	-webkit-animation: fadein 1.5s;
-	background-color: #ffffed;
+	background-color: rgb(255, 227, 109, 0.5);
 	padding: 0px 30px 0px 30px;
+	transform: skewY(-10deg);
+	transition: 300ms;
+
 
 }
 
-.description:hover {
-  color: #5415fa;
+.button-style:hover {
+  color: black;
   font-family: PolySans;
   text-align: center;
   margin-right: 70px;
-  background-color: white;
-  border: 1px #5415fa solid;
-	box-shadow: 5px 5px 0 0 #5415fa;
-	border-radius: 6px;
+  background-color: #ffffed;
+  border: 1px black solid;
+	box-shadow: 5px 5px 0 0 black;
+	border-radius: none;
+	transform: skewY(0);
+
 }
 
 @keyframes fadein {

@@ -56,9 +56,9 @@ class App extends React.Component {
 	render() {
 		return (
 <>
-  <div className="bg-fill">
+  <div className="background-main">
     <div><Top /></div>
-			<div className="background main-layout">
+			<div className="main-layout">
 
 
 

@@ -16,7 +16,7 @@ class Links extends React.Component {
 				  <span className="links"><i className="fa-brands fa-github"></i><span>://</span>
 
 
-						<a href="https://github.com/Jacobbidmead" className="gitlink">github.com/Jacobbidmead</a>
+						<a href="https://github.com/Jacobbidmead" className="gitlink" target="_blank">github.com/Jacobbidmead</a>
 				  </span>
 			</div>
 			<div>

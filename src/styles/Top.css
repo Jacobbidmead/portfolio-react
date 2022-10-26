@@ -1,5 +1,5 @@
 .top-bar {
-	background-color: #ffffed;
+	background-color: rgba(255, 227, 109, 0.5);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	font-family: PolySans;
@@ -11,5 +11,5 @@
 	text-align: right;
 	padding: 10px;
 	letter-spacing: 30px;
-	color:#5415fa;
+	color: black;
 }
