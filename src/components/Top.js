@@ -9,7 +9,7 @@ class Top extends React.Component {
      <div></div>
 			<div className="top-right">
 			 <div>
-				<h1 className="top-name">://JacobBidmead
+				<h1 className="top-name">
 				</h1>
 				</div>
 			</div>

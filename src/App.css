@@ -3,6 +3,18 @@
 	src: url("/public/fonts/PolySansNeutralWide.woff") format("woff");
 }
 
+@font-face {
+	font-family: 'Futura';
+	src: url("/public/fonts/futuralight.woff")
+}
+
+@font-face {
+	font-family: 'Hola';
+	src : url("/public/fonts/hola.woff");
+}
+
+
+
 html, body {
     margin: 0;
     height: 100vh;
@@ -10,12 +22,12 @@ html, body {
 
 ::selection {
   color: #ffffed;
-  background: deeppink;
+  background: #c72a00;
 }
 
 
 .background-main {
- background-color: #f6b7f1;
+ background-color: #fffcda;
  height: 100vh;
 }
 
@@ -30,17 +42,20 @@ html, body {
 }
 
 .main-page {
-	font-family: PolySans;
-	font-size: 80px;
+	font-family: hola;
+	font-size: 40px;
 	text-align: left;
-	color: white;
+	color: #c72a00;
 	padding-bottom: 0px;
 	font-style: italic;
 	letter-spacing: 12px;
 	margin-bottom: 30px;
 	margin-left: 20px;
-	background-color: black;
+	width: auto;
 }
+
+
+
 
 .glitch:hover {
 	animation: glitch 1000ms infinite;
@@ -100,7 +115,7 @@ html, body {
 }
 
 .buttons {
-	background-color: #f6b7f1;
+	background-color: ;
 }
 
 .name-text {
@@ -113,7 +128,7 @@ html, body {
 }
 
 .button-style {
-  font-family: PolySans;
+  font-family: hola;
   color: black;
   text-align: center;
   margin: 0px 70px 50px 0px;
@@ -131,7 +146,7 @@ html, body {
 
 .button-style:hover {
   color: black;
-  font-family: PolySans;
+  font-family: hola;
   text-align: center;
   margin-right: 70px;
   background-color: #ffffed;

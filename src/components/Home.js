@@ -5,16 +5,26 @@ class Home extends React.Component {
 		return (
 			<>
 				  <div className="main-display">
+					  <div>
 					    <div>
-						    <h1 className="main-page glitch">://Web Developer</h1>
-
+						    <h1 className="main-page glitch">JACOB</h1>
 							</div>
+						</div>
+						<div>
 							<div>
-								 <h1 className="main-page glitch">://Designer</h1>
+								 <h1 className="main-page glitch">BIDMEAD</h1>
 							</div>
+						</div>
+						<div>
 							<div>
-							  <h1 className="main-page glitch">://Photographer</h1>
+							  <h1 className="main-page glitch">WEB</h1>
 						  </div>
+						</div>
+						<div>
+							<div>
+							  <h1 className="main-page glitch">DEVELOPER</h1>
+						  </div>
+						</div>
 					</div>
 				 </>
 		)

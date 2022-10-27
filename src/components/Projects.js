@@ -1,32 +1,27 @@
 import React from 'react'
+import MagiKards from '../components/MagiKards.js'
 import '../styles/Projects.css'
 
 class Projects extends React.Component {
+	class = {
+		showMagiKards: false
+	}
+
+	toggleShowMagiKards = () => {
+		this.setState({
+			showMagiKards: this.state.showMagiKards ? true : false
+		})
+	}
+
+
 	render() {
 		return (
 	<>
 	  <div className="bg-fill">
 		 <div className="text-container text"><h1>Personal Projects</h1></div>
-			 <div >
-				  <img src="./images/project-img/MK1.png" className="img-container" alt=""/>
-			 </div>
-			 <div className="text-container">
-				 <h2 className="text">MagiKards</h2>
-					 <p className="text">Magikards is a fantasy based battle card game created by myself and class mates Joshua Peoples & Mohammed Hammuri during the final two weeks of Tortuga Coders bootcamp. The concept was top create a game using React that would take two class of cards, each with unique attributes, that would affect one another, with the strongest removing health from the other user.
-					 </p>
-			 </div>
-			 <div className="text-container">
-				 <p className="text">
-				 The view above is the home screen; players are able to select either ICe or Fire, then enter thier name into the input above. This allows the start of the game.
-				 </p>
-			 </div>
+      <div onClick={e => this.state.toggleShowMagiKards(e)}><MagiKards/></div>
 
-			<div>
-			 <img src="./images/project-img/MK3.png" className="img-container" alt=""/>
-			</div>
 
-			<div><img src="./images/project-img/MK4.png" className="img-container"alt="" /></div>
-			<div><img src="./images/project-img/MK2.png"  className="img-container"alt="" /></div>
 			<div><img src="./images/project-img/abnb1.png" className="img-container"alt="" /></div>
 	    <div><img src="./images/project-img/abnb2.png" className="img-container"alt="" /></div>
 			<div><img src="./images/project-img/abnb3.png" className="img-container"alt="" /></div>
