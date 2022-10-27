@@ -31,9 +31,37 @@ html, body {
  height: 100vh;
 }
 
+.first-name.main-page {
+ position: absolute;
+ top: 70px;
+ left:70px;
+ font-size: 90px;
+ letter-spacing: 100px;
+ -webkit-animation: fadein 2s;
 
-.main-display {
-	padding-top: 0px;
+}
+
+.last-name.main-page {
+	position: absolute;
+  bottom:50%;
+  right: 350px;
+	font-size: 50px;
+	letter-spacing: 40px;
+}
+
+.web.main-page {
+	position: absolute;
+	bottom: 200px;
+	left: 90px;
+	font-size: 80px;
+	letter-spacing: 90px;
+}
+
+.developer.main-page {
+	position: absolute;
+	bottom: 50px;
+	right: 300px;
+	letter-spacing: 50px;
 }
 
 .main-layout {
@@ -43,11 +71,9 @@ html, body {
 
 .main-page {
 	font-family: hola;
-	font-size: 40px;
 	text-align: left;
 	color: #c72a00;
 	padding-bottom: 0px;
-	font-style: italic;
 	letter-spacing: 12px;
 	margin-bottom: 30px;
 	margin-left: 20px;
@@ -57,12 +83,11 @@ html, body {
 
 
 
-.glitch:hover {
+/* .glitch:hover {
 	animation: glitch 1000ms infinite;
-	background-color: black;
 	cursor: crosshair;
-
-}
+	color: white;
+} */
 
 @keyframes glitch {
  0% {
@@ -104,18 +129,18 @@ html, body {
  }
 }
 
-.main-page:hover {
-	color: white;
-}
+
 
 .button-container {
 	position: fixed;
 	right: 0;
 	bottom: 30px;
+	background-color: #fffcda;
+
 }
 
 .buttons {
-	background-color: ;
+	background-color: #fffcda;
 }
 
 .name-text {

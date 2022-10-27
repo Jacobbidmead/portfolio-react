@@ -7,9 +7,9 @@ class Projects extends React.Component {
 		showMagiKards: false
 	}
 
-	toggleShowMagiKards = () => {
+	toggleShowMagiKards = (e) => {
 		this.setState({
-			showMagiKards: this.state.showMagiKards ? true : false
+			showMagiKards: true
 		})
 	}
 
@@ -19,7 +19,19 @@ class Projects extends React.Component {
 	<>
 	  <div className="bg-fill">
 		 <div className="text-container text"><h1>Personal Projects</h1></div>
-      <div onClick={e => this.state.toggleShowMagiKards(e)}><MagiKards/></div>
+      <div>
+
+			<div>
+			  <MagiKards />
+			</div>
+
+
+
+
+
+			</div>
+
+
 
 
 			<div><img src="./images/project-img/abnb1.png" className="img-container"alt="" /></div>
