@@ -6,6 +6,7 @@ import About from './components/About.js'
 import Home from './components/Home.js'
 import Top from './components/Top.js'
 import Projects from './components/Projects.js'
+import Photos from './components/Photos.js'
 
 
 class App extends React.Component {
@@ -29,7 +30,8 @@ class App extends React.Component {
 			showLinks: this.state.showLinks ? false : true,
 			showHome: false,
 			showAbout: false,
-			showProjects: false
+			showProjects: false,
+			showPhotos: false
 		})
 
 	}
@@ -39,7 +41,8 @@ class App extends React.Component {
 			showAbout: this.state.showAbout ? false : true,
 			showHome: false,
 			showLinks: false,
-			showProjects: false
+			showProjects: false,
+			showPhotos: false
 		})
 	}
 
@@ -48,7 +51,18 @@ class App extends React.Component {
 			 showProjects: this.state.showProjects ? false : true,
 			 showHome: false,
 			 showLinks: false,
-			 showAbout: false
+			 showAbout: false,
+			 showPhotos: false
+		 })
+	 }
+
+	 toggleShowPhotos = () => {
+		 this.setState({
+			 showPhotos: this.state.showPhotos ? false : true,
+			 showHome: false,
+			 showLinks: false,
+			 showAbout: false,
+			 showProjects: false
 		 })
 	 }
 
@@ -70,12 +84,15 @@ class App extends React.Component {
 
 			{this.state.showProjects && <div><Projects /></div>}
 
+			{this.state.showPhotos && <Photos />}
+
 
 
       <div className="buttons">
         <Sidebar
 					 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}
-					 toggleShowProjects={this.toggleShowProjects}/>
+					 toggleShowProjects={this.toggleShowProjects}
+					 toggleShowPhotos={this.toggleShowPhotos}/>
       </div>
     </div>
 	</div>

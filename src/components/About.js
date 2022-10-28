@@ -8,7 +8,7 @@ class About extends React.Component {
 			<div className="about-container">
 
 				<div className="selfie">
-				<img src="images/selfie.png" className="selfie"/>
+				<img src="images/selfie.png" alt="" className="selfie"/>
 				</div>
 					 <div className="about-text-bg">
 							 <p>Hi, I'm a Web Developer, Designer and Photographer based in London.</p>
@@ -29,7 +29,7 @@ class About extends React.Component {
 							 A passionate photographer, Ive documentend my travels in South America, the USA, Asia & Australia over the last 8 years.
 							 </p>
 						</div>
-        
+
 			</div>
 		</>
 		)

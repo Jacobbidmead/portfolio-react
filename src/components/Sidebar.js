@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
 			<div onClick={e => this.props.toggleShowProjects(e)}  className="button-style link1 ">
 				<h1>Projects</h1>
 			</div>
-			<div className="button-style link2 ">
+			<div onClick={e => this.props.toggleShowPhotos(e)}  className="button-style link2 ">
 				<h1>Photo</h1>
 			</div>
 			<div onClick={e => this.props.toggleShowLinks(e)} className="button-style link3 ">
