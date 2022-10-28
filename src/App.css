@@ -13,6 +13,14 @@
 	src : url("/public/fonts/hola.woff");
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
 html, body {
@@ -21,8 +29,8 @@ html, body {
 }
 
 ::selection {
-  color: #ffffed;
-  background: #c72a00;
+  color: black;
+  background: white;
 }
 
 
@@ -36,8 +44,8 @@ html, body {
  top: 70px;
  left:70px;
  font-size: 90px;
- letter-spacing: 100px;
- -webkit-animation: fadein 2s;
+ letter-spacing: 70px;
+ font-style: italic;
 
 }
 
@@ -45,8 +53,9 @@ html, body {
 	position: absolute;
   bottom:50%;
   right: 350px;
-	font-size: 50px;
+	font-size: 60px;
 	letter-spacing: 40px;
+	font-family: Futura;
 }
 
 .web.main-page {
@@ -57,11 +66,32 @@ html, body {
 	letter-spacing: 90px;
 }
 
+.photographer.main-page {
+	position: absolute;
+	bottom: 40%;
+	right: 500px;
+	font-size: 12px;
+	color: black;
+	font-style: italic;
+	font-family: Futura;
+}
+
 .developer.main-page {
 	position: absolute;
-	bottom: 50px;
+	bottom: 140px;
 	right: 300px;
 	letter-spacing: 50px;
+	font-family: Futura;
+}
+
+.designer.main-page {
+	position: absolute;
+	bottom: 80px;
+	left: 300px;
+	font-size: 12px;
+	color: black;
+	font-style: italic;
+	font-family: Futura;
 }
 
 .main-layout {
@@ -79,56 +109,6 @@ html, body {
 	margin-left: 20px;
 	width: auto;
 }
-
-
-
-
-/* .glitch:hover {
-	animation: glitch 1000ms infinite;
-	cursor: crosshair;
-	color: white;
-} */
-
-@keyframes glitch {
- 0% {
-	 text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
- 	-0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
- 	-0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
- }
- 14% {
-	 text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
- 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
- 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
- }
- 15% {
-	 text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
- 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
- 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
- }
- 49% {
-	 text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
- 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
- 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
- }
-
- 50% {
-	 text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
- 	0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
- 	-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
- }
-
- 99% {
-	 text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
- 	-0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
- 	-0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
- }
- 100% {
- 	text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
-  -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
-  -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
- }
-}
-
 
 
 .button-container {
@@ -153,7 +133,7 @@ html, body {
 }
 
 .button-style {
-  font-family: hola;
+  font-family: Futura;
   color: black;
   text-align: center;
   margin: 0px 70px 50px 0px;
@@ -171,7 +151,7 @@ html, body {
 
 .button-style:hover {
   color: black;
-  font-family: hola;
+  font-family: Futura;
   text-align: center;
   margin-right: 70px;
   background-color: #ffffed;
@@ -180,13 +160,4 @@ html, body {
 	border-radius: none;
 	transform: skewY(-8deg);
 
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

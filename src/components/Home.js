@@ -7,22 +7,28 @@ class Home extends React.Component {
 				  <div className="main-display">
 					  <div >
 					    <div >
-						    <h1 className="main-page glitch first-name" >JACOB</h1>
+						    <h1 className="main-page  first-name" >JACOB</h1>
 							</div>
 						</div>
 						<div>
 							<div>
-								 <h1 className="main-page glitch last-name">BIDMEAD</h1>
+								 <h1 className="main-page last-name">BIDMEAD</h1>
+							</div>
+							<div>
+							  <h3 className="main-page photographer">PHOTOGRAPHER</h3>
 							</div>
 						</div>
 						<div>
 							<div>
-							  <h1 className="main-page glitch web">WEB</h1>
+							  <h1 className="main-page web">WEB</h1>
 						  </div>
 						</div>
 						<div>
 							<div>
-							  <h1 className="main-page glitch developer">DEVELOPER</h1>
+							  <h1 className="main-page  developer">DEVELOPER</h1>
+						  </div>
+							<div>
+							  <h1 className="main-page  designer">& DESIGNER</h1>
 						  </div>
 						</div>
 					</div>

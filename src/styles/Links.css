@@ -1,7 +1,7 @@
 .links {
 	margin: 30px;
 	text-align: center;
-	font-family: PolySans;
+	font-family: Futura;
 	display: flex;
 	justify-content: center;
 	border: 1px black solid;
@@ -19,7 +19,7 @@
 
 .links:hover {
 	color: black;
-	font-family: PolySans;
+	font-family: Futura;
 	border: 1px black solid;
   box-shadow: 5px 5px 0 0 black;
 	border-radius: 6px;
