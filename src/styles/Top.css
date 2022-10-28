@@ -1,10 +1,11 @@
 .top-bar {
-	background-color: rgba(255, 227, 109, 0.5);
+	background-color: #420b13;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	font-family: PolySans;
 	width: 100%;
-	border: black 1px solid;
+	border-bottom: 8px solid;
+	border-color: #e5b0a3;
 }
 
 .top-name {

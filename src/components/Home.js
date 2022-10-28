@@ -5,15 +5,23 @@ class Home extends React.Component {
 		return (
 			<>
 				  <div className="main-display">
-					  <div >
-					    <div >
+					  <div>
+							<div className="box3">
+
+							</div>
+					    <div>
 						    <h1 className="main-page  first-name" >JACOB</h1>
 							</div>
+									<div >
+									<img src="images/umbrella.png" className="box2"/>
+									</div>
 						</div>
 						<div>
 							<div>
 								 <h1 className="main-page last-name">BIDMEAD</h1>
 							</div>
+										<div className="box">
+										</div>
 							<div>
 							  <h3 className="main-page photographer">PHOTOGRAPHER</h3>
 							</div>

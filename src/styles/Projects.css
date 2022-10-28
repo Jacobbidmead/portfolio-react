@@ -20,7 +20,7 @@
 .text-container {
 	-webkit-animation: fadein 1.5s;
 	background-color: rgb(255, 227, 109, 0.5);
-	background-color: #c72a00;
+	background-color: #420b13;
 	color: white;
 	width: 57%;
 	margin-left: 25%;
@@ -32,4 +32,5 @@
 .text {
 	font-family: Futura;;
 	font-size: 15px;
+	color: #e5b0a3;
 }

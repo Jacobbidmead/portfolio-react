@@ -1,11 +1,9 @@
 .about-container {
 	margin: auto;
   width: 50%;
-	color: white;
 	text-align: center;
 	-webkit-animation: fadein 1.5s;
 	padding-top: 5%;
-
 
 }
 
@@ -18,6 +16,7 @@
 p {
 	font-family: Futura;
 	font-size: 20px;
+	color: #e5b0a3;
 }
 
 .underline {
@@ -35,8 +34,8 @@ p {
 
 
 .about-text-bg {
-	background-color: black;
-	color: white;
+	background-color: #420b13;
+
 
 
 }
