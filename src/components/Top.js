@@ -6,7 +6,7 @@ class Top extends React.Component {
 		return (
 		<>
 		<div className="top-bar">
-     <div></div>
+     <div className="home-button">家</div>
 			<div className="top-right">
 			 <div>
 				<h1 className="top-name">

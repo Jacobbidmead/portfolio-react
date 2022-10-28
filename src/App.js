@@ -20,7 +20,7 @@ class App extends React.Component {
 
 	toggleShowHome = () => {
 		this.setState({
-			showHome: false
+			showHome: true
 		})
 	}
 
@@ -71,7 +71,7 @@ class App extends React.Component {
 		return (
 <>
   <div className="background-main">
-    <div><Top /></div>
+    <div><Top/></div>
 			<div className="main-layout">
 
 
