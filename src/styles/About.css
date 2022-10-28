@@ -4,6 +4,8 @@
 	text-align: center;
 	-webkit-animation: fadein 1.5s;
 	padding-top: 5%;
+	background-color: #fffcda;
+	display: 100vh;
 
 }
 
@@ -23,19 +25,11 @@ p {
 	text-decoration: underline;
 }
 
-.about-image {
-	object-fit: cover;
-  width: 100%;
-	border: 1px white solid;
-	box-shadow: 5px 5px 0 0 black;
-	border-radius: 40px;
-}
-
-
 
 .about-text-bg {
 	background-color: #420b13;
+}
 
-
-
+.selfie {
+	width: 70%;
 }

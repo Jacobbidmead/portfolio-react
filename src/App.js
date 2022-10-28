@@ -66,7 +66,7 @@ class App extends React.Component {
 
       {this.state.showLinks && <Links/>}
 
-			{this.state.showAbout && <div><About /></div>}
+			{this.state.showAbout && <About />}
 
 			{this.state.showProjects && <div><Projects /></div>}
 

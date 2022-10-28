@@ -56,6 +56,7 @@ html, body {
 	font-size: 60px;
 	letter-spacing: 40px;
 	font-family: Futura;
+	color: rgb(255,69,0);
 }
 
 .web.main-page {
@@ -122,13 +123,14 @@ html, body {
 	left: 30px;
 	top: 90px;
 	height: 300px;
-	background-color: #e5b0a3;
+	background-color: rgba(255,69,0, 0.2);
 
 }
 
 .main-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
+	background-color: #fffcda;
 }
 
 .main-page {
@@ -173,7 +175,7 @@ html, body {
   cursor: crosshair;
 	border: 1px black solid;
 	box-shadow: 5px 5px 0 0 #343434;
-	border-radius: 6px;
+	
 	background-color: #e5b0a3;
 	padding: 0px 10px 0px 10px;
 	transform: skewY(-10deg);
@@ -183,7 +185,7 @@ html, body {
 }
 
 .button-style:hover {
-  color: black;
+  color: rgb(255,69,0);
   font-family: Futura;
   text-align: center;
   margin-right: 70px;
