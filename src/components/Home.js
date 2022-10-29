@@ -33,6 +33,7 @@ class Home extends React.Component {
 						</div>
 						</div>
 						<div>
+						<div><small className="small">I'm a</small></div>
 							<div>
 							  <h1 className="main-page web">WEB</h1>
 						  </div>

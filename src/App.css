@@ -46,7 +46,7 @@ html, body {
  font-size: 120px;
  letter-spacing: 70px;
  font-style: italic;
-
+ color: rgb(255,69,0);
 }
 
 .last-name.main-page {
@@ -85,8 +85,8 @@ html, body {
 	right: 400px;
 	letter-spacing: 50px;
 	font-family: Futura;
-	color: black;
-	background-color: rgb(255,69,0);
+	color: rgb(255,69,0);
+
 }
 
 .designer.main-page {
@@ -107,7 +107,7 @@ html, body {
 	font-size: 30px;
 	top: 0;
 	right: 10px;
-	background-color: rgba(255,69,0, 0.8);
+	color: black;
 }
 
 .box {
@@ -168,6 +168,16 @@ html, body {
 	padding: 80px;
 	bottom: 30px;
 	right: 300px;
+}
+
+.small {
+	position: absolute;
+	font-family: Futura;
+	bottom:350px;
+	left:570px;
+	font-size: 20px;
+	color:  #e5b0a3;
+	padding: 0 10px;
 }
 
 .main-layout {
