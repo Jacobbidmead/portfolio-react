@@ -6,7 +6,7 @@ class Photos extends React.Component {
 		return (
 		<>
 			<div className="photo-container">
-			<div >
+			<div>
 			<img src="images/geezer.png" alt="" className="photo1"/>
 			</div>
 
