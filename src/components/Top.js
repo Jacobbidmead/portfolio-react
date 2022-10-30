@@ -1,4 +1,5 @@
 import React from 'react'
+import App from '../App.js'
 import '../styles/Top.css'
 
 class Top extends React.Component {
@@ -6,7 +7,7 @@ class Top extends React.Component {
 		return (
 		<>
 		<div className="top-bar">
-     <div className="home-button">家</div>
+     <div className="home-button" onClick={e => this.props.toggleShowHome(e)}>X</div>
 			<div className="top-right">
 			 <div>
 				<h1 className="top-name">

@@ -20,30 +20,34 @@ class Projects extends React.Component {
 	  <div className="bg-fill">
 		 <div className="text-container text"><h1>Personal Projects</h1></div>
       <div>
-
+					<div>
+					  <MagiKards />
+					</div>
+		 </div>
 			<div>
-			  <MagiKards />
+					<img src="./images/project-img/abnb1.png" className="img-container"alt="" />
 			</div>
-
-
-
-
-
+	    <div>
+					<img src="./images/project-img/abnb2.png" className="img-container"alt="" />
 			</div>
-
-
-
-
-			<div><img src="./images/project-img/abnb1.png" className="img-container"alt="" /></div>
-	    <div><img src="./images/project-img/abnb2.png" className="img-container"alt="" /></div>
-			<div><img src="./images/project-img/abnb3.png" className="img-container"alt="" /></div>
-			<div><img src="./images/project-img/abnb4.png" className="img-container"alt="" /></div>
-	    <div><img src="./images/project-img/abnb5.png" className="img-container"alt="" /></div>
-			<div><img src="./images/project-img/abnb6.png" className="img-container"alt="" /></div>
-			<div><img src="./images/project-img/google.png" className="img-container"alt="" /></div>
+			<div>
+					<img src="./images/project-img/abnb3.png" className="img-container"alt="" />
+			</div>
+			<div>
+					<img src="./images/project-img/abnb4.png" className="img-container"alt="" />
+			</div>
+	    <div>
+					<img src="./images/project-img/abnb5.png" className="img-container"alt="" />
+			</div>
+			<div>
+					<img src="./images/project-img/abnb6.png" className="img-container"alt="" />
+			</div>
+			<div>
+					<img src="./images/project-img/google.png" className="img-container"alt="" />
+			</div>
 
   </div>
-	</>
+</>
 		)
 	}
 }
