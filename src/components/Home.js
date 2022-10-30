@@ -9,7 +9,7 @@ class Home extends React.Component {
 							<div className="box3">
 						</div>
 						<div className="box4">
-						  <div>
+						  <div className="greet">
 								  <h3 className="greeting">Hi.    My name is</h3>
 							</div>
 						</div>

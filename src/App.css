@@ -22,7 +22,6 @@
   }
 }
 
-
 html, body {
     margin: 0;
     height: 100vh;
@@ -37,6 +36,7 @@ html, body {
 .background-main {
  background-color: #fffcda;
  height: 100vh;
+
 }
 
 .first-name.main-page {
@@ -47,6 +47,7 @@ html, body {
  letter-spacing: 70px;
  font-style: italic;
  color: rgb(255,69,0);
+ animation: moveRight 2s ease-in-out forwards;
 }
 
 .last-name.main-page {
@@ -66,6 +67,17 @@ html, body {
 	font-size: 120px;
 	letter-spacing: 90px;
 	color: black;
+	animation: moveTextUp 2s ease-in-out forwards;
+}
+
+
+@keyframes moveTextUp {
+  0% {
+  bottom: -40%;
+  }
+  100% {
+  bottom: 25%;
+  }
 }
 
 .photographer.main-page {
@@ -121,8 +133,6 @@ html, body {
 	animation: moveRight2 2s ease-in-out forwards;
 }
 
-
-
 .box2 {
 	background-color: #e5b0a3;
 	width: 500px;
@@ -154,7 +164,6 @@ html, body {
   }
 }
 
-
 @keyframes moveRight2{
   0% {
   left: -40%;
@@ -172,9 +181,6 @@ html, body {
 		bottom: 6%;
 	}
 }
-
-
-
 
 .box3:hover {
 	background-image: url("/public/images/seoul.png");
@@ -210,6 +216,16 @@ html, body {
 	padding: 80px;
 	bottom: 30px;
 	right: 300px;
+	animation: moveUp 3s ease-in-out forwards;
+}
+
+@keyframes moveUp{
+  0% {
+  bottom: -40%;
+  }
+  100% {
+  bottom: 3.4%;
+  }
 }
 
 .small {
@@ -237,6 +253,7 @@ html, body {
 	margin-bottom: 30px;
 	margin-left: 20px;
 	width: auto;
+	animation: fadein 5s;
 }
 
 
@@ -245,8 +262,10 @@ html, body {
 	right: 0;
 	bottom: 30px;
 	background-color: #fffcda;
-
 }
+
+
+
 
 .buttons {
 	background-color: #fffcda;

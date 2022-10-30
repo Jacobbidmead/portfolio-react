@@ -16,8 +16,8 @@
 
 .home-button {
 	position: absolute;
-	left:100px;
-	font-size: 70px;
+	left:101px;
+	font-size: 75px;
 	cursor: crosshair;
 	background-color: rgb(255,69,0);
 }
