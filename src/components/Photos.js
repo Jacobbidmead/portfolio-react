@@ -8,7 +8,7 @@ class Photos extends React.Component {
 			<div className="container">
 			 <div className="quote-container">
 				 <div className="quote1">
-					 <h1>Travel changes you.</h1>
+					 <h1 className="travel">Travel changes you.</h1>
 				 </div>
 				 <div className="quote2">
 					 <span>
@@ -33,31 +33,31 @@ class Photos extends React.Component {
 			</div>
 			 <div className="photo-container">
 				 <div>
-				    <img src="images/geezer.png" alt="" className="photo1"/>
+				    <img src="images/geezer.png" alt="" className="photo1 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo2"/>
+				    <img src="images/dance.png" alt="" className="photo2 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo3"/>
+				    <img src="" alt="" className="photo3 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo4"/>
+				    <img src="" alt="" className="photo4 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo5"/>
+				    <img src="" alt="" className="photo5 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo6"/>
+				    <img src="" alt="" className="photo6 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo7"/>
+				    <img src="" alt="" className="photo7 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo8"/>
+				    <img src="" alt="" className="photo8 photo-hover"/>
 				 </div>
 				 <div>
-				    <img src="" alt="" className="photo9"/>
+				    <img src="" alt="" className="photo9 photo-hover"/>
 				 </div>
 			 </div>
 			</div>
