@@ -30,34 +30,50 @@ class Photos extends React.Component {
 					- Anthony Bourdain
 					</span>
 				</div>
+			 </div>
+					<div>
+					  <span className="photo-quote">Over the last 10 years, I've been shooting street photography. Capturing moments from my life & travels; colors, lights and compositions that I found beautiful</span>
+					<div>
+						<span className="photo-quote">
+						Most interesting to me, thou, are the people I see and the lives they live.
+						</span>
+					</div>
+					<div>
+						<span className="photo-quote">
+						Through my photography I attempt to describe the cultural narrative of the places I visit and the people I meet.
+						</span>
+					</div>
+			 </div>
+			<div className="large-photo-container">
+			  <div className="large-photo"></div>
 			</div>
 			 <div className="photo-container">
-				 <div>
-				    <img src="images/geezer.png" alt="" className="photo1 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/geezer.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="images/dance.png" alt="" className="photo2 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/dance.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="" alt="" className="photo3 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/parade.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="" alt="" className="photo4 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/horse.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="" alt="" className="photo5 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/trumpet.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="" alt="" className="photo6 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/seller.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="" alt="" className="photo7 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/oruru.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="" alt="" className="photo8 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/colbeach.png" alt="" className="photo"/>
 				 </div>
-				 <div>
-				    <img src="" alt="" className="photo9 photo-hover"/>
+				 <div className="photo-div">
+				    <img src="images/train.png" alt="" className="photo"/>
 				 </div>
 			 </div>
 			</div>
