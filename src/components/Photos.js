@@ -31,22 +31,19 @@ class Photos extends React.Component {
 					</span>
 				</div>
 			 </div>
-					<div>
-					  <span className="photo-quote">Over the last 10 years, I've been shooting street photography. Capturing moments from my life & travels; colors, lights and compositions that I found beautiful</span>
-					<div>
+					<div className="photo-quotes">
+					  <span className="photo-quote">Over the last 10 years, I've been shooting street photography. Capturing moments of my life & from travels; colors, lights and compositions.</span>
+					<div className="photo-quotes">
 						<span className="photo-quote">
 						Most interesting to me, thou, are the people I see and the lives they live.
 						</span>
 					</div>
-					<div>
+					<div className="photo-quotes">
 						<span className="photo-quote">
-						Through my photography I attempt to describe the cultural narrative of the places I visit and the people I meet.
+						Through my photography
 						</span>
 					</div>
 			 </div>
-			<div className="large-photo-container">
-			  <div className="large-photo"></div>
-			</div>
 			 <div className="photo-container">
 				 <div className="photo-div">
 				    <img src="images/geezer.png" alt="" className="photo"/>

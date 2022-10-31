@@ -47,7 +47,7 @@ html, body {
  letter-spacing: 70px;
  font-style: italic;
  color: rgb(255,69,0);
- animation: moveRight 2s ease-in-out forwards;
+ animation: fadein 2.5s;
 
 }
 

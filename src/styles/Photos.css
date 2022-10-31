@@ -30,6 +30,11 @@
 	margin-bottom: 100px;
 }
 
+.photo-quotes {
+	margin: 20px;
+
+}
+
 
 
 .container {
@@ -41,7 +46,7 @@
 .photo-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	background-color: #4acfee;
+	background-color: ;
 	margin: 0px 60px 0px 60px;
   padding-top: 40px;
 	padding-right: 40px;
