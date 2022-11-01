@@ -12,14 +12,9 @@
 .name {
 	font-family: Futura;
 	font-size: 70px;
-
 }
 
-p {
-	font-family: Futura;
-	font-size: 20px;
-	color: #e5b0a3;
-}
+
 
 .underline {
 	text-decoration: underline;
@@ -27,7 +22,7 @@ p {
 
 
 .about-text-bg {
-	background-color: #420b13;
+
 }
 
 .selfie {

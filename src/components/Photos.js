@@ -35,7 +35,7 @@ class Photos extends React.Component {
 					  <span className="photo-quote">Over the last 10 years, I've been shooting street photography. Capturing moments from my life & travels; colors, lights and compositions.</span>
 					<div className="photo-quotes">
 						<span className="photo-quote">
-						Most interesting to me thou, are the people I see and the lives they live.
+					  
 						</span>
 					</div>
 			 </div>
