@@ -5,6 +5,7 @@ class Photo extends React.Component {
 	render() {
 		return (
 			<>
+			<div className="container">
 				<div className="photo-container">
 					<div className="photo-div">
 						 <img src="images/geezer.png" alt="" className="photo"/>
@@ -28,12 +29,13 @@ class Photo extends React.Component {
 						 <img src="images/oruru.png" alt="" className="photo"/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/colbeach.png" alt="" className="photo"/>
-					</div>
-					<div className="photo-div">
 						 <img src="images/train.png" alt="" className="photo"/>
 					</div>
 				</div>
+					<div className="large-photo-container">
+							<img className="main-photo" src="/images/dance.png" alt="" />
+					</div>
+			</div>
 			</>
 		)
 	}

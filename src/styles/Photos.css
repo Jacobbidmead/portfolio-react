@@ -32,28 +32,29 @@
 
 .photo-quotes {
 	margin: 0px 10px 30px 30px;
-}
-
-
-.container {
 	font-family: Futura;
 	animation: fadein 1s;
 }
 
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 .photo-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	background-color: ;
 	margin: 0px 60px 0px 60px;
   padding-top: 40px;
 	padding-right: 40px;
 }
 
-.large-photo-container {
-	display: grid;
-	grid-template-rows: 1fr;
-	place-items: center;
-	margin-right:
+.main-photo {
+	width: 100%;
+	background-size: contain;
+	background-image: cover;
+	margin-top: 50%;
 }
 
 .large-photo {
@@ -72,6 +73,8 @@
 .quote-container {
 	display: grid;
 	grid-template-rows: 1fr;
+	font-family: Futura;
+	animation: fadein 1s;
 }
 
 .quote1 {
