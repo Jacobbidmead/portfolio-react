@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Photos.css'
-import {imageData} from '../imageData.js'
+
 
 class Photo extends React.Component {
 
@@ -8,17 +8,15 @@ state = {
 	largePhoto: "images/train.png"
 }
 
-imgClicked = ["images/dance.png", "images/parade.png", "images/horse.png", "images/trumpet.png", "images/seller.png", "images/oruru.png", "images/train.png"]
+imgClicked = ["images/dance.png", "images/parade.png", "images/horse.png", "images/trumpet.png", "images/seller.png", "images/oruru.png", "images/train.png", "images/geezer.png"]
 
 
 
 changePic = (e) => {
 	this.setState({
-		largePhoto: "images/dance.png",
+		largePhoto: this.imgClicked
 	})
 }
-
-
 
 	render() {
 		return (
@@ -26,28 +24,28 @@ changePic = (e) => {
 			<div className="container">
 				<div className="photo-container">
 					<div className="photo-div">
-						 <img src="images/geezer.png" alt="" className="photo" onClick={e => this.changePic(e)}/>
+						 <img src={this.imgClicked[0]} alt="" className="photo" onClick={e => this.changePic(e)}/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/dance.png" alt="" className="photo"/>
+						 <img src={this.imgClicked[1]} alt="" className="photo"/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/parade.png" alt="" className="photo"/>
+						 <img src={this.imgClicked[2]} alt="" className="photo"/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/horse.png" alt="" className="photo"/>
+						 <img src={this.imgClicked[3]} alt="" className="photo"/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/trumpet.png" alt="" className="photo"/>
+						 <img src={this.imgClicked[4]} alt="" className="photo"/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/seller.png" alt="" className="photo"/>
+						 <img src={this.imgClicked[5]} alt="" className="photo"/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/oruru.png" alt="" className="photo"/>
+						 <img src={this.imgClicked[6]} alt="" className="photo"/>
 					</div>
 					<div className="photo-div">
-						 <img src="images/train.png" alt="" className="photo"/>
+						 <img src={this.imgClicked[7]} alt="" className="photo"/>
 					</div>
 				</div>
 
