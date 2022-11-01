@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Photos.css'
+import {imageData} from '../imageData'
 
 
 class Photo extends React.Component {
