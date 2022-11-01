@@ -35,7 +35,7 @@ class Photos extends React.Component {
 					  <span className="photo-quote">Over the last 10 years, I've been shooting street photography. Capturing moments from my life & travels; colors, lights and compositions.</span>
 					<div className="photo-quotes">
 						<span className="photo-quote">
-					  
+             I have a love for anthropology & discovering new cultures; this is what I attempt to desribe throughout my work.
 						</span>
 					</div>
 			 </div>
@@ -67,6 +67,7 @@ class Photos extends React.Component {
 				 <div className="photo-div">
 				    <img src="images/train.png" alt="" className="photo"/>
 				 </div>
+
 			 </div>
 			</div>
     </>

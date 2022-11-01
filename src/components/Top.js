@@ -1,5 +1,4 @@
 import React from 'react'
-import App from '../App.js'
 import '../styles/Top.css'
 
 class Top extends React.Component {
