@@ -45,10 +45,9 @@ html, body {
  left:150px;
  font-size: 120px;
  letter-spacing: 70px;
- font-style: italic;
  color: rgb(255,69,0);
  animation: fadein 2.5s;
-
+ font-family: Futura;
 }
 
 .last-name.main-page {
@@ -192,13 +191,6 @@ html, body {
 	100% {
 		bottom: 6%;
 	}
-}
-
-.box3:hover {
-	background-image: url("/public/images/seoul.png");
-	background-image: cover;
-	background-size: contain;
-	cursor: crosshair;
 }
 
 .box4 {

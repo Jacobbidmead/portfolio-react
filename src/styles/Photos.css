@@ -31,21 +31,18 @@
 }
 
 .photo-quotes {
-	margin: 20px;
-
+	margin: 0px 10px 30px 30px;
 }
-
 
 
 .container {
 	font-family: Futura;
 	animation: fadein 1s;
-
 }
 
 .photo-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr ;
 	background-color: ;
 	margin: 0px 60px 0px 60px;
   padding-top: 40px;
@@ -77,12 +74,9 @@
 	grid-template-rows: 1fr;
 }
 
-
-
 .quote1 {
 	font-size: 60px;
 	text-align: left;
-
 }
 
 .travel {
@@ -106,7 +100,6 @@
 	position: absolute;
 	top: 280px;
 	left: 50px;
-
 }
 
 .quote4 {
