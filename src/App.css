@@ -264,7 +264,7 @@ html, body {
 .button-container {
 	position: fixed;
 	right: 0;
-	bottom: 100px;
+	bottom: 30px;
 	background-color: #fffcda;
 }
 
@@ -289,26 +289,12 @@ html, body {
   text-align: center;
   margin: 0px 70px 20px 0px;
   cursor: crosshair;
-	border: 1px black solid;
-	box-shadow: 5px 5px 0 0 #343434;
-
-	background-color: #ffffed;
-	padding: 0px 10px 0px 10px;
-	transform: skewY(-10deg);
-	transition: 300ms;
-
-
 }
 
 .button-style:hover {
-  color: black;
+  color: rgba(255,69,0, 0.6);
   font-family: Futura;
   text-align: center;
   margin-right: 70px;
-  background-color: rgba(255,69,0, 0.6);
-  border: 1px black solid;
-	box-shadow: 5px 5px 0 0 black;
-	border-radius: none;
-	transform: skewY(-8deg);
-
+	text-decoration: underline;
 }
