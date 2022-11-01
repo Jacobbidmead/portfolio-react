@@ -31,7 +31,7 @@ class App extends React.Component {
 
 	toggleShowLinks = () => {
 		this.setState({
-			showLinks: this.state.showLinks ? false : true,
+			showLinks: true,
 			showHome: false,
 			showAbout: false,
 			showProjects: false,
@@ -42,7 +42,7 @@ class App extends React.Component {
 
 	toggleShowAbout = () => {
     this.setState({
-			showAbout: this.state.showAbout ? false : true,
+			showAbout: true,
 			showHome: false,
 			showLinks: false,
 			showProjects: false,
@@ -52,7 +52,7 @@ class App extends React.Component {
 
 	 toggleShowProjects = () => {
 		 this.setState({
-			 showProjects: this.state.showProjects ? false : true,
+			 showProjects: true,
 			 showHome: false,
 			 showLinks: false,
 			 showAbout: false,
@@ -62,7 +62,7 @@ class App extends React.Component {
 
 	 toggleShowPhotos = () => {
 		 this.setState({
-			 showPhotos: this.state.showPhotos ? false : true,
+			 showPhotos: true,
 			 showHome: false,
 			 showLinks: false,
 			 showAbout: false,
