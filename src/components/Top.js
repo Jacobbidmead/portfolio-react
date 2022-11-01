@@ -4,7 +4,7 @@ import '../styles/Top.css'
 
 class Top extends React.Component {
 	state = {
-		showHomeButton: false
+		showHomeButton: true
 	}
 
 	toggleShowHomeButton = () => {
