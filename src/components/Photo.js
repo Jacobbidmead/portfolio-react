@@ -19,16 +19,28 @@ changePic = (el) => {
 	})
 }
 
-changeImages = () => {
+changeToAsia = () => {
 	this.setState({
 		allImages: asiaImageData
 	})
 }
 
+changeToSa = () => {
+	this.setState({
+		allImages: saImageData
+	})
+}
+
+
+
+
 	render() {
 		return (
 		<>
-		<div><button onClick={e => this.changeImages(e)}>Asia</button></div>
+		<div className="photo-nav">
+		 <span onClick={e => this.changeToAsia(e)} className="change-photos">Asia</span>
+		 <span onClick={e => this.changeToSa(e)} className="change-photos">South America</span>
+		</div>
 			<div className="container">
 				<div className="photo-container">
 				 {this.state.allImages.map((el, i) => <div key={i} onClick={e => this.changePic(el)} className="photo-div">
