@@ -6,8 +6,6 @@ import asiaImageData from '../imageData/asiaImageData'
 
 class Photo extends React.Component {
 
-
-
 state = {
 	largePhoto: "images/sa/train.png",
 	allImages: saImageData
@@ -34,13 +32,11 @@ changeToSa = () => {
 }
 
 
-
-
 	render() {
 		return (
 		<>
 		<div className="photo-nav">
-			 <span onClick={e => this.changeToAsia(e)} className="change-photos">Asia</span>
+			 <span onClick={e => this.changeToAsia(e)} className="change-photos">Far East</span>
 			 <span onClick={e => this.changeToSa(e)} className="change-photos">South America</span>
 		</div>
 			<div className="container">

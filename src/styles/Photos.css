@@ -50,6 +50,20 @@
 	padding-right: 40px;
 }
 
+.change-photos {
+	font-family: Futura;
+	font-size: 30px;
+	color:black;
+	cursor: crosshair;
+	padding: 50px;
+	text-align: center;
+
+}
+
+.photo-nav {
+	text-align: center;
+}
+
 .main-photo {
 	width: 100%;
 	background-size: contain;
