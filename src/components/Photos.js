@@ -40,7 +40,7 @@ class Photos extends React.Component {
 						</span>
 					</div>
 			 </div>
-			 <Photo changePic={this.props.changePic}/>
+			 <Photo changePic={this.props.changePic} />
 			</div>
     </>
 		)
