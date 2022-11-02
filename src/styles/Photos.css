@@ -1,11 +1,11 @@
 .photo {
-	width: 260px;
+	width: 200px;
 	background-image: cover;
 	background-size: contain;
 	-webkit-transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
 		opacity: 0.8;
-		margin: 0px 0px 40px 60px;
+		margin: 0px 2px 20px 60px;
 }
 
 
@@ -21,17 +21,32 @@
 	padding: 0;
 }
 
-.photo-quote {
-	background-color: black;
-	color: #4acfee;
-	font-size: 30px;
-	place-items: center;
-	margin: 30px;
-	margin-bottom: 100px;
+.photo-quote1 {
+	background-color: deeppink;
+	color: white;
+	font-size: 80px;
+	text-align: right;
+	margin: 10px 50px 50px 70px;
+	font-family: Futura;
 }
 
-.photo-quotes {
-	margin: 0px 10px 30px 30px;
+.photo-quote2 {
+	color: #4acfee;
+	font-size: 80px;
+	place-items: center;
+	margin: 30px;
+	margin-bottom: 00px;
+}
+
+.photo-quote-container {
+	text-align: right;
+	margin: 0px 40px 100px 0px;
+}
+
+
+
+.photo-quote-container2 {
+	margin: 0px 10px 100px 50px;
 	font-family: Futura;
 	animation: fadein 1s;
 }
@@ -44,11 +59,8 @@
 .photo-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: ;
-	margin: 0px 0px 0px 0px;
   padding-top: 40px;
 	padding-right: 40px;
-
 }
 
 .change-photos {
@@ -59,6 +71,10 @@
 	padding: 10px 50px;
 	text-align: center;
 	background-color: #4acfee;
+}
+
+.change-photos:hover {
+	color:deeppink;
 }
 
 .photo-nav {
@@ -109,25 +125,29 @@
 
 .quote2 {
 	font-size: 20px;
-	background-color: #4acfee;
+	background-color: deeppink;
 	margin: 30px 0px 30px 700px;
 	width: 600px;
+	padding-bottom: 30px;
+	color: white;
 
 }
 
 .quote3 {
-	font-size: 15px;
+	font-size: 20px;
 	text-decoration: underline;
-	padding: 60px;
+	padding: 10px;
 	margin-left: 50px;
 	position: absolute;
-	top: 280px;
-	left: 50px;
+	top: 350px;
+	left: 120px;
+	font-style: italic;
+
 }
 
 .quote4 {
 	font-size: 50px;
-	background-color: #4acfee;
+	color: #4acfee;
 	width: 1170px;
 	margin: 100px 0px 100px 70px;
 }

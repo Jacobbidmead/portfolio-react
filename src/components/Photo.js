@@ -3,12 +3,15 @@ import '../styles/Photos.css'
 import saImageData from '../imageData/saImageData'
 import asiaImageData from '../imageData/asiaImageData'
 
+let saDescription = "sa Description"
+let asiaDescription = "asia"
 
 class Photo extends React.Component {
 
 state = {
 	largePhoto: "images/sa/train.png",
-	allImages: saImageData
+	allImages: saImageData,
+	imgDescription: saDescription
 }
 
 changePic = (el) => {
@@ -20,14 +23,16 @@ changePic = (el) => {
 changeToAsia = () => {
 	this.setState({
 		largePhoto: "images/asia/umbrella.png",
-		allImages: asiaImageData
+		allImages: asiaImageData,
+		imgDescription: asiaDescription
 	})
 }
 
 changeToSa = () => {
 	this.setState({
 		largePhoto: "images/sa/train.png",
-		allImages: saImageData
+		allImages: saImageData,
+		imgDescription: saDescription
 	})
 }
 
@@ -36,10 +41,11 @@ changeToSa = () => {
 		return (
 		<>
 		<div className="photo-nav">
-			 <span onClick={e => this.changeToAsia(e)} className="change-photos far-east">Far East</span>
-			 <span onClick={e => this.changeToSa(e)} className="change-photos sa">South America</span>
-			 <span onClick={e => this.changeToSa(e)} className="change-photos sa">Europe</span>
-			 <span onClick={e => this.changeToSa(e)} className="change-photos sa">People</span>
+			 <span onClick={e => this.changeToAsia(e)} className="change-photos">Far East</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos">South America</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos">Europe</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos">Oceania</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos">London</span>
 		</div>
 			<div className="container">
 				<div className="photo-container">
@@ -49,7 +55,7 @@ changeToSa = () => {
 			</div>
 				<div className="large-photo-container">
 					<img className="main-photo" src={this.state.largePhoto} alt="" />
-					<div>Description of images</div>
+					<div>{this.state.imgDescription}</div>
 				</div>
 			</div>
 		</>
