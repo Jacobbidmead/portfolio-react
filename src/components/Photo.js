@@ -21,12 +21,14 @@ changePic = (el) => {
 
 changeToAsia = () => {
 	this.setState({
+		largePhoto: "images/asia/umbrella.png",
 		allImages: asiaImageData
 	})
 }
 
 changeToSa = () => {
 	this.setState({
+		largePhoto: "images/sa/train.png",
 		allImages: saImageData
 	})
 }
@@ -38,8 +40,8 @@ changeToSa = () => {
 		return (
 		<>
 		<div className="photo-nav">
-		 <span onClick={e => this.changeToAsia(e)} className="change-photos">Asia</span>
-		 <span onClick={e => this.changeToSa(e)} className="change-photos">South America</span>
+			 <span onClick={e => this.changeToAsia(e)} className="change-photos">Asia</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos">South America</span>
 		</div>
 			<div className="container">
 				<div className="photo-container">
