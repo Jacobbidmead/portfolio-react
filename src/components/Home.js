@@ -19,7 +19,7 @@ class Home extends React.Component {
 							    <h1 className="main-page  first-name" >JACOB</h1>
 							</div>
 							<div >
-									  <img src="images/umbrella.png" alt="" className="box2"/>
+									  <img src="images/asia/umbrella.png" alt="" className="box2"/>
 							</div>
 						</div>
 						<div>
