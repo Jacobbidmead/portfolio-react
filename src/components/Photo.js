@@ -36,8 +36,10 @@ changeToSa = () => {
 		return (
 		<>
 		<div className="photo-nav">
-			 <span onClick={e => this.changeToAsia(e)} className="change-photos">Far East</span>
-			 <span onClick={e => this.changeToSa(e)} className="change-photos">South America</span>
+			 <span onClick={e => this.changeToAsia(e)} className="change-photos far-east">Far East</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos sa">South America</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos sa">Europe</span>
+			 <span onClick={e => this.changeToSa(e)} className="change-photos sa">People</span>
 		</div>
 			<div className="container">
 				<div className="photo-container">
@@ -47,6 +49,7 @@ changeToSa = () => {
 			</div>
 				<div className="large-photo-container">
 					<img className="main-photo" src={this.state.largePhoto} alt="" />
+					<div>Description of images</div>
 				</div>
 			</div>
 		</>

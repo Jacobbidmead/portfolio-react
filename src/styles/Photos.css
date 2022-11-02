@@ -45,30 +45,33 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	background-color: ;
-	margin: 0px 60px 0px 60px;
+	margin: 0px 0px 0px 0px;
   padding-top: 40px;
 	padding-right: 40px;
+
 }
 
 .change-photos {
 	font-family: Futura;
-	font-size: 30px;
+	font-size: 20px;
 	color:black;
 	cursor: crosshair;
-	padding: 50px;
+	padding: 10px 50px;
 	text-align: center;
-
+	background-color: #4acfee;
 }
 
 .photo-nav {
 	text-align: center;
+	margin-bottom: 40px;
 }
 
 .main-photo {
 	width: 100%;
 	background-size: contain;
 	background-image: cover;
-	margin-top: 50%;
+	margin-top: 17px;
+	animation: fadein 1.5s;
 }
 
 .large-photo {
@@ -80,7 +83,10 @@
 	background-image: cover;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
 
+.large-photo-container {
+	padding: 20px;
 }
 
 

@@ -263,8 +263,8 @@ html, body {
 
 .button-container {
 	position: fixed;
-	right: 0;
-	bottom: 30px;
+	right: 0px;
+	bottom: 20px;
 	background-color: #fffcda;
 }
 
