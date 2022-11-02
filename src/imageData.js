@@ -1,26 +1,5 @@
-export const imageData = [
-	{
-		image: "images/dance.png"
-	},
-	{
-		image: "images/parade.png"
-	},
-	{
-		image: "images/horse.png"
-	},
-	{
-		image: "images/trumpet.png"
-	},
-	{
-		image: "images/seller.png"
-	},
-	{
-		image:  "images/oruru.png"
-	},
-	{
-		image: "images/train.png"
-	},
-	{
-		image: "images/geezer.png"
-	},
+let imageData = [
+	"images/dance.png","images/parade.png", "images/horse.png" ,"images/trumpet.png" ,"images/seller.png",  "images/oruru.png" ,"images/train.png",
+	"images/geezer.png"
 ]
+ export default imageData

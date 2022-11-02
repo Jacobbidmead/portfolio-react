@@ -1,21 +1,20 @@
 import React from 'react'
 import '../styles/Photos.css'
-import {imageData} from '../imageData'
+import imageData from '../imageData'
 
 
 class Photo extends React.Component {
 
+
+
 state = {
-	largePhoto: "images/train.png"
+	largePhoto: "images/train.png",
+	allImages: imageData
 }
 
-imgClicked = ["images/dance.png", "images/parade.png", "images/horse.png", "images/trumpet.png", "images/seller.png", "images/oruru.png", "images/train.png", "images/geezer.png"]
-
-
-
-changePic = (e) => {
+changePic = (el) => {
 	this.setState({
-		largePhoto: this.imgClicked
+		largePhoto: el
 	})
 }
 
@@ -24,30 +23,13 @@ changePic = (e) => {
 			<>
 			<div className="container">
 				<div className="photo-container">
-					<div className="photo-div">
-						 <img src={this.imgClicked[0]} alt="" className="photo" onClick={e => this.changePic(e)}/>
-					</div>
-					<div className="photo-div">
-						 <img src={this.imgClicked[1]} alt="" className="photo"/>
-					</div>
-					<div className="photo-div">
-						 <img src={this.imgClicked[2]} alt="" className="photo"/>
-					</div>
-					<div className="photo-div">
-						 <img src={this.imgClicked[3]} alt="" className="photo"/>
-					</div>
-					<div className="photo-div">
-						 <img src={this.imgClicked[4]} alt="" className="photo"/>
-					</div>
-					<div className="photo-div">
-						 <img src={this.imgClicked[5]} alt="" className="photo"/>
-					</div>
-					<div className="photo-div">
-						 <img src={this.imgClicked[6]} alt="" className="photo"/>
-					</div>
-					<div className="photo-div">
-						 <img src={this.imgClicked[7]} alt="" className="photo"/>
-					</div>
+
+				 {this.state.allImages.map((el, i) => <div onClick={e => this.changePic(el)} className="photo-div">
+						<img src={el} alt="" className="photo"/>
+				 </div>)}
+
+
+
 				</div>
 
 					<div className="large-photo-container">
