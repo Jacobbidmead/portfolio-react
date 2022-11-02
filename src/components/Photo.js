@@ -29,7 +29,6 @@ changePic = (el) => {
 				 </div>)}
 
 
-
 				</div>
 
 					<div className="large-photo-container">
