@@ -9,6 +9,7 @@ class About extends React.Component {
 				<div>
 					 <h1 className="welcome">Welcome.</h1>
 						 <h3 className="my-website">to my website.</h3>
+						 <div className="color-block"></div>
 				   <div className="about-bg">
 							 <h3>About me.</h3>
 							<div className="about-text-bg about1">

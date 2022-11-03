@@ -11,7 +11,7 @@ let europeDescription = "Life in Europe: 2014 - 2018 - London, Oslo, Palermo, Cr
 class Photo extends React.Component {
 
 state = {
-	largePhoto: "images/asia/umbrella.png",
+	largePhoto: "images/asia/tracks.png",
 	allImages: asiaImageData,
 	imgDescription: asiaDescription
 }

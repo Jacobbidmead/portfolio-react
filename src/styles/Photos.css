@@ -5,7 +5,7 @@
 	background-size: contain;
 	-webkit-transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
-		opacity: 0.8;
+		opacity: 0.6;
 		margin: 0px 2px 20px 20px;
 		object-fit: cover;
 }
@@ -14,8 +14,8 @@
 .photo:hover {
 	opacity: 1;
 	cursor: crosshair;
-	-webkit-transform: scale(1.2) rotate(0.01deg);
-	transform: scale(1.2) rotate(0.01deg);
+	-webkit-transform: scale(1.15) rotate(0.01deg);
+	transform: scale(1.15) rotate(0.01deg);
 }
 
 
@@ -62,6 +62,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
   padding-top: 40px;
+	padding-left: 10px
 }
 
 .change-photos {
@@ -126,6 +127,7 @@
 
 .travel {
 	margin:20px 0px 0px 50px;
+	
 }
 
 
