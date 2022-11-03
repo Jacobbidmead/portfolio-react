@@ -7,7 +7,6 @@
 	grid-template-rows: ;
 	font-family: Futura;
 	border-top:black 1px solid;
-
 }
 
 .name {
@@ -33,20 +32,22 @@ padding-bottom: 50px;
 
 .about-bg {
 	background-color: green;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
 
 .about-text-bg {
 	width: 50%;
+	border: 1px solid black;
 }
 
 .about1 {
-
 }
 
 .selfie {
-	width: 200px;
+	width: 250px;
 	border-radius: 10px;
-	align-items: center;
-	
+	margin: 20px;
+
 }
