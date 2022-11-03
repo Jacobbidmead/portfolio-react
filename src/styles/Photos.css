@@ -97,14 +97,13 @@
 .img-description {
 	font-family: Futura;
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 50px;
 	padding: 0px 50px;
 	color: #4acfee;
 }
 
 .large-photo {
 	width: 20%;
-	height: auto;
 	background-color: black;
 	padding: 180px;
 	margin-bottom: 30px;
@@ -115,6 +114,8 @@
 
 .large-photo-container {
 	padding: 20px;
+	width: 700px;
+
 }
 
 
