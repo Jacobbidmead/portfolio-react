@@ -33,11 +33,11 @@ class Photos extends React.Component {
 				</div>
 			 </div>
 			<div className="photo-quote-container">
-					  <span className="photo-quote1">Over the last 10 years, I've been shooting street photography. Capturing moments from my life & travels; colors, lights and compositions.</span>
+					  <span className="photo-quote1">Over the last 10 years, I've been shooting street photography. Capturing moments from my life & travels; cultures, experiences, landscapes and compositions.</span>
 			</div>
 			<div className="photo-quote-container2">
 						<span className="photo-quote2">
-             I attempt to descrive my love of anthropology & discovering new cultures throughout my work.
+             Through my work, I attempt to describe my love of anthropology & discovering new cultures.
 						</span>
 			 </div>
 			 <Photo changePic={this.props.changePic} />

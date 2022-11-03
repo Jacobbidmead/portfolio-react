@@ -3,8 +3,8 @@ import '../styles/Photos.css'
 import saImageData from '../imageData/saImageData'
 import asiaImageData from '../imageData/asiaImageData'
 
-let saDescription = "sa Description"
-let asiaDescription = "asia"
+let saDescription = "South & Central America: September 2017 - March 2018. Countries exhibited: Peru, Bolivia, Colombia & Mexico "
+let asiaDescription = "Japan, Vietnam & South Korea: September - November 2019"
 
 class Photo extends React.Component {
 
@@ -55,7 +55,7 @@ changeToSa = () => {
 			</div>
 				<div className="large-photo-container">
 					<img className="main-photo" src={this.state.largePhoto} alt="" />
-					<div>{this.state.imgDescription}</div>
+					<div className="img-description">{this.state.imgDescription}</div>
 				</div>
 			</div>
 		</>
