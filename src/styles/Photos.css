@@ -1,11 +1,13 @@
 .photo {
 	width: 200px;
+	height: 130px;
 	background-image: cover;
 	background-size: contain;
 	-webkit-transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
 		opacity: 0.8;
-		margin: 0px 2px 20px 60px;
+		margin: 0px 2px 20px 20px;
+		object-fit: cover;
 }
 
 
@@ -16,10 +18,7 @@
 	transform: scale(1.2) rotate(0.01deg);
 }
 
-.photo-div {
-	margin: 0;
-	padding: 0;
-}
+
 
 .photo-quote1 {
 	background-color: deeppink;
@@ -55,14 +54,14 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	background-color: black;
+	margin: 18px;
+
 }
 
 .photo-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
   padding-top: 40px;
-
-
 }
 
 .change-photos {
@@ -88,36 +87,28 @@
 }
 
 .main-photo {
-	width: 100%;
+	width: 880px;
+	height: 550px;
 	background-size: contain;
 	background-image: cover;
 	margin-top: 17px;
 	animation: fadein 1.5s;
+
 }
 
 .img-description {
 	font-family: Futura;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding: 0px 50px;
 	color: #4acfee;
 }
 
-.large-photo {
-	width: 20%;
-	background-color: black;
-	padding: 180px;
-	margin-bottom: 30px;
-	background-image: cover;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
+
 
 .large-photo-container {
 	padding: 20px;
-	width: 700px;
-	margin-right: 100px;
- 
+	width: 900px;
 }
 
 
