@@ -29,7 +29,7 @@ html, body {
 
 ::selection {
   color: black;
-  background: rgb(255,69,0);
+  background: deeppink;
 }
 
 
@@ -194,12 +194,12 @@ html, body {
 }
 
 .box4 {
-	width: 20px;
+	width: 170px;
 	position: absolute;
-	right: 40px;
+	right: 0px;
 	background-color: #e5b0a3;
 	padding: 50px 270px 120px 160px;
-	top: 120px;
+	top: 110px;
 	height: 0px;
 	animation: moveLeft 2s ease-in-out forwards;
 }
@@ -214,12 +214,12 @@ html, body {
 }
 
 .box5 {
-	width: 300px;
+	width: 500px;
 	position: absolute;
 	background-color: rgba(255,69,0, 0.2);
 	padding: 80px;
 	bottom: 30px;
-	right: 300px;
+	right: 80px;
 	animation: moveUp 2s ease-in-out forwards;
 
 }
@@ -275,14 +275,14 @@ html, body {
   font-family: Futura;
 	font-size: 10px;
   color: black;
-  text-align: right;
-  margin: 0px 70px 20px 0px;
+  text-align: center;
+  margin: 0px 70px 20px 30px;
   cursor: crosshair;
 	display: inline;
+	padding-top: 20px;
 }
 
 .button-style:hover {
-  color: rgba(255,69,0, 0.6);
+  color: deeppink;
   font-family: Futura;
-	text-decoration: underline;
 }

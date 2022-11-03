@@ -2,10 +2,11 @@
   width: 100%;
 	-webkit-animation: fadein 1.5s;
 	padding-top: 5%;
-	background-color: #fffcda;
+	background-color: white;
   display: grid;
 	grid-template-rows: ;
 	font-family: Futura;
+	border-top:black 1px solid;
 
 }
 
@@ -17,13 +18,12 @@
 .welcome {
 font-size: 330px;
 margin: 0px 0px 150px 40px;
-padding-bottom: 150px;
-color: ;
+padding-bottom: 50px;
 }
 
 .my-website {
 	position: absolute;
-	top: 500px;
+	top: 550px;
 	left: 100px;
 }
 
@@ -31,8 +31,12 @@ color: ;
 	text-decoration: underline;
 }
 
-.about1 {
+.about-bg {
+	background-color: green;
+}
 
+.about1 {
+ 
 }
 
 .selfie {

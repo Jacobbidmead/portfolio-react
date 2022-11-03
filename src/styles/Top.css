@@ -7,17 +7,14 @@
 	border-color: #e5b0a3;
 }
 
-.top-name {
-	text-align: right;
-	padding: 10px;
-	letter-spacing: 30px;
-	color: black;
-}
-
 .home-button {
 	position: absolute;
 	left: 10px;
-	font-size: 40px;
+	font-size: 30px;
 	cursor: crosshair;
-	padding: 20px;
+	padding: 25px;
+}
+
+.home-button:hover {
+	color: deeppink;
 }

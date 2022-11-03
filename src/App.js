@@ -84,9 +84,9 @@ class App extends React.Component {
 				 toggleShowPhotos={this.toggleShowPhotos}/>
 
 				 <Top toggleShowHome={this.toggleShowHome}/>
-		</div>
 
 		</div>
+ </div>
 
 
 
