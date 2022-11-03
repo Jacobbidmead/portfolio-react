@@ -33,16 +33,20 @@ padding-bottom: 50px;
 
 .about-bg {
 	background-color: green;
+
+}
+
+.about-text-bg {
+	width: 50%;
 }
 
 .about1 {
- 
+
 }
 
 .selfie {
-	width: 380px;
+	width: 200px;
 	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	margin-left: 60%;
+	align-items: center;
+	
 }
