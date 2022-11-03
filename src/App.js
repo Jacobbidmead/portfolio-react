@@ -75,7 +75,21 @@ class App extends React.Component {
 		return (
 <>
   <div className="background-main">
-    <div><Top toggleShowHome={this.toggleShowHome}/></div>
+   <div>
+		<div className="top-bar">
+
+		<Sidebar
+				 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}
+				 toggleShowProjects={this.toggleShowProjects}
+				 toggleShowPhotos={this.toggleShowPhotos}/>
+
+				 <Top toggleShowHome={this.toggleShowHome}/>
+		</div>
+
+		</div>
+
+
+
 			<div className="main-layout">
 
 
@@ -92,12 +106,7 @@ class App extends React.Component {
 
 
 
-      <div className="buttons">
-        <Sidebar
-					 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}
-					 toggleShowProjects={this.toggleShowProjects}
-					 toggleShowPhotos={this.toggleShowPhotos}/>
-      </div>
+
     </div>
 	</div>
 </>

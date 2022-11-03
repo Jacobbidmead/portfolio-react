@@ -1,7 +1,7 @@
 .top-bar {
 	background-color: #fffcda;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	font-family: Futura;
 	width: 100%;
 	border-color: #e5b0a3;

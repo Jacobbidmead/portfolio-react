@@ -196,10 +196,10 @@ html, body {
 .box4 {
 	width: 20px;
 	position: absolute;
-	right: 60px;
+	right: 40px;
 	background-color: #e5b0a3;
 	padding: 50px 270px 120px 160px;
-	top: 50px;
+	top: 120px;
 	height: 0px;
 	animation: moveLeft 2s ease-in-out forwards;
 }
@@ -221,6 +221,7 @@ html, body {
 	bottom: 30px;
 	right: 300px;
 	animation: moveUp 2s ease-in-out forwards;
+
 }
 
 @keyframes moveUp{
@@ -244,7 +245,7 @@ html, body {
 
 .main-layout {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 2fr 1fr; */
 	background-color: #fffcda;
 }
 
@@ -261,18 +262,6 @@ html, body {
 }
 
 
-.button-container {
-	position: fixed;
-	right: 0px;
-	bottom: 20px;
-	background-color: #fffcda;
-}
-
-
-.buttons {
-	background-color: #fffcda;
-}
-
 .name-text {
   margin: 20px 60px 0px 0px;
   text-align: center;
@@ -286,15 +275,14 @@ html, body {
   font-family: Futura;
 	font-size: 10px;
   color: black;
-  text-align: center;
+  text-align: right;
   margin: 0px 70px 20px 0px;
   cursor: crosshair;
+	display: inline;
 }
 
 .button-style:hover {
   color: rgba(255,69,0, 0.6);
   font-family: Futura;
-  text-align: center;
-  margin-right: 70px;
 	text-decoration: underline;
 }

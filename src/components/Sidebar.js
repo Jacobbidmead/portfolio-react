@@ -6,7 +6,7 @@ class Sidebar extends React.Component {
 	render() {
 		return (
 	<>
-		<div className="button-container">
+
 			<div onClick={e => this.props.toggleShowAbout(e)} className=" button-style name-text name-box ">
 				<h1>About</h1>
 			</div>
@@ -19,7 +19,7 @@ class Sidebar extends React.Component {
 			<div onClick={e => this.props.toggleShowLinks(e)} className="button-style link3 ">
 				<h1>Links</h1>
 			</div>
-		</div>
+
 	</>
 		)
 	}

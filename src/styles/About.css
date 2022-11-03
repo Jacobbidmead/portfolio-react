@@ -1,11 +1,11 @@
 .about-container {
-	margin: auto;
-  width: 50%;
-	text-align: center;
+  width: 100%;
 	-webkit-animation: fadein 1.5s;
 	padding-top: 5%;
 	background-color: #fffcda;
-	display: 100vh;
+  display: grid;
+	grid-template-rows: ;
+	font-family: Futura;
 
 }
 
@@ -14,17 +14,31 @@
 	font-size: 70px;
 }
 
+.welcome {
+font-size: 330px;
+margin: 0px 0px 150px 40px;
+padding-bottom: 150px;
+color: ;
+}
 
+.my-website {
+	position: absolute;
+	top: 500px;
+	left: 100px;
+}
 
 .underline {
 	text-decoration: underline;
 }
 
-
-.about-text-bg {
+.about1 {
 
 }
 
 .selfie {
-	width: 70%;
+	width: 380px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	margin-left: 60%;
 }
