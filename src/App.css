@@ -41,34 +41,38 @@ html, body {
 
 .first-name.main-page {
  position: absolute;
- top: 30px;
- left:150px;
- font-size: 120px;
+ top: 0px;
+ left:95px;
+ font-size: 150px;
  letter-spacing: 70px;
- color: rgb(255,69,0);
+ color: black;
  animation: fadein 2.5s;
  font-family: Futura;
+
 }
 
 .last-name.main-page {
 	position: absolute;
-  bottom:55%;
-  right: 250px;
-	font-size: 70px;
+  bottom:50%;
+  left: 300px;
+	font-size: 50px;
 	letter-spacing: 45px;
 	font-family: Futura;
 	color: rgb(255,69,0);
-	animation: moveTextLeft 2.5s ease-in-out forwards;
+	animation: moveTextDown 2.8s ease-in-out forwards;
 }
 
-@keyframes moveTextLeft {
+@keyframes moveTextDown {
   0% {
-  right: -50%;
+  top: -40%;
   }
   100% {
-  right: 18%;
+  top: 35%;
   }
 }
+
+
+
 
 
 .web.main-page {
@@ -93,10 +97,10 @@ html, body {
 
 .photographer.main-page {
 	position: absolute;
-	bottom: 25%;
-	right: 500px;
+	bottom: 58%;
+	right: 270px;
 	font-size: 12px;
-	color:#e5b0a3 ;
+	color:black ;
 	font-style: italic;
 	font-family: Futura;
 
@@ -104,8 +108,8 @@ html, body {
 
 .developer.main-page {
 	position: absolute;
-	bottom: 140px;
-	right: 400px;
+	bottom: 145px;
+	right: 725px;
 	letter-spacing: 50px;
 	font-family: Futura;
 	color: rgb(255,69,0);
@@ -124,16 +128,38 @@ html, body {
 }
 
 .greeting {
-	position: absolute;
 	font-family: Futura;
-	padding:0 20px 0 20px;
+	padding:30px 80px 30px 90px;
 	font-size: 30px;
-	top: 0;
-	right: 10px;
+	right: -10px;
+	top: 90px;
 	color: black;
+	background-color: rgb(255,69,0);
+	position: absolute;
+	animation: moveLeft2 2.5s ease-in-out forwards;
 }
 
-.box {
+@keyframes moveLeft2{
+  0% {
+  right: -60%;
+  }
+  100% {
+  right: 5%;
+  }
+}
+
+.img-box {
+	background-color: #e5b0a3;
+	width: 550px;
+	position: absolute;
+	right: 140px;
+	top: 400px;
+	height: 350px;
+	background-image: cover;
+	animation: moveDown 2.5s ease-in-out forwards;
+}
+
+.box-left-small {
 	padding:50px;
 	background-color: #e5b0a3;
 	width: 510px;
@@ -144,27 +170,30 @@ html, body {
 	animation: moveRight2 2s ease-in-out forwards;
 }
 
-.box2 {
-	background-color: #e5b0a3;
-	width: 500px;
-	position: absolute;
-	right:250px;
-	top: 300px;
-	height: 300px;
-	background-image: cover;
-	animation: moveDown 2.5s ease-in-out forwards;
-}
-
-
-.box3 {
+.box-left {
 	width: 550px;
 	position: absolute;
 	left: 30px;
-	top: 90px;
-	height: 300px;
+	top: 80px;
+	height: 85%;
 	background-color: rgba(255,69,0, 0.2);
-  animation: moveRight 3s ease-in-out forwards;
+  animation: moveRight 2s ease-in-out forwards;
+	padding-right: 50px;
+
 }
+
+.box-right {
+	width: 550px;
+	position: absolute;
+	height: 85%;
+	background-color: rgba(255, 0, 0, 0.5);
+	right: 30px;
+	top: 80px;
+	animation: moveLeft 2s ease-in-out forwards;
+	padding-left: 50px;
+}
+
+
 
 @keyframes moveRight{
   0% {
@@ -177,7 +206,7 @@ html, body {
 
 @keyframes moveRight2{
   0% {
-  left: -40%;
+  left: -30%;
   }
   100% {
   left: 5%;
@@ -193,40 +222,20 @@ html, body {
 	}
 }
 
-.box4 {
-	width: 170px;
-	position: absolute;
-	right: 0px;
-	background-color: #e5b0a3;
-	padding: 50px 270px 120px 160px;
-	top: 110px;
-	height: 0px;
-	animation: moveLeft 2s ease-in-out forwards;
-}
 
 @keyframes moveLeft{
   0% {
   right: -40%;
   }
   100% {
-  right: 9%;
+  right: 8%;
   }
 }
 
-.box5 {
-	width: 500px;
-	position: absolute;
-	background-color: rgba(255,69,0, 0.2);
-	padding: 80px;
-	bottom: 30px;
-	right: 80px;
-	animation: moveUp 2s ease-in-out forwards;
-
-}
 
 @keyframes moveUp{
   0% {
-  bottom: -15%;
+  bottom: -5%;
   }
   100% {
   bottom: 3.4%;
