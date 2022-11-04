@@ -44,7 +44,7 @@ html, body {
  top: 0px;
  left:95px;
  font-size: 150px;
- letter-spacing: 70px;
+ letter-spacing: 105px;
  color: black;
  animation: fadein 2.5s;
  font-family: Futura;
@@ -54,11 +54,11 @@ html, body {
 .last-name.main-page {
 	position: absolute;
   bottom:50%;
-  left: 300px;
-	font-size: 50px;
+  left: 110px;
+	font-size: 30px;
 	letter-spacing: 45px;
 	font-family: Futura;
-	color: rgb(255,69,0);
+	color: rgba(255, 0, 0, 0.5);
 	animation: moveTextDown 2.8s ease-in-out forwards;
 }
 
@@ -71,14 +71,10 @@ html, body {
   }
 }
 
-
-
-
-
 .web.main-page {
 	position: absolute;
 	bottom: 200px;
-	left: 40px;
+	left: 10px;
 	font-size: 120px;
 	letter-spacing: 90px;
 	color: black;
@@ -88,7 +84,7 @@ html, body {
 
 @keyframes moveTextUp {
   0% {
-  bottom: -40%;
+  bottom: -30%;
   }
   100% {
   bottom: 25%;
@@ -129,7 +125,7 @@ html, body {
 
 .greeting {
 	font-family: Futura;
-	padding:30px 80px 30px 90px;
+	padding:30px 80px 30px 30px;
 	font-size: 30px;
 	right: -10px;
 	top: 90px;
@@ -248,7 +244,7 @@ html, body {
 	bottom:350px;
 	left:570px;
 	font-size: 20px;
-	color:  #e5b0a3;
+	color:  rgba(255, 0, 0, 0.5);
 	padding: 0 10px;
 }
 

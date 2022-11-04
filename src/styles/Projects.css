@@ -1,28 +1,44 @@
 .img-container {
 	width: 50%;
-	margin-left: 25%;
 	margin-top:20px;
-	padding: 50px;
+	padding: 20px;
 	color: black;
 	-webkit-animation: fadein 1.5s;
 }
 
 .bg-fill {
 	background-color: #fffcda;
+	border-top: black 1px solid;
 }
 
 .text-container {
-	-webkit-animation: fadein 1.5s;
 	color: black;
-	width: 57%;
-	margin-left: 25%;
-	margin-top:20px;
-	text-align: center;
-	padding: 20px;
 }
+
+.content-container {
+	display: flex;
+	justify-content: center;
+	border-top:1px white solid;
+
+}
+
+.header {
+	font-size: 80px;
+	font-family: Futura;
+	padding-left: 20px;
+}
+
 
 .text {
 	font-family: Futura;;
-	font-size: 15px;
-	color: black;
+	font-size: 20px;
+	color: white;
+
+}
+
+.Mcards-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgba(255, 0, 0, 0.5);
+	padding: 40px;
 }

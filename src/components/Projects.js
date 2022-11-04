@@ -2,28 +2,31 @@ import React from 'react'
 import MagiKards from '../components/MagiKards.js'
 import '../styles/Projects.css'
 
+
 class Projects extends React.Component {
 	class = {
-		showMagiKards: false
+		showDefaultProj: true,
+		showMagiKards: true,
+		showAirBnb: false,
+		showGoogle: false
 	}
 
-	toggleShowMagiKards = (e) => {
-		this.setState({
-			showMagiKards: true
-		})
-	}
+
 
 
 	render() {
 		return (
 	<>
+
 	  <div className="bg-fill">
-		 <div className="text-container text"><h1>Personal Projects</h1></div>
-      <div>
-					<div>
-					  <MagiKards />
-					</div>
-		 </div>
+		 <div className="header"><h1 className="header">Personal Projects</h1></div>
+
+
+		<MagiKards/>
+
+
+
+
 			<div>
 					<img src="./images/project-img/abnb1.png" className="img-container"alt="" />
 			</div>
