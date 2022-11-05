@@ -67,10 +67,16 @@
 .airbnb-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: rgba(255, 0, 0, 0.8);
+	background-color: rgba(255, 0, 0, 0.7);
 }
 
 .google-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	background-color: rgba(255, 0, 0, 0.7);
+}
+
+.google-img {
+	width: 100%;
+	padding: 10px 0px 50px 20px;
 }

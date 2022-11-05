@@ -20,22 +20,15 @@ class Projects extends React.Component {
  }
 
 
-
-
 	render() {
 		return (
 	<>
-
-	  <div className="bg-fill">
-
+	<div className="bg-fill">
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
+		  <AirBnB />
       <MagiKards/>
      <button>Show</button>
-       <AirBnB />
 			 <Google />
-
-
-
   </div>
 </>
 		)
