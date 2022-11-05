@@ -25,9 +25,9 @@ class MagiKards extends React.Component {
 			<img src="./images/project-img/MK3.png" className="img-container" alt=""/>
 		 </div>
 
-		 <div className="content-container"><img src="./images/project-img/MK4.png" className="img-container alt=" /></div>
+		 <div className="content-container"><img src="./images/project-img/MK4.png" className="img-container" alt="" /></div>
 
-		 <div className="content-container"><img src="./images/project-img/MK2.png"  className="img-container alt=" /></div>
+		 <div className="content-container"><img src="./images/project-img/MK2.png"  className="img-container" alt="" /></div>
 	</div>
 </>
 		)
