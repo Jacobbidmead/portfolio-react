@@ -14,7 +14,7 @@
 }
 
 .bg-fill {
-	background-color: black;
+	background-color: white;
 	border-top: black 1px solid;
 }
 
@@ -30,12 +30,13 @@
 }
 
 .header {
-	font-size: 100px;
+	font-size: 80px;
 	font-family: Futura;
-	padding-left: 20px;
-	color: deeppink;
-	background-color: white;
-	padding: 10px;
+	color: rgba(255, 0, 0, 0.8);
+	background-color: black;
+	padding: 1px;
+	letter-spacing: 50px;
+	text-align: center;
 }
 
 
@@ -48,8 +49,9 @@
 }
 
 .title {
-	color: deeppink;
-	margin-right: 40px
+	color: rgba(255, 0, 0, 0.8);
+	margin-right: 40px;
+	padding-top: 25px;
 }
 
 .text-fit {

@@ -36,10 +36,12 @@ class MagiKards extends React.Component {
 		 <div className="content-container"><img src="./images/project-img/MK4.png" className="img-container mk" alt="" /></div>
 		 <div className="content-container text-container">
 			 <p className="text">
+			 This view shows the Battlefield, the hand of cards is randomly generated to the player. Once the player runs out of cards, seven more cards will be randomly selected from the deck. Once a card is selected it will be displayed as the main card. There is also a pass option.
 			 </p>
 		 </div>
 		 <div className="content-container text-container">
-			<p className="text">
+			<p className="text text-fit">
+			Once both players have selected a card, the resulting card effects will take place and health will be subtracked from the relevent players. This is a work in progress that we are still working on as a group. Hover to enlarge
 			</p>
 		</div>
 
