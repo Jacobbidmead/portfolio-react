@@ -1,7 +1,6 @@
 .about-container {
   width: 100%;
 	-webkit-animation: fadein 1.5s;
-	padding-top: 5%;
 	background-color: white;
   display: grid;
 	grid-template-rows: ;
@@ -15,9 +14,9 @@
 }
 
 .welcome {
-font-size: 330px;
+font-size: 100px;
 margin: 0px 0px 150px 40px;
-padding-bottom: 50px;
+
 }
 
 .my-website {

@@ -12,9 +12,6 @@
 	left: 10px;
 	font-size: 30px;
 	cursor: crosshair;
-	padding: 25px;
-}
-
-.home-button:hover {
-	color: deeppink;
+	padding: 20px 10px;
+	margin-top: 7px;
 }

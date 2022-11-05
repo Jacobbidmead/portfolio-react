@@ -5,11 +5,17 @@ import '../styles/Projects.css'
 
 class Projects extends React.Component {
 	class = {
-		showDefaultProj: true,
-		showMagiKards: true,
+		showDefaultProject: true,
+		showMagiKards: false,
 		showAirBnb: false,
 		showGoogle: false
 	}
+
+ toggleShowAirBnb = () => {
+	 this.setState({
+		 showAirBnb: true
+	 })
+ }
 
 
 
@@ -19,17 +25,21 @@ class Projects extends React.Component {
 	<>
 
 	  <div className="bg-fill">
+
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
 
 
 		<MagiKards/>
 
 
+<button onClick={e => this.toggleShowAirBnb(e)}>Show</button>
 
 
 			<div>
 					<img src="./images/project-img/abnb1.png" className="img-container"alt="" />
 			</div>
+
+
 	    <div>
 					<img src="./images/project-img/abnb2.png" className="img-container"alt="" />
 			</div>
@@ -45,6 +55,8 @@ class Projects extends React.Component {
 			<div>
 					<img src="./images/project-img/abnb6.png" className="img-container"alt="" />
 			</div>
+
+
 			<div>
 					<img src="./images/project-img/google.png" className="img-container"alt="" />
 			</div>
