@@ -1,5 +1,5 @@
 import React from 'react'
-import MagiKards from '../components/MagiKards.js'
+import MagiKards from '../components/Projects/MagiKards.js'
 import '../styles/Projects.css'
 
 
@@ -27,12 +27,8 @@ class Projects extends React.Component {
 	  <div className="bg-fill">
 
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
-
-
-		<MagiKards/>
-
-
-<button onClick={e => this.toggleShowAirBnb(e)}>Show</button>
+      <MagiKards/>
+     <button onClick={e => this.toggleShowAirBnb(e)}>Show</button>
 
 
 			<div>
