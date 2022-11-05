@@ -33,12 +33,11 @@
 	font-size: 80px;
 	font-family: Futura;
 	color: rgba(255, 0, 0, 0.8);
-	background-color: black;
+	background-color: white;
 	padding: 1px;
 	letter-spacing: 50px;
 	text-align: center;
 }
-
 
 
 .text {
@@ -63,4 +62,15 @@
 	grid-template-columns: 1fr 1fr;
 	background-color: black;
 	padding: 40px;
+}
+
+.airbnb-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgba(255, 0, 0, 0.8);
+}
+
+.google-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
