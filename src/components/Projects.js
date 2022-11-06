@@ -1,4 +1,5 @@
 import React from 'react'
+import App from '../App.js'
 import MagiKards from '../components/Projects/MagiKards.js'
 import AirBnB from '../components/Projects/AirBnB.js'
 import Google from '../components/Projects/Google.js'
@@ -6,28 +7,19 @@ import '../styles/Projects.css'
 
 
 class Projects extends React.Component {
-	class = {
-		showDefaultProject: true,
-		showMagiKards: false,
-		showAirBnb: false,
-		showGoogle: false
-	}
-
- toggleShowAirBnb = () => {
-	 this.setState({
-		 showAirBnb: true
-	 })
- }
-
 
 	render() {
 		return (
 	<>
 	<div className="bg-fill">
+	<button onClick={e => this.props.toggleShowAirBnb(e)}>Show</button>
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
-		  <AirBnB />
-      <MagiKards/>
-     <button>Show</button>
+
+			{this.props.showAirBnb ? <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb}/> : <div>Hello</div>}
+      <MagiKards />
+
+
+
 			 <Google />
   </div>
 </>

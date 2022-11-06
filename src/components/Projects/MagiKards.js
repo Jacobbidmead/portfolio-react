@@ -1,11 +1,11 @@
 import React from 'react'
-
 class MagiKards extends React.Component {
 	render() {
 		return (
 	<>
 
 		<div className="Mcards-container">
+
 			<div className="content-container">
 				 <img src="./images/project-img/MK1.png" className="img-container" alt=""/>
 			</div>

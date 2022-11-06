@@ -16,7 +16,7 @@ class App extends React.Component {
 		showAbout: false,
 		showPhotos: false,
 		showProjects: false,
-		showOneProject: false
+		showAirBnb: false
 	}
 
 	toggleShowHome = () => {
@@ -72,10 +72,13 @@ class App extends React.Component {
 	 }
 
 
-  toggleShowOneProject = () => {
-		this.setState({
-			showOneProject: true
-		})
+  toggleShowAirBnb = (e) => {
+		console.log('passed prop')
+		if (this.state.showProjects == true) {
+			this.setState({
+				showAirBnb: true,
+			})
+		}
 	}
 
 
@@ -107,8 +110,8 @@ class App extends React.Component {
 
 			{this.state.showAbout && <About />}
 
-			{this.state.showProjects && <div><Projects toggleShowOneProject={this.toggleShowOneProject}
-			toggleShowAirBnb={this.showAirBnb}/></div>}
+			{this.state.showProjects && <div><Projects
+			toggleShowAirBnb={this.toggleShowAirBnb}/></div>}
 
 			{this.state.showPhotos && <Photos />}
 

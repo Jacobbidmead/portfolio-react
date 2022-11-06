@@ -14,7 +14,7 @@
 }
 
 .bg-fill {
-	background-color: white;
+	background-color: #fffcda;
 	border-top: black 1px solid;
 }
 
@@ -33,7 +33,6 @@
 	font-size: 80px;
 	font-family: Futura;
 	color: rgba(255, 0, 0, 0.8);
-	background-color: white;
 	padding: 1px;
 	letter-spacing: 50px;
 	text-align: center;
@@ -67,7 +66,8 @@
 .airbnb-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: rgba(255, 0, 0, 0.7);
+	border-top: 1px solid rgba(255, 0, 0, 0.7);
+	background-color:
 }
 
 .google-container {

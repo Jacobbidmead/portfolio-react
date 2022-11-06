@@ -1,9 +1,11 @@
 import React from 'react'
 
+
 class AirBnB extends React.Component {
 	render() {
 		return (
 <>
+
 		<div className="airbnb-container">
 			<div>
 					<img src="./images/project-img/abnb1.png" className="img-container"alt="" />
