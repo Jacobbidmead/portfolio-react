@@ -74,11 +74,12 @@ class App extends React.Component {
 
   toggleShowAirBnb = (e) => {
 		console.log('passed prop')
-		if (this.state.showProjects == true) {
+
 			this.setState({
 				showAirBnb: true,
+				showProjects: true
 			})
-		}
+
 	}
 
 
@@ -112,6 +113,8 @@ class App extends React.Component {
 
 			{this.state.showProjects && <div><Projects
 			toggleShowAirBnb={this.toggleShowAirBnb}/></div>}
+
+
 
 			{this.state.showPhotos && <Photos />}
 

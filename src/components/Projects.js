@@ -12,15 +12,17 @@ class Projects extends React.Component {
 		return (
 	<>
 	<div className="bg-fill">
-	<button onClick={e => this.props.toggleShowAirBnb(e)}>Show</button>
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
 
-			{this.props.showAirBnb ? <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb}/> : <div>Hello</div>}
-      <MagiKards />
+
+    	<button onClick={e => this.props.toggleShowAirBnb(e)}>Show</button>
 
 
+			<AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb}/> 
 
-			 <Google />
+
+			<MagiKards />
+      <Google />
   </div>
 </>
 		)
