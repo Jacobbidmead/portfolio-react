@@ -7,6 +7,7 @@ import Home from './components/Home.js'
 import Top from './components/Top.js'
 import Projects from './components/Projects.js'
 import Photos from './components/Photos.js'
+import AirBnB from './components/Projects/AirBnB.js'
 
 
 
@@ -26,7 +27,8 @@ class App extends React.Component {
 			showLinks: false,
 			showAbout: false,
 			showPhotos: false,
-			showProjects: false
+			showProjects: false,
+			showAirBnb: false
 		})
 	}
 
@@ -74,37 +76,27 @@ class App extends React.Component {
 
 
   toggleShowAirBnb = (e) => {
-		console.log('passed prop')
-
 			this.setState({
-				showAirBnb: true,
+				showProjects: false,
+				showAirBnb: true
 			})
-
 	}
 
 
 	render() {
 		return (
 <>
-  <div className="background-main">
+ <div className="background-main">
    <div>
 		<div className="top-bar">
-
-		<Sidebar
+		 <Sidebar
 				 toggleShowLinks={this.toggleShowLinks} toggleShowAbout={this.toggleShowAbout} toggleShowHome={this.toggleShowHome}
 				 toggleShowProjects={this.toggleShowProjects}
 				 toggleShowPhotos={this.toggleShowPhotos}/>
-
-				 <Top toggleShowHome={this.toggleShowHome}/>
+			 <Top toggleShowHome={this.toggleShowHome}/>
 		</div>
  </div>
-
-
-
-			<div className="main-layout">
-
-
-
+ <div className="main-layout">
       {this.state.showHome  && <div className="main-display"><Home /></div>}
 
       {this.state.showLinks && <Links/>}
@@ -114,12 +106,10 @@ class App extends React.Component {
 			{this.state.showProjects && <div><Projects
 			toggleShowAirBnb={this.toggleShowAirBnb}/></div>}
 
+			{this.state.showAirBnb ? <AirBnB/> : null}
+
 
 			{this.state.showPhotos && <Photos />}
-
-
-
-
     </div>
 	</div>
 </>

@@ -7,9 +7,7 @@ import '../styles/Projects.css'
 
 class Projects extends React.Component {
 
-	state ={
-		showAirBnb: false
-	}
+
 
 	render() {
 		return (
@@ -18,10 +16,12 @@ class Projects extends React.Component {
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
 
 
-    	<button onClick={e => this.props.toggleShowAirBnb(e)}>Show</button>
 
 
-      <AirBnB/>
+    {this.props.showAirBnb ?
+      <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb} /> : <button onClick={e => this.props.toggleShowAirBnb(e)}>AIRBNB</button>}
+
+
 			<MagiKards />
       <Google />
   </div>
