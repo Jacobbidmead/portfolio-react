@@ -1,10 +1,12 @@
 import React from 'react'
 import '../styles/About.css'
+import Sidebar from './Sidebar'
 
 class About extends React.Component {
 	render() {
 		return (
 		<>
+			<Sidebar />
 			<div className="about-container">
 				<div>
 					 <h1 className="welcome">Welcome.</h1>
