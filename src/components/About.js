@@ -6,29 +6,29 @@ class About extends React.Component {
 		return (
 		<>
 			<div className="about-container">
+			  <div className="about">About.</div>
+				 <div className="about-text">
+               <span className="about-paragraph">
+	 							 Hi, I'm a Web Developer, Designer and Photographer based in London.
+								 </span>
 
+                <p><span className="about-paragraph">
+	 							Ive recently completed Tortuga Coders 11 week fullstack coding bootcamp in Koh Phangan - Thailand, where I gained experience of JavaScript, HTML, CSS, Node.js & React, amoung other languages and frameworks </span></p>
 
+                 <span className="about-paragraph">
+	 							 Im currently looking for a junior position as Web Developer, whilst working on a number of personal projects that can be viewed in the projects section and on my GitHub repository.
+       	 				 </span>
 
-	 							 <p>Hi, I'm a Web Developer, Designer and Photographer based in London.</p>
-
-
-	 							<p>Ive recently completed Tortuga Coders 11 week fullstack coding bootcamp in Koh Phangan - Thailand, where I gained experience of JavaScript, HTML, CSS, Node.js & React, amoung other languages and frameworks </p>
-
-						   <img src="images/selfie.png" alt="" className="selfie"/>
-
-	 							 <p>Im currently looking for a junior position as Web Developer, whilst working on a number of personal projects that can be viewed in the <span className="underline">projects</span> section and on my <span className="underline">GitHub </span>repository. </p>
-
-
-	 							<p>
+									<span className="about-paragraph">
 	 								Im currently using React to create my projects and am looking for a position where I can gain further knowledge of React and further my JavaScript skills.
-	               </p>
+									</span>
+								  <span className="about-paragraph">
+	 							 A passionate photographer, Ive documentend my travels in South
+								 America, the USA, Asia & Australia over the last 8 years.
+								 </span>
 
-	 							 <p>
-	 							 A passionate photographer, Ive documentend my travels in South America, the USA, Asia & Australia over the last 8 years.
-	 							 </p>
+         </div>
 
-
-				  
 			</div>
 		</>
 		)

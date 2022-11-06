@@ -170,7 +170,7 @@ html, body {
 	width: 550px;
 	position: absolute;
 	left: 30px;
-	top: 80px;
+	top: 100px;
 	height: 83%;
 	background-color: rgba(255, 0, 0, 0.8);
   animation: moveRight 2s ease-in-out forwards;
@@ -184,7 +184,7 @@ html, body {
 	height: 83%;
 	background-color: rgba(255, 0, 0, 0.5);
 	right: 30px;
-	top: 80px;
+	top: 100px;
 	animation: moveLeft 2s ease-in-out forwards;
 	padding-left: 50px;
 }

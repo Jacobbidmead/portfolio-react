@@ -6,7 +6,7 @@ class AirBnB extends React.Component {
 		return (
 <>
 
-  	<button onClick={e => this.props.toggleShowProjects(e)}>More projects</button>
+  	<button onClick={e => this.props.changeBackToProjects(e)}>More projects</button>
 		<div className="airbnb-container">
 			<div>
 					<img src="./images/project-img/abnb1.png" className="img-container"alt="" />

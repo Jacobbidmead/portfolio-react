@@ -74,6 +74,13 @@ class App extends React.Component {
 		 })
 	 }
 
+	 changeBackToProjects = () => {
+		 this.setState({
+			 showProjects: true,
+			 showAirbnb: false
+		 })
+	 }
+
 
   toggleShowAirBnb = (e) => {
 			this.setState({
@@ -104,7 +111,7 @@ class App extends React.Component {
 			{this.state.showAbout && <About />}
 
 			{this.state.showProjects && <div><Projects
-			toggleShowAirBnb={this.toggleShowAirBnb}/></div>}
+			toggleShowAirBnb={this.toggleShowAirBnb} changeBackToProjects={this.changeBackToProjects}/></div>}
 
 			{this.state.showAirBnb ? <AirBnB/> : null}
 

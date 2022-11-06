@@ -1,61 +1,42 @@
+
+
 .about-container {
   width: 100%;
 	-webkit-animation: fadein 1.5s;
-	background-color: white;
-  display: grid;
-	grid-template-rows: ;
 	font-family: Futura;
 	border-top:black 1px solid;
-}
-
-.name {
-	font-family: Futura;
-	font-size: 70px;
-}
-
-.welcome {
-font-size: 100px;
-margin: 0px 0px 150px 40px;
-
-}
-
-.my-website {
-	position: absolute;
-	top: 550px;
-	left: 100px;
-}
-
-.underline {
-	text-decoration: underline;
-}
-
-.color-block {
-	background-color: deeppink;
-	width: 100%;
-	height: 80px;
-
-}
-
-
-.about-bg {
-  background-image: url('/public/images/struckaxiom.png');
+	height: 100vh;
+	background-color: ;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 7fr;
 
 }
 
-.about-text-bg {
-	width: 50%;
-	border: 1px solid black;
+.about {
+	writing-mode: vertical-lr;
+  text-orientation: mixed;
+	font-size: 200px;
+	padding-top: 130px;
+	color: ;
+	background-color: #4acfee;
+	border-right: black 1px solid;
 }
 
-.about1 {
+.about-text {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	padding: 30px 80px 30px 30px;
+
 }
+
+.about-paragraph {
+	background-color: deeppink;
+}
+
 
 .selfie {
 	width: 250px;
 	border-radius: 10px;
 	margin: 20px;
-
-
 }
