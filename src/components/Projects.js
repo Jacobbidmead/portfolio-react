@@ -1,5 +1,4 @@
 import React from 'react'
-import App from '../App.js'
 import MagiKards from '../components/Projects/MagiKards.js'
 import AirBnB from '../components/Projects/AirBnB.js'
 import Google from '../components/Projects/Google.js'
@@ -7,6 +6,10 @@ import '../styles/Projects.css'
 
 
 class Projects extends React.Component {
+
+	state ={
+		showAirBnb: false
+	}
 
 	render() {
 		return (
@@ -18,9 +21,7 @@ class Projects extends React.Component {
     	<button onClick={e => this.props.toggleShowAirBnb(e)}>Show</button>
 
 
-			<AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb}/> 
-
-
+      <AirBnB/>
 			<MagiKards />
       <Google />
   </div>

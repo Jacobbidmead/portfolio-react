@@ -9,6 +9,7 @@ import Projects from './components/Projects.js'
 import Photos from './components/Photos.js'
 
 
+
 class App extends React.Component {
 	state = {
 		showHome: true,
@@ -77,7 +78,6 @@ class App extends React.Component {
 
 			this.setState({
 				showAirBnb: true,
-				showProjects: true
 			})
 
 	}
@@ -113,7 +113,6 @@ class App extends React.Component {
 
 			{this.state.showProjects && <div><Projects
 			toggleShowAirBnb={this.toggleShowAirBnb}/></div>}
-
 
 
 			{this.state.showPhotos && <Photos />}
