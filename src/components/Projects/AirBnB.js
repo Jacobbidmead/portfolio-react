@@ -6,7 +6,7 @@ class AirBnB extends React.Component {
 	render() {
 		return (
 <>
-
+ <div className="airbnb-border">
   <div><button onClick={e => this.props.toggleShowProjects(e)}>More projects</button></div>
 		<div className="airbnb-container">
 			<div>
@@ -28,6 +28,8 @@ class AirBnB extends React.Component {
 					<img src="./images/project-img/abnb6.png" className="img-container"alt="" />
 			</div>
 		</div>
+		
+	</div>
 </>
 		)
 	}

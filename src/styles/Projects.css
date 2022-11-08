@@ -66,8 +66,11 @@
 .airbnb-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	border-top: 1px solid rgba(255, 0, 0, 0.7);
 	background-color:
+}
+
+.airbnb-border {
+	border-top: 1px solid rgba(255, 0, 0, 0.7);
 }
 
 .google-container {

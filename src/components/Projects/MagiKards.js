@@ -1,11 +1,12 @@
 import React from 'react'
+
 class MagiKards extends React.Component {
 	render() {
 		return (
 	<>
-
+<div><button onClick={e => this.props.toggleShowProjects(e)}>More projects</button></div>
 		<div className="Mcards-container">
-
+    
 			<div className="content-container">
 				 <img src="./images/project-img/MK1.png" className="img-container" alt=""/>
 			</div>

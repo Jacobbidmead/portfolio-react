@@ -19,8 +19,9 @@ class Projects extends React.Component {
       <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowAirBnb(e)}>AIRBNB</button>}
 
 
-			<MagiKards />
-      <Google />
+      {this.props.showMagiKards ? <MagiKards toggleShowMagiKards={this.props.toggleShowMagiKards} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowMagiKards(e)}>MagiKards</button>}
+
+
   </div>
 </>
 		)
