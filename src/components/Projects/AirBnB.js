@@ -7,7 +7,7 @@ class AirBnB extends React.Component {
 		return (
 <>
  <div className="airbnb-border">
-  <div><button onClick={e => this.props.toggleShowProjects(e)}>More projects</button></div>
+  <div className="return-projects" onClick={e => this.props.toggleShowProjects(e)}>Back to Projects</div>
 		<div className="airbnb-container">
 			<div>
 					<img src="./images/project-img/abnb1.png" className="img-container"alt="" />
@@ -28,7 +28,7 @@ class AirBnB extends React.Component {
 					<img src="./images/project-img/abnb6.png" className="img-container"alt="" />
 			</div>
 		</div>
-		
+
 	</div>
 </>
 		)

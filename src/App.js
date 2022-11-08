@@ -80,7 +80,6 @@ class App extends React.Component {
 		 })
 	 }
 
-
   toggleShowAirBnb = (e) => {
 			this.setState({
 				showProjects: false,
