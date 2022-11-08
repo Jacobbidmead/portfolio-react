@@ -14,13 +14,13 @@ class Projects extends React.Component {
 	<>
 	<div className="bg-fill">
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
-
 		  {this.props.showAirBnb ?
       <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowAirBnb(e)}>AIRBNB</button>}
 
+			{this.props.showMagiKards ? <MagiKards toggleShowMagiKards={this.props.toggleShowMagiKards} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowMagiKards(e)}>MagiKards</button>}
 
-      {this.props.showMagiKards ? <MagiKards toggleShowMagiKards={this.props.toggleShowMagiKards} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowMagiKards(e)}>MagiKards</button>}
-
+			{this.props.showGoogle ? <Google toggleShowGoogle={this.props.toggleShowGoogle}
+			toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowGoogle(e)}>Google Search</button>}
 
   </div>
 </>

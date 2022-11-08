@@ -9,6 +9,7 @@ import Projects from './components/Projects.js'
 import Photos from './components/Photos.js'
 import AirBnB from './components/Projects/AirBnB.js'
 import MagiKards from './components/Projects/MagiKards.js'
+import Google from './components/Projects/Google.js'
 
 
 
@@ -56,18 +57,6 @@ class App extends React.Component {
 		})
 	}
 
-	 toggleShowProjects = () => {
-		 this.setState({
-			 showProjects: true,
-			 showHome: false,
-			 showLinks: false,
-			 showAbout: false,
-			 showPhotos: false,
-			 showAirBnb: false,
-			 showMagiKards: false
-		 })
-	 }
-
 	 toggleShowPhotos = () => {
 		 this.setState({
 			 showPhotos: true,
@@ -77,6 +66,20 @@ class App extends React.Component {
 			 showProjects: false
 		 })
 	 }
+
+	 toggleShowProjects = () => {
+		 this.setState({
+			 showProjects: true,
+			 showHome: false,
+			 showLinks: false,
+			 showAbout: false,
+			 showPhotos: false,
+			 showAirBnb: false,
+			 showMagiKards: false,
+			 showGoogle: false
+		 })
+	 }
+
 
   toggleShowAirBnb = (e) => {
 			this.setState({
@@ -89,6 +92,13 @@ class App extends React.Component {
 		this.setState({
 			showProjects: false,
 			showMagiKards: true
+		})
+	}
+
+	toggleShowGoogle = (e) => {
+		this.setState({
+			showProjects: false,
+			showGoogle: true
 		})
 	}
 
@@ -114,11 +124,14 @@ class App extends React.Component {
 			{this.state.showAbout && <About />}
 
 			{this.state.showProjects && <div><Projects
-			toggleShowAirBnb={this.toggleShowAirBnb} toggleShowMagiKards={this.toggleShowMagiKards}/></div>}
+			toggleShowAirBnb={this.toggleShowAirBnb} toggleShowMagiKards={this.toggleShowMagiKards}
+			toggleShowGoogle={this.toggleShowGoogle}/></div>}
 
 			{this.state.showAirBnb ? <AirBnB toggleShowProjects={this.toggleShowProjects}/> : null}
 
 			{this.state.showMagiKards ? <MagiKards toggleShowProjects={this.toggleShowProjects}/> : null}
+
+			{this.state.showGoogle ? <Google toggleShowProjects={this.toggleShowProjects}/> : null}
 
 
 			{this.state.showPhotos && <Photos />}
