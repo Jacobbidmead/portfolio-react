@@ -12,17 +12,22 @@ class Projects extends React.Component {
 	render() {
 		return (
 	<>
+	<div className="projects-container">
 	<div className="bg-fill">
-		 <div className="header"><h1 className="header">Personal Projects</h1></div>
+	<div>
+		 <h1 className="header">Projects.</h1>
+	</div>
+	<div>
 		  {this.props.showAirBnb ?
-      <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowAirBnb(e)}>AIRBNB</button>}
+      <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb} toggleShowProjects={this.props.toggleShowProjects}/> : <span className="project-links" onClick={e => this.props.toggleShowAirBnb(e)}>AIRBNB</span>}
 
-			{this.props.showMagiKards ? <MagiKards toggleShowMagiKards={this.props.toggleShowMagiKards} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowMagiKards(e)}>MagiKards</button>}
+			{this.props.showMagiKards ? <MagiKards toggleShowMagiKards={this.props.toggleShowMagiKards} toggleShowProjects={this.props.toggleShowProjects}/> : <span className="project-links" onClick={e => this.props.toggleShowMagiKards(e)}>MagiKards</span>}
 
 			{this.props.showGoogle ? <Google toggleShowGoogle={this.props.toggleShowGoogle}
-			toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowGoogle(e)}>Google Search</button>}
-
+			toggleShowProjects={this.props.toggleShowProjects}/> : <span className="project-links" onClick={e => this.props.toggleShowGoogle(e)}>Google Search</span>}
+   </div>
   </div>
+	</div>
 </>
 		)
 	}

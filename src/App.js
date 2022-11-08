@@ -32,6 +32,9 @@ class App extends React.Component {
 			showAbout: false,
 			showPhotos: false,
 			showProjects: false,
+			showAirBnb: false,
+			showMagiKards: false,
+			showGoogle: false
 		})
 	}
 
@@ -42,7 +45,10 @@ class App extends React.Component {
 			showHome: false,
 			showAbout: false,
 			showProjects: false,
-			showPhotos: false
+			showPhotos: false,
+			showAirBnb: false,
+			showMagiKards: false,
+			showGoogle: false
 		})
 
 	}
@@ -53,7 +59,10 @@ class App extends React.Component {
 			showHome: false,
 			showLinks: false,
 			showProjects: false,
-			showPhotos: false
+			showPhotos: false,
+			showAirBnb: false,
+			showMagiKards: false,
+			showGoogle: false
 		})
 	}
 
@@ -63,7 +72,10 @@ class App extends React.Component {
 			 showHome: false,
 			 showLinks: false,
 			 showAbout: false,
-			 showProjects: false
+			 showProjects: false,
+			 showAirBnb: false,
+ 			showMagiKards: false,
+ 			showGoogle: false
 		 })
 	 }
 

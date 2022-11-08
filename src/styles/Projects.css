@@ -1,3 +1,5 @@
+
+
 .img-container {
 	width: 60%;
 	margin-top:20px;
@@ -16,6 +18,8 @@
 .bg-fill {
 	background-color: #fffcda;
 	border-top: black 1px solid;
+	display: grid;
+	grid-template-columns: 1fr 7fr;
 }
 
 .text-container {
@@ -33,9 +37,15 @@
 	font-size: 80px;
 	font-family: Futura;
 	color: rgba(255, 0, 0, 0.8);
-	padding: 1px;
-	letter-spacing: 50px;
+  background-color: blue;
 	text-align: center;
+	writing-mode: vertical-rl;
+  text-orientation: mixed;
+	border-right: 1px black solid;
+	padding-right: 30px;
+	height: 100vh;
+	width: 100%;
+	margin:0px;
 }
 
 
@@ -83,8 +93,8 @@
 }
 
 .return-projects {
-	background-color: deeppink;
-	padding: 20px;
+	background-color:  #4acfee;
+	padding: 10px;
 	width: 15%;
 	margin-left: auto;
 	margin-right: auto;
@@ -92,5 +102,14 @@
 	margin-bottom: 40px;
 	text-align: center;
 	font-family: Futura;
-	border-radius: 30px;
+	cursor: crosshair;
+}
+
+.return-projects:hover {
+	color: deeppink;
+}
+
+.project-links {
+ text-align: center;
+ margin-left: 100px;
 }
