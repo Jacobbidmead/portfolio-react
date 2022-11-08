@@ -1,12 +1,13 @@
 import React from 'react'
 
 
+
 class AirBnB extends React.Component {
 	render() {
 		return (
 <>
 
-  	<button onClick={e => this.props.changeBackToProjects(e)}>More projects</button>
+  <div><button onClick={e => this.props.toggleShowProjects(e)}>More projects</button></div>
 		<div className="airbnb-container">
 			<div>
 					<img src="./images/project-img/abnb1.png" className="img-container"alt="" />

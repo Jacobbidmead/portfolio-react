@@ -14,9 +14,9 @@ class Projects extends React.Component {
 	<>
 	<div className="bg-fill">
 		 <div className="header"><h1 className="header">Personal Projects</h1></div>
-  
+
 		  {this.props.showAirBnb ?
-      <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb} changeBackToProjects={this.props.changeBackToProjects}/> : <button onClick={e => this.props.toggleShowAirBnb(e)}>AIRBNB</button>}
+      <AirBnB toggleShowAirBnb={this.props.toggleShowAirBnb} toggleShowProjects={this.props.toggleShowProjects}/> : <button onClick={e => this.props.toggleShowAirBnb(e)}>AIRBNB</button>}
 
 
 			<MagiKards />

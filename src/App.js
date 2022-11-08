@@ -60,7 +60,8 @@ class App extends React.Component {
 			 showHome: false,
 			 showLinks: false,
 			 showAbout: false,
-			 showPhotos: false
+			 showPhotos: false,
+			 showAirBnb: false
 		 })
 	 }
 
@@ -111,9 +112,9 @@ class App extends React.Component {
 			{this.state.showAbout && <About />}
 
 			{this.state.showProjects && <div><Projects
-			toggleShowAirBnb={this.toggleShowAirBnb} changeBackToProjects={this.changeBackToProjects}/></div>}
+			toggleShowAirBnb={this.toggleShowAirBnb} toggleShowProjects={this.toggleShowProjects}/></div>}
 
-			{this.state.showAirBnb ? <AirBnB/> : null}
+			{this.state.showAirBnb ? <AirBnB toggleShowProjects={this.toggleShowProjects}/> : null}
 
 
 			{this.state.showPhotos && <Photos />}
