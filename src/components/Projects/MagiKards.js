@@ -8,7 +8,7 @@ class MagiKards extends React.Component {
           className="return-projects"
           onClick={(e) => this.props.toggleShowProjects(e)}
         >
-          <img src="images/left-arrow.png" className="arrow" />
+          <img src="images/left-arrow.png" alt="" className="arrow" />
         </div>
         <div className="Mcards-container">
           <div className="content-container">

@@ -4,7 +4,6 @@
   font-family: Futura;
   border-top: black 1px solid;
   height: 100vh;
-  background-color: ;
   display: grid;
   grid-template-columns: 1fr 7fr;
 }
@@ -14,7 +13,6 @@
   text-orientation: mixed;
   font-size: 200px;
   padding-top: 130px;
-  color: ;
   background-color: #4acfee;
   border-right: black 1px solid;
 }
