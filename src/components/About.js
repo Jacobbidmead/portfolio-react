@@ -16,7 +16,7 @@ class About extends React.Component {
 	 							Ive recently completed Tortuga Coders 11 week fullstack coding bootcamp in Koh Phangan - Thailand, where I gained experience of JavaScript, HTML, CSS, Node.js & React, amoung other languages and frameworks </span></p>
 
                  <span className="about-paragraph">
-	 							 Im currently looking for a junior position as Web Developer, whilst working on a number of personal projects that can be viewed in the projects section and on my GitHub repository.
+	 							 Im currently looking for a junior position as Web Developer, whilst working on a number of personal and freelance projects that can be viewed in the projects section of this site and on my GitHub repository.
        	 				 </span>
 
 									<span className="about-paragraph">

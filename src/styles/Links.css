@@ -13,6 +13,7 @@
 .link-container {
   background-color: white;
 	border-top: solid 1px black;
+	animation: fadein 1.5s;
 }
 
 .contact-me {
