@@ -1,42 +1,37 @@
-
-
 .about-container {
   width: 100%;
-	-webkit-animation: fadein 1.5s;
-	font-family: Futura;
-	border-top:black 1px solid;
-	height: 100vh;
-	background-color: ;
-	display: grid;
-	grid-template-columns: 1fr 7fr;
-
+  -webkit-animation: fadein 1.5s;
+  font-family: Futura;
+  border-top: black 1px solid;
+  height: 100vh;
+  background-color: ;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
 }
 
 .about {
-	writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   text-orientation: mixed;
-	font-size: 200px;
-	padding-top: 130px;
-	color: ;
-	background-color: #4acfee;
-	border-right: black 1px solid;
+  font-size: 200px;
+  padding-top: 130px;
+  color: ;
+  background-color: #4acfee;
+  border-right: black 1px solid;
 }
 
 .about-text {
-	color: black;
-	text-align: center;
-	font-size: 40px;
-	padding: 30px 80px 30px 30px;
-
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 80px 30px 30px;
 }
 
 .about-paragraph {
-	background-color: deeppink;
+  background-color: deeppink;
 }
 
-
 .selfie {
-	width: 250px;
-	border-radius: 10px;
-	margin: 20px;
+  width: 250px;
+  border-radius: 10px;
+  margin: 20px;
 }

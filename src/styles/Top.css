@@ -1,17 +1,17 @@
 .top-bar {
-	background-color: #fffcda;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	font-family: Futura;
-	width: 100%;
-	border-color: #e5b0a3;
+  background-color: #fffcda;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: Futura;
+  width: 100%;
+  border-color: #e5b0a3;
 }
 
 .home-button {
-	position: absolute;
-	left: 10px;
-	font-size: 30px;
-	cursor: crosshair;
-	padding: 20px 10px;
-	margin-top: 7px;
+  position: absolute;
+  left: 10px;
+  font-size: 30px;
+  cursor: crosshair;
+  padding: 20px 10px;
+  margin-top: 7px;
 }

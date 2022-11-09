@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'PolySans';
-	src: url("/public/fonts/PolySansNeutralWide.woff") format("woff");
+  font-family: "PolySans";
+  src: url("/public/fonts/PolySansNeutralWide.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Futura';
-	src: url("/public/fonts/futuralight.woff")
+  font-family: "Futura";
+  src: url("/public/fonts/futuralight.woff");
 }
 
 @font-face {
-	font-family: 'Hola';
-	src : url("/public/fonts/hola.woff");
+  font-family: "Hola";
+  src: url("/public/fonts/hola.woff");
 }
 
 @keyframes fadein {
@@ -22,9 +22,10 @@
   }
 }
 
-html, body {
-    margin: 0;
-    height: 100vh;
+html,
+body {
+  margin: 0;
+  height: 100vh;
 }
 
 ::selection {
@@ -32,240 +33,228 @@ html, body {
   background: deeppink;
 }
 
-
 .background-main {
- background-color: #fffcda;
- height: 100vh;
-
+  background-color: #fffcda;
+  height: 100vh;
 }
 
 .first-name.main-page {
- position: absolute;
- top: 0px;
- left:95px;
- font-size: 150px;
- letter-spacing: 105px;
- color: black;
- animation: fadein 2.5s;
- font-family: Futura;
-
+  position: absolute;
+  top: 0px;
+  left: 95px;
+  font-size: 150px;
+  letter-spacing: 105px;
+  color: black;
+  animation: fadein 2.5s;
+  font-family: Futura;
 }
 
 .last-name.main-page {
-	position: absolute;
-  bottom:50%;
+  position: absolute;
+  bottom: 50%;
   left: 110px;
-	font-size: 30px;
-	letter-spacing: 45px;
-	font-family: Futura;
-	color: black;
-	animation: moveTextDown 2.8s ease-in-out forwards;
+  font-size: 30px;
+  letter-spacing: 45px;
+  font-family: Futura;
+  color: black;
+  animation: moveTextDown 2.8s ease-in-out forwards;
 }
 
 @keyframes moveTextDown {
   0% {
-  top: -40%;
+    top: -40%;
   }
   100% {
-  top: 35%;
+    top: 35%;
   }
 }
 
 .web.main-page {
-	position: absolute;
-	bottom: 200px;
-	left: 10px;
-	font-size: 120px;
-	letter-spacing: 90px;
-	color: black;
-	animation: moveTextUp 2s ease-in-out forwards;
+  position: absolute;
+  bottom: 200px;
+  left: 10px;
+  font-size: 120px;
+  letter-spacing: 90px;
+  color: black;
+  animation: moveTextUp 2s ease-in-out forwards;
 }
-
 
 @keyframes moveTextUp {
   0% {
-  bottom: -30%;
+    bottom: -30%;
   }
   100% {
-  bottom: 25%;
+    bottom: 25%;
   }
 }
 
 .photographer.main-page {
-	position: absolute;
-	bottom: 58%;
-	right: 270px;
-	font-size: 12px;
-	color:black ;
-	font-style: italic;
-	font-family: Futura;
-
+  position: absolute;
+  bottom: 58%;
+  right: 270px;
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+  font-family: Futura;
 }
 
 .developer.main-page {
-	position: absolute;
-	bottom: 145px;
-	right: 50%;
-	letter-spacing: 50px;
-	font-family: Futura;
-	color: black;
-
+  position: absolute;
+  bottom: 145px;
+  right: 50%;
+  letter-spacing: 50px;
+  font-family: Futura;
+  color: black;
 }
 
 .designer.main-page {
-	position: absolute;
-	bottom: 80px;
-	left: 300px;
-	font-size: 12px;
-	color: #420b13;
-	font-style: italic;
-	font-family: Futura;
-	text-decoration: underline;
+  position: absolute;
+  bottom: 80px;
+  left: 300px;
+  font-size: 12px;
+  color: #420b13;
+  font-style: italic;
+  font-family: Futura;
+  text-decoration: underline;
 }
 
 .greeting {
-	font-family: Futura;
-	padding:20px 70px 30px 10px;
-	font-size: 30px;
-	right: -10px;
-	top: 90px;
-	color: black;
-	background-color: rgb(255,69,0);
-	position: absolute;
-	animation: moveLeft2 2.5s ease-in-out forwards;
-	letter-spacing: 5px;
+  font-family: Futura;
+  padding: 20px 70px 30px 10px;
+  font-size: 30px;
+  right: -10px;
+  top: 90px;
+  color: black;
+  background-color: rgb(255, 69, 0);
+  position: absolute;
+  animation: moveLeft2 2.5s ease-in-out forwards;
+  letter-spacing: 5px;
 }
 
-@keyframes moveLeft2{
+@keyframes moveLeft2 {
   0% {
-  right: -60%;
+    right: -60%;
   }
   100% {
-  right: 5%;
+    right: 5%;
   }
 }
 
 .img-box {
-	background-color: #e5b0a3;
-	width: 550px;
-	position: absolute;
-	right: 140px;
-	top: 385px;
-	height: 350px;
-	background-image: cover;
-	animation: moveDown 2.5s ease-in-out forwards;
+  background-color: #e5b0a3;
+  width: 550px;
+  position: absolute;
+  right: 140px;
+  top: 385px;
+  height: 350px;
+  background-image: cover;
+  animation: moveDown 2.5s ease-in-out forwards;
 }
 
 .box-left-small {
-	padding:50px;
-	background-color: rgb(186, 18, 0);
-	width: 510px;
-	position: absolute;
-	top: 500px;
-	height: 90px;
-	animation: moveRight2 2s ease-in-out forwards;
+  padding: 50px;
+  background-color: rgb(186, 18, 0);
+  width: 510px;
+  position: absolute;
+  top: 500px;
+  height: 90px;
+  animation: moveRight2 2s ease-in-out forwards;
 }
 
 .box-left {
-	width: 550px;
-	position: absolute;
-	left: 30px;
-	top: 100px;
-	height: 83%;
-	background-color: rgba(255, 0, 0, 0.8);
+  width: 550px;
+  position: absolute;
+  left: 30px;
+  top: 100px;
+  height: 83%;
+  background-color: rgba(255, 0, 0, 0.8);
   animation: moveRight 2s ease-in-out forwards;
-	padding-right: 50px;
-
+  padding-right: 50px;
 }
 
 .box-right {
-	width: 550px;
-	position: absolute;
-	height: 83%;
-	background-color: rgba(255, 0, 0, 0.5);
-	right: 30px;
-	top: 100px;
-	animation: moveLeft 2s ease-in-out forwards;
-	padding-left: 50px;
+  width: 550px;
+  position: absolute;
+  height: 83%;
+  background-color: rgba(255, 0, 0, 0.5);
+  right: 30px;
+  top: 100px;
+  animation: moveLeft 2s ease-in-out forwards;
+  padding-left: 50px;
 }
 
-
-
-@keyframes moveRight{
+@keyframes moveRight {
   0% {
-  left: -40%;
+    left: -40%;
   }
   100% {
-  left: 7%;
+    left: 7%;
   }
 }
 
-@keyframes moveRight2{
+@keyframes moveRight2 {
   0% {
-  left: -30%;
+    left: -30%;
   }
   100% {
-  left: 1%;
+    left: 1%;
   }
 }
 
 @keyframes moveDown {
-	0% {
-		top: -40%;
-	}
-	100% {
-		bottom: 6%;
-	}
-}
-
-
-@keyframes moveLeft{
   0% {
-  right: -40%;
+    top: -40%;
   }
   100% {
-  right: 8%;
+    bottom: 6%;
   }
 }
 
-
-@keyframes moveUp{
+@keyframes moveLeft {
   0% {
-  bottom: -5%;
+    right: -40%;
   }
   100% {
-  bottom: 3.4%;
+    right: 8%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    bottom: -5%;
+  }
+  100% {
+    bottom: 3.4%;
   }
 }
 
 .small {
-	position: absolute;
-	font-family: Futura;
-	bottom:350px;
-	left:570px;
-	font-size: 20px;
-	color:  black;
-	padding: 0 10px;
-	letter-spacing: 5px;
+  position: absolute;
+  font-family: Futura;
+  bottom: 350px;
+  left: 570px;
+  font-size: 20px;
+  color: black;
+  padding: 0 10px;
+  letter-spacing: 5px;
 }
 
 .main-layout {
   display: grid;
-	background-color: #fffcda;
+  background-color: #fffcda;
 }
 
 .main-page {
-	font-family: hola;
-	text-align: left;
-	color: #c72a00;
-	padding-bottom: 0px;
-	letter-spacing: 12px;
-	margin-bottom: 30px;
-	margin-left: 20px;
-	width: auto;
-	animation: fadein 5s;
+  font-family: hola;
+  text-align: left;
+  color: #c72a00;
+  padding-bottom: 0px;
+  letter-spacing: 12px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  width: auto;
+  animation: fadein 5s;
 }
-
 
 .name-text {
   margin: 20px 60px 0px 0px;
@@ -278,17 +267,16 @@ html, body {
 
 .button-style {
   font-family: Futura;
-	font-size: 10px;
+  font-size: 10px;
   color: black;
   text-align: center;
   margin: 0px 70px 20px 30px;
   cursor: crosshair;
-	display: inline;
-	padding-top: 20px;
-	letter-spacing: 10px;
+  display: inline;
+  padding-top: 20px;
+  letter-spacing: 10px;
 }
 
 .button-style:hover {
-
   font-family: Futura;
 }

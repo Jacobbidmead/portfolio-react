@@ -1,135 +1,130 @@
-
-
 .img-container {
-	width: 60%;
-	margin-top:20px;
-	padding: 20px;
-	color: black;
-	animation: fadein 1.5s;
-	-webkit-transition: -webkit-transform 1.2s;
-	opacity: 0.7;
-	border: 10px black solid;
+  width: 60%;
+  margin-top: 20px;
+  padding: 20px;
+  color: black;
+  animation: fadein 1.5s;
+  -webkit-transition: -webkit-transform 1.2s;
+  opacity: 0.7;
+  border: 10px black solid;
 }
 
 .img-container:hover {
-	opacity: 1;
-	cursor: crosshair;
+  opacity: 1;
+  cursor: crosshair;
 }
 
 .mk:hover {
-	-webkit-transform: scale(1.5) rotate(0.01deg);
-	transform: scale(1.5) rotate(0.01deg);
+  -webkit-transform: scale(1.5) rotate(0.01deg);
+  transform: scale(1.5) rotate(0.01deg);
 }
 
 .bg-fill {
-	background-color: #fffcda;
-	display: grid;
-	grid-template-columns: 1fr 7fr;
+  background-color: #fffcda;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
 }
 
 .text-container {
-	color: black;
+  color: black;
 }
 
 .content-container {
-	display: flex;
-	justify-content: center;
-	border-top:1px white solid;
+  display: flex;
+  justify-content: center;
+  border-top: 1px white solid;
 }
 
 .header {
-	font-size: 230px;
-	font-family: Futura;
-	color: rgba(255, 0, 0, 0.8);
-	text-align: center;
-	writing-mode: vertical-rl;
+  font-size: 230px;
+  font-family: Futura;
+  color: rgba(255, 0, 0, 0.8);
+  text-align: center;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
-	padding-right: 30px;
-	height: 100vh;
-	width: 100%;
-	margin:0px;
-	animation: fadein 1.5s;
+  padding-right: 30px;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  animation: fadein 1.5s;
 }
 
-
 .text {
-	font-family: Futura;;
-	font-size: 20px;
-	color: white;
-	padding:20px 15px;
+  font-family: Futura;
+  font-size: 20px;
+  color: white;
+  padding: 20px 15px;
 }
 
 .title {
-	color: white;
-	margin-right: 40px;
-	padding-top: 25px;
+  color: white;
+  margin-right: 40px;
+  padding-top: 25px;
 }
 
 .text-fit {
-	padding: 100px 15px 0px 15px;
+  padding: 100px 15px 0px 15px;
 }
 
 .Mcards-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: rgba(255, 0, 0, 0.8);
-	padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 0, 0, 0.8);
+  padding: 40px;
 }
 
 .airbnb-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: rgba(255, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 0, 0, 0.8);
 }
 
-
-
 .google-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: rgba(255, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 0, 0, 0.8);
 }
 
 .google-img {
-	width: 100%;
-	padding: 10px 0px 50px 20px;
+  width: 100%;
+  padding: 10px 0px 50px 20px;
 }
 
 .return-projects {
-	background-color:  ;
-	width: 15%;
-	margin-left: auto;
-	padding:0px 30px 10px 0px;
-	text-align: right;
-	font-family: Futura;
-	cursor: crosshair;
+  background-color: ;
+  width: 15%;
+  margin-left: auto;
+  padding: 0px 30px 10px 0px;
+  text-align: right;
+  font-family: Futura;
+  cursor: crosshair;
 }
 
 .return-projects:hover {
-	color: deeppink;
+  color: deeppink;
 }
 
 .project-links {
- text-align: right;
- cursor: crosshair;
- display: grid;
- grid-template-rows: 1fr 1fr 1fr 1fr;
- width: 100%;
- display: flex;
- justify-content: center;
+  text-align: right;
+  cursor: crosshair;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .project-link {
-	font-family: Futura;
-	font-size: 60px;
-	margin: 200px 100px 0px 0px;
-	background-color: rgb(255,69,0);
-	width: 25%;
-	text-align: center;
-	height: 40px;
-	padding-top: 100px;
+  font-family: Futura;
+  font-size: 60px;
+  margin: 200px 100px 0px 0px;
+  background-color: rgb(255, 69, 0);
+  width: 25%;
+  text-align: center;
+  height: 40px;
+  padding-top: 100px;
 }
 
 .arrow {
-	width: 15px;
+  width: 15px;
 }

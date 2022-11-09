@@ -1,167 +1,153 @@
 .photo {
-	width: 200px;
-	height: 130px;
-	background-image: cover;
-	background-size: contain;
-	-webkit-transition: -webkit-transform 0.8s;
-    transition: transform 0.8s;
-		opacity: 0.6;
-		margin: 0px 2px 20px 20px;
-		object-fit: cover;
+  width: 200px;
+  height: 130px;
+  background-image: cover;
+  background-size: contain;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  opacity: 0.6;
+  margin: 0px 2px 20px 20px;
+  object-fit: cover;
 }
-
 
 .photo:hover {
-	opacity: 1;
-	cursor: crosshair;
-	-webkit-transform: scale(1.15) rotate(0.01deg);
-	transform: scale(1.15) rotate(0.01deg);
+  opacity: 1;
+  cursor: crosshair;
+  -webkit-transform: scale(1.15) rotate(0.01deg);
+  transform: scale(1.15) rotate(0.01deg);
 }
 
-
-
 .photo-quote1 {
-	background-color: deeppink;
-	color: white;
-	font-size: 80px;
-	text-align: right;
-	margin: 10px 50px 50px 70px;
-	font-family: Futura;
+  background-color: deeppink;
+  color: white;
+  font-size: 80px;
+  text-align: right;
+  margin: 10px 50px 50px 70px;
+  font-family: Futura;
 }
 
 .photo-quote2 {
-	color: #4acfee;
-	font-size: 80px;
-	place-items: center;
-	margin: 30px;
-	margin-bottom: 00px;
+  color: #4acfee;
+  font-size: 80px;
+  place-items: center;
+  margin: 30px;
+  margin-bottom: 00px;
 }
 
 .photo-quote-container {
-	text-align: right;
-	margin: 0px 40px 100px 0px;
+  text-align: right;
+  margin: 0px 40px 100px 0px;
 }
 
-
-
 .photo-quote-container2 {
-	margin: 0px 10px 100px 50px;
-	font-family: Futura;
-	animation: fadein 1s;
+  margin: 0px 10px 100px 50px;
+  font-family: Futura;
+  animation: fadein 1s;
 }
 
 .container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: black;
-	margin: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+  margin: 18px;
 }
 
 .photo-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-top: 40px;
-	padding-left: 10px
+  padding-left: 10px;
 }
 
 .change-photos {
-	font-family: Futura;
-	font-size: 20px;
-	color:black;
-	cursor: crosshair;
-	padding: 10px 50px;
-	text-align: center;
-	background-color: #4acfee;
+  font-family: Futura;
+  font-size: 20px;
+  color: black;
+  cursor: crosshair;
+  padding: 10px 50px;
+  text-align: center;
+  background-color: #4acfee;
 }
 
 .change-photos:hover {
-	color:deeppink;
+  color: deeppink;
 }
 
 .photo-nav {
-	text-align: center;
-	margin-bottom: 40px;
-	margin-right: auto;
-	margin-left: auto;
-
+  text-align: center;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-photo {
-	width: 880px;
-	height: 550px;
-	background-size: contain;
-	background-image: cover;
-	margin-top: 17px;
-	animation: fadein 1.5s;
-
+  width: 880px;
+  height: 550px;
+  background-size: contain;
+  background-image: cover;
+  margin-top: 17px;
+  animation: fadein 1.5s;
 }
 
 .img-description {
-	font-family: Futura;
-	text-align: center;
-	margin-top: 20px;
-	padding: 0px 50px;
-	color: #4acfee;
+  font-family: Futura;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0px 50px;
+  color: #4acfee;
 }
-
-
 
 .large-photo-container {
-	padding: 20px;
-	width: 900px;
+  padding: 20px;
+  width: 900px;
 }
 
-
 .quote-container {
-	display: grid;
-	grid-template-rows: 1fr;
-	font-family: Futura;
-	animation: fadein 1s;
+  display: grid;
+  grid-template-rows: 1fr;
+  font-family: Futura;
+  animation: fadein 1s;
 }
 
 .quote1 {
-	font-size: 60px;
-	text-align: left;
-	margin-bottom: 30px;
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .travel {
-	margin:20px 0px 0px 50px;
-
+  margin: 20px 0px 0px 50px;
 }
 
-
 .quote2 {
-	font-size: 20px;
-	background-color: deeppink;
-	margin: 30px 0px 30px 700px;
-	width: 600px;
-	padding-bottom: 30px;
-	color: white;
-
+  font-size: 20px;
+  background-color: deeppink;
+  margin: 30px 0px 30px 700px;
+  width: 600px;
+  padding-bottom: 30px;
+  color: white;
 }
 
 .quote3 {
-	font-size: 20px;
-	text-decoration: underline;
-	padding: 10px;
-	margin-left: 50px;
-	position: absolute;
-	top: 350px;
-	left: 120px;
-	font-style: italic;
-
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 10px;
+  margin-left: 50px;
+  position: absolute;
+  top: 350px;
+  left: 120px;
+  font-style: italic;
 }
 
 .quote4 {
-	font-size: 50px;
-	color: #4acfee;
-	width: 1170px;
-	margin: 100px 0px 100px 70px;
+  font-size: 50px;
+  color: #4acfee;
+  width: 1170px;
+  margin: 100px 0px 100px 70px;
 }
 
 .quote5 {
-	text-align: right;
-	margin-right: 70px;
-	padding-bottom: 50px;
+  text-align: right;
+  margin-right: 70px;
+  padding-bottom: 50px;
 }
