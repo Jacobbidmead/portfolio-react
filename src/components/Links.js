@@ -12,7 +12,7 @@ class Links extends React.Component {
           <div>
             <span className="links">
               <i className="fa-solid fa-envelope"></i>
-              jacob.bidmead.fullstack@outlook.com
+              <span className="email">jacob.bidmead.fullstack@outlook.com</span>
               <i className="fa-brands fa-github"></i>
               <a
                 href="https://github.com/Jacobbidmead"
