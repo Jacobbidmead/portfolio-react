@@ -112,17 +112,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div>
-          <div className="top-bar">
-            <Sidebar
-              toggleShowLinks={this.toggleShowLinks}
-              toggleShowAbout={this.toggleShowAbout}
-              toggleShowHome={this.toggleShowHome}
-              toggleShowProjects={this.toggleShowProjects}
-              toggleShowPhotos={this.toggleShowPhotos}
-            />
-            <Top toggleShowHome={this.toggleShowHome} />
-          </div>
+        <div className="top-bar">
+          <Sidebar
+            toggleShowLinks={this.toggleShowLinks}
+            toggleShowAbout={this.toggleShowAbout}
+            toggleShowHome={this.toggleShowHome}
+            toggleShowProjects={this.toggleShowProjects}
+            toggleShowPhotos={this.toggleShowPhotos}
+          />
+          <Top toggleShowHome={this.toggleShowHome} />
         </div>
 
         {this.state.showHome && (
@@ -146,15 +144,16 @@ class App extends React.Component {
           {this.state.showAirBnb ? (
             <AirBnB toggleShowProjects={this.toggleShowProjects} />
           ) : null}
-
-          {this.state.showMagiKards ? (
-            <MagiKards toggleShowProjects={this.toggleShowProjects} />
-          ) : null}
-
-          {this.state.showGoogle ? (
-            <Google toggleShowProjects={this.toggleShowProjects} />
-          ) : null}
         </div>
+
+        {this.state.showMagiKards ? (
+          <MagiKards toggleShowProjects={this.toggleShowProjects} />
+        ) : null}
+
+        {this.state.showGoogle ? (
+          <Google toggleShowProjects={this.toggleShowProjects} />
+        ) : null}
+
         {this.state.showPhotos && <Photos />}
       </>
     );

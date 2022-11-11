@@ -11,6 +11,8 @@ class AirBnB extends React.Component {
           <img src="images/left-arrow.png" alt="" className="arrow" />
         </div>
 
+        <div>Hello</div>
+
         <div className="airbnb-container">
           <div className="media-scroller first">
             <img

@@ -77,28 +77,32 @@
 
 .airbnb-container {
   background-color: #fffcda;
-  display: grid;
   display: inline-flex;
   overflow: hidden;
   height: 333px;
-  width: 4550px;
+  width: 3550px;
 }
 
 .media-scroller {
-  padding: 0px;
-  width: 25%;
+  padding: 30px;
+  width: 15%;
+  margin-bottom: 40px;
+}
+
+.overflow {
+  height: 100%;
 }
 
 .airbnb-img {
-  width: 50%;
+  width: 100%;
   overflow: hidden;
 }
 
-.first {
-  animation: bannermove 20s linear infinite;
+.airbnb-container {
+  animation: bannermove 50s linear infinite;
 }
 
-.media-scroller:hover {
+.airbnb-container:hover {
   animation-play-state: paused;
 }
 
@@ -109,6 +113,10 @@
   100% {
     margin-left: -2125px;
   }
+}
+
+.media-scroller:hover {
+  animation-play-state: paused;
 }
 
 .google-container {
@@ -147,7 +155,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  height: 100vh;
 }
 
 .project-link {
@@ -159,7 +167,6 @@
   text-align: center;
   height: 40px;
   padding-top: 100px;
-  overflow: hidden;
 }
 
 .arrow {
