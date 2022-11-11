@@ -8,54 +8,53 @@ class Projects extends React.Component {
   render() {
     return (
       <>
-        <div className="projects-container">
-          <div className="bg-fill">
-            <div>
-              <h1 className="header">Projects.</h1>
-            </div>
-            <div className="project-links">
-              {this.props.showMagiKards ? (
-                <MagiKards
-                  toggleShowMagiKards={this.props.toggleShowMagiKards}
-                  toggleShowProjects={this.props.toggleShowProjects}
-                />
-              ) : (
-                <span
-                  className="project-link"
-                  onClick={(e) => this.props.toggleShowMagiKards(e)}
-                >
-                  MagiKards
-                </span>
-              )}
+        <div className="bg-fill">
+          <div>
+            <h1 className="header">Projects.</h1>
+          </div>
 
-              {this.props.showAirBnb ? (
-                <AirBnB
-                  toggleShowAirBnb={this.props.toggleShowAirBnb}
-                  toggleShowProjects={this.props.toggleShowProjects}
-                />
-              ) : (
-                <span
-                  className="project-link"
-                  onClick={(e) => this.props.toggleShowAirBnb(e)}
-                >
-                  AIRBNB
-                </span>
-              )}
+          <div className="project-links">
+            {this.props.showMagiKards ? (
+              <MagiKards
+                toggleShowMagiKards={this.props.toggleShowMagiKards}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <span
+                className="project-link"
+                onClick={(e) => this.props.toggleShowMagiKards(e)}
+              >
+                MagiKards
+              </span>
+            )}
 
-              {this.props.showGoogle ? (
-                <Google
-                  toggleShowGoogle={this.props.toggleShowGoogle}
-                  toggleShowProjects={this.props.toggleShowProjects}
-                />
-              ) : (
-                <span
-                  className="project-link"
-                  onClick={(e) => this.props.toggleShowGoogle(e)}
-                >
-                  Google Search
-                </span>
-              )}
-            </div>
+            {this.props.showAirBnb ? (
+              <AirBnB
+                toggleShowAirBnb={this.props.toggleShowAirBnb}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <span
+                className="project-link"
+                onClick={(e) => this.props.toggleShowAirBnb(e)}
+              >
+                AIRBNB
+              </span>
+            )}
+
+            {this.props.showGoogle ? (
+              <Google
+                toggleShowGoogle={this.props.toggleShowGoogle}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <span
+                className="project-link"
+                onClick={(e) => this.props.toggleShowGoogle(e)}
+              >
+                Google Search
+              </span>
+            )}
           </div>
         </div>
       </>

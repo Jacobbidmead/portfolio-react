@@ -112,55 +112,50 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className="background-main">
-          <div>
-            <div className="top-bar">
-              <Sidebar
-                toggleShowLinks={this.toggleShowLinks}
-                toggleShowAbout={this.toggleShowAbout}
-                toggleShowHome={this.toggleShowHome}
-                toggleShowProjects={this.toggleShowProjects}
-                toggleShowPhotos={this.toggleShowPhotos}
-              />
-              <Top toggleShowHome={this.toggleShowHome} />
-            </div>
-          </div>
-          <div className="main-layout">
-            {this.state.showHome && (
-              <div className="main-display">
-                <Home />
-              </div>
-            )}
-
-            {this.state.showLinks && <Links />}
-
-            {this.state.showAbout && <About />}
-
-            {this.state.showProjects && (
-              <div>
-                <Projects
-                  toggleShowAirBnb={this.toggleShowAirBnb}
-                  toggleShowMagiKards={this.toggleShowMagiKards}
-                  toggleShowGoogle={this.toggleShowGoogle}
-                />
-              </div>
-            )}
-
-            {this.state.showAirBnb ? (
-              <AirBnB toggleShowProjects={this.toggleShowProjects} />
-            ) : null}
-
-            {this.state.showMagiKards ? (
-              <MagiKards toggleShowProjects={this.toggleShowProjects} />
-            ) : null}
-
-            {this.state.showGoogle ? (
-              <Google toggleShowProjects={this.toggleShowProjects} />
-            ) : null}
-
-            {this.state.showPhotos && <Photos />}
+        <div>
+          <div className="top-bar">
+            <Sidebar
+              toggleShowLinks={this.toggleShowLinks}
+              toggleShowAbout={this.toggleShowAbout}
+              toggleShowHome={this.toggleShowHome}
+              toggleShowProjects={this.toggleShowProjects}
+              toggleShowPhotos={this.toggleShowPhotos}
+            />
+            <Top toggleShowHome={this.toggleShowHome} />
           </div>
         </div>
+
+        {this.state.showHome && (
+          <div className="main-display">
+            <Home />
+          </div>
+        )}
+
+        {this.state.showLinks && <Links />}
+
+        {this.state.showAbout && <About />}
+
+        {this.state.showProjects && (
+          <Projects
+            toggleShowAirBnb={this.toggleShowAirBnb}
+            toggleShowMagiKards={this.toggleShowMagiKards}
+            toggleShowGoogle={this.toggleShowGoogle}
+          />
+        )}
+        <div className="overflow">
+          {this.state.showAirBnb ? (
+            <AirBnB toggleShowProjects={this.toggleShowProjects} />
+          ) : null}
+
+          {this.state.showMagiKards ? (
+            <MagiKards toggleShowProjects={this.toggleShowProjects} />
+          ) : null}
+
+          {this.state.showGoogle ? (
+            <Google toggleShowProjects={this.toggleShowProjects} />
+          ) : null}
+        </div>
+        {this.state.showPhotos && <Photos />}
       </>
     );
   }

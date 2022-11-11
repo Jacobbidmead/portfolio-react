@@ -12,45 +12,45 @@ class AirBnB extends React.Component {
         </div>
 
         <div className="airbnb-container">
-          <div className="animated-div">
+          <div className="media-scroller first">
             <img
+              className="airbnb-img"
               src="./images/project-img/abnb1.png"
-              className="img-container"
               alt=""
             />
           </div>
-          <div className="animated-div">
+          <div className="media-scroller">
             <img
+              className="airbnb-img"
               src="./images/project-img/abnb2.png"
-              className="img-container"
               alt=""
             />
           </div>
-          <div className="animated-div">
+          <div className="media-scroller">
             <img
+              className="airbnb-img"
               src="./images/project-img/abnb3.png"
-              className="img-container"
               alt=""
             />
           </div>
-          <div className="animated-div">
+          <div className="media-scroller">
             <img
+              className="airbnb-img"
               src="./images/project-img/abnb4.png"
-              className="img-container"
               alt=""
             />
           </div>
-          <div className="animated-div">
+          <div className="media-scroller">
             <img
+              className="airbnb-img"
               src="./images/project-img/abnb5.png"
-              className="img-container"
               alt=""
             />
           </div>
-          <div className="animated-div">
+          <div className="media-scroller">
             <img
+              className="airbnb-img"
               src="./images/project-img/abnb6.png"
-              className="img-container"
               alt=""
             />
           </div>

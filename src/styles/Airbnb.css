@@ -1,0 +1,28 @@
+.airbnb-container {
+  background-color: #fffcda;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  animation: slide 30s linear infinite;
+} */
+
+/* .animated-div {
+  width: 100%;
+}
+
+.airbnb-container:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500px, 0, 0);
+  }
+}

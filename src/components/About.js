@@ -16,9 +16,9 @@ class About extends React.Component {
             <p>
               <span className="about-paragraph">
                 Ive recently completed Tortuga Coders 11 week fullstack coding
-                bootcamp in Koh Phangan - Thailand, where I gained experience of{" "}
-                <b>JavaScript, HTML, CSS, Node.js & React</b>, amoung other
-                languages, frameworks and libarys.{" "}
+                bootcamp in Koh Phangan - Thailand, where I gained extensive
+                experience of <b>JavaScript, HTML, CSS, Node.js & React</b>,
+                amoung other languages, frameworks and libarys.{" "}
               </span>
             </p>
 

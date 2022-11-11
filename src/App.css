@@ -33,7 +33,7 @@ body {
   background: deeppink;
 }
 
-.background-main {
+.main-display {
   background-color: #fffcda;
   height: 100vh;
 }
@@ -279,4 +279,8 @@ body {
 
 .button-style:hover {
   font-family: Futura;
+}
+
+.overflow {
+  overflow: hidden;
 }
