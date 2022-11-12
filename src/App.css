@@ -26,7 +26,6 @@ html,
 body {
   margin: 0;
   height: 100vh;
-  background-color: #fffcda;
 }
 
 ::selection {
@@ -284,4 +283,19 @@ body {
 
 .overflow {
   overflow: hidden;
+  height: 100vh;
+  background-color: #fffcda;
+}
+
+.photo-bg {
+  background-color: #fffcda;
+  padding-bottom: 20px;
+}
+
+.about-bg {
+  background-color: #fffcda;
+}
+
+.links-bg {
+  background-color: #fffcda;
 }

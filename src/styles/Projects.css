@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 7fr;
   overflow: hidden;
-  height: 100%;
+  height: 100vh;
 }
 
 .text-container {
@@ -79,31 +79,35 @@
   background-color: #fffcda;
   display: inline-flex;
   overflow: hidden;
-  height: 333px;
   width: 3550px;
 }
 
 .media-scroller {
-  padding: 30px;
+  padding: 50px;
   width: 15%;
-  margin-bottom: 40px;
-}
-
-.overflow {
-  height: 100%;
 }
 
 .airbnb-img {
   width: 100%;
-  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+
+.first {
+  padding-top: 50px;
+}
+
+.airbnb-img:hover {
+  -webkit-transform: scale(1.15) rotate(0.01deg);
+  transform: scale(1.15) rotate(0.01deg);
 }
 
 .airbnb-container {
-  animation: bannermove 50s linear infinite;
+  animation: bannermove 30s linear infinite;
 }
 
 .airbnb-container:hover {
   animation-play-state: paused;
+  cursor: crosshair;
 }
 
 @keyframes bannermove {
@@ -118,6 +122,8 @@
 .media-scroller:hover {
   animation-play-state: paused;
 }
+
+/* scroller end */
 
 .google-container {
   display: grid;
@@ -155,7 +161,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .project-link {

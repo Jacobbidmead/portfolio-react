@@ -128,10 +128,8 @@ class App extends React.Component {
             <Home />
           </div>
         )}
-
-        {this.state.showLinks && <Links />}
-
-        {this.state.showAbout && <About />}
+        <div className="links-bg">{this.state.showLinks && <Links />}</div>
+        <div className="about-bg">{this.state.showAbout && <About />}</div>
 
         {this.state.showProjects && (
           <Projects
@@ -153,8 +151,7 @@ class App extends React.Component {
         {this.state.showGoogle ? (
           <Google toggleShowProjects={this.toggleShowProjects} />
         ) : null}
-
-        {this.state.showPhotos && <Photos />}
+        <div className="photo-bg">{this.state.showPhotos && <Photos />}</div>
       </>
     );
   }
