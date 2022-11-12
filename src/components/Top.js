@@ -19,7 +19,7 @@ class Top extends React.Component {
           className="home-button"
           onClick={(e) => this.props.toggleShowHome(e)}
         >
-          +
+          [<span className="link-effect">戻る</span>]
         </div>
       </>
     );
