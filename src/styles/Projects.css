@@ -76,7 +76,6 @@
 /* scroller */
 
 .airbnb-container {
-  background-color: #3350f4;
   display: inline-flex;
   overflow: hidden;
   width: 3550px;
@@ -90,6 +89,7 @@
 .airbnb-img {
   width: 100%;
   -webkit-transition: -webkit-transform 0.8s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .first {
