@@ -34,7 +34,7 @@ body {
 }
 
 .main-display {
-  background-color: #fffcda;
+  background-color: #f7f3ea;
   height: 100vh;
 }
 
@@ -153,7 +153,7 @@ body {
 
 .box-left-small {
   padding: 50px;
-  background-color: rgb(186, 18, 0);
+  background-color: cornflowerblue;
   width: 510px;
   position: absolute;
   top: 500px;
@@ -165,18 +165,21 @@ body {
   width: 550px;
   position: absolute;
   left: 30px;
-  top: 100px;
-  height: 83%;
+  top: 190px;
+  height: 68%;
   background-color: rgba(255, 0, 0, 0.8);
   animation: moveRight 2s ease-in-out forwards;
   padding-right: 50px;
 }
 
+.box-left:hover {
+}
+
 .box-right {
   width: 550px;
   position: absolute;
-  height: 83%;
-  background-color: rgba(255, 0, 0, 0.5);
+  height: 63%;
+  background-color: #3350f4;
   right: 30px;
   top: 100px;
   animation: moveLeft 2s ease-in-out forwards;
@@ -284,16 +287,16 @@ body {
 .overflow {
   overflow: hidden;
   height: 100vh;
-  background-color: #fffcda;
+  background-color: #f7f3ea;
 }
 
 .photo-bg {
-  background-color: #fffcda;
+  background-color: #f7f3ea;
   padding-bottom: 20px;
 }
 
 .about-bg {
-  background-color: #fffcda;
+  background-color: #f7f3ea;
 }
 
 .links-bg {

@@ -1,5 +1,5 @@
 .top-bar {
-  background-color: #fffcda;
+  background-color: #f7f3ea;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   font-family: Futura;
@@ -13,14 +13,13 @@
   font-size: 15px;
   cursor: crosshair;
   padding: 38px 10px;
-  margin-top: 9px;
+  margin-top: 11px;
 }
 
 .link-effect:hover {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 8px 0px 8px;
 }
 
 .link-effect {
-  padding-left: 4px;
   transition: 0.4s;
 }

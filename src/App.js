@@ -138,11 +138,10 @@ class App extends React.Component {
             toggleShowGoogle={this.toggleShowGoogle}
           />
         )}
-        <div className="overflow">
-          {this.state.showAirBnb ? (
-            <AirBnB toggleShowProjects={this.toggleShowProjects} />
-          ) : null}
-        </div>
+
+        {this.state.showAirBnb ? (
+          <AirBnB toggleShowProjects={this.toggleShowProjects} />
+        ) : null}
 
         {this.state.showMagiKards ? (
           <MagiKards toggleShowProjects={this.toggleShowProjects} />
