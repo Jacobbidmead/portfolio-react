@@ -12,7 +12,7 @@
 
 .photo:hover {
   opacity: 1;
-  cursor: crosshair;
+  cursor: pointer;
   -webkit-transform: scale(1.15) rotate(0.01deg);
   transform: scale(1.15) rotate(0.01deg);
 }
@@ -27,7 +27,8 @@
 }
 
 .photo-quote2 {
-  color: #4acfee;
+  color: black;
+  background-color: #94d7f9;
   font-size: 80px;
   place-items: center;
   margin: 30px;
@@ -66,11 +67,12 @@
   cursor: crosshair;
   padding: 10px 50px;
   text-align: center;
-  background-color: #3350f4;
+  background-color: #94d7f9;
 }
 
 .change-photos:hover {
   color: white;
+  cursor: pointer;
 }
 
 .photo-nav {
@@ -121,11 +123,11 @@
 
 .quote2 {
   font-size: 20px;
-  background-color: deeppink;
+  background-color: #94d7f9;
   margin: 30px 0px 30px 700px;
   width: 600px;
   padding-bottom: 30px;
-  color: white;
+  color: black;
 }
 
 .quote3 {

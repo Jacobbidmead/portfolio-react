@@ -1,16 +1,6 @@
 @font-face {
-  font-family: "PolySans";
-  src: url("/public/fonts/PolySansNeutralWide.woff") format("woff");
-}
-
-@font-face {
   font-family: "Futura";
   src: url("/public/fonts/futuralight.woff");
-}
-
-@font-face {
-  font-family: "Hola";
-  src: url("/public/fonts/hola.woff");
 }
 
 @keyframes fadein {
@@ -69,79 +59,7 @@ body {
   }
 }
 
-.web.main-page {
-  position: absolute;
-  bottom: 200px;
-  left: 10px;
-  font-size: 120px;
-  letter-spacing: 90px;
-  color: black;
-  animation: moveTextUp 2s ease-in-out forwards;
-}
-
-@keyframes moveTextUp {
-  0% {
-    bottom: -30%;
-  }
-  100% {
-    bottom: 25%;
-  }
-}
-
-.photographer.main-page {
-  position: absolute;
-  bottom: 58%;
-  right: 270px;
-  font-size: 12px;
-  color: black;
-  font-style: italic;
-  font-family: Futura;
-}
-
-.developer.main-page {
-  position: absolute;
-  bottom: 145px;
-  right: 50%;
-  letter-spacing: 50px;
-  font-family: Futura;
-  color: black;
-}
-
-.designer.main-page {
-  position: absolute;
-  bottom: 80px;
-  left: 300px;
-  font-size: 12px;
-  color: #420b13;
-  font-style: italic;
-  font-family: Futura;
-  text-decoration: underline;
-}
-
-.greeting {
-  font-family: Futura;
-  padding: 20px 70px 30px 10px;
-  font-size: 30px;
-  right: -10px;
-  top: 90px;
-  color: black;
-  background-color: rgb(255, 69, 0);
-  position: absolute;
-  animation: moveLeft2 2.5s ease-in-out forwards;
-  letter-spacing: 5px;
-}
-
-@keyframes moveLeft2 {
-  0% {
-    right: -60%;
-  }
-  100% {
-    right: 5%;
-  }
-}
-
 .img-box {
-  background-color: #e5b0a3;
   width: 550px;
   position: absolute;
   right: 140px;
@@ -149,16 +67,7 @@ body {
   height: 350px;
   background-image: cover;
   animation: moveDown 2.5s ease-in-out forwards;
-}
-
-.box-left-small {
-  padding: 50px;
-  background-color: cornflowerblue;
-  width: 510px;
-  position: absolute;
-  top: 500px;
-  height: 90px;
-  animation: moveRight2 2s ease-in-out forwards;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box-left {
@@ -167,12 +76,9 @@ body {
   left: 30px;
   top: 190px;
   height: 68%;
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: cornflowerblue;
   animation: moveRight 2s ease-in-out forwards;
   padding-right: 50px;
-}
-
-.box-left:hover {
 }
 
 .box-right {
@@ -231,32 +137,9 @@ body {
   }
 }
 
-.small {
-  position: absolute;
-  font-family: Futura;
-  bottom: 350px;
-  left: 570px;
-  font-size: 20px;
-  color: black;
-  padding: 0 10px;
-  letter-spacing: 5px;
-}
-
 .main-layout {
   display: grid;
   background-color: #fffcda;
-}
-
-.main-page {
-  font-family: hola;
-  text-align: left;
-  color: #c72a00;
-  padding-bottom: 0px;
-  letter-spacing: 12px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  width: auto;
-  animation: fadein 5s;
 }
 
 .name-text {
@@ -274,14 +157,10 @@ body {
   color: black;
   text-align: center;
   margin: 0px 70px 20px 30px;
-  cursor: crosshair;
+  cursor: pointer;
   display: inline;
   padding-top: 20px;
   letter-spacing: 10px;
-}
-
-.button-style:hover {
-  font-family: Futura;
 }
 
 .overflow {
