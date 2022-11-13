@@ -18,6 +18,7 @@
 
 .link-effect:hover {
   padding: 0px 8px 0px 8px;
+  cursor: pointer;
 }
 
 .link-effect {

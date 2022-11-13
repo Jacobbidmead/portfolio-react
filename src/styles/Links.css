@@ -8,7 +8,6 @@
 }
 
 .link-container {
-  background-color: #fffcd;
   border-top: solid 1px black;
   animation: fadein 1.5s;
   display: grid;

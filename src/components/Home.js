@@ -1,25 +1,18 @@
 import React from "react";
+import Top from "./Top.js";
 
 class Home extends React.Component {
   render() {
     return (
       <>
         <div className="main-display">
-          <div>
-            <div className="box-left"></div>
-            <div className="box-right"></div>
+          <div className="box-left"></div>
+          <div className="box-right"></div>
 
-            <div>
-              <h1 className="main-page  first-name">JACOB</h1>
-            </div>
-            <div>
-              <img src="images/asia/umbrella.png" alt="" className="img-box" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <h1 className="main-page last-name">BIDMEAD</h1>
-            </div>
+          <div onClick={(e) => this.props.hideTopBar(e)}>
+            <h1 className="main-page  initial">
+              [<span className="link-effect">J - B</span>]
+            </h1>
           </div>
         </div>
       </>

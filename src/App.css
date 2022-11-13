@@ -20,62 +20,33 @@ body {
 
 ::selection {
   color: black;
-  background: deeppink;
+  background: lime;
 }
 
 .main-display {
   background-color: #f7f3ea;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.first-name.main-page {
+.initial.main-page {
   position: absolute;
-  top: 0px;
-  left: 95px;
-  font-size: 150px;
-  letter-spacing: 105px;
+  bottom: 6.5%;
+  left: 7.8%;
+  font-size: 20px;
   color: black;
-  animation: fadein 2.5s;
   font-family: Futura;
-}
-
-.last-name.main-page {
-  position: absolute;
-  bottom: 50%;
-  left: 110px;
-  font-size: 30px;
-  letter-spacing: 45px;
-  font-family: Futura;
-  color: black;
-  animation: moveTextDown 2.8s ease-in-out forwards;
-}
-
-@keyframes moveTextDown {
-  0% {
-    top: -40%;
-  }
-  100% {
-    top: 35%;
-  }
-}
-
-.img-box {
-  width: 550px;
-  position: absolute;
-  right: 140px;
-  top: 385px;
-  height: 350px;
-  background-image: cover;
-  animation: moveDown 2.5s ease-in-out forwards;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: lime;
+  padding: 10px;
 }
 
 .box-left {
   width: 550px;
   position: absolute;
   left: 30px;
-  top: 190px;
-  height: 68%;
+  top: 18%;
+  height: 75%;
   background-color: cornflowerblue;
   animation: moveRight 2s ease-in-out forwards;
   padding-right: 50px;
@@ -84,10 +55,10 @@ body {
 .box-right {
   width: 550px;
   position: absolute;
-  height: 63%;
+  height: 75%;
   background-color: #3350f4;
   right: 30px;
-  top: 100px;
+  top: 18%;
   animation: moveLeft 2s ease-in-out forwards;
   padding-left: 50px;
 }
@@ -110,30 +81,12 @@ body {
   }
 }
 
-@keyframes moveDown {
-  0% {
-    top: -40%;
-  }
-  100% {
-    bottom: 6%;
-  }
-}
-
 @keyframes moveLeft {
   0% {
     right: -40%;
   }
   100% {
     right: 8%;
-  }
-}
-
-@keyframes moveUp {
-  0% {
-    bottom: -5%;
-  }
-  100% {
-    bottom: 3.4%;
   }
 }
 

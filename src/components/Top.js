@@ -3,12 +3,12 @@ import "../styles/Top.css";
 
 class Top extends React.Component {
   state = {
-    showHomeButton: true,
+    hideTop: true,
   };
 
-  toggleShowHomeButton = () => {
+  hideTopBar = () => {
     this.setState({
-      showHomeButton: true,
+      hideTop: false,
     });
   };
 
