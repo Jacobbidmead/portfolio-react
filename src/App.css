@@ -44,11 +44,11 @@ body {
 .box-left {
   width: 550px;
   position: absolute;
-  left: 30px;
+  left: 7.3%;
   top: 18%;
   height: 75%;
   background-color: cornflowerblue;
-  animation: moveRight 2s ease-in-out forwards;
+
   padding-right: 50px;
 }
 
@@ -57,9 +57,9 @@ body {
   position: absolute;
   height: 75%;
   background-color: #3350f4;
-  right: 30px;
+  right: 7.3%;
   top: 18%;
-  animation: moveLeft 2s ease-in-out forwards;
+
   padding-left: 50px;
 }
 

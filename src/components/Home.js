@@ -1,5 +1,4 @@
 import React from "react";
-import Top from "./Top.js";
 
 class Home extends React.Component {
   render() {
@@ -9,7 +8,7 @@ class Home extends React.Component {
           <div className="box-left"></div>
           <div className="box-right"></div>
 
-          <div onClick={(e) => this.props.hideTopBar(e)}>
+          <div onClick={(e) => this.props.toggleShowAbout(e)}>
             <h1 className="main-page  initial">
               [<span className="link-effect">J - B</span>]
             </h1>

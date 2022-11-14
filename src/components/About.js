@@ -5,30 +5,32 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <div className="about-container">
-          <div className="about">About.</div>
-          <div className="about-text">
-            <span className="about-paragraph">
-              Hi. I'm a <b>Web Developer, Designer and Photographer</b> based in
-              London.
-            </span>
-
-            <p>
+        <div className="main-display">
+          <div className="about-box-left">
+            <div className="about-text">
               <span className="about-paragraph">
-                Ive recently completed Tortuga Coders 11 week fullstack coding
-                bootcamp in Koh Phangan - Thailand, where I gained extensive
-                experience of <b>JavaScript, HTML, CSS, Node.js & React</b>,
-                amoung other languages, frameworks and libarys.{" "}
+                Hi. I'm a <b>Web Developer, Designer and Photographer</b> based
+                in London.
               </span>
-            </p>
 
+              <p>
+                <span className="about-paragraph">
+                  Ive recently completed Tortuga Coders 11 week fullstack coding
+                  bootcamp in Koh Phangan - Thailand, where I gained extensive
+                  experience of <b>JavaScript, HTML, CSS, Node.js & React</b>,
+                  amoung other languages, frameworks and libarys.{" "}
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="about-box-right">
             <span className="about-paragraph">
               Im currently looking for a junior position as Web Developer,
               whilst working on a number of personal and freelance projects that
               can be viewed in the projects section of this site and on my
               GitHub repository.{" "}
             </span>
-
             <span className="about-paragraph">
               <b>I build my projects using React</b>; and am looking for a
               position where I can gain advanced skills using the libary and
