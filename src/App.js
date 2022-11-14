@@ -125,7 +125,7 @@ class App extends React.Component {
 
         {this.state.showHome && (
           <div className="main-display">
-            <Home toggleShowAbout={this.toggleShowAbout} />
+            <Home />
           </div>
         )}
         <div className="links-bg">{this.state.showLinks && <Links />}</div>
