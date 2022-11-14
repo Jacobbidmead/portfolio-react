@@ -20,14 +20,14 @@ class Home extends React.Component {
                 visibility: this.state.showWelcome ? "visible" : "hidden",
               }}
             >
-              Hi, my names Jacob Bidmead. Welcome to my site
+              Hi, my names Jacob Bidmead. <div>Welcome to my website.</div>
             </div>
           </div>
 
           <div onClick={(e) => this.toggleShowWelcome(e)}>
-            <h1 className="main-page  initial">
+            <span className="initial">
               [<span className="link-effect">J - B</span>]
-            </h1>
+            </span>
           </div>
         </div>
       </>
