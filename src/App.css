@@ -37,10 +37,10 @@ body {
   font-size: 20px;
   color: black;
   font-family: Futura;
-  background-color: lime;
   padding: 6px;
   cursor: pointer;
   border-radius: 2px;
+  background-color: rgba(168, 255, 74, 0.8);
 }
 
 /* reveal name effect */
@@ -61,6 +61,7 @@ body {
   opacity: 0;
   max-width: 0;
   transition: ease-in-out 0.8s;
+  background-color: ;
 }
 
 @keyframes reveal {
@@ -96,11 +97,21 @@ body {
 
 @keyframes moveRight {
   0% {
-    left: -40%;
+    right: -40%;
   }
   100% {
-    left: 7%;
+    right: 7%;
   }
+}
+
+.welcome-name {
+  font-family: Futura;
+  font-size: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 10%;
+  margin-top: 100%;
+  animation: fadein 2s;
 }
 
 .main-layout {

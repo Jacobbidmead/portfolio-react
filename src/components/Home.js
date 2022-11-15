@@ -6,7 +6,7 @@ class Home extends React.Component {
   };
   toggleShowWelcome = (e) => {
     this.setState({
-      showWelcome: true,
+      showWelcome: this.showWelcome ? false : true,
     });
   };
   render() {
@@ -20,15 +20,15 @@ class Home extends React.Component {
                 visibility: this.state.showWelcome ? "visible" : "hidden",
               }}
             >
-              Hi, my names Jacob Bidmead. <div>Welcome to my website.</div>
+              <div className="welcome-name">Hi. I'm Jacob.</div>
             </div>
           </div>
 
           <div onClick={(e) => this.toggleShowWelcome(e)}>
             <span className="initial">
               <div className="name-reveal">
-                [J<span className="revealed-text">acob</span> - B
-                <span className="revealed-text">idmead</span> ]
+                [ J <span className="revealed-text"> acob</span>&nbsp; -&nbsp; B
+                <span className="revealed-text">idmead</span> &nbsp;]
               </div>
             </span>
           </div>
