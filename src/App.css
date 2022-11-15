@@ -41,6 +41,7 @@ body {
   padding: 10px;
   cursor: pointer;
 }
+
 /* reveal name effect */
 
 .name-reveal {
@@ -72,22 +73,6 @@ body {
 }
 
 /* end of name reveal */
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 
 @keyframes fade-in-down {
   0% {
@@ -136,7 +121,7 @@ body {
 }
 
 .name-text {
-  margin: 20px 60px 0px 0px;
+  margin: 20px 1000px 0px 0px;
   text-align: center;
 }
 
@@ -151,10 +136,9 @@ body {
   text-align: center;
   margin: 0px 70px 20px 30px;
   cursor: pointer;
-  display: inline;
+
   padding-top: 20px;
   letter-spacing: 10px;
-  animation: fade-in-down 3s;
 }
 
 .overflow {

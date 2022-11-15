@@ -6,39 +6,28 @@ class Sidebar extends React.Component {
       <>
         <div
           onClick={(e) => this.props.toggleShowAbout(e)}
-          className=" button-style name-text name-box "
+          className=" button-style  name-reveal"
         >
-          <small>01</small>
-          <h1>
-            [<span className="link-effect">About</span>]
-          </h1>
+          [01
+          <span className="revealed-text">About</span>]
         </div>
         <div
           onClick={(e) => this.props.toggleShowProjects(e)}
-          className="button-style link1 "
+          className="button-style link1 name-reveal"
         >
-          <small>02</small>
-          <h1>
-            [<span className="link-effect">Projects</span>]
-          </h1>
+          [02<span className="revealed-text">Projects</span>]
         </div>
         <div
           onClick={(e) => this.props.toggleShowPhotos(e)}
-          className="button-style link2 "
+          className="button-style link2 name-reveal"
         >
-          <small>03</small>
-          <h1>
-            [<span className="link-effect">Photo</span>]
-          </h1>
+          [03<span className="revealed-text">Photo</span>]
         </div>
         <div
           onClick={(e) => this.props.toggleShowLinks(e)}
-          className="button-style link3 "
+          className="button-style link3 name-reveal"
         >
-          <small>04</small>
-          <h1>
-            [<span className="link-effect">Links</span>]
-          </h1>
+          [04<span className="revealed-text">Links</span>]
         </div>
       </>
     );
