@@ -55,7 +55,7 @@ body {
 .name-reveal:hover span {
   display: inline-block;
   max-width: 300px;
-  animation: reveal 2s;
+  animation: reveal 3s;
 }
 
 .revealed-text {
@@ -133,10 +133,14 @@ body {
   font-size: 15px;
   color: black;
   text-align: center;
-  margin: 15px 20px 0px 90px;
+  margin: 50px 0px 0px 35%;
   cursor: pointer;
-  padding-top: 39px;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
+  padding: 10px 0px 10px 7px;
+  display: flex;
+  justify-content: center;
+  background-color: lime;
+  width: 32%;
 }
 
 .overflow {

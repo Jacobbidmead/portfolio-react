@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import Sidebar from "./components/Sidebar.js";
-import Links from "./components/Links.js";
+
 import About from "./components/About.js";
 import Home from "./components/Home.js";
 import Top from "./components/Top.js";
@@ -14,7 +14,6 @@ import Google from "./components/Projects/Google.js";
 class App extends React.Component {
   state = {
     showHome: true,
-    showLinks: false,
     showAbout: false,
     showPhotos: false,
     showProjects: false,
@@ -26,7 +25,6 @@ class App extends React.Component {
   toggleShowHome = () => {
     this.setState({
       showHome: true,
-      showLinks: false,
       showAbout: false,
       showPhotos: false,
       showProjects: false,
@@ -53,7 +51,6 @@ class App extends React.Component {
     this.setState({
       showAbout: true,
       showHome: false,
-      showLinks: false,
       showProjects: false,
       showPhotos: false,
       showAirBnb: false,
@@ -79,7 +76,6 @@ class App extends React.Component {
     this.setState({
       showProjects: true,
       showHome: false,
-      showLinks: false,
       showAbout: false,
       showPhotos: false,
       showAirBnb: false,
@@ -128,7 +124,7 @@ class App extends React.Component {
             <Home />
           </div>
         )}
-        <div className="links-bg">{this.state.showLinks && <Links />}</div>
+
         <div className="about-bg">{this.state.showAbout && <About />}</div>
 
         {this.state.showProjects && (

@@ -41,6 +41,23 @@ class About extends React.Component {
               America, the USA, Asia, Europe & Australia over the last 8 years.
             </span>
           </div>
+          <div className="links name-reveal">
+            [<i className="fa-solid fa-envelope"></i>
+            <span className="email revealed-text">
+              jacob.bidmead.fullstack@outlook.com
+            </span>{" "}
+            ]
+          </div>
+
+          <div
+            href="https://github.com/Jacobbidmead"
+            className="gitlink links name-reveal"
+            target="_blank"
+            rel="noreferrer"
+          >
+            [<i className="fa-brands fa-github"></i>
+            <span className="revealed-text">github.com/Jacobbidmead</span>]
+          </div>
         </div>
       </>
     );
