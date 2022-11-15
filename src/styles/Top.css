@@ -9,19 +9,10 @@
 
 .home-button {
   position: absolute;
-  left: 10px;
+  right: 10px;
+  top: 4.6%;
   font-size: 15px;
   cursor: pointer;
-  padding: 38px 10px;
-  margin-top: 11px;
+  margin: 15px 40px 0px 0px;
   animation: fade-in-down 3s;
-}
-
-.link-effect:hover {
-  padding: 0px 8px 0px 8px;
-  cursor: pointer;
-}
-
-.link-effect {
-  transition: 0.4s;
 }

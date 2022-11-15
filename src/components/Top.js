@@ -16,10 +16,10 @@ class Top extends React.Component {
     return (
       <>
         <div
-          className="home-button"
+          className="home-button name-reveal"
           onClick={(e) => this.props.toggleShowHome(e)}
         >
-          [<span className="link-effect">+</span>]
+          [+ <span className="revealed-text"> &nbsp;Home &nbsp;</span> ]
         </div>
       </>
     );

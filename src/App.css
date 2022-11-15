@@ -38,8 +38,9 @@ body {
   color: black;
   font-family: Futura;
   background-color: lime;
-  padding: 10px;
+  padding: 6px;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 /* reveal name effect */
@@ -69,19 +70,6 @@ body {
 
   100% {
     opacity: 1;
-  }
-}
-
-/* end of name reveal */
-
-@keyframes fade-in-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -131,12 +119,11 @@ body {
 
 .button-style {
   font-family: Futura;
-  font-size: 10px;
+  font-size: 20px;
   color: black;
   text-align: center;
-  margin: 0px 70px 20px 30px;
+  margin: 30px 20px 20px 60px;
   cursor: pointer;
-
   padding-top: 20px;
   letter-spacing: 10px;
 }
