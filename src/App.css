@@ -32,16 +32,46 @@ body {
 
 .initial {
   position: absolute;
-  bottom: 6.5%;
+  bottom: 7.8%;
   left: 7.8%;
   font-size: 20px;
   color: black;
   font-family: Futura;
   background-color: lime;
   padding: 10px;
-  animation: bounce ease 2s;
   cursor: pointer;
 }
+/* reveal name effect */
+
+.name-reveal {
+  cursor: pointer;
+  display: flex;
+  transition: all 0.5s;
+}
+
+.name-reveal:hover span {
+  display: inline-block;
+  max-width: 300px;
+  animation: reveal 2s;
+}
+
+.revealed-text {
+  opacity: 0;
+  max-width: 0;
+  transition: ease-in-out 0.8s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* end of name reveal */
 
 @keyframes bounce {
   0%,
@@ -125,13 +155,6 @@ body {
   padding-top: 20px;
   letter-spacing: 10px;
   animation: fade-in-down 3s;
-}
-
-.reveal-link {
-}
-
-.reveal-link:hover {
-  opacity: 1;
 }
 
 .overflow {
