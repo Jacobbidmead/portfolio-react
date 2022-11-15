@@ -1,44 +1,13 @@
-.links {
-  text-align: center;
-  font-family: Futura;
-  color: black;
-  font-size: 50px;
-  display: flex;
-  flex-direction: column;
-}
-
-.link-container {
-  border-top: solid 1px black;
-  animation: fadein 1.5s;
-  display: grid;
-  grid-template-columns: 1fr 8fr;
-}
-
 .contact-me {
   font-family: Futura;
   font-size: 120px;
   margin: 60px 0px 10px 10px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  color: rgba(255, 0, 0, 0.8);
 }
 
 .gitlink {
   text-decoration: none;
   color: inherit;
   cursor: crosshair;
-}
-
-.fa-github {
-  padding-right: 8px;
-  margin-top: 12%;
-}
-
-.fa-envelope {
-  padding-right: 8px;
-  margin-top: 12%;
-}
-
-.email {
-  text-align: center;
 }
