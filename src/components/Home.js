@@ -27,7 +27,7 @@ class Home extends React.Component {
           <div onClick={(e) => this.toggleShowWelcome(e)}>
             <span className="initial">
               <div className="name-reveal">
-                [ J <span className="revealed-text"> acob</span>&nbsp; -&nbsp; B
+                [ J <span className="revealed-text"> acob</span>&nbsp;- B
                 <span className="revealed-text">idmead</span> &nbsp;]
               </div>
             </span>

@@ -139,25 +139,20 @@
 }
 
 .return-projects {
-  background-color: ;
   width: 15%;
   margin-left: auto;
   padding: 0px 30px 10px 0px;
   text-align: right;
   font-family: Futura;
-  cursor: crosshair;
+  cursor: pointer;
   position: absolute;
-  left: 500px;
-  top: 50px;
-}
-
-.return-projects:hover {
-  color: deeppink;
+  right: 25px;
+  top: 20px;
 }
 
 .project-links {
   text-align: right;
-  cursor: crosshair;
+  cursor: pointer;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 100%;

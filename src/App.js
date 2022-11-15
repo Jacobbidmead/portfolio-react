@@ -150,7 +150,7 @@ class App extends React.Component {
         {this.state.showGoogle ? (
           <Google toggleShowProjects={this.toggleShowProjects} />
         ) : null}
-        <div className="photo-bg">{this.state.showPhotos && <Photos />}</div>
+        {this.state.showPhotos && <Photos />}
       </>
     );
   }

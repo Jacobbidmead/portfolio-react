@@ -5,10 +5,6 @@ class Links extends React.Component {
   render() {
     return (
       <>
-        <div>
-          <h1 className="contact-me">Contact Me.</h1>
-        </div>
-
         <div className="links name-reveal">
           [<i className="fa-solid fa-envelope"></i>
           <span className="email revealed-text">

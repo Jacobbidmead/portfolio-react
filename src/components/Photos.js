@@ -6,7 +6,7 @@ class Photos extends React.Component {
   render() {
     return (
       <>
-        <div>
+        <div className="photo-bg">
           <div className="quote-container">
             <div className="quote1">
               <h1 className="travel">Travel changes you.</h1>

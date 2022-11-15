@@ -16,6 +16,7 @@ html,
 body {
   margin: 0;
   height: 100vh;
+  background-color: #f7f3ea;
 }
 
 ::selection {
@@ -48,7 +49,7 @@ body {
 .name-reveal {
   cursor: pointer;
   display: flex;
-  transition: all 0.5s;
+  transition: all 3s;
 }
 
 .name-reveal:hover span {
@@ -61,7 +62,6 @@ body {
   opacity: 0;
   max-width: 0;
   transition: ease-in-out 0.8s;
-  background-color: ;
 }
 
 @keyframes reveal {
@@ -111,7 +111,7 @@ body {
   text-align: center;
   margin-right: 10%;
   margin-top: 100%;
-  animation: fadein 2s;
+  animation: fadein ease-in 3.5s;
 }
 
 .main-layout {
@@ -130,12 +130,12 @@ body {
 
 .button-style {
   font-family: Futura;
-  font-size: 20px;
+  font-size: 15px;
   color: black;
   text-align: center;
-  margin: 30px 20px 20px 60px;
+  margin: 15px 20px 0px 90px;
   cursor: pointer;
-  padding-top: 20px;
+  padding-top: 39px;
   letter-spacing: 10px;
 }
 
