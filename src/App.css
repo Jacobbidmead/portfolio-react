@@ -17,6 +17,7 @@ body {
   margin: 0;
   height: 100vh;
   background-color: #f7f3ea;
+  font-family: Futura;
 }
 
 ::selection {
@@ -36,12 +37,11 @@ body {
   bottom: 7.8%;
   left: 7.8%;
   font-size: 20px;
-  color: black;
+  color: #f7f3ea;
   font-family: Futura;
   padding: 6px;
   cursor: pointer;
   border-radius: 2px;
-  background-color: rgba(168, 255, 74, 0.8);
 }
 
 /* reveal name effect */
@@ -55,13 +55,13 @@ body {
 .name-reveal:hover span {
   display: inline-block;
   max-width: 300px;
-  animation: reveal 3s;
+  animation: reveal 1s;
 }
 
 .revealed-text {
   opacity: 0;
   max-width: 0;
-  transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.5s;
 }
 
 @keyframes reveal {
@@ -80,7 +80,7 @@ body {
   left: 7.3%;
   top: 18%;
   height: 75%;
-  background-color: cornflowerblue;
+  background-color: deeppink;
   padding-right: 50px;
 }
 
@@ -91,7 +91,6 @@ body {
   background-color: #3350f4;
   right: 7.3%;
   top: 18%;
-
   padding-left: 50px;
 }
 
@@ -111,7 +110,7 @@ body {
   text-align: center;
   margin-right: 10%;
   margin-top: 100%;
-  animation: fadein ease-in 3.5s;
+  animation: fadein ease-in-out 3.5s;
 }
 
 .main-layout {
@@ -131,7 +130,7 @@ body {
 .button-style {
   font-family: Futura;
   font-size: 15px;
-  color: black;
+  color: #f7f3ea;
   text-align: center;
   margin: 50px 0px 0px 35%;
   cursor: pointer;
@@ -139,7 +138,7 @@ body {
   padding: 10px 0px 10px 7px;
   display: flex;
   justify-content: center;
-  background-color: lime;
+  background-color: black;
   width: 32%;
 }
 

@@ -1,6 +1,27 @@
-.about-text {
-  color: black;
+.about-text-left {
+  color: white;
   text-align: center;
+  font-family: Futura;
+  font-size: 40px;
+  margin: 30px 0px 0px 40px;
+  animation: fadein 2s;
+}
+
+b {
+  color: lime;
+}
+
+.about-text-right {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: Futura;
+  margin: 10px 70px 0px 40px;
+  animation: fadein 2s;
+}
+
+.about-paragraph {
+  background-color: black;
 }
 
 .about-box-left {
@@ -8,17 +29,32 @@
   position: absolute;
   left: 7.3%;
   top: 18%;
-  height: 75%;
-  background-color: cornflowerblue;
+  height: 100%;
+  background-color: deeppink;
   padding-right: 50px;
 }
 
 .about-box-right {
   width: 550px;
   position: absolute;
-  height: 75%;
+  height: 100%;
   background-color: #3350f4;
   right: 7.3%;
   top: 18%;
   padding-left: 50px;
+}
+
+.links {
+  background-color: deeppink;
+}
+
+.gitlink {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.fa-github {
+  padding: 2px;
 }
