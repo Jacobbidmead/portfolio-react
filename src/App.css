@@ -11,25 +11,20 @@
     opacity: 1;
   }
 }
-
-html,
+html {
+  height: 100vh;
+}
 body {
   margin: 0;
-  height: 100vh;
   background-color: #f7f3ea;
   font-family: Futura;
+  display: block;
+  height: 100vh;
 }
 
 ::selection {
   color: black;
   background: lime;
-}
-
-.main-display {
-  background-color: #f7f3ea;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .initial {
