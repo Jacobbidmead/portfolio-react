@@ -19,63 +19,62 @@ import {
 } from "react-scroll-motion";
 import "../styles/About.css";
 
+const FadeUp = batch(FadeIn(), Sticky(), Move());
+
 class About extends React.Component {
   render() {
     return (
       <>
-        <div className="about-container">
-          <div className="about-text-left">
-            <ScrollContainer>
-              <ScrollPage>
-                <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-                  <span className="about-paragraph">
-                    Hi. I'm a{" "}
-                    <b>
-                      Full Stack Web Developer with interest in Web/UI Design
-                      and Photography,
-                    </b>{" "}
-                    originally from Suffolk and now based in London.
-                  </span>
-                  <p>
-                    <span className="about-paragraph">
-                      Im currently looking for a junior position as{" "}
-                      <b>Full Stack or Front End Web Developer</b>, whilst
-                      working on a number of personal and freelance projects
-                      that can be viewed in the projects section of this site
-                      and on my <b>GitHub</b> repository.{" "}
-                    </span>
-                  </p>
-                  <p>
-                    <span className="about-paragraph right">
-                      <b>I build my projects using React & Node.js</b>; Im
-                      constantly practicing, watching and reading to advance
-                      skills with the <b>React library & Vanilla JavaScript</b>{" "}
-                    </span>
-                  </p>
-                </Animator>
-              </ScrollPage>
-            </ScrollContainer>
-          </div>
-          <div className="links">
-            <h1>Contact me.</h1>
-            <div className="name-reveal">
-              [<i className="fa-solid fa-envelope"></i>
-              <span className="email revealed-text">
-                jacob.bidmead.fullstack@outlook.com
-              </span>{" "}
-              ]
-            </div>
+        <div className="about-text-left">
+          <ScrollContainer>
+            <ScrollPage page={0}>
+              <Animator animation={batch(MoveOut(-10, 1000))}>
+                <span className="about-paragraph">
+                  Hi. I'm a{" "}
+                  <b>
+                    Full Stack Web Developer with interest in Web/UI Design and
+                    Photography,
+                  </b>{" "}
+                  originally from Suffolk and now based in London.
+                </span>
+              </Animator>
+            </ScrollPage>
 
-            <a
-              href="https://github.com/Jacobbidmead"
-              className="gitlink name-reveal"
-              target="_blank"
-              rel="noreferrer"
-            >
-              [<i className="fa-brands fa-github"></i>
-              <span className="revealed-text">github.com/Jacobbidmead</span>]
-            </a>
-          </div>
+            <ScrollPage page={1}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                <span className="about-paragraph">
+                  <Animator animation={MoveIn(1000, 0)}>
+                    Im currently looking for a junior position as{" "}
+                    <b>Full Stack or Front End Web Developer</b>, whilst working
+                    on a number of personal and freelance projects that can be
+                    viewed in the projects section of this site and on my{" "}
+                    <b>GitHub</b> repository.{" "}
+                  </Animator>
+                </span>
+              </div>
+            </ScrollPage>
+
+            <p>
+              <span className="about-paragraph right">
+                <b>I build my projects using React & Node.js</b>; Im constantly
+                practicing, watching and reading to advance skills with the{" "}
+                <b>React library & Vanilla JavaScript</b>{" "}
+              </span>
+            </p>
+          </ScrollContainer>
+
+          <ScrollContainer>
+            <ScrollPage page={2}>
+              <Animator animation={FadeIn}></Animator>
+            </ScrollPage>
+          </ScrollContainer>
 
           <div className="about-text-right">
             <p>
@@ -102,6 +101,26 @@ class About extends React.Component {
                 <b>Print & Time Based Media.</b>
               </span>
             </p>
+          </div>
+          <div className="links">
+            <h1>Contact me.</h1>
+            <div className="name-reveal">
+              [<i className="fa-solid fa-envelope"></i>
+              <span className="email revealed-text">
+                jacob.bidmead.fullstack@outlook.com
+              </span>{" "}
+              ]
+            </div>
+
+            <a
+              href="https://github.com/Jacobbidmead"
+              className="gitlink name-reveal"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [<i className="fa-brands fa-github"></i>
+              <span className="revealed-text">github.com/Jacobbidmead</span>]
+            </a>
           </div>
         </div>
       </>

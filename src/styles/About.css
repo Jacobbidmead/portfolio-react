@@ -4,12 +4,12 @@
   font-family: Futura;
   font-size: 40px;
   margin: 30px 0px 0px 40px;
-  animation: fadein 2s;
+  border: black 1px solid;
 }
 
 .about-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 b {
@@ -22,7 +22,6 @@ b {
   text-align: center;
   font-family: Futura;
   margin: 10px 70px 0px 40px;
-  animation: fadein 2s;
 }
 
 .about-paragraph {
@@ -30,22 +29,12 @@ b {
 }
 
 .about-box-left {
-  width: 550px;
-  position: absolute;
-  left: 7.3%;
-  top: 18%;
-  height: 100%;
   background-color: deeppink;
   padding-right: 50px;
 }
 
 .about-box-right {
-  width: 550px;
-  position: absolute;
-  height: 100%;
   background-color: #3350f4;
-  right: 7.3%;
-  top: 18%;
   padding-left: 50px;
 }
 
