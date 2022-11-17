@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import Sidebar from "./components/Sidebar.js";
-
 import About from "./components/About.js";
 import Home from "./components/Home.js";
 import Top from "./components/Top.js";

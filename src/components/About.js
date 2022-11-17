@@ -19,16 +19,14 @@ import {
 } from "react-scroll-motion";
 import "../styles/About.css";
 
-const FadeUp = batch(FadeIn(), Sticky(), Move());
-
 class About extends React.Component {
   render() {
     return (
       <>
         <ScrollContainer>
           <ScrollPage page={0}>
-            <div className="about-text-left">
-              <Animator animation={batch(Move(900, 0), FadeOut(100, 0))}>
+            <Animator animation={batch(Move(900, 0), FadeOut(100, 0))}>
+              <div className="about-text-left">
                 <span className="about-paragraph">
                   Hi. I'm a{" "}
                   <b>
@@ -37,8 +35,8 @@ class About extends React.Component {
                   </b>{" "}
                   originally from Suffolk and now based in London.
                 </span>
-              </Animator>
-            </div>
+              </div>
+            </Animator>
           </ScrollPage>
 
           <ScrollPage page={0}>
@@ -48,6 +46,9 @@ class About extends React.Component {
                 justifyContent: "center",
                 alignItems: "center",
                 height: "100%",
+                textAlign: "center",
+                margin: "30px",
+                backgroundColor: "deeppink",
               }}
             >
               <span className="about-paragraph">
@@ -62,18 +63,24 @@ class About extends React.Component {
             </div>
           </ScrollPage>
 
-          <p>
-            <span className="about-paragraph right">
-              <b>I build my projects using React & Node.js</b>; Im constantly
-              practicing, watching and reading to advance skills with the{" "}
-              <b>React library & Vanilla JavaScript</b>{" "}
-            </span>
-          </p>
-        </ScrollContainer>
-
-        <ScrollContainer>
-          <ScrollPage page={2}>
-            <Animator animation={FadeIn}></Animator>
+          <ScrollPage page={1}>
+            <div
+              style={{
+                textAlign: "center",
+                marginTop: "200px",
+              }}
+            >
+              <span className="about-paragraph right">
+                <Animator
+                  animation={batch(FadeOut(100, 0), ZoomIn(), FadeIn())}
+                >
+                  <b>I build my projects using React & Node.js</b>; Im
+                  constantly practicing, watching and reading to advance skills
+                  with the{" "}
+                  <b>React library, Vanilla JavaScript & advanced CSS</b>{" "}
+                </Animator>
+              </span>
+            </div>
           </ScrollPage>
         </ScrollContainer>
 
