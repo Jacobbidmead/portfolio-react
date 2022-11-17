@@ -2,8 +2,7 @@
   color: black;
   text-align: center;
   font-family: Futura;
-  font-size: 40px;
-  margin-top: 200px;
+  font-size: 10px;
 }
 
 b {
@@ -12,15 +11,6 @@ b {
 
 .about-paragraph {
   font-size: 80px;
-}
-
-.about-box-left {
-  background-color: deeppink;
-  padding-right: 50px;
-}
-
-.about-box-right {
-  background-color: #3350f4;
 }
 
 .links {

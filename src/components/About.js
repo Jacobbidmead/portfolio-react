@@ -25,9 +25,16 @@ class About extends React.Component {
       <>
         <ScrollContainer>
           <ScrollPage page={0}>
-            <Animator animation={batch(Move(900, 0), FadeOut(100, 0))}>
-              <div className="about-text-left">
-                <span className="about-paragraph">
+            <Animator
+              animation={batch(Sticky(), Move(3000, 0), FadeOut(100, 0))}
+            >
+              <div
+                style={{
+                  fontSize: "60px",
+                  textAlign: "center",
+                }}
+              >
+                <span>
                   Hi. I'm a{" "}
                   <b>
                     Full Stack Web Developer with interest in Web/UI Design and
@@ -52,7 +59,7 @@ class About extends React.Component {
               }}
             >
               <span className="about-paragraph">
-                <Animator animation={MoveIn(1000, 0)}>
+                <Animator animation={MoveIn(0, 1000, 0, 1100)}>
                   Im currently looking for a junior position as{" "}
                   <b>Full Stack or Front End Web Developer</b>, whilst working
                   on a number of personal and freelance projects that can be
@@ -67,13 +74,11 @@ class About extends React.Component {
             <div
               style={{
                 textAlign: "center",
-                marginTop: "200px",
+                margin: "200px 30px 0px 30px",
               }}
             >
               <span className="about-paragraph right">
-                <Animator
-                  animation={batch(FadeOut(100, 0), ZoomIn(), FadeIn())}
-                >
+                <Animator animation={Move(200, 0)}>
                   <b>I build my projects using React & Node.js</b>; Im
                   constantly practicing, watching and reading to advance skills
                   with the{" "}
@@ -82,34 +87,39 @@ class About extends React.Component {
               </span>
             </div>
           </ScrollPage>
+
+          <ScrollPage>
+            <div
+              style={{
+                textAlign: "center",
+                margin: "0px 30px 0px 30px",
+              }}
+            >
+              <span className="about-paragraph right">
+                <Animator animation={MoveIn(0, 1000, 0, 1100)}>
+                  I completed Tortuga Coders 11 week fullstack coding bootcamp
+                  in Koh Phangan - Thailand in mid October 2022, during the
+                  course I gained extensive experience of{" "}
+                  <b>JavaScript, HTML, CSS, Node.js & React</b>, amoung other
+                  languages, frameworks and libarys.{" "}
+                </Animator>
+              </span>
+            </div>
+          </ScrollPage>
         </ScrollContainer>
 
-        <div className="about-text-right">
-          <p>
-            <span className="about-paragraph right">
-              I completed Tortuga Coders 11 week fullstack coding bootcamp in
-              Koh Phangan - Thailand in mid October 2022, during the course I
-              gained extensive experience of{" "}
-              <b>JavaScript, HTML, CSS, Node.js & React</b>, amoung other
-              languages, frameworks and libarys.{" "}
-            </span>
-          </p>
+        <span className="about-paragraph ">
+          <b>A passionate photographer,</b> Ive documentend my travels in{" "}
+          <b>South America, the USA, Asia, Europe & Australia</b> over the last
+          8 years.
+        </span>
 
-          <p>
-            <span className="about-paragraph ">
-              <b>A passionate photographer,</b> Ive documentend my travels in{" "}
-              <b>South America, the USA, Asia, Europe & Australia</b> over the
-              last 8 years.
-            </span>
-          </p>
-          <p>
-            <span className="about-paragraph last-right">
-              I have a creative background; graduating from{" "}
-              <b>Wimbledon College of Art </b>in 2013, studying{" "}
-              <b>Print & Time Based Media.</b>
-            </span>
-          </p>
-        </div>
+        <span className="about-paragraph last-right">
+          I have a creative background; graduating from{" "}
+          <b>Wimbledon College of Art </b>in 2013, studying{" "}
+          <b>Print & Time Based Media.</b>
+        </span>
+
         <div className="links">
           <h1>Contact me.</h1>
           <div className="name-reveal">
