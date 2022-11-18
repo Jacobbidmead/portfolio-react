@@ -11,6 +11,7 @@
     opacity: 1;
   }
 }
+
 html {
   height: 100vh;
 }
@@ -19,7 +20,6 @@ body {
   margin: 0;
   background-color: #f7f3ea;
   font-family: Futura;
-  display: block;
   height: 100vh;
 }
 
@@ -28,16 +28,28 @@ body {
   background: lime;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+.home-img {
+  object-fit: contain;
+  width: 80%;
+  margin-top: 35px;
+}
+
 .initial {
-  position: absolute;
-  bottom: 7.8%;
-  left: 7.8%;
-  font-size: 20px;
-  color: #f7f3ea;
+  font-size: 100px;
+  color: black;
   font-family: Futura;
   padding: 6px;
   cursor: pointer;
   border-radius: 2px;
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  background-color: lime;
 }
 
 /* reveal name effect */
@@ -70,26 +82,6 @@ body {
   }
 }
 
-.box-left {
-  width: 550px;
-  position: absolute;
-  left: 7.3%;
-  top: 18%;
-  height: 75%;
-  background-color: deeppink;
-  padding-right: 50px;
-}
-
-.box-right {
-  width: 550px;
-  position: absolute;
-  height: 75%;
-  background-color: #3350f4;
-  right: 7.3%;
-  top: 18%;
-  padding-left: 50px;
-}
-
 @keyframes moveRight {
   0% {
     right: -40%;
@@ -97,16 +89,6 @@ body {
   100% {
     right: 7%;
   }
-}
-
-.welcome-name {
-  font-family: Futura;
-  font-size: 80px;
-  margin-bottom: 20px;
-  text-align: center;
-  margin-right: 10%;
-  margin-top: 100%;
-  animation: fadein ease-in-out 3.5s;
 }
 
 .main-layout {

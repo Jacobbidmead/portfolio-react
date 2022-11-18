@@ -26,7 +26,7 @@ class About extends React.Component {
         <ScrollContainer>
           <ScrollPage page={0}>
             <Animator
-              animation={batch(Sticky(), Move(3000, 0), FadeOut(100, 0))}
+              animation={batch(Sticky(), Move(2000, 0), FadeOut(100, 0))}
             >
               <div
                 style={{
