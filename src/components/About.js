@@ -26,12 +26,12 @@ class About extends React.Component {
         <ScrollContainer>
           <ScrollPage page={0}>
             <Animator
-              animation={batch(Sticky(), Move(2000, 0), FadeOut(100, 0))}
+              animation={batch(Sticky(35, 50), MoveOut(0, 100), FadeOut(1, 0))}
             >
               <div
                 style={{
-                  fontSize: "60px",
-                  textAlign: "center",
+                  fontSize: "70px",
+                  marginTop: "120px",
                 }}
               >
                 <span>
@@ -69,6 +69,33 @@ class About extends React.Component {
               </span>
             </div>
           </ScrollPage>
+          <ScrollPage>
+            <Animator animation={batch(StickyOut(35, 67), FadeOut(1, 0))}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "left",
+                  width: "100%",
+                }}
+              >
+                <img
+                  style={{ borderRadius: "20px" }}
+                  className="selfie"
+                  src="images/selfie.png"
+                  alt=""
+                />
+                <span
+                  style={{
+                    marginLeft: "100px",
+                    fontSize: "100px",
+                    color: "deeppink",
+                  }}
+                >
+                  This is me. On a Fjord in Norway.
+                </span>
+              </div>
+            </Animator>
+          </ScrollPage>
 
           <ScrollPage page={1}>
             <div
@@ -78,7 +105,7 @@ class About extends React.Component {
               }}
             >
               <span className="about-paragraph right">
-                <Animator animation={Move(200, 0)}>
+                <Animator animation={batch(Move(200, 0), FadeOut(1, 0))}>
                   <b>I build my projects using React & Node.js</b>; Im
                   constantly practicing, watching and reading to advance skills
                   with the{" "}
@@ -93,6 +120,7 @@ class About extends React.Component {
               style={{
                 textAlign: "center",
                 margin: "0px 30px 0px 30px",
+                backgroundColor: "deeppink",
               }}
             >
               <span className="about-paragraph right">
