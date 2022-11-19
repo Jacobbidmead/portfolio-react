@@ -37,8 +37,8 @@ class About extends React.Component {
                 <span>
                   Hi. I'm a{" "}
                   <b>
-                    Full Stack Web Developer with interest in Web/UI Design and
-                    Photography,
+                    Full Stack Web Developer with an interest in Web/UI Design
+                    and Photography,
                   </b>{" "}
                   originally from Suffolk and now based in London.
                 </span>

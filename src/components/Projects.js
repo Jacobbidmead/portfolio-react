@@ -9,10 +9,6 @@ class Projects extends React.Component {
     return (
       <>
         <div className="bg-fill">
-          <div>
-            <h1 className="header">Projects.</h1>
-          </div>
-
           <div className="project-links">
             {this.props.showMagiKards ? (
               <MagiKards
@@ -20,12 +16,12 @@ class Projects extends React.Component {
                 toggleShowProjects={this.props.toggleShowProjects}
               />
             ) : (
-              <span
+              <div
                 className="project-link"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
               >
                 MagiKards
-              </span>
+              </div>
             )}
 
             {this.props.showAirBnb ? (
@@ -34,12 +30,12 @@ class Projects extends React.Component {
                 toggleShowProjects={this.props.toggleShowProjects}
               />
             ) : (
-              <span
+              <div
                 className="project-link"
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
               >
                 AIRBNB
-              </span>
+              </div>
             )}
 
             {this.props.showGoogle ? (
@@ -48,12 +44,12 @@ class Projects extends React.Component {
                 toggleShowProjects={this.props.toggleShowProjects}
               />
             ) : (
-              <span
+              <div
                 className="project-link"
                 onClick={(e) => this.props.toggleShowGoogle(e)}
               >
                 Google Search
-              </span>
+              </div>
             )}
           </div>
         </div>
