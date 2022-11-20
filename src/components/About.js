@@ -16,14 +16,32 @@ import "../styles/About.css";
 
 class About extends React.Component {
   state = {
-    bgcolor: "deeppink",
-    color: "black",
+    bgColor: "color",
   };
+
+  listenScrollEvent = (e) => {
+    if (window.scrollY > 900) {
+      this.setState({ bgColor: "white" });
+    } else if (window.scrollY > 500) {
+      this.setState({ bgColor: "deeppink" });
+    } else {
+      this.setState({ bgColor: "#f7f3ea" });
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
 
   render() {
     return (
       <>
-        <div>
+        <div
+          style={{
+            backgroundColor: this.state.bgColor,
+            transition: "background-color 0.5s ease",
+          }}
+        >
           <ScrollContainer>
             <ScrollPage>
               <Animator
