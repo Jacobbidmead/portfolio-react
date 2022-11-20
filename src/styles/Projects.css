@@ -165,13 +165,20 @@
 .project-link {
   font-family: Futura;
   font-size: 50px;
-  margin: 50px 100px 0px 20px;
+  margin: 50px 100px 40px 20px;
   background-color: #3350f4;
   width: 25%;
   text-align: left;
   height: 40px;
   padding-top: 100px;
   display: flex;
+}
+
+.project-link:hover {
+  transform: scale(1.2) translateX(50px);
+  transition: 0.7s;
+  background-color: white;
+  color: black;
 }
 
 .arrow {

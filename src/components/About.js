@@ -36,7 +36,7 @@ class About extends React.Component {
               >
                 <span>
                   Hi. I'm a{" "}
-                  <b>
+                  <b style={{ backgroundColor: "black" }}>
                     Full Stack Web Developer with an interest in Web/UI Design
                     and Photography,
                   </b>{" "}
@@ -53,24 +53,32 @@ class About extends React.Component {
                 justifyContent: "center",
                 alignItems: "center",
                 height: "100%",
-                textAlign: "center",
+                textAlign: "left",
                 margin: "30px",
-                backgroundColor: "deeppink",
               }}
             >
               <span className="about-paragraph">
                 <Animator animation={MoveIn(0, 1000, 0, 1100)}>
                   Im currently looking for a junior position as{" "}
-                  <b>Full Stack or Front End Web Developer</b>, whilst working
-                  on a number of personal and freelance projects that can be
-                  viewed in the projects section of this site and on my{" "}
-                  <b>GitHub</b> repository.{" "}
+                  <b style={{ backgroundColor: "black" }}>
+                    Full Stack or Front End Web Developer
+                  </b>
+                  , whilst working on a number of personal and freelance
+                  projects that can be viewed in the projects section of this
+                  site and on my{" "}
+                  <b style={{ backgroundColor: "black" }}>GitHub</b> repository.{" "}
                 </Animator>
               </span>
             </div>
           </ScrollPage>
           <ScrollPage>
-            <Animator animation={batch(StickyOut(35, 67), FadeOut(1, 0))}>
+            <Animator
+              animation={batch(
+                Move(0, 200, 0, 0),
+                StickyOut(35, 67),
+                FadeOut(1, 0)
+              )}
+            >
               <div
                 style={{
                   display: "flex",
@@ -79,20 +87,14 @@ class About extends React.Component {
                 }}
               >
                 <img
-                  style={{ borderRadius: "20px" }}
+                  style={{
+                    borderRadius: "20px",
+                    marginRight: " 100px",
+                  }}
                   className="selfie"
                   src="images/selfie.png"
                   alt=""
                 />
-                <span
-                  style={{
-                    marginLeft: "100px",
-                    fontSize: "100px",
-                    color: "deeppink",
-                  }}
-                >
-                  This is me. On a Fjord in Norway.
-                </span>
               </div>
             </Animator>
           </ScrollPage>
@@ -100,16 +102,21 @@ class About extends React.Component {
           <ScrollPage page={1}>
             <div
               style={{
-                textAlign: "center",
-                margin: "200px 30px 0px 30px",
+                textAlign: "left",
+                margin: "100px 30px 1000px 30px",
+                padding: "80px 30px",
               }}
             >
               <span className="about-paragraph right">
-                <Animator animation={batch(Move(200, 0), FadeOut(1, 0))}>
-                  <b>I build my projects using React & Node.js</b>; Im
-                  constantly practicing, watching and reading to advance skills
-                  with the{" "}
-                  <b>React library, Vanilla JavaScript & advanced CSS</b>{" "}
+                <Animator animation={Move(0, 1000, 0, 100)}>
+                  <b style={{ backgroundColor: "black" }}>
+                    I build my projects using React & Node.js
+                  </b>
+                  ; Im constantly practicing, watching and reading to advance
+                  skills with the{" "}
+                  <b style={{ backgroundColor: "black" }}>
+                    React library, Vanilla JavaScript & advanced CSS
+                  </b>{" "}
                 </Animator>
               </span>
             </div>
@@ -118,12 +125,12 @@ class About extends React.Component {
           <ScrollPage>
             <div
               style={{
-                textAlign: "center",
-                margin: "0px 30px 0px 30px",
-                backgroundColor: "deeppink",
+                textAlign: "left",
+                margin: "100px 30px 0px 30px",
+                fontSize: "70px",
               }}
             >
-              <span className="about-paragraph right">
+              <span>
                 <Animator animation={MoveIn(0, 1000, 0, 1100)}>
                   I completed Tortuga Coders 11 week fullstack coding bootcamp
                   in Koh Phangan - Thailand in mid October 2022, during the
@@ -134,19 +141,40 @@ class About extends React.Component {
               </span>
             </div>
           </ScrollPage>
+
+          <ScrollPage>
+            <div style={{ textAlign: "right", margin: "0px 80px 0px 30px" }}>
+              <span className="about-paragraph ">
+                <Animator animation={Move(0, 1000, 0, 1100)}>
+                  <b>A passionate photographer,</b> Ive documentend my travels
+                  in <b>South America, the USA, Asia, Europe & Australia</b>{" "}
+                  over the last 8 years.
+                </Animator>
+              </span>
+            </div>
+          </ScrollPage>
+
+          <ScrollPage>
+            <div
+              style={{
+                textAlign: "left",
+                margin: "0px 80px 0px 30px",
+                backgroundColor: "deeppink",
+                color: "white",
+                height: "500px",
+                padding: "80px 20px 0px 20px",
+              }}
+            >
+              <span className="about-paragraph last-right">
+                <Animator animation={MoveIn(0, 1000, 0, 1100)}>
+                  I have a creative background; graduating from{" "}
+                  <b>Wimbledon College of Art </b>in 2013, studying{" "}
+                  <b>Print & Time Based Media.</b>
+                </Animator>
+              </span>
+            </div>
+          </ScrollPage>
         </ScrollContainer>
-
-        <span className="about-paragraph ">
-          <b>A passionate photographer,</b> Ive documentend my travels in{" "}
-          <b>South America, the USA, Asia, Europe & Australia</b> over the last
-          8 years.
-        </span>
-
-        <span className="about-paragraph last-right">
-          I have a creative background; graduating from{" "}
-          <b>Wimbledon College of Art </b>in 2013, studying{" "}
-          <b>Print & Time Based Media.</b>
-        </span>
 
         <div className="links">
           <h1>Contact me.</h1>

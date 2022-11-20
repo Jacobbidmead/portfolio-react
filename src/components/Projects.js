@@ -5,10 +5,30 @@ import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
 
 class Projects extends React.Component {
+  state = {
+    changeColor: false,
+  };
+
+  onMouseEnter = () => {
+    this.setState({
+      changeColor: true,
+    });
+  };
+
+  onMouseLeave = () => {
+    this.setState({
+      changeColor: false,
+    });
+  };
+
   render() {
+    const { changeColor } = this.state;
+    const style = changeColor
+      ? { backgroundColor: "deeppink" }
+      : { backgroundColor: "#f7f3ea" };
     return (
       <>
-        <div className="bg-fill">
+        <div className="bg-fill" style={style}>
           <div className="project-links">
             {this.props.showMagiKards ? (
               <MagiKards
@@ -19,6 +39,8 @@ class Projects extends React.Component {
               <div
                 className="project-link"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
               >
                 MagiKards
               </div>

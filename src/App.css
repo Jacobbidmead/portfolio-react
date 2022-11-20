@@ -47,11 +47,12 @@ body {
   padding: 6px;
   border-radius: 2px;
   position: absolute;
-  bottom: 50%;
+  bottom: 60%;
   left: 20%;
   background-color: lime;
   display: flex;
   justify-content: center;
+  text-orientation: vertical-lr;
 }
 
 /* reveal name effect */
