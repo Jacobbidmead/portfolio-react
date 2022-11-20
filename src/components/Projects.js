@@ -24,8 +24,14 @@ class Projects extends React.Component {
   render() {
     const { changeColor } = this.state;
     const style = changeColor
-      ? { backgroundColor: "deeppink" }
-      : { backgroundColor: "#f7f3ea" };
+      ? {
+          transition: "background-color 0.5s ease",
+          backgroundColor: "deeppink",
+        }
+      : {
+          backgroundColor: "#f7f3ea",
+          transition: "background-color 0.5s ease",
+        };
     return (
       <>
         <div className="bg-fill" style={style}>
