@@ -64,7 +64,7 @@ class About extends React.Component {
                   style={{
                     marginTop: "120px",
                     fontSize: "70px",
-                    color: "deeppink",
+                    color: "#5DA399",
                   }}
                 >
                   <span>
@@ -129,7 +129,9 @@ class About extends React.Component {
                 }}
               >
                 <span>
-                  <Animator animation={MoveIn(0, 1000, 0, 1100)}>
+                  <Animator
+                    animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
+                  >
                     I completed Tortuga Coders 11 week fullstack coding bootcamp
                     in Koh Phangan - Thailand in mid October 2022, during the
                     course I gained extensive experience of{" "}
