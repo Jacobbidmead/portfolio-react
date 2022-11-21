@@ -48,6 +48,12 @@ class Projects extends React.Component {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                animate={{
+                  x: 20,
+                  y: 28,
+                  scale: 1,
+                  rotate: 0,
+                }}
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
@@ -62,12 +68,18 @@ class Projects extends React.Component {
                 toggleShowProjects={this.props.toggleShowProjects}
               />
             ) : (
-              <div
+              <motion.div
+                animate={{
+                  x: 20,
+                  y: 28,
+                  scale: 1,
+                  rotate: 0,
+                }}
                 className="project-link"
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
               >
                 AIRBNB
-              </div>
+              </motion.div>
             )}
 
             {this.props.showGoogle ? (

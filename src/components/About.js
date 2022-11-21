@@ -189,23 +189,35 @@ class About extends React.Component {
                 </h1>
               </div>
             </ScrollPage>
-          </ScrollContainer>
 
-          <div className="name-reveal">
-            <i className="fa-solid fa-envelope"></i>
-            jacob.bidmead.fullstack@outlook.com
-          </div>
-          <div>
-            <a
-              href="https://github.com/Jacobbidmead"
-              className="gitlink name-reveal"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-github"></i>
-              github.com/Jacobbidmead
-            </a>
-          </div>
+            <ScrollPage>
+              <div
+                style={{
+                  fontSize: "60px",
+                  textAlign: "center",
+                  margin: "0px 10px 0px 10px",
+                }}
+              >
+                <Animator animation={MoveIn()}>
+                  <i className="fa-solid fa-envelope"></i>
+                  jacob.bidmead.fullstack@outlook.com
+                </Animator>
+              </div>
+              <div>
+                <Animator animation={MoveIn()}>
+                  <a
+                    href="https://github.com/Jacobbidmead"
+                    className="gitlink name-reveal"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                    github.com/Jacobbidmead
+                  </a>
+                </Animator>
+              </div>
+            </ScrollPage>
+          </ScrollContainer>
         </div>
       </>
     );
