@@ -22,8 +22,18 @@ class About extends React.Component {
   listenScrollEvent = (e) => {
     if (window.scrollY < 500) {
       this.setState({ bgColor: "#f7f3ea" });
-    } else if (window.scrollY > 500 && window.scrollY < 1000) {
-      this.setState({ bgColor: "deeppink" });
+    } else if (window.scrollY > 500 && window.scrollY < 1500) {
+      this.setState({ bgColor: "#3350f4" });
+    } else if (window.scrollY > 1500 && window.scrollY < 2500) {
+      this.setState({ bgColor: "rgb(128, 138,2)" });
+    } else if (window.scrollY > 2500 && window.scrollY < 3500) {
+      this.setState({ bgColor: "#FFFD77" });
+    } else if (window.scrollY > 3500 && window.scrollY < 4500) {
+      this.setState({ bgColor: "#FE5F55" });
+    } else if (window.scrollY > 4500 && window.scrollY < 5500) {
+      this.setState({ bgColor: "#898980" });
+    } else if (window.scrollY > 5500 && window.scrollY < 6500) {
+      this.setState({ bgColor: "black" });
     } else {
       this.setState({ bgColor: "#f7f3ea" });
     }
@@ -80,14 +90,10 @@ class About extends React.Component {
                 <span className="about-paragraph">
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
                     Im currently looking for a junior position as{" "}
-                    <b style={{ backgroundColor: "black" }}>
-                      Full Stack or Front End Web Developer
-                    </b>
-                    , whilst working on a number of personal and freelance
-                    projects that can be viewed in the projects section of this
-                    site and on my{" "}
-                    <b style={{ backgroundColor: "black" }}>GitHub</b>{" "}
-                    repository.{" "}
+                    <b>Full Stack or Front End Web Developer</b>, whilst working
+                    on a number of personal and freelance projects that can be
+                    viewed in the projects section of this site and on my{" "}
+                    <b>GitHub</b> repository.{" "}
                   </Animator>
                 </span>
               </div>
@@ -148,7 +154,7 @@ class About extends React.Component {
                 style={{
                   textAlign: "left",
                   margin: "0px 80px 0px 30px",
-                  backgroundColor: "deeppink",
+                  backgroundColor: "black",
                   color: "white",
                   height: "500px",
                   padding: "80px 20px 0px 20px",
