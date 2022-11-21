@@ -3,6 +3,7 @@ import MagiKards from "../components/Projects/MagiKards.js";
 import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
+import { motion } from "framer-motion";
 
 class Projects extends React.Component {
   state = {
@@ -42,14 +43,14 @@ class Projects extends React.Component {
                 toggleShowProjects={this.props.toggleShowProjects}
               />
             ) : (
-              <div
+              <motion.div
                 className="project-link"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
               >
                 MagiKards
-              </div>
+              </motion.div>
             )}
 
             {this.props.showAirBnb ? (

@@ -20,9 +20,9 @@ class About extends React.Component {
   };
 
   listenScrollEvent = (e) => {
-    if (window.scrollY > 900) {
-      this.setState({ bgColor: "white" });
-    } else if (window.scrollY > 500) {
+    if (window.scrollY < 500) {
+      this.setState({ bgColor: "#f7f3ea" });
+    } else if (window.scrollY > 500 && window.scrollY < 1000) {
       this.setState({ bgColor: "deeppink" });
     } else {
       this.setState({ bgColor: "#f7f3ea" });
