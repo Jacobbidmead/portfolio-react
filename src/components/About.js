@@ -55,7 +55,7 @@ class About extends React.Component {
             <ScrollPage>
               <Animator
                 animation={batch(
-                  Sticky(35, 50),
+                  Sticky(85, 50),
                   MoveOut(0, 100),
                   FadeOut(1, 0)
                 )}
@@ -63,8 +63,9 @@ class About extends React.Component {
                 <div
                   style={{
                     marginTop: "120px",
-                    fontSize: "70px",
-                    color: "#5DA399",
+                    fontSize: "40px",
+                    color: "black",
+                    textAlign: "right",
                   }}
                 >
                   <span>
@@ -158,12 +159,13 @@ class About extends React.Component {
               <div
                 style={{
                   textAlign: "left",
-                  margin: "0px 80px 0px 30px",
                   backgroundColor: "black",
                   color: "white",
                   height: "500px",
-                  padding: "80px 40px 0px 40px",
+                  padding: "170px 30px 0px 30px",
                   textAlignLast: "center",
+                  marginLeft: "auto",
+                  marginRight: "auto",
                 }}
               >
                 <span className="about-paragraph last-right">
@@ -180,12 +182,18 @@ class About extends React.Component {
               <div
                 style={{
                   fontSize: "80px",
-                  marginLeft: "40px",
+                  backgroundColor: "deeppink",
+                  color: "#D1DEDE",
+                  width: "50%",
                   textAlign: "center",
+                  marginLeft: "auto",
+                  marginRight: "auto",
                 }}
               >
                 <h1>
-                  <Animator animation={Move()}>Contact me.</Animator>
+                  <Animator animation={MoveIn(0, 3000, 0, 5000)}>
+                    Contact me.
+                  </Animator>
                 </h1>
               </div>
             </ScrollPage>
@@ -195,25 +203,27 @@ class About extends React.Component {
                 style={{
                   fontSize: "60px",
                   textAlign: "center",
-                  margin: "0px 10px 0px 10px",
+                  margin: "250px 10px 0px 10px",
                 }}
               >
-                <Animator animation={MoveIn()}>
+                <Animator animation={MoveIn(0, 1000, 0, 1100)}>
                   <i className="fa-solid fa-envelope"></i>
                   jacob.bidmead.fullstack@outlook.com
                 </Animator>
               </div>
               <div>
-                <Animator animation={MoveIn()}>
-                  <a
-                    href="https://github.com/Jacobbidmead"
-                    className="gitlink name-reveal"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-github"></i>
-                    github.com/Jacobbidmead
-                  </a>
+                <Animator animation={MoveIn(0, 1000, 0, 1100)}>
+                  <div className="gitlink">
+                    <a
+                      href="https://github.com/Jacobbidmead"
+                      className="gitlink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-github"></i>
+                      github.com/Jacobbidmead
+                    </a>
+                  </div>
                 </Animator>
               </div>
             </ScrollPage>
