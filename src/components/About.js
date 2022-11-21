@@ -10,7 +10,6 @@ import {
   MoveIn,
   MoveOut,
   Sticky,
-  StickyOut,
 } from "react-scroll-motion";
 import "../styles/About.css";
 
@@ -142,7 +141,7 @@ class About extends React.Component {
             </ScrollPage>
 
             <ScrollPage>
-              <div style={{ textAlign: "right", margin: "0px 80px 0px 30px" }}>
+              <div style={{ textAlign: "center", margin: "0px 80px 0px 30px" }}>
                 <span className="about-paragraph ">
                   <Animator animation={Move(0, 1000, 0, 1100)}>
                     <b>A passionate photographer,</b> Ive documentend my travels
@@ -161,7 +160,8 @@ class About extends React.Component {
                   backgroundColor: "black",
                   color: "white",
                   height: "500px",
-                  padding: "80px 20px 0px 20px",
+                  padding: "80px 40px 0px 40px",
+                  textAlignLast: "center",
                 }}
               >
                 <span className="about-paragraph last-right">
@@ -173,34 +173,36 @@ class About extends React.Component {
                 </span>
               </div>
             </ScrollPage>
+
+            <ScrollPage>
+              <div
+                style={{
+                  fontSize: "80px",
+                  marginLeft: "40px",
+                  textAlign: "center",
+                }}
+              >
+                <h1>
+                  <Animator animation={Move()}>Contact me.</Animator>
+                </h1>
+              </div>
+            </ScrollPage>
           </ScrollContainer>
 
-          <div
-            style={{
-              fontSize: "80px",
-              marginLeft: "40px",
-              textAlign: "center",
-            }}
-          >
-            <div>
-              <h1>Contact me.</h1>
-            </div>
-
-            <div className="name-reveal">
-              <i className="fa-solid fa-envelope"></i>
-              jacob.bidmead.fullstack@outlook.com
-            </div>
-            <div>
-              <a
-                href="https://github.com/Jacobbidmead"
-                className="gitlink name-reveal"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fa-brands fa-github"></i>
-                github.com/Jacobbidmead
-              </a>
-            </div>
+          <div className="name-reveal">
+            <i className="fa-solid fa-envelope"></i>
+            jacob.bidmead.fullstack@outlook.com
+          </div>
+          <div>
+            <a
+              href="https://github.com/Jacobbidmead"
+              className="gitlink name-reveal"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-github"></i>
+              github.com/Jacobbidmead
+            </a>
           </div>
         </div>
       </>

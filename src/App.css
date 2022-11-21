@@ -41,18 +41,6 @@ body {
 }
 
 .initial {
-  font-size: 60px;
-  color: black;
-  font-family: Futura;
-  padding: 6px;
-  border-radius: 2px;
-  position: absolute;
-  bottom: 60%;
-  left: 20%;
-  background-color: lime;
-  display: flex;
-  justify-content: center;
-  text-orientation: vertical-lr;
 }
 
 /* reveal name effect */
@@ -121,6 +109,7 @@ body {
   justify-content: center;
   background-color: #1c1d21;
   width: 32%;
+  border-radius: 20px;
 }
 
 .overflow {
