@@ -44,7 +44,10 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
-                className="project-link"
+                className="box project-link"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}

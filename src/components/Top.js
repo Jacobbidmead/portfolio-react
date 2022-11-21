@@ -2,16 +2,6 @@ import React from "react";
 import "../styles/Top.css";
 
 class Top extends React.Component {
-  state = {
-    hideTop: true,
-  };
-
-  hideTopBar = () => {
-    this.setState({
-      hideTop: false,
-    });
-  };
-
   render() {
     return (
       <>

@@ -23,17 +23,17 @@ class About extends React.Component {
     if (window.scrollY < 500) {
       this.setState({ bgColor: "#f7f3ea" });
     } else if (window.scrollY > 500 && window.scrollY < 1500) {
-      this.setState({ bgColor: "#3350f4" });
+      this.setState({ bgColor: "#23C4FF" });
     } else if (window.scrollY > 1500 && window.scrollY < 2500) {
-      this.setState({ bgColor: "rgb(128, 138,2)" });
+      this.setState({ bgColor: "#FF10F0" });
     } else if (window.scrollY > 2500 && window.scrollY < 3500) {
       this.setState({ bgColor: "#FFFD77" });
     } else if (window.scrollY > 3500 && window.scrollY < 4500) {
       this.setState({ bgColor: "#FE5F55" });
     } else if (window.scrollY > 4500 && window.scrollY < 5500) {
-      this.setState({ bgColor: "#898980" });
+      this.setState({ bgColor: "#D1DEDE" });
     } else if (window.scrollY > 5500 && window.scrollY < 6500) {
-      this.setState({ bgColor: "black" });
+      this.setState({ bgColor: "#5DA399" });
     } else {
       this.setState({ bgColor: "#f7f3ea" });
     }
@@ -65,6 +65,7 @@ class About extends React.Component {
                   style={{
                     marginTop: "120px",
                     fontSize: "70px",
+                    color: "deeppink",
                   }}
                 >
                   <span>
@@ -82,9 +83,11 @@ class About extends React.Component {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-
+                  fontSize: "50px",
                   textAlign: "left",
                   margin: "30px",
+
+                  padding: "40px",
                 }}
               >
                 <span className="about-paragraph">
@@ -104,6 +107,7 @@ class About extends React.Component {
                   textAlign: "left",
                   margin: "100px 30px 1000px 30px",
                   padding: "80px 30px",
+                  color: "white",
                 }}
               >
                 <span className="about-paragraph right">
@@ -169,39 +173,35 @@ class About extends React.Component {
                 </span>
               </div>
             </ScrollPage>
-
-            <div className="links">
-              <ScrollPage>
-                <Animator animation={batch(Move(0, 1000), StickyOut(10, 10))}>
-                  <h1>Contact me.</h1>
-                </Animator>
-              </ScrollPage>
-              <ScrollPage>
-                <div className="name-reveal">
-                  [<i className="fa-solid fa-envelope"></i>
-                  <span className="email revealed-text">
-                    <Animator animation={Move(0, 1000)}>
-                      jacob.bidmead.fullstack@outlook.com
-                    </Animator>
-                  </span>{" "}
-                  ]
-                </div>
-
-                <a
-                  href="https://github.com/Jacobbidmead"
-                  className="gitlink name-reveal"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  [<i className="fa-brands fa-github"></i>
-                  <span className="revealed-text">
-                    <Animator>github.com/Jacobbidmead</Animator>
-                  </span>
-                  ]
-                </a>
-              </ScrollPage>
-            </div>
           </ScrollContainer>
+
+          <div
+            style={{
+              fontSize: "80px",
+              marginLeft: "40px",
+              textAlign: "center",
+            }}
+          >
+            <div>
+              <h1>Contact me.</h1>
+            </div>
+
+            <div className="name-reveal">
+              <i className="fa-solid fa-envelope"></i>
+              jacob.bidmead.fullstack@outlook.com
+            </div>
+            <div>
+              <a
+                href="https://github.com/Jacobbidmead"
+                className="gitlink name-reveal"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-brands fa-github"></i>
+                github.com/Jacobbidmead
+              </a>
+            </div>
+          </div>
         </div>
       </>
     );
