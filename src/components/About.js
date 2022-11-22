@@ -131,7 +131,7 @@ class About extends React.Component {
                     the&nbsp;&nbsp;&nbsp;
                     <b>
                       React library, &nbsp;&nbsp;&nbsp;Vanilla JavaScript &
-                      &nbsp;&nbsp;&nbsp;&nbsp;advanced CSS
+                      &nbsp;&nbsp;&nbsp;&nbsp;advanced CSS.
                     </b>
                   </Animator>
                 </span>
@@ -151,10 +151,11 @@ class About extends React.Component {
                   <Animator
                     animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                   >
-                    I completed Tortuga Coders 11 week
-                    &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding bootcamp
-                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
-                    &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022
+                    After three months of self study,
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I completed Tortuga
+                    Coders 11 week &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding
+                    bootcamp &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
+                    &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022.
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
                     <div>
                       <a
@@ -243,9 +244,9 @@ class About extends React.Component {
               >
                 <span className="about-paragraph last-right">
                   <Animator animation={MoveIn(0, 1000, 0, 1100)}>
-                    Check out my site
+                    Check out my site.
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
-                    get in touch.
+                    Get in touch.
                   </Animator>
                 </span>
               </div>
