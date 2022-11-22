@@ -8,6 +8,7 @@
   opacity: 0.6;
   margin: 0px 2px 20px 20px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .photo:hover {
@@ -49,8 +50,9 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: black;
+  background-color: rgba(247, 243, 234, 0.1);
   margin: 18px;
+  border-radius: 5px;
 }
 
 .photo-container {
@@ -63,16 +65,11 @@
 .change-photos {
   font-family: Futura;
   font-size: 20px;
-  color: black;
-  cursor: crosshair;
-  padding: 10px 50px;
-  text-align: center;
-  background-color: #94d7f9;
-}
-
-.change-photos:hover {
   color: white;
   cursor: pointer;
+  padding: 10px 50px;
+  text-align: center;
+  background-color: rgba(247, 243, 234, 0.1);
 }
 
 .photo-nav {
@@ -89,6 +86,7 @@
   background-image: cover;
   margin-top: 17px;
   animation: fadein 1.5s;
+  border-radius: 5px;
 }
 
 .img-description {
