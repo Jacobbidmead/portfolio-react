@@ -10,6 +10,8 @@ import {
   MoveIn,
   MoveOut,
   Sticky,
+  StickyIn,
+  StickyOut,
 } from "react-scroll-motion";
 import "../styles/About.css";
 
@@ -23,9 +25,9 @@ class About extends React.Component {
       this.setState({ bgColor: "#f7f3ea" });
     } else if (window.scrollY > 500 && window.scrollY < 1500) {
       this.setState({ bgColor: "#23C4FF" });
-    } else if (window.scrollY > 1500 && window.scrollY < 2500) {
+    } else if (window.scrollY > 1500 && window.scrollY < 2400) {
       this.setState({ bgColor: "#FF10F0" });
-    } else if (window.scrollY > 2500 && window.scrollY < 3500) {
+    } else if (window.scrollY > 2400 && window.scrollY < 3500) {
       this.setState({ bgColor: "#FFFD77" });
     } else if (window.scrollY > 3500 && window.scrollY < 4500) {
       this.setState({ bgColor: "#FE5F55" });
@@ -53,25 +55,24 @@ class About extends React.Component {
         >
           <ScrollContainer>
             <ScrollPage>
-              <Animator
-                animation={batch(
-                  Sticky(85, 50),
-                  MoveOut(0, 100),
-                  FadeOut(1, 0)
-                )}
-              >
+              <Animator animation={batch(MoveOut(0, 100), FadeOut(1, 0))}>
                 <div
                   style={{
-                    marginTop: "120px",
-                    fontSize: "40px",
+                    marginLeft: "30px",
+                    marginTop: "20px",
+                    fontSize: "70px",
                     color: "black",
-                    textAlign: "right",
+                    textAlign: "left",
+                    width: "50%",
                   }}
                 >
                   <span>
-                    Hi. I'm a Full Stack Web Developer with an interest in
-                    Web/UI Design and Photography, originally from Suffolk and
-                    now based in London.
+                    Hi. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Full Stack Web
+                    Developer
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with
+                    an interest in Web/UI &nbsp;&nbsp;&nbsp;Design and
+                    &nbsp;Photography&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based
+                    in &nbsp;&nbsp;South London.
                   </span>
                 </div>
               </Animator>
@@ -92,10 +93,14 @@ class About extends React.Component {
               >
                 <span className="about-paragraph">
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
-                    Im currently looking for a junior position as{" "}
-                    <b>Full Stack or Front End Web Developer</b>, whilst working
-                    on a number of personal and freelance projects that can be
-                    viewed in the projects section of this site and on my{" "}
+                    Im currently looking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for a
+                    junior &nbsp;&nbsp;position as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>a Full Stack or Front End Web Developer</b>,
+                    &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
+                    &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
+                    freelance projects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can
+                    be viewed in the projects section of this
+                    site&nbsp;&nbsp;&nbsp; and on my&nbsp;&nbsp;&nbsp;&nbsp;
                     <b>GitHub</b> repository.{" "}
                   </Animator>
                 </span>
@@ -112,10 +117,18 @@ class About extends React.Component {
               >
                 <span className="about-paragraph right">
                   <Animator animation={MoveIn(0, 1000, 0, 300)}>
-                    <b>I build my projects using React & Node.js</b>; Im
-                    constantly practicing, watching and reading to advance
-                    skills with the{" "}
-                    <b>React library, Vanilla JavaScript & advanced CSS</b>{" "}
+                    <b>
+                      I build my projects using React
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
+                      &nbsp;&nbsp;&nbsp;&nbsp;Node.js
+                    </b>
+                    ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
+                    &nbsp;&nbsp;practicing, watching &nbsp;&nbsp;&nbsp;&nbsp;and
+                    reading to advance my skills with the&nbsp;&nbsp;&nbsp;
+                    <b>
+                      React library, &nbsp;&nbsp;&nbsp;Vanilla JavaScript &
+                      &nbsp;&nbsp;&nbsp;&nbsp;advanced CSS
+                    </b>
                   </Animator>
                 </span>
               </div>
@@ -124,23 +137,102 @@ class About extends React.Component {
             <ScrollPage>
               <div
                 style={{
-                  textAlign: "left",
-                  margin: "100px 30px 0px 30px",
-                  fontSize: "80px",
+                  textAlign: "right",
+                  margin: "100px 50px 0px 40px",
+                  fontSize: "70px",
                 }}
               >
                 <span>
                   <Animator
                     animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                   >
-                    I completed Tortuga Coders 11 week fullstack coding bootcamp
-                    in Koh Phangan - Thailand in mid October 2022, during the
-                    course I gained extensive experience of{" "}
-                    <b>JavaScript, HTML, CSS, Node.js & React</b>, amoung other
-                    languages, frameworks and libarys.{" "}
+                    I completed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tortuga
+                    Coders 11 week fullstack coding bootcamp
+                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
+                    &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022
                   </Animator>
                 </span>
               </div>
+            </ScrollPage>
+            <ScrollPage>
+              <div
+                style={{
+                  textAlign: "center",
+                  fontSize: "50px",
+                  backgroundColor: "black",
+                  color: "black",
+                  fontSize: "80px",
+                }}
+              >
+                <Animator
+                  animation={batch(
+                    MoveIn(0, 1000, 0, 1100),
+                    StickyOut(),
+                    FadeOut(1, 0)
+                  )}
+                >
+                  My Stack
+                </Animator>
+              </div>
+            </ScrollPage>
+            <ScrollPage>
+              <Animator animation={MoveIn(2000, 0, 0, 0)}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontSize: "50px",
+                    marginTop: "100px",
+                    padding: "30px",
+                  }}
+                >
+                  React
+                </div>
+              </Animator>
+              <Animator animation={MoveIn(3000, 0, 0, 0)}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontSize: "50px",
+                    padding: "30px",
+                  }}
+                >
+                  JavaScript
+                </div>
+              </Animator>
+              <Animator animation={MoveIn(-3000, 0, 0, 1100)}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontSize: "50px",
+                    marginBottom: "40px",
+                  }}
+                >
+                  Advanced HTML & CSS
+                </div>
+              </Animator>
+              <Animator animation={MoveIn(1000, 0, 0, 1100)}>
+                <div style={{ textAlign: "center", fontSize: "50px" }}>
+                  MongoDB
+                </div>
+              </Animator>
+              <Animator animation={MoveIn(3000, 0, 0, 1100)}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontSize: "50px",
+                    padding: "30px",
+                  }}
+                >
+                  Node.js
+                </div>
+              </Animator>
+            </ScrollPage>
+            <ScrollPage>
+              <Animator animation={MoveIn(-2000, 0, 0, 1100)}>
+                <div style={{ textAlign: "center", fontSize: "50px" }}>
+                  As well as other languages, frameworks and libarys.{" "}
+                </div>
+              </Animator>
             </ScrollPage>
 
             <ScrollPage>
@@ -195,6 +287,25 @@ class About extends React.Component {
                     Contact me.
                   </Animator>
                 </h1>
+              </div>
+            </ScrollPage>
+            <ScrollPage>
+              <div
+                style={{
+                  textAlign: "left",
+                  fontSize: "30px",
+                  height: "500px",
+                  padding: "170px 30px 0px 30px",
+                  textAlignLast: "center",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              >
+                <span className="about-paragraph last-right">
+                  <Animator animation={MoveIn(0, 1000, 0, 1100)}>
+                    Check out my site, get in touch.
+                  </Animator>
+                </span>
               </div>
             </ScrollPage>
 
