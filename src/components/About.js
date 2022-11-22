@@ -14,27 +14,32 @@ import "../styles/About.css";
 
 class About extends React.Component {
   state = {
-    bgColor: "color",
+    bgColor: "black",
   };
 
   listenScrollEvent = (e) => {
-    if (window.scrollY < 500) {
-      this.setState({ bgColor: "black" });
-    } else if (window.scrollY > 500 && window.scrollY < 1500) {
-      this.setState({ bgColor: "#23C4FF" });
-    } else if (window.scrollY > 1500 && window.scrollY < 2400) {
-      this.setState({ bgColor: "#FF10F0" });
-    } else if (window.scrollY > 2400 && window.scrollY < 3500) {
-      this.setState({ bgColor: "#FFFD77" });
-    } else if (window.scrollY > 3500 && window.scrollY < 4500) {
-      this.setState({ bgColor: "#FE5F55" });
-    } else if (window.scrollY > 4500 && window.scrollY < 5500) {
-      this.setState({ bgColor: "#D1DEDE" });
-    } else if (window.scrollY > 5500 && window.scrollY < 6070) {
-      this.setState({ bgColor: "#5DA399" });
-    } else {
-      this.setState({ bgColor: "black" });
-    }
+    const backgroundBreakpoints = [
+      0, 500, 1500, 2400, 3500, 4500, 5500, 6070, 7000,
+    ];
+    const colorsList = [
+      "black",
+      "#23C4FF",
+      "#FF10F0",
+      "#FFFD77",
+      "#FE5F55",
+      "#D1DEDE",
+      "#5DA399",
+      "black",
+    ];
+
+    backgroundBreakpoints.forEach((breakpoint, position) => {
+      if (
+        window.scrollY > breakpoint &&
+        window.scrollY < backgroundBreakpoints[position + 1]
+      ) {
+        this.setState({ bgColor: colorsList[position] });
+      }
+    });
   };
 
   componentDidMount() {
