@@ -9,14 +9,12 @@ const TiltComponent = () => {
       tiltMaxAngleX={10}
       tiltMaxAngleY={10}
       perspective={1000}
-      glareColor={""}
+      glareColor={"red"}
     >
       <div className="tiltComponent">
         <div>JACOB BIDMEAD</div>
         <div>WEB DEVELOPER</div>
         <div>+447960446892</div>
-        <div>JACOB.BIDMEAD</div>
-        <div>@FULLSTACK.COM</div>
       </div>
     </Tilt>
   );

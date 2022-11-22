@@ -74,7 +74,7 @@ class About extends React.Component {
                     Developer
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with
                     an interest in Web/UI &nbsp;&nbsp;&nbsp;Design and
-                    &nbsp;Photography&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based
+                    &nbsp;Photography&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based,
                     in &nbsp;&nbsp;South London.
                   </span>
                 </div>
@@ -87,22 +87,21 @@ class About extends React.Component {
                   display: "flex",
                   justifyContent: "right",
                   alignItems: "center",
-                  fontSize: "20px",
+                  fontSize: "50px",
                   textAlign: "right",
-
                   width: "50%",
-
                   padding: "40px",
+                  marginLeft: "40%",
                 }}
               >
                 <span className="about-paragraph">
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
-                    Im looking for a junior &nbsp;&nbsp;position
+                    Im looking for a junior position
                     as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <b>a Full Stack or Front End Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
-                    freelance projects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can
+                    freelance projects, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can
                     be viewed in the projects section of this
                     site&nbsp;&nbsp;&nbsp; and on my&nbsp;&nbsp;&nbsp;&nbsp;
                     <b>GitHub</b> repository.{" "}
@@ -114,21 +113,22 @@ class About extends React.Component {
               <div
                 style={{
                   textAlign: "left",
-                  margin: "100px 30px 1000px 30px",
+                  margin: "100px 30px 0px 30%",
                   padding: "80px 30px",
                   color: "white",
+                  fontSize: "50px",
                 }}
               >
                 <span className="about-paragraph right">
                   <Animator animation={MoveIn(0, 1000, 0, 300)}>
                     <b>
-                      I build my projects using React
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
+                      I build my projects using React &
                       &nbsp;&nbsp;&nbsp;&nbsp;Node.js
                     </b>
                     ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
-                    &nbsp;&nbsp;practicing, watching &nbsp;&nbsp;&nbsp;&nbsp;and
-                    reading to advance my skills with the&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;practicing, watching and reading
+                    &nbsp;&nbsp;&nbsp;&nbsp; to advance my skills with
+                    the&nbsp;&nbsp;&nbsp;
                     <b>
                       React library, &nbsp;&nbsp;&nbsp;Vanilla JavaScript &
                       &nbsp;&nbsp;&nbsp;&nbsp;advanced CSS
@@ -142,8 +142,9 @@ class About extends React.Component {
               <div
                 style={{
                   textAlign: "left",
-                  margin: "100px 50px 0px 40px",
-                  fontSize: "70px",
+                  margin: "100px 50px 0px 80px",
+                  fontSize: "50px",
+                  width: "40%",
                 }}
               >
                 <span>
@@ -154,42 +155,40 @@ class About extends React.Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding bootcamp
                     &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
                     &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                    <div>
+                      <a
+                        style={{ textDecoration: "none", color: " black" }}
+                        href="https://tortugacoders.com/certificates/08/jacob-bidmead"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Click me.
+                      </a>
+                    </div>
                   </Animator>
                 </span>
               </div>
             </ScrollPage>
+
             <ScrollPage>
               <div
                 style={{
                   textAlign: "center",
+                  margin: "100px 80px 0px 10%",
                   fontSize: "50px",
-                  color: "black",
-                  fontSize: "80px",
+                  width: "80%",
+                  height: " 500px",
+                  backgroundColor: "black",
+                  color: "#FE5F55",
+                  padding: "10px 20px",
+                  borderRadius: "30px",
                 }}
               >
-                <Animator
-                  animation={batch(
-                    MoveIn(0, 1000, 0, 1100),
-
-                    FadeOut(1, 0)
-                  )}
-                >
-                  <a
-                    style={{ textDecoration: "none", color: " black" }}
-                    href="https://tortugacoders.com/certificates/08/jacob-bidmead"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Click me.
-                  </a>
-                </Animator>
-              </div>
-            </ScrollPage>
-
-            <ScrollPage>
-              <div style={{ textAlign: "center", margin: "0px 80px 0px 30px" }}>
                 <span className="about-paragraph ">
-                  <Animator animation={Move(0, 1000, 0, 1100)}>
+                  <Animator
+                    animation={batch(Move(0, 1000, 0, 1100), FadeOut(1, 0))}
+                  >
                     <b>&nbsp;A passionate photographer,</b>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ive documentend my
                     travels in&nbsp;&nbsp;&nbsp;&nbsp;{" "}
@@ -209,6 +208,9 @@ class About extends React.Component {
                   textAlign: "left",
                   padding: "80px 50px 80px 50px",
                   color: "white",
+                  fontSize: "50px",
+                  width: "50%",
+                  marginLeft: "40%",
                 }}
               >
                 <span className="about-paragraph last-right">
@@ -229,14 +231,14 @@ class About extends React.Component {
               <div
                 style={{
                   textAlign: "left",
-                  fontSize: "30px",
+                  fontSize: "40px",
 
                   padding: "350px 30px 0px 30px",
                   textAlignLast: "center",
                   marginLeft: "auto",
                   marginRight: "auto",
 
-                  color: "white",
+                  color: "black",
                 }}
               >
                 <span className="about-paragraph last-right">
@@ -255,7 +257,7 @@ class About extends React.Component {
                   fontSize: "60px",
                   textAlign: "center",
                   margin: "250px 10px 0px 10px",
-                  color: "white",
+                  color: "black",
                 }}
               >
                 <Animator animation={MoveIn(0, 1000, 0, 1100)}>
