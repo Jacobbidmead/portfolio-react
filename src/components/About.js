@@ -96,8 +96,8 @@ class About extends React.Component {
               >
                 <span className="about-paragraph">
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
-                    Im currently looking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for a
-                    junior &nbsp;&nbsp;position as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Im looking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for a junior
+                    &nbsp;&nbsp;position as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <b>a Full Stack or Front End Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
@@ -150,8 +150,8 @@ class About extends React.Component {
                     animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                   >
                     I completed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tortuga
-                    Coders 11 week fullstack coding bootcamp
-                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
+                    Coders 11 week &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding
+                    bootcamp &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
                     &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022
                   </Animator>
                 </span>
@@ -191,30 +191,41 @@ class About extends React.Component {
                 <div
                   className="stack"
                   style={{
-                    textAlign: "left",
+                    textAlign: "center",
                     backgroundColor: "#23C4FF",
                   }}
                 >
-                  React
+                  MyStack = {"["}
                 </div>
               </Animator>
-              <Animator animation={MoveIn(-3000, 0, 0, 1100)}>
+              <Animator
+                animation={batch(MoveIn(-2000, 0, 0, 1100), FadeOut(1, 0))}
+              >
                 <div
                   className="stack"
                   style={{
                     textAlign: "center",
-                    backgroundColor: "#FE5F55",
+                    backgroundColor: "#23C4FF",
                   }}
                 >
                   JavaScript
+                </div>
+              </Animator>
+              <Animator animation={MoveIn(3000, 0, 0, 1100)}>
+                <div
+                  className="stack"
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  React
                 </div>
               </Animator>
               <Animator animation={MoveIn(2000, 0, 0, 1100)}>
                 <div
                   className="stack"
                   style={{
-                    textAlign: "right",
-                    backgroundColor: "#FF10F0",
+                    textAlign: "center",
                   }}
                 >
                   HTML & CSS
@@ -227,21 +238,20 @@ class About extends React.Component {
                   className="stack"
                   style={{
                     textAlign: "center",
-                    backgroundColor: "#FFFD77",
                   }}
                 >
                   MongoDB
                 </div>
               </Animator>
-              <Animator animation={MoveIn(3000, 0, 0, 1100)}>
+              <Animator animation={MoveIn(3000, 900, 0, 0)}>
                 <div
                   className="stack"
                   style={{
-                    textAlign: "left",
+                    textAlign: "center",
                     backgroundColor: "#23C4FF",
                   }}
                 >
-                  Node.js
+                  Node.js {"]"}
                 </div>
               </Animator>
             </ScrollPage>
@@ -258,7 +268,7 @@ class About extends React.Component {
                 <span className="about-paragraph ">
                   <Animator animation={Move(0, 1000, 0, 1100)}>
                     <b>
-                      &nbsp;&nbsp;&nbsp;&nbsp;A passionate
+                      &nbsp;A passionate
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photographer,
                     </b>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ive documentend my

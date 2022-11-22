@@ -16,4 +16,5 @@
   cursor: pointer;
   margin: 15px 40px 0px 0px;
   animation: fade-in-down 3s;
+  color: white;
 }
