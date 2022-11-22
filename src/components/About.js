@@ -85,19 +85,20 @@ class About extends React.Component {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "right",
                   alignItems: "center",
-                  fontSize: "50px",
-                  textAlign: "left",
-                  margin: "30px",
+                  fontSize: "20px",
+                  textAlign: "right",
+
+                  width: "50%",
 
                   padding: "40px",
                 }}
               >
                 <span className="about-paragraph">
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
-                    Im looking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for a junior
-                    &nbsp;&nbsp;position as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Im looking for a junior &nbsp;&nbsp;position
+                    as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <b>a Full Stack or Front End Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
@@ -149,9 +150,9 @@ class About extends React.Component {
                   <Animator
                     animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                   >
-                    I completed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tortuga
-                    Coders 11 week &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding
-                    bootcamp &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
+                    I completed Tortuga Coders 11 week
+                    &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding bootcamp
+                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
                     &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022
                   </Animator>
                 </span>
@@ -184,93 +185,12 @@ class About extends React.Component {
                 </Animator>
               </div>
             </ScrollPage>
-            <ScrollPage>
-              <Animator
-                animation={batch(MoveIn(-2000, 0, 0, 1100), FadeOut(1, 0))}
-              >
-                <div
-                  className="stack"
-                  style={{
-                    textAlign: "center",
-                    backgroundColor: "#23C4FF",
-                  }}
-                >
-                  MyStack = {"["}
-                </div>
-              </Animator>
-              <Animator
-                animation={batch(MoveIn(-2000, 0, 0, 1100), FadeOut(1, 0))}
-              >
-                <div
-                  className="stack"
-                  style={{
-                    textAlign: "center",
-                    backgroundColor: "#23C4FF",
-                  }}
-                >
-                  JavaScript
-                </div>
-              </Animator>
-              <Animator animation={MoveIn(3000, 0, 0, 1100)}>
-                <div
-                  className="stack"
-                  style={{
-                    textAlign: "center",
-                  }}
-                >
-                  React
-                </div>
-              </Animator>
-              <Animator animation={MoveIn(2000, 0, 0, 1100)}>
-                <div
-                  className="stack"
-                  style={{
-                    textAlign: "center",
-                  }}
-                >
-                  HTML & CSS
-                </div>
-              </Animator>
-              <Animator
-                animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
-              >
-                <div
-                  className="stack"
-                  style={{
-                    textAlign: "center",
-                  }}
-                >
-                  MongoDB
-                </div>
-              </Animator>
-              <Animator animation={MoveIn(3000, 900, 0, 0)}>
-                <div
-                  className="stack"
-                  style={{
-                    textAlign: "center",
-                    backgroundColor: "#23C4FF",
-                  }}
-                >
-                  Node.js {"]"}
-                </div>
-              </Animator>
-            </ScrollPage>
-            <ScrollPage>
-              <Animator animation={MoveIn(-2000, 0, 0, 1100)}>
-                <div style={{ textAlign: "center", fontSize: "50px" }}>
-                  As well as other languages, frameworks and libarys.{" "}
-                </div>
-              </Animator>
-            </ScrollPage>
 
             <ScrollPage>
               <div style={{ textAlign: "center", margin: "0px 80px 0px 30px" }}>
                 <span className="about-paragraph ">
                   <Animator animation={Move(0, 1000, 0, 1100)}>
-                    <b>
-                      &nbsp;A passionate
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photographer,
-                    </b>
+                    <b>&nbsp;A passionate photographer,</b>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ive documentend my
                     travels in&nbsp;&nbsp;&nbsp;&nbsp;{" "}
                     <b>
@@ -310,12 +230,12 @@ class About extends React.Component {
                 style={{
                   textAlign: "left",
                   fontSize: "30px",
-                  height: "600px",
+
                   padding: "350px 30px 0px 30px",
                   textAlignLast: "center",
                   marginLeft: "auto",
                   marginRight: "auto",
-                  backgroundColor: "deeppink",
+
                   color: "white",
                 }}
               >

@@ -130,3 +130,15 @@ body {
 .links-bg {
   background-color: #f7f3ea;
 }
+
+#background {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
