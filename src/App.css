@@ -18,7 +18,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #f7f3ea;
+  background-color: black;
   font-family: Futura;
   height: 100vh;
 }
@@ -99,7 +99,7 @@ body {
 .button-style {
   font-family: Futura;
   font-size: 15px;
-  color: black;
+  color: #f7f3ea;
   text-align: center;
   margin: 50px 0px 0px 35%;
   cursor: pointer;
@@ -109,6 +109,7 @@ body {
   justify-content: center;
   width: 32%;
   border-radius: 20px;
+  background-color: rgba(247, 243, 234, 0.1);
 }
 
 .overflow {

@@ -19,7 +19,7 @@ class Home extends React.Component {
                 top: "185px",
                 height: "90%",
                 fontSize: "85px",
-                color: "black",
+                color: "#fffcda",
               }}
             >
               JACOB BIDMEAD

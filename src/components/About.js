@@ -9,9 +9,6 @@ import {
   Move,
   MoveIn,
   MoveOut,
-  Sticky,
-  StickyIn,
-  StickyOut,
 } from "react-scroll-motion";
 import "../styles/About.css";
 
@@ -22,7 +19,7 @@ class About extends React.Component {
 
   listenScrollEvent = (e) => {
     if (window.scrollY < 500) {
-      this.setState({ bgColor: "#f7f3ea" });
+      this.setState({ bgColor: "black" });
     } else if (window.scrollY > 500 && window.scrollY < 1500) {
       this.setState({ bgColor: "#23C4FF" });
     } else if (window.scrollY > 1500 && window.scrollY < 2400) {
@@ -33,10 +30,10 @@ class About extends React.Component {
       this.setState({ bgColor: "#FE5F55" });
     } else if (window.scrollY > 4500 && window.scrollY < 5500) {
       this.setState({ bgColor: "#D1DEDE" });
-    } else if (window.scrollY > 5500 && window.scrollY < 6500) {
+    } else if (window.scrollY > 5500 && window.scrollY < 6070) {
       this.setState({ bgColor: "#5DA399" });
     } else {
-      this.setState({ bgColor: "#f7f3ea" });
+      this.setState({ bgColor: "black" });
     }
   };
 
@@ -64,6 +61,7 @@ class About extends React.Component {
                     color: "black",
                     textAlign: "left",
                     width: "50%",
+                    color: "#f7f3ea",
                   }}
                 >
                   <span>
@@ -137,7 +135,7 @@ class About extends React.Component {
             <ScrollPage>
               <div
                 style={{
-                  textAlign: "right",
+                  textAlign: "left",
                   margin: "100px 50px 0px 40px",
                   fontSize: "70px",
                 }}
@@ -159,7 +157,6 @@ class About extends React.Component {
                 style={{
                   textAlign: "center",
                   fontSize: "50px",
-                  backgroundColor: "black",
                   color: "black",
                   fontSize: "80px",
                 }}
@@ -167,60 +164,76 @@ class About extends React.Component {
                 <Animator
                   animation={batch(
                     MoveIn(0, 1000, 0, 1100),
-                    StickyOut(),
+
                     FadeOut(1, 0)
                   )}
                 >
-                  My Stack
+                  <a
+                    style={{ textDecoration: "none", color: " black" }}
+                    href="https://tortugacoders.com/certificates/08/jacob-bidmead"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Click me.
+                  </a>
                 </Animator>
               </div>
             </ScrollPage>
             <ScrollPage>
-              <Animator animation={MoveIn(2000, 0, 0, 0)}>
+              <Animator
+                animation={batch(MoveIn(-2000, 0, 0, 1100), FadeOut(1, 0))}
+              >
                 <div
+                  className="stack"
                   style={{
-                    textAlign: "center",
-                    fontSize: "50px",
-                    marginTop: "100px",
-                    padding: "30px",
+                    textAlign: "left",
+                    backgroundColor: "#23C4FF",
                   }}
                 >
                   React
                 </div>
               </Animator>
-              <Animator animation={MoveIn(3000, 0, 0, 0)}>
+              <Animator animation={MoveIn(-3000, 0, 0, 1100)}>
                 <div
+                  className="stack"
                   style={{
                     textAlign: "center",
-                    fontSize: "50px",
-                    padding: "30px",
+                    backgroundColor: "#FE5F55",
                   }}
                 >
                   JavaScript
                 </div>
               </Animator>
-              <Animator animation={MoveIn(-3000, 0, 0, 1100)}>
+              <Animator animation={MoveIn(2000, 0, 0, 1100)}>
                 <div
+                  className="stack"
                   style={{
-                    textAlign: "center",
-                    fontSize: "50px",
-                    marginBottom: "40px",
+                    textAlign: "right",
+                    backgroundColor: "#FF10F0",
                   }}
                 >
-                  Advanced HTML & CSS
+                  HTML & CSS
                 </div>
               </Animator>
-              <Animator animation={MoveIn(1000, 0, 0, 1100)}>
-                <div style={{ textAlign: "center", fontSize: "50px" }}>
+              <Animator
+                animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
+              >
+                <div
+                  className="stack"
+                  style={{
+                    textAlign: "center",
+                    backgroundColor: "#FFFD77",
+                  }}
+                >
                   MongoDB
                 </div>
               </Animator>
               <Animator animation={MoveIn(3000, 0, 0, 1100)}>
                 <div
+                  className="stack"
                   style={{
-                    textAlign: "center",
-                    fontSize: "50px",
-                    padding: "30px",
+                    textAlign: "left",
+                    backgroundColor: "#23C4FF",
                   }}
                 >
                   Node.js
@@ -239,9 +252,17 @@ class About extends React.Component {
               <div style={{ textAlign: "center", margin: "0px 80px 0px 30px" }}>
                 <span className="about-paragraph ">
                   <Animator animation={Move(0, 1000, 0, 1100)}>
-                    <b>A passionate photographer,</b> Ive documentend my travels
-                    in <b>South America, the USA, Asia, Europe & Australia</b>{" "}
-                    over the last 8 years.
+                    <b>
+                      &nbsp;&nbsp;&nbsp;&nbsp;A passionate
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photographer,
+                    </b>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ive documentend my
+                    travels in&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                    <b>
+                      South America, &nbsp;&nbsp;&nbsp;&nbsp;the USA, Asia,
+                      Europe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; & Australia
+                    </b>{" "}
+                    over the last &nbsp;&nbsp;&nbsp;&nbsp;8 years.
                   </Animator>
                 </span>
               </div>
@@ -251,59 +272,43 @@ class About extends React.Component {
               <div
                 style={{
                   textAlign: "left",
-                  backgroundColor: "black",
+                  padding: "80px 50px 80px 50px",
                   color: "white",
-                  height: "500px",
-                  padding: "170px 30px 0px 30px",
-                  textAlignLast: "center",
-                  marginLeft: "auto",
-                  marginRight: "auto",
                 }}
               >
                 <span className="about-paragraph last-right">
                   <Animator animation={MoveIn(0, 1000, 0, 1100)}>
-                    I have a creative background; graduating from{" "}
-                    <b>Wimbledon College of Art </b>in 2013, studying{" "}
-                    <b>Print & Time Based Media.</b>
+                    I have a creative background;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graduating
+                    from &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Wimbledon College of Art </b>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in 2013,
+                    studying{" "}
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;Print & Time Based Media.</b>
                   </Animator>
                 </span>
               </div>
             </ScrollPage>
 
-            <ScrollPage>
-              <div
-                style={{
-                  fontSize: "80px",
-                  backgroundColor: "deeppink",
-                  color: "#D1DEDE",
-                  width: "50%",
-                  textAlign: "center",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                }}
-              >
-                <h1>
-                  <Animator animation={MoveIn(0, 3000, 0, 5000)}>
-                    Contact me.
-                  </Animator>
-                </h1>
-              </div>
-            </ScrollPage>
             <ScrollPage>
               <div
                 style={{
                   textAlign: "left",
                   fontSize: "30px",
-                  height: "500px",
-                  padding: "170px 30px 0px 30px",
+                  height: "600px",
+                  padding: "350px 30px 0px 30px",
                   textAlignLast: "center",
                   marginLeft: "auto",
                   marginRight: "auto",
+                  backgroundColor: "deeppink",
+                  color: "white",
                 }}
               >
                 <span className="about-paragraph last-right">
                   <Animator animation={MoveIn(0, 1000, 0, 1100)}>
-                    Check out my site, get in touch.
+                    Check out my site
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+                    get in touch.
                   </Animator>
                 </span>
               </div>
@@ -315,6 +320,7 @@ class About extends React.Component {
                   fontSize: "60px",
                   textAlign: "center",
                   margin: "250px 10px 0px 10px",
+                  color: "white",
                 }}
               >
                 <Animator animation={MoveIn(0, 1000, 0, 1100)}>
