@@ -4,6 +4,17 @@ import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
 import { motion } from "framer-motion";
+import {
+  Animator,
+  ScrollContainer,
+  ScrollPage,
+  batch,
+  Fade,
+  FadeOut,
+  Move,
+  MoveIn,
+  MoveOut,
+} from "react-scroll-motion";
 
 let backgroundColors = [
   "#23C4FF",
@@ -21,12 +32,13 @@ const random = () => {
 class Projects extends React.Component {
   state = {
     changeColor: false,
-    backgroundColor: random(),
+    backgroundColor: "black",
   };
 
   onMouseEnter = () => {
     this.setState({
       changeColor: true,
+      backgroundColor: random(),
     });
   };
 
@@ -92,6 +104,8 @@ class Projects extends React.Component {
               <div
                 className="project-link"
                 onClick={(e) => this.props.toggleShowGoogle(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
               >
                 Google Search
               </div>
