@@ -10,18 +10,9 @@ import {
   batch,
   FadeOut,
   MoveOut,
-  MoveIn,
-  Fade,
 } from "react-scroll-motion";
 
-let backgroundColors = [
-  "#23C4FF",
-  "#FF10F0",
-  "#FFFD77",
-  "#FE5F55",
-  "#D1DEDE",
-  "#5DA399",
-];
+let backgroundColors = ["#23C4FF", "#FF10F0", "#FFFD77", "#FE5F55"];
 
 const random = () => {
   return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];

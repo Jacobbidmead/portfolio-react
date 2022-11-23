@@ -129,21 +129,16 @@
 }
 
 .project-links {
-  text-align: right;
   cursor: pointer;
-  display: grid;
-  grid-template-rows: 1fr;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-
-  background-color: black;
+  margin-top: auto;
 }
 
 .project-link {
   font-family: Futura;
   font-size: 60px;
-  margin: 60px 100px 0px 0px;
   background-color: rgba(247, 243, 234, 0.1);
   width: 25%;
   text-align: center;
@@ -152,7 +147,7 @@
   display: flex;
   color: white;
   border-radius: 10px;
-  align-self: flex-end;
+  margin-bottom: 120px;
 }
 
 .project-link:hover {
@@ -167,6 +162,7 @@
 
 .bg-fill {
   background-color: black;
-
+  margin-top: auto;
+  display: flex;
   height: 100vh;
 }
