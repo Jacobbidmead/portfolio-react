@@ -10,6 +10,29 @@ class Projects extends React.Component {
     changeColor: false,
   };
 
+  shuffleColors = (e) => {
+    let colors = [
+      "#23C4FF",
+      "#FF10F0",
+      "#FFFD77",
+      "#FE5F55",
+      "#D1DEDE",
+      "#5DA399",
+    ];
+    let currentIndex = colors.length,
+      randomIndex;
+
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [colors[currentIndex], colors[randomIndex]] = [
+        colors[randomIndex],
+        colors[currentIndex],
+      ];
+    }
+  };
+
   onMouseEnter = () => {
     this.setState({
       changeColor: true,
