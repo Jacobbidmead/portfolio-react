@@ -30,28 +30,27 @@ class Projects extends React.Component {
           backgroundColor: "deeppink",
         }
       : {
-          backgroundColor: "#f7f3ea",
+          backgroundColor: "black",
           transition: "background-color 0.5s ease",
         };
     return (
       <>
         <div className="bg-fill" style={style}>
-          <div className="project-links">
+          <div className="project-links" style={style}>
             {this.props.showMagiKards ? (
               <MagiKards
                 toggleShowMagiKards={this.props.toggleShowMagiKards}
                 toggleShowProjects={this.props.toggleShowProjects}
               />
             ) : (
-              <motion.div
+              <div
                 className="box project-link"
-                whileTap={{ scale: 0.9 }}
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
               >
                 MagiKards
-              </motion.div>
+              </div>
             )}
 
             {this.props.showAirBnb ? (
@@ -63,6 +62,8 @@ class Projects extends React.Component {
               <motion.div
                 className="project-link"
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
               >
                 AIRBNB
               </motion.div>

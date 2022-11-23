@@ -98,7 +98,7 @@ class About extends React.Component {
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
                     Im looking for a junior position
                     as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <b>a Full Stack or Front End Web Developer</b>,
+                    <b>a Full Stack/ Front End Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
                     freelance projects, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can
@@ -112,7 +112,7 @@ class About extends React.Component {
             <ScrollPage>
               <div
                 style={{
-                  textAlign: "left",
+                  textAlign: "right",
                   margin: "100px 30px 0px 30%",
                   padding: "80px 30px",
                   color: "white",
@@ -126,7 +126,7 @@ class About extends React.Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;Node.js
                     </b>
                     ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
-                    &nbsp;&nbsp;practicing, watching and reading
+                    &nbsp;&nbsp;practicing, watching and reading;
                     &nbsp;&nbsp;&nbsp;&nbsp; to advance my skills with
                     the&nbsp;&nbsp;&nbsp;
                     <b>
@@ -156,8 +156,8 @@ class About extends React.Component {
                     Coders 11 week &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding
                     bootcamp &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
                     &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022.
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-                    <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div style={{ marginTop: "50px", fontSize: "26px" }}>
                       <a
                         style={{ textDecoration: "none", color: " black" }}
                         href="https://tortugacoders.com/certificates/08/jacob-bidmead"
@@ -175,31 +175,38 @@ class About extends React.Component {
             <ScrollPage>
               <div
                 style={{
-                  textAlign: "center",
-                  margin: "100px 80px 0px 10%",
-                  fontSize: "50px",
-                  width: "80%",
-                  height: " 500px",
-                  backgroundColor: "black",
-                  color: "#FE5F55",
-                  padding: "10px 20px",
-                  borderRadius: "30px",
+                  display: "flex",
+                  justifyContent: "center",
+                  marginTop: "150px",
                 }}
               >
-                <span className="about-paragraph ">
-                  <Animator
-                    animation={batch(Move(0, 1000, 0, 1100), FadeOut(1, 0))}
-                  >
-                    <b>&nbsp;A passionate photographer,</b>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ive documentend my
-                    travels in&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-                    <b>
-                      South America, &nbsp;&nbsp;&nbsp;&nbsp;the USA, Asia,
-                      Europe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; & Australia
-                    </b>{" "}
-                    over the last &nbsp;&nbsp;&nbsp;&nbsp;8 years.
-                  </Animator>
-                </span>
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontSize: "50px",
+                    width: "80%",
+                    height: " 500px",
+                    backgroundColor: "black",
+                    color: "#FE5F55",
+                    padding: "10px 20px",
+                    borderRadius: "30px",
+                  }}
+                >
+                  <span className="about-paragraph ">
+                    <Animator
+                      animation={batch(Move(0, 1000, 0, 1100), FadeOut(1, 0))}
+                    >
+                      <b>&nbsp;A passionate photographer,</b>
+                      &nbsp;Ive documentend my travels
+                      in&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                      <b>
+                        South America, &nbsp;the USA, &nbsp;&nbsp;Asia,
+                        Europe&nbsp;&nbsp; & &nbsp;&nbsp;Australia
+                      </b>{" "}
+                      over the last 8 years.
+                    </Animator>
+                  </span>
+                </div>
               </div>
             </ScrollPage>
 
@@ -245,7 +252,7 @@ class About extends React.Component {
                 <span className="about-paragraph last-right">
                   <Animator animation={MoveIn(0, 1000, 0, 1100)}>
                     Check out my site.
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Get in touch.
                   </Animator>
                 </span>

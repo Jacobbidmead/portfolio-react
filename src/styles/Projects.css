@@ -165,3 +165,7 @@
 .arrow {
   width: 15px;
 }
+
+.bg-fill {
+  background-color: black;
+}
