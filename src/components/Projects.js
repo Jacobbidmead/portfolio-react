@@ -5,7 +5,7 @@ import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
 import { motion } from "framer-motion";
 
-const backgroundColors = [
+let backgroundColors = [
   "#23C4FF",
   "#FF10F0",
   "#FFFD77",
@@ -14,18 +14,25 @@ const backgroundColors = [
   "#5DA399",
 ];
 
-const random =
-  backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+const random = () => {
+  return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+};
 
 class Projects extends React.Component {
   state = {
     changeColor: false,
-    backgroundColor: random,
+    backgroundColor: random(),
   };
 
   onMouseEnter = () => {
     this.setState({
       changeColor: true,
+    });
+  };
+
+  onMouseLeave = () => {
+    this.setState({
+      changeColor: false,
     });
   };
 
@@ -54,6 +61,7 @@ class Projects extends React.Component {
                 className="box project-link"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
               >
                 MagiKards
               </div>
@@ -69,6 +77,7 @@ class Projects extends React.Component {
                 className="project-link"
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
                 onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
               >
                 AIRBNB
               </motion.div>
