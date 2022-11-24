@@ -16,6 +16,7 @@ class AirBnB extends React.Component {
         >
           <div style={{ color: "white", marginLeft: "100px" }}>
             <h1>AirBnB style site</h1>
+            <h5>October 2022</h5>
           </div>
           <div
             style={{ color: "white", fontSize: "30px", marginRight: "100px" }}
@@ -60,40 +61,49 @@ class AirBnB extends React.Component {
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             gridTemplateRows: " 1fr 1fr",
+            margin: "200px 70px 100px 70px",
           }}
         >
           <div>
             {" "}
             <img
-              style={{ width: "50%", zIndex: "5" }}
+              style={{ width: "100%", borderRadius: "5px" }}
               className="airbnb-img"
               src="./images/project-img/abnb1.png"
               alt=""
             />
           </div>
-          <div style={{ color: "white" }}>
+          <div
+            style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
+          >
             <h1>some text here</h1>
           </div>
 
           <div style={{ color: "white" }}>
             <h1>some text here</h1>
           </div>
-          <div>
+          <div style={{ marginTop: "50px" }}>
             {" "}
             <img
-              style={{ width: "50%", zIndex: "5" }}
+              style={{ width: "100%", borderRadius: "5px" }}
               className="airbnb-img"
-              src="./images/project-img/abnb1.png"
+              src="./images/project-img/abnb2.png"
               alt=""
             />
           </div>
         </div>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "200px",
+          }}
+        >
           {" "}
           <img
-            style={{ width: "50%", zIndex: "5" }}
+            style={{ width: "90%", borderRadius: "5px" }}
             className="airbnb-img"
-            src="./images/project-img/abnb1.png"
+            src="./images/project-img/abnb3.png"
             alt=""
           />
         </div>
@@ -102,39 +112,47 @@ class AirBnB extends React.Component {
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             gridTemplateRows: " 1fr 1fr",
+            margin: "200px 70px 100px 70px",
           }}
         >
           <div>
             {" "}
             <img
-              style={{ width: "50%", zIndex: "5" }}
+              style={{
+                width: "100%",
+                borderRadius: "5px",
+                marginBottom: "80px",
+              }}
               className="airbnb-img"
-              src="./images/project-img/abnb1.png"
+              src="./images/project-img/abnb6.png"
               alt=""
             />
           </div>
-          <div style={{ color: "white" }}>
+          <div
+            style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
+          >
             <h1>some text here</h1>
           </div>
 
           <div style={{ color: "white" }}>
             <h1>some text here</h1>
           </div>
-          <div>
+          <div style={{ marginTop: "50px" }}>
             {" "}
             <img
-              style={{ width: "50%", zIndex: "5" }}
+              style={{ width: "100%", borderRadius: "5px" }}
               className="airbnb-img"
-              src="./images/project-img/abnb1.png"
+              src="./images/project-img/abnb7.png"
               alt=""
             />
           </div>
         </div>
         <div
+          style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
           className="return-projects"
           onClick={(e) => this.props.toggleShowProjects(e)}
         >
-          <h1>Back to Projects</h1>
+          <h3>Back to Projects</h3>
         </div>
       </>
     );
