@@ -14,7 +14,7 @@
 .return-projects {
   width: 15%;
   color: white;
-  background-color: white;
+  cursor: pointer;
 }
 
 .project-links {
