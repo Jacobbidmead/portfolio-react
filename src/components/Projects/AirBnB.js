@@ -4,7 +4,7 @@ class AirBnB extends React.Component {
   render() {
     return (
       <>
-        <div className="header">
+        <div className="header" style={{ marginBottom: "170px" }}>
           <h1 style={{ margin: "0" }}>AirBnB Clone</h1>
         </div>
 
@@ -14,20 +14,44 @@ class AirBnB extends React.Component {
             gridTemplateColumns: "1fr 1fr",
           }}
         >
-          <div style={{ color: "white" }}>
+          <div style={{ color: "white", marginLeft: "100px" }}>
             <h1>AirBnB style site</h1>
           </div>
-          <div style={{ color: "white" }}>
-            <h1>Main descritption of airbnb project</h1>
+          <div
+            style={{ color: "white", fontSize: "30px", marginRight: "100px" }}
+          >
+            Fully working fullstack MVC AirBnB style web app, this personal
+            project was part of Tortuga Coders coding bootcamp. Users are able
+            to create a profile and upload house data, which is populated onto
+            the main app page.{" "}
+            <p>
+              Users, while logged in, can also edit house data and leave
+              comments. User data is stored in MongoDB and accessed with
+              Express.js.
+            </p>
+            <p>
+              Tecnhologies used - HTML, CSS, Bootstrap, Express.js, Node.js,
+              MongoDB.
+            </p>
           </div>
         </div>
 
-        <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "300px",
+          }}
+        >
           {" "}
           <img
-            style={{ width: "50%", zIndex: "5" }}
+            style={{
+              width: "90%",
+              zIndex: "5",
+              borderRadius: "5px",
+            }}
             className="airbnb-img"
-            src="./images/project-img/abnb1.png"
+            src="./images/project-img/abnb4.png"
             alt=""
           />
         </div>
