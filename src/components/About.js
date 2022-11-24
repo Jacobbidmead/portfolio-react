@@ -63,7 +63,6 @@ class About extends React.Component {
                     marginLeft: "30px",
                     marginTop: "20px",
                     fontSize: "70px",
-                    color: "black",
                     textAlign: "left",
                     width: "50%",
                     color: "rgba(247, 243, 234, 0.5)",
@@ -238,7 +237,7 @@ class About extends React.Component {
               <div
                 style={{
                   textAlign: "left",
-                  fontSize: "40px",
+                  fontSize: "100px",
 
                   padding: "350px 30px 0px 30px",
                   textAlignLast: "center",
@@ -250,8 +249,6 @@ class About extends React.Component {
               >
                 <span className="about-paragraph last-right">
                   <Animator animation={MoveIn(0, 1000, 0, 1100)}>
-                    Check out my site.
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Get in touch.
                   </Animator>
                 </span>

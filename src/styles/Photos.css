@@ -50,7 +50,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: rgba(247, 243, 234, 0.1);
+
   margin: 18px;
   border-radius: 5px;
 }
@@ -69,7 +69,6 @@
   cursor: pointer;
   padding: 10px 50px;
   text-align: center;
-  background-color: rgba(247, 243, 234, 0.1);
 }
 
 .photo-nav {
