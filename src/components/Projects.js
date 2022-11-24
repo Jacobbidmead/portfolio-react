@@ -4,6 +4,12 @@ import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
 import { motion } from "framer-motion";
+import {
+  Animator,
+  ScrollContainer,
+  ScrollPage,
+  MoveIn,
+} from "react-scroll-motion";
 
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB"];
 
@@ -59,7 +65,11 @@ class Projects extends React.Component {
                 whileHover={{
                   scale: 1.2,
                 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
                 className="box project-link"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseEnter={this.onMouseEnter}
@@ -76,6 +86,14 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
+                whileHover={{
+                  scale: 1.2,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
                 className="project-link"
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
                 onMouseEnter={this.onMouseEnter}
@@ -92,6 +110,14 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
+                whileHover={{
+                  scale: 1.2,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
                 className="project-link"
                 onClick={(e) => this.props.toggleShowGoogle(e)}
                 onMouseEnter={this.onMouseEnter}

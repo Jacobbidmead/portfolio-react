@@ -142,7 +142,7 @@ class About extends React.Component {
                 style={{
                   textAlign: "left",
                   margin: "100px 50px 0px 80px",
-                  fontSize: "50px",
+                  fontSize: "60px",
                   width: "40%",
                 }}
               >
@@ -150,10 +150,9 @@ class About extends React.Component {
                   <Animator
                     animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                   >
-                    After three months of self study,
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I completed Tortuga
-                    Coders 11 week &nbsp;&nbsp;&nbsp;&nbsp;fullstack coding
-                    bootcamp &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
+                    After three months of self study, &nbsp;&nbsp;I completed
+                    Tortuga Coders 11 week fullstack coding bootcamp
+                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
                     &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022.
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <div style={{ marginTop: "50px", fontSize: "26px" }}>
@@ -215,7 +214,7 @@ class About extends React.Component {
                   textAlign: "left",
                   padding: "80px 50px 80px 50px",
                   color: "white",
-                  fontSize: "50px",
+                  fontSize: "60px",
                   width: "50%",
                   marginLeft: "40%",
                 }}
@@ -224,10 +223,9 @@ class About extends React.Component {
                   <Animator animation={MoveIn(0, 1000, 0, 1100)}>
                     I have a creative background;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graduating
-                    from &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    from
                     <b>Wimbledon College of Art </b>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in 2013,
-                    studying{" "}
+                    in 2013, studying{" "}
                     <b>&nbsp;&nbsp;&nbsp;&nbsp;Print & Time Based Media.</b>
                   </Animator>
                 </span>
