@@ -27,8 +27,8 @@ class About extends React.Component {
       "#FF10F0",
       "#FFFD77",
       "#FE5F55",
-      "#D1DEDE",
-      "#5DA399",
+      "#10FFCB",
+      "#CB04A5",
       "black",
     ];
 
@@ -130,7 +130,9 @@ class About extends React.Component {
                     the&nbsp;&nbsp;&nbsp;
                     <b>
                       React library, &nbsp;&nbsp;&nbsp;Vanilla JavaScript &
-                      &nbsp;&nbsp;&nbsp;&nbsp;advanced CSS.
+                      &nbsp;&nbsp;&nbsp;&nbsp;advanced
+                      CSS.&nbsp;&nbsp;&nbsp;&nbsp;Althought these are my primary
+                      langauges, I am open to learning any tech stack.
                     </b>
                   </Animator>
                 </span>
@@ -142,7 +144,7 @@ class About extends React.Component {
                 style={{
                   textAlign: "left",
                   margin: "100px 50px 0px 80px",
-                  fontSize: "60px",
+                  fontSize: "55px",
                   width: "40%",
                 }}
               >
@@ -223,7 +225,7 @@ class About extends React.Component {
                   <Animator animation={MoveIn(0, 1000, 0, 1100)}>
                     I have a creative background;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graduating
-                    from
+                    from &nbsp;
                     <b>Wimbledon College of Art </b>
                     in 2013, studying{" "}
                     <b>&nbsp;&nbsp;&nbsp;&nbsp;Print & Time Based Media.</b>

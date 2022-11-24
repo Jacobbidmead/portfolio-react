@@ -12,9 +12,10 @@ const TiltComponent = () => {
       glareColor={"red"}
     >
       <div className="tiltComponent">
-        <div>JACOB BIDMEAD</div>
-        <div>WEB DEVELOPER</div>
-        <div>+447960446892</div>
+        <div style={{ paddingTop: "140px" }}>JACOB </div>
+        <div>BIDMEAD</div>
+        <div>WEB</div>
+        <div>DEVELOPER</div>
       </div>
     </Tilt>
   );

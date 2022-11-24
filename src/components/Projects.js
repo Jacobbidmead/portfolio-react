@@ -4,14 +4,8 @@ import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
 import { motion } from "framer-motion";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  MoveIn,
-} from "react-scroll-motion";
 
-let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB"];
+let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
 
 const random = () => {
   return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
