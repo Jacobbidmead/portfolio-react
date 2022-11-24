@@ -6,8 +6,8 @@ const TiltComponent = () => {
   return (
     <Tilt
       glareEnable={true}
-      tiltMaxAngleX={10}
-      tiltMaxAngleY={10}
+      tiltMaxAngleX={20}
+      tiltMaxAngleY={20}
       perspective={1000}
       glareColor={"red"}
     >

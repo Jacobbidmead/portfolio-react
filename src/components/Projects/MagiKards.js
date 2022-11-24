@@ -67,7 +67,7 @@ class MagiKards extends React.Component {
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             gridTemplateRows: " 1fr 1fr",
-            margin: "200px 70px 100px 70px",
+            margin: "200px 70px 0px 70px",
           }}
         >
           <div>
@@ -109,7 +109,7 @@ class MagiKards extends React.Component {
           }}
         >
           <img
-            style={{ width: "90%", borderRadius: "5px", marginBottom: "40px" }}
+            style={{ width: "80%", borderRadius: "5px", marginBottom: "40px" }}
             className="airbnb-img"
             src="./images/project-img/MK4.png"
             alt=""

@@ -99,9 +99,10 @@ class About extends React.Component {
                     <b> a React/Front End Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
-                    freelance projects, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can
-                    be viewed in the projects section of this
-                    site&nbsp;&nbsp;&nbsp; and on my&nbsp;&nbsp;&nbsp;&nbsp;
+                    freelance projects,
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can be
+                    viewed in the projects section of this site and on
+                    my&nbsp;&nbsp;&nbsp;&nbsp;
                     <b>GitHub</b> repository.{" "}
                   </Animator>
                 </span>
@@ -150,8 +151,8 @@ class About extends React.Component {
                   <Animator
                     animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                   >
-                    After three months of self study, &nbsp;&nbsp;I completed
-                    Tortuga Coders 11 week fullstack coding bootcamp
+                    After three months of self study, &nbsp;&nbsp;&nbsp;&nbsp;I
+                    completed Tortuga Coders 11 week fullstack coding bootcamp
                     &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
                     &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022.
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
