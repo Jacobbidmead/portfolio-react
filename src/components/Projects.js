@@ -57,7 +57,7 @@ class Projects extends React.Component {
             ) : (
               <motion.div
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.1,
                 }}
                 transition={{
                   type: "spring",
@@ -81,7 +81,7 @@ class Projects extends React.Component {
             ) : (
               <motion.div
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.1,
                 }}
                 transition={{
                   type: "spring",
@@ -105,7 +105,7 @@ class Projects extends React.Component {
             ) : (
               <motion.div
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.1,
                 }}
                 transition={{
                   type: "spring",

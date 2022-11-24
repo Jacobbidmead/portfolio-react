@@ -124,14 +124,13 @@ class About extends React.Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;Node.js
                     </b>
                     ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
-                    &nbsp;&nbsp;practicing, watching and reading;
-                    &nbsp;&nbsp;&nbsp;&nbsp; to advance my skills with
-                    the&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;practicing, watching and reading; &nbsp; to
+                    advance my skills with the&nbsp;
                     <b>
-                      React library, &nbsp;&nbsp;&nbsp;Vanilla JavaScript &
-                      &nbsp;&nbsp;&nbsp;&nbsp;advanced
-                      CSS.&nbsp;&nbsp;&nbsp;&nbsp;Althought these are my primary
-                      langauges, I am open to learning any tech stack.
+                      React library, Vanilla JavaScript & advanced CSS, among
+                      others.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought
+                      these are my primary langauges, I am open to learning any
+                      tech stack required.
                     </b>
                   </Animator>
                 </span>

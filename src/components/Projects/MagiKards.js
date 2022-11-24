@@ -10,86 +10,113 @@ class MagiKards extends React.Component {
         >
           <img src="images/left-arrow.png" alt="" className="arrow" />
         </div>
-        <div className="Mcards-container">
-          <div className="content-container">
+        <div className="header" style={{ marginBottom: "170px" }}>
+          <h1 style={{ margin: "0" }}>MagiKards</h1>
+        </div>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+          }}
+        >
+          <div style={{ color: "white", marginLeft: "100px" }}>
+            <h1>MagiKards battle style card game</h1>
+            <h5>October 2022</h5>
+          </div>
+          <div
+            style={{ color: "white", fontSize: "30px", marginRight: "100px" }}
+          >
+            Fully working fullstack MVC AirBnB style web app, this personal
+            project was part of Tortuga Coders coding bootcamp. Users are able
+            to create a profile and upload house data, which is populated onto
+            the main app page.{" "}
+            <p>
+              Users, while logged in, can also edit house data and leave
+              comments. User data is stored in MongoDB and accessed with
+              Express.js.
+            </p>
+            <p>
+              Tecnhologies used - HTML, CSS, Bootstrap, Express.js, Node.js,
+              MongoDB.
+            </p>
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "300px",
+          }}
+        >
+          {" "}
+          <img
+            style={{
+              width: "90%",
+              zIndex: "5",
+              borderRadius: "5px",
+            }}
+            className="airbnb-img"
+            src="./images/project-img/MK1.png"
+            alt=""
+          />
+        </div>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gridTemplateRows: " 1fr 1fr",
+            margin: "200px 70px 100px 70px",
+          }}
+        >
+          <div>
+            {" "}
             <img
-              src="./images/project-img/MK1.png"
-              className="img-container"
-              alt=""
-            />
-          </div>
-
-          <div className="content-container text-container">
-            <h1 className="text title">MagiKards</h1>
-            <p className="text">
-              {" "}
-              Magikards is a fantasy based battle card game created by myself
-              and class mates Joshua Peoples & Mohammed Hammuri during the final
-              two weeks of Tortuga Coders bootcamp.
-            </p>
-            <p className="text">
-              The concept was top create a game using React that would take two
-              classes of cards, each with unique attributes that would affect
-              one another, with the strongest removing health from the
-              opposition player.
-            </p>
-          </div>
-
-          <div className="content-container text-container">
-            <p className="text text-fit">
-              The view above is the home screen; players are able to select
-              either Ice or Fire, then enter thier name into the input above.
-              This allows the start of the game. Only when both players have
-              selected their class and entered thier name can they enter the
-              'Battlefield'.
-            </p>
-            <p className="text text-fit">
-              The image on the right shows a pop up located on the home screen
-              that explains the rules of the game. This button is located in the
-              top right of the home screen and disapears apon clicking 'info'.
-            </p>
-          </div>
-
-          <div className="content-container">
-            <img
+              style={{ width: "100%", borderRadius: "5px" }}
+              className="airbnb-img"
               src="./images/project-img/MK3.png"
-              className="img-container"
               alt=""
             />
           </div>
-
-          <div className="content-container">
-            <img
-              src="./images/project-img/MK4.png"
-              className="img-container mk"
-              alt=""
-            />
-          </div>
-          <div className="content-container text-container">
-            <p className="text">
-              This view shows the Battlefield, the hand of cards is randomly
-              generated to the player. Once the player runs out of cards, seven
-              more cards will be randomly selected from the deck. Once a card is
-              selected it will be displayed as the main card. There is also a
-              pass option.
-            </p>
-          </div>
-          <div className="content-container text-container">
-            <p className="text text-fit">
-              Once both players have selected a card, the resulting card effects
-              will take place and health will be subtracked from the relevent
-              players. This is a work in progress that we are still working on
-              as a group. Hover to enlarge
-            </p>
+          <div
+            style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
+          >
+            <h1>some text here</h1>
           </div>
 
-          <div className="content-container">
+          <div style={{ color: "white", marginTop: "70px" }}>
+            <h1>some text here</h1>
+          </div>
+          <div style={{ marginTop: "100px" }}>
+            {" "}
             <img
+              style={{ width: "100%", borderRadius: "5px" }}
+              className="airbnb-img"
               src="./images/project-img/MK2.png"
-              className="img-container mk"
               alt=""
             />
           </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "50px",
+          }}
+        >
+          <img
+            style={{ width: "90%", borderRadius: "5px" }}
+            className="airbnb-img"
+            src="./images/project-img/MK4.png"
+            alt=""
+          />
+        </div>
+
+        <div
+          style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
+          className="return-projects"
+          onClick={(e) => this.props.toggleShowProjects(e)}
+        >
+          <h3>Back to Projects</h3>
         </div>
       </>
     );
