@@ -1,14 +1,3 @@
-.google-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: black;
-}
-
-.google-img {
-  width: 100%;
-  padding: 10px 0px 50px 20px;
-}
-
 /* below are needed */
 
 .return-projects {

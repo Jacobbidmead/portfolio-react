@@ -1,17 +1,19 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 class MagiKards extends React.Component {
   render() {
     return (
       <>
+        <div className="header" style={{ marginBottom: "170px" }}>
+          <h1 style={{ margin: "0" }}>MagiKards</h1>
+        </div>
         <div
+          style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
           className="return-projects"
           onClick={(e) => this.props.toggleShowProjects(e)}
         >
-          <img src="images/left-arrow.png" alt="" className="arrow" />
-        </div>
-        <div className="header" style={{ marginBottom: "170px" }}>
-          <h1 style={{ margin: "0" }}>MagiKards</h1>
+          <h4>Back to Projects</h4>
         </div>
         <div
           style={{
@@ -69,13 +71,14 @@ class MagiKards extends React.Component {
           }}
         >
           <div>
-            {" "}
-            <img
-              style={{ width: "100%", borderRadius: "5px" }}
-              className="airbnb-img"
-              src="./images/project-img/MK3.png"
-              alt=""
-            />
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+              <img
+                style={{ width: "100%", borderRadius: "5px" }}
+                className="airbnb-img"
+                src="./images/project-img/MK3.png"
+                alt=""
+              />
+            </Tilt>
           </div>
           <div
             style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
@@ -88,12 +91,14 @@ class MagiKards extends React.Component {
           </div>
           <div style={{ marginTop: "100px" }}>
             {" "}
-            <img
-              style={{ width: "100%", borderRadius: "5px" }}
-              className="airbnb-img"
-              src="./images/project-img/MK2.png"
-              alt=""
-            />
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+              <img
+                style={{ width: "100%", borderRadius: "5px" }}
+                className="airbnb-img"
+                src="./images/project-img/MK2.png"
+                alt=""
+              />
+            </Tilt>
           </div>
         </div>
         <div
@@ -104,19 +109,11 @@ class MagiKards extends React.Component {
           }}
         >
           <img
-            style={{ width: "90%", borderRadius: "5px" }}
+            style={{ width: "90%", borderRadius: "5px", marginBottom: "40px" }}
             className="airbnb-img"
             src="./images/project-img/MK4.png"
             alt=""
           />
-        </div>
-
-        <div
-          style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
-          className="return-projects"
-          onClick={(e) => this.props.toggleShowProjects(e)}
-        >
-          <h3>Back to Projects</h3>
         </div>
       </>
     );

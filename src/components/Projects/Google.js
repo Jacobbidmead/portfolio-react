@@ -5,18 +5,21 @@ class Google extends React.Component {
     return (
       <>
         <div
+          style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
           className="return-projects"
           onClick={(e) => this.props.toggleShowProjects(e)}
         >
-          <img src="images/left-arrow.png" alt="" className="arrow" />
+          <h4>Back to Projects</h4>
         </div>
-        <div className="google-container">
-          <img
-            src="./images/project-img/google.png"
-            className=" google-img"
-            alt=""
-          />
-          <div className="google-text">
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+          <div>
+            <img
+              src="./images/project-img/google.png"
+              style={{ width: "100%", borderRadius: "5px" }}
+              alt=""
+            />
+          </div>
+          <div>
             <p>Google this is a test</p>
           </div>
         </div>

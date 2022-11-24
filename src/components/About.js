@@ -95,8 +95,8 @@ class About extends React.Component {
                 <span className="about-paragraph">
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
                     Im looking for a junior position as
-                    a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <b> React/Front End Web Developer</b>,
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b> a React/Front End Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
                     freelance projects, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can

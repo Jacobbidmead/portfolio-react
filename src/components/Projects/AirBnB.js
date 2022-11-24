@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 class AirBnB extends React.Component {
   render() {
@@ -6,6 +7,13 @@ class AirBnB extends React.Component {
       <>
         <div className="header" style={{ marginBottom: "170px" }}>
           <h1 style={{ margin: "0" }}>AirBnB Clone</h1>
+        </div>
+        <div
+          style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
+          className="return-projects"
+          onClick={(e) => this.props.toggleShowProjects(e)}
+        >
+          <h4>Back to Projects</h4>
         </div>
 
         <div
@@ -18,6 +26,7 @@ class AirBnB extends React.Component {
             <h1>AirBnB style site</h1>
             <h5>October 2022</h5>
           </div>
+
           <div
             style={{ color: "white", fontSize: "30px", marginRight: "100px" }}
           >
@@ -66,12 +75,18 @@ class AirBnB extends React.Component {
         >
           <div>
             {" "}
-            <img
-              style={{ width: "100%", borderRadius: "5px" }}
-              className="airbnb-img"
-              src="./images/project-img/abnb1.png"
-              alt=""
-            />
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+              <img
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                }}
+                className="airbnb-img"
+                src="./images/project-img/abnb1.png"
+                alt=""
+              />
+            </Tilt>
           </div>
           <div
             style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
@@ -83,13 +98,18 @@ class AirBnB extends React.Component {
             <h1>some text here</h1>
           </div>
           <div style={{ marginTop: "50px" }}>
-            {" "}
-            <img
-              style={{ width: "100%", borderRadius: "5px" }}
-              className="airbnb-img"
-              src="./images/project-img/abnb2.png"
-              alt=""
-            />
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+              <img
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                }}
+                className="airbnb-img"
+                src="./images/project-img/abnb2.png"
+                alt=""
+              />
+            </Tilt>
           </div>
         </div>
         <div
@@ -117,16 +137,18 @@ class AirBnB extends React.Component {
         >
           <div>
             {" "}
-            <img
-              style={{
-                width: "100%",
-                borderRadius: "5px",
-                marginBottom: "80px",
-              }}
-              className="airbnb-img"
-              src="./images/project-img/abnb6.png"
-              alt=""
-            />
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+              <img
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  marginBottom: "80px",
+                }}
+                className="airbnb-img"
+                src="./images/project-img/abnb6.png"
+                alt=""
+              />{" "}
+            </Tilt>
           </div>
           <div
             style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
@@ -139,20 +161,15 @@ class AirBnB extends React.Component {
           </div>
           <div style={{ marginTop: "50px" }}>
             {" "}
-            <img
-              style={{ width: "100%", borderRadius: "5px" }}
-              className="airbnb-img"
-              src="./images/project-img/abnb7.png"
-              alt=""
-            />
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+              <img
+                style={{ width: "100%", borderRadius: "5px" }}
+                className="airbnb-img"
+                src="./images/project-img/abnb7.png"
+                alt=""
+              />
+            </Tilt>
           </div>
-        </div>
-        <div
-          style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
-          className="return-projects"
-          onClick={(e) => this.props.toggleShowProjects(e)}
-        >
-          <h3>Back to Projects</h3>
         </div>
       </>
     );
