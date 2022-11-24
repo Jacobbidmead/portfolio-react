@@ -66,15 +66,14 @@ class About extends React.Component {
                     color: "black",
                     textAlign: "left",
                     width: "50%",
-                    color: "#f7f3ea",
+                    color: "rgba(247, 243, 234, 0.5)",
                   }}
                 >
                   <span>
-                    Hi. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Full Stack Web
-                    Developer
+                    Hi. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Front End Developer
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with
                     an interest in Web/UI &nbsp;&nbsp;&nbsp;Design and
-                    &nbsp;Photography&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based,
+                    &nbsp;Photography,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based
                     in &nbsp;&nbsp;South London.
                   </span>
                 </div>
@@ -96,9 +95,9 @@ class About extends React.Component {
               >
                 <span className="about-paragraph">
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
-                    Im looking for a junior position
-                    as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <b>a Full Stack/ Front End Web Developer</b>,
+                    Im looking for a junior position as
+                    a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b> React/Front End Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
                     freelance projects, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can
@@ -262,7 +261,7 @@ class About extends React.Component {
             <ScrollPage>
               <div
                 style={{
-                  fontSize: "60px",
+                  fontSize: "40px",
                   textAlign: "center",
                   margin: "250px 10px 0px 10px",
                   color: "black",

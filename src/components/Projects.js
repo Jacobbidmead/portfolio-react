@@ -3,16 +3,9 @@ import MagiKards from "../components/Projects/MagiKards.js";
 import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  FadeOut,
-  MoveOut,
-} from "react-scroll-motion";
+import { motion } from "framer-motion";
 
-let backgroundColors = ["#23C4FF", "#FF10F0", "#FFFD77", "#FE5F55"];
+let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB"];
 
 const random = () => {
   return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
@@ -50,71 +43,65 @@ class Projects extends React.Component {
         };
     return (
       <>
-        <ScrollContainer>
-          <ScrollPage>
-            <div
-              className="header"
-              style={{ color: "white", fontSize: "100px", textAlign: "center" }}
-            >
-              <Animator animation={batch(MoveOut(0, 100), FadeOut(0.5, 0))}>
-                <h1>Things I've made</h1>
-              </Animator>
-            </div>
-          </ScrollPage>
-          <ScrollPage>
-            <div className="bg-fill" style={style}>
-              <div className="project-links" style={style}>
-                {this.props.showMagiKards ? (
-                  <MagiKards
-                    toggleShowMagiKards={this.props.toggleShowMagiKards}
-                    toggleShowProjects={this.props.toggleShowProjects}
-                  />
-                ) : (
-                  <div
-                    className="box project-link"
-                    onClick={(e) => this.props.toggleShowMagiKards(e)}
-                    onMouseEnter={this.onMouseEnter}
-                    onMouseLeave={this.onMouseLeave}
-                  >
-                    MagiKards
-                  </div>
-                )}
+        <div className="header" style={style}>
+          <h1 style={{ margin: "0" }}>Things I've made</h1>
+        </div>
 
-                {this.props.showAirBnb ? (
-                  <AirBnB
-                    toggleShowAirBnb={this.props.toggleShowAirBnb}
-                    toggleShowProjects={this.props.toggleShowProjects}
-                  />
-                ) : (
-                  <div
-                    className="project-link"
-                    onClick={(e) => this.props.toggleShowAirBnb(e)}
-                    onMouseEnter={this.onMouseEnter}
-                    onMouseLeave={this.onMouseLeave}
-                  >
-                    AIRBNB
-                  </div>
-                )}
+        <div className="bg-fill" style={style}>
+          <div className="project-links" style={style}>
+            {this.props.showMagiKards ? (
+              <MagiKards
+                toggleShowMagiKards={this.props.toggleShowMagiKards}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <motion.div
+                whileHover={{
+                  scale: 1.2,
+                }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="box project-link"
+                onClick={(e) => this.props.toggleShowMagiKards(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+              >
+                MagiKards
+              </motion.div>
+            )}
 
-                {this.props.showGoogle ? (
-                  <Google
-                    toggleShowGoogle={this.props.toggleShowGoogle}
-                    toggleShowProjects={this.props.toggleShowProjects}
-                  />
-                ) : (
-                  <div
-                    className="project-link"
-                    onClick={(e) => this.props.toggleShowGoogle(e)}
-                    onMouseEnter={this.onMouseEnter}
-                    onMouseLeave={this.onMouseLeave}
-                  >
-                    Google Search
-                  </div>
-                )}
-              </div>
-            </div>
-          </ScrollPage>
-        </ScrollContainer>
+            {this.props.showAirBnb ? (
+              <AirBnB
+                toggleShowAirBnb={this.props.toggleShowAirBnb}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <motion.div
+                className="project-link"
+                onClick={(e) => this.props.toggleShowAirBnb(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+              >
+                AIRBNB
+              </motion.div>
+            )}
+
+            {this.props.showGoogle ? (
+              <Google
+                toggleShowGoogle={this.props.toggleShowGoogle}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <motion.div
+                className="project-link"
+                onClick={(e) => this.props.toggleShowGoogle(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+              >
+                Google Search
+              </motion.div>
+            )}
+          </div>
+        </div>
       </>
     );
   }
