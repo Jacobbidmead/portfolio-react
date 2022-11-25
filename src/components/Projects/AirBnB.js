@@ -85,6 +85,8 @@ class AirBnB extends React.Component {
                 width: "90%",
                 zIndex: "5",
                 borderRadius: "5px",
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
               }}
               className="airbnb-img"
               src="./images/project-img/abnb4.png"
@@ -107,6 +109,8 @@ class AirBnB extends React.Component {
                     width: "100%",
                     borderRadius: "5px",
                     cursor: "pointer",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
                   className="airbnb-img"
                   src="./images/project-img/abnb1.png"
@@ -130,6 +134,8 @@ class AirBnB extends React.Component {
                     width: "100%",
                     borderRadius: "5px",
                     cursor: "pointer",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
                   className="airbnb-img"
                   src="./images/project-img/abnb2.png"
@@ -147,7 +153,12 @@ class AirBnB extends React.Component {
           >
             {" "}
             <img
-              style={{ width: "90%", borderRadius: "5px" }}
+              style={{
+                width: "90%",
+                borderRadius: "5px",
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+              }}
               className="airbnb-img"
               src="./images/project-img/abnb3.png"
               alt=""
@@ -169,6 +180,8 @@ class AirBnB extends React.Component {
                     width: "100%",
                     borderRadius: "5px",
                     marginBottom: "80px",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
                   className="airbnb-img"
                   src="./images/project-img/abnb6.png"
@@ -189,7 +202,12 @@ class AirBnB extends React.Component {
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
-                  style={{ width: "100%", borderRadius: "5px" }}
+                  style={{
+                    width: "100%",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  }}
                   className="airbnb-img"
                   src="./images/project-img/abnb7.png"
                   alt=""
