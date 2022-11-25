@@ -50,6 +50,36 @@ class Google extends React.Component {
             <h4>Back to Projects</h4>
           </div>
           <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+            }}
+          >
+            <div style={{ color: "white", marginLeft: "100px" }}>
+              <h1>Google Seach App</h1>
+              <h5>October 2022</h5>
+            </div>
+
+            <div
+              style={{ color: "white", fontSize: "30px", marginRight: "100px" }}
+            >
+              Google Search style app, first made in MVC style, then using React
+              for the front end while creating our own API and connecting to the
+              backend using Axios.{" "}
+              <p>
+                Users are able to search for limited data contained in the
+                MongoDB database.
+              </p>
+              <p>
+                Tecnhologies used - React, Axios, Passport, HTML, CSS,
+                Express.js, Node.js, MongoDB.
+              </p>
+              <small style={{ fontSize: "15px" }}>
+                Scroll over images to change colour
+              </small>
+            </div>
+          </div>
+          <div
             className="google-img"
             onMouseEnter={this.onMouseEnter}
             style={style}
@@ -69,7 +99,10 @@ class Google extends React.Component {
                 marginLeft: "145px",
               }}
             >
-              <div onMouseEnter={this.onMouseEnter}>
+              <div
+                onMouseEnter={this.onMouseEnter}
+                style={{ marginBottom: "50px" }}
+              >
                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                   <img
                     src="./images/project-img/google2.png"

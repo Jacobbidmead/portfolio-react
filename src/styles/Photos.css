@@ -18,24 +18,6 @@
   transform: scale(1.15) rotate(0.01deg);
 }
 
-.photo-quote1 {
-  background-color: deeppink;
-  color: white;
-  font-size: 80px;
-  text-align: right;
-  margin: 10px 50px 50px 70px;
-  font-family: Futura;
-}
-
-.photo-quote2 {
-  color: black;
-  background-color: #94d7f9;
-  font-size: 80px;
-  place-items: center;
-  margin: 30px;
-  margin-bottom: 0px;
-}
-
 .photo-quote-container {
   text-align: right;
   margin: 0px 40px 100px 0px;
@@ -88,65 +70,13 @@
   border-radius: 5px;
 }
 
-.img-description {
-  font-family: Futura;
-  text-align: center;
-  margin-top: 20px;
-  padding: 0px 50px;
-  color: #4acfee;
-}
-
 .large-photo-container {
   padding: 20px;
   width: 900px;
 }
 
-.quote-container {
-  display: grid;
-  grid-template-rows: 1fr;
-  font-family: Futura;
-  animation: fadein 1s;
-}
-
-.quote1 {
-  font-size: 60px;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.travel {
-  margin: 20px 0px 0px 50px;
-}
-
-.quote2 {
-  font-size: 20px;
-  background-color: #94d7f9;
-  margin: 30px 0px 30px 700px;
-  width: 600px;
-  padding-bottom: 30px;
-  color: black;
-}
-
-.quote3 {
-  font-size: 20px;
-  text-decoration: underline;
-  padding: 10px;
-  margin-left: 50px;
-  position: absolute;
-  top: 350px;
-  left: 120px;
-  font-style: italic;
-}
-
-.quote4 {
-  font-size: 50px;
-  color: #4acfee;
-  width: 1170px;
-  margin: 100px 0px 100px 70px;
-}
-
-.quote5 {
-  text-align: right;
-  margin-right: 70px;
-  padding-bottom: 50px;
+.img-description {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
 }

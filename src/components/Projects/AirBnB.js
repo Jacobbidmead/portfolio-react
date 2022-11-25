@@ -66,8 +66,8 @@ class AirBnB extends React.Component {
                 Express.js.
               </p>
               <p>
-                Tecnhologies used - HTML, CSS, Bootstrap, Express.js, Node.js,
-                MongoDB.
+                Tecnhologies used - JavaScript, HTML, CSS, Bootstrap,
+                Express.js, Node.js, MongoDB.
               </p>
             </div>
           </div>
@@ -209,7 +209,6 @@ class AirBnB extends React.Component {
             <div
               style={{
                 color: "white",
-                marginLeft: "40px",
                 textAlign: "right",
                 width: "50%",
                 marginLeft: "40%",

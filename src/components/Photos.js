@@ -6,42 +6,24 @@ class Photos extends React.Component {
   render() {
     return (
       <>
+        <div className="header" style={{ marginBottom: "170px" }}>
+          <h1 style={{ margin: "0" }}>Photos.</h1>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+          <div style={{ color: "white", marginLeft: "100px" }}>
+            <h1>Analogue photography</h1>
+            <h5>2014 - 2019</h5>
+          </div>
+          <div
+            style={{ color: "white", marginRight: "100px", textAlign: "right" }}
+          >
+            "Travel changes you, As you move through this life and this world
+            you change things slightly, you leave marks behind, however small.
+            And in return, life — and travel — leaves marks on you." -{" "}
+            <p>Anthony Bourdain</p> <p></p>
+          </div>
+        </div>
         <div className="photo-bg">
-          <div className="quote-container">
-            <div className="quote1">
-              <h1 className="travel">Travel changes you.</h1>
-            </div>
-            <div className="quote2">
-              <span>
-                As you move through this life and this world you change things
-                slightly,
-              </span>
-            </div>
-            <div className="quote3">
-              <span>you leave marks behind, however small.</span>
-            </div>
-            <div className="quote4">
-              <span>
-                And in return, life — and travel — leaves marks on you.
-              </span>
-            </div>
-            <div className="quote5">
-              <span>- Anthony Bourdain</span>
-            </div>
-          </div>
-          <div className="photo-quote-container">
-            <span className="photo-quote1">
-              Over the last 10 years, I've been shooting street photography.
-              Capturing moments from my life & travels; cultures, experiences,
-              landscapes and compositions.
-            </span>
-          </div>
-          <div className="photo-quote-container2">
-            <span className="photo-quote2">
-              Through my work, I attempt to describe my love of anthropology &
-              discovering new cultures.
-            </span>
-          </div>
           <Photo changePic={this.props.changePic} />
         </div>
       </>

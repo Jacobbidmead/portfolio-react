@@ -113,7 +113,6 @@ class MagiKards extends React.Component {
             </div>
             <div
               style={{
-                marginLeft: "40px",
                 textAlign: "right",
                 width: "50%",
                 marginLeft: "40%",
@@ -135,7 +134,6 @@ class MagiKards extends React.Component {
 
             <div
               style={{
-                marginTop: "70px",
                 width: "50%",
                 marginTop: " 100px",
                 fontSize: "18px",

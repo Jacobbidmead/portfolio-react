@@ -6,7 +6,6 @@ import {
   batch,
   Fade,
   FadeOut,
-  Move,
   MoveIn,
   MoveOut,
 } from "react-scroll-motion";
