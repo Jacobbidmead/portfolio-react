@@ -24,8 +24,7 @@
   cursor: pointer;
 }
 
-.stack {
-  padding: 30px;
-  font-size: 50px;
-  width: 20%;
+.about-text {
+  margin: 0px 100px 0px 100px;
+  color: white;
 }

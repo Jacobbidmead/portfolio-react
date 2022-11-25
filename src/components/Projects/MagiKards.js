@@ -7,7 +7,7 @@ class MagiKards extends React.Component {
   };
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 2000, 3000];
-    const colorsList = ["black", "#FFBFBF"];
+    const colorsList = ["black", "#FE5F55"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -104,6 +104,7 @@ class MagiKards extends React.Component {
                     borderRadius: "5px",
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    cursor: "pointer",
                   }}
                   className="airbnb-img"
                   src="./images/project-img/MK3.png"
@@ -162,8 +163,8 @@ class MagiKards extends React.Component {
                     borderRadius: "5px",
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    cursor: "pointer",
                   }}
-                  className="airbnb-img"
                   src="./images/project-img/MK2.png"
                   alt=""
                 />
@@ -185,7 +186,6 @@ class MagiKards extends React.Component {
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
               }}
-              className="airbnb-img"
               src="./images/project-img/MK4.png"
               alt=""
             />

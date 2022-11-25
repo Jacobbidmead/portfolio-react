@@ -17,9 +17,7 @@ class About extends React.Component {
   };
 
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [
-      0, 500, 1500, 2400, 3500, 4500, 5500, 6070, 7000,
-    ];
+    const backgroundBreakpoints = [0, 500, 1500, 2000, 2700, 3800, 5500, 7000];
     const colorsList = [
       "black",
       "#23C4FF",
@@ -27,7 +25,6 @@ class About extends React.Component {
       "#35FF69",
       "#FE5F55",
       "#10FFCB",
-      "#CB04A5",
       "black",
     ];
 
@@ -106,57 +103,32 @@ class About extends React.Component {
                 </span>
               </div>
             </ScrollPage>
-            <ScrollPage>
-              <div
-                style={{
-                  textAlign: "right",
-                  margin: "100px 30px 0px 30%",
-                  padding: "80px 30px",
-                  color: "white",
-                  fontSize: "50px",
-                }}
-              >
-                <span className="about-paragraph right">
-                  <Animator animation={MoveIn(0, 1000, 0, 300)}>
-                    <b>
-                      I build my projects using React &
-                      &nbsp;&nbsp;&nbsp;&nbsp;Node.js
-                    </b>
-                    ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
-                    &nbsp;&nbsp;practicing, watching and reading; &nbsp; to
-                    advance my skills with the&nbsp;
-                    <b>
-                      React, Vanilla JavaScript, advanced CSS and Next.js.
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought
-                      these are my primary langauges, I am open to learning any
-                      tech stack required.
-                    </b>
-                  </Animator>
-                </span>
-              </div>
-            </ScrollPage>
 
             <ScrollPage>
               <div
                 style={{
-                  textAlign: "left",
-                  margin: "100px 50px 0px 80px",
-                  fontSize: "55px",
-                  width: "60%",
+                  fontSize: "30px",
                   color: "black",
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
                 }}
               >
-                <span>
+                <div className="about-text">
                   <Animator
-                    animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
+                    animation={batch(MoveIn(0, 500, 0, 300), FadeOut(1, 0))}
                   >
                     After three months of self study, I completed{" "}
                     <b>Tortuga Coders 11 week fullstack coding bootcamp</b>{" "}
-                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand. Graduating in
-                    mid-October 2022. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div style={{ marginTop: "50px", fontSize: "26px" }}>
+                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand.
+                    &nbsp;&nbsp;&nbsp;&nbsp;Graduating in mid-October 2022.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
                       <a
-                        style={{ textDecoration: "none", color: "black" }}
+                        style={{
+                          textDecoration: "none",
+                          color: "white",
+                          fontSize: "20px",
+                        }}
                         href="https://tortugacoders.com/certificates/08/jacob-bidmead"
                         target="_blank"
                         rel="noreferrer"
@@ -165,24 +137,65 @@ class About extends React.Component {
                       </a>
                     </div>
                   </Animator>
-                </span>
+                </div>
+
+                <div
+                  style={{
+                    textAlign: "right",
+                    color: "white",
+                  }}
+                  className="about-text"
+                >
+                  <span className="about-paragraph right">
+                    <Animator animation={MoveIn(0, 500, 0, 300)}>
+                      <b>
+                        I build my projects using React &
+                        &nbsp;&nbsp;&nbsp;&nbsp;Node.js
+                      </b>
+                      ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
+                      &nbsp;&nbsp;practicing, watching and reading; &nbsp; to
+                      advance my skills with the&nbsp;
+                      <b>
+                        React, Vanilla JavaScript, advanced CSS and Next.js.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought
+                        these are my primary langauges, I am open to learning
+                        any tech stack required.
+                      </b>
+                    </Animator>
+                  </span>
+                </div>
               </div>
             </ScrollPage>
 
             <ScrollPage>
               <div
                 style={{
-                  display: "flex",
-                  justifyContent: "right",
-                  margin: "150px 80px 0px 0px",
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
                 }}
               >
                 <div
+                  className="about-text"
+                  style={{ fontSize: "40px", color: "black" }}
+                >
+                  <Animator
+                    animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
+                  >
+                    I have a creative background;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graduating
+                    from &nbsp;
+                    <b>Wimbledon College of Art </b>
+                    in 2013, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;studying{" "}
+                    <b>BA:Hons - Print & Time Based Media.</b>
+                  </Animator>
+                </div>
+                <div
+                  className="about-text"
                   style={{
-                    textAlign: "right",
-                    fontSize: "50px",
-                    width: "40%",
+                    fontSize: "40px",
                     color: "black",
+                    textAlign: "right",
                   }}
                 >
                   <span className="about-paragraph ">
@@ -206,29 +219,6 @@ class About extends React.Component {
             <ScrollPage>
               <div
                 style={{
-                  textAlign: "right",
-                  padding: "80px 50px 80px 50px",
-                  color: "white",
-                  fontSize: "60px",
-                  width: "50%",
-                  marginLeft: "40%",
-                }}
-              >
-                <span className="about-paragraph last-right">
-                  <Animator animation={MoveIn(0, 1000, 0, 1100)}>
-                    I have a creative background;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graduating
-                    from &nbsp;
-                    <b>Wimbledon College of Art </b>
-                    in 2013, studying <b>Print & Time Based Media.</b>
-                  </Animator>
-                </span>
-              </div>
-            </ScrollPage>
-
-            <ScrollPage>
-              <div
-                style={{
                   textAlign: "left",
                   fontSize: "100px",
 
@@ -241,7 +231,7 @@ class About extends React.Component {
                 }}
               >
                 <span className="about-paragraph last-right">
-                  <Animator animation={MoveIn(0, 1000, 0, 1100)}>
+                  <Animator animation={MoveIn(0, 2000, 0, 2100)}>
                     Get in touch.
                   </Animator>
                 </span>
