@@ -38,8 +38,8 @@ class Google extends React.Component {
         };
     return (
       <>
-        <div style={{ style }}>
-          <div className="header" style={{ marginBottom: "170px" }}>
+        <div style={style}>
+          <div className="header" style={style}>
             <h1 style={{ margin: "0" }}>Google Search</h1>
           </div>
           <div
@@ -50,12 +50,9 @@ class Google extends React.Component {
             <h4>Back to Projects</h4>
           </div>
           <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginBlock: "80px",
-            }}
+            className="google-img"
             onMouseEnter={this.onMouseEnter}
+            style={style}
           >
             <img
               src="./images/project-img/google.png"
@@ -64,30 +61,32 @@ class Google extends React.Component {
               onMouseEnter={this.onMouseEnter}
             />
           </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              marginLeft: "145px",
-            }}
-          >
-            <div onMouseEnter={this.onMouseEnter}>
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-                <img
-                  src="./images/project-img/google2.png"
-                  style={{ width: "100%", borderRadius: "5px" }}
-                  alt=""
-                />
-              </Tilt>
-            </div>
+          <div style={style}>
             <div
               style={{
-                color: "white",
-                marginRight: "160px",
-                textAlign: "right",
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                marginLeft: "145px",
               }}
             >
-              <p>Some txt here</p>
+              <div onMouseEnter={this.onMouseEnter}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+                  <img
+                    src="./images/project-img/google2.png"
+                    style={{ width: "100%", borderRadius: "5px" }}
+                    alt=""
+                  />
+                </Tilt>
+              </div>
+              <div
+                style={{
+                  color: "white",
+                  marginRight: "160px",
+                  textAlign: "right",
+                }}
+              >
+                <p>Some txt here</p>
+              </div>
             </div>
           </div>
         </div>

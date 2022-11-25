@@ -53,3 +53,9 @@
   padding: 40px 25px 0px 25px;
   margin: 0;
 }
+
+.google-img {
+  display: flex;
+  justify-content: center;
+  margin-block: 80px;
+}
