@@ -6,8 +6,8 @@ class AirBnB extends React.Component {
     bgColor: "black",
   };
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [0, 500, 2400, 3500];
-    const colorsList = ["black", "#23C4FF", "#FF10F0"];
+    const backgroundBreakpoints = [0, 2000, 3000];
+    const colorsList = ["black", "#00A699"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
