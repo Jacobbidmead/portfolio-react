@@ -70,8 +70,8 @@ class About extends React.Component {
                 >
                   <span>
                     Hi. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Front End Developer
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with
-                    an interest in Web/UI &nbsp;&nbsp;&nbsp;Design and
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an
+                    interest in Web/UI Design and
                     &nbsp;Photography,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based
                     in &nbsp;&nbsp;South London.
                   </span>
@@ -101,8 +101,7 @@ class About extends React.Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
                     freelance projects,
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can be
-                    viewed in the projects section of this site and on
-                    my&nbsp;&nbsp;&nbsp;&nbsp;
+                    viewed in the projects section of this site and on my&nbsp;
                     <b>GitHub</b> repository.{" "}
                   </Animator>
                 </span>
@@ -154,9 +153,8 @@ class About extends React.Component {
                   >
                     After three months of self study, I completed{" "}
                     <b>Tortuga Coders 11 week fullstack coding bootcamp</b>{" "}
-                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
-                    &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022.
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand in mid October
+                    2022. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <div style={{ marginTop: "50px", fontSize: "26px" }}>
                       <a
                         style={{ textDecoration: "none", color: "black" }}
@@ -196,8 +194,8 @@ class About extends React.Component {
                       &nbsp;Ive documentend my travels
                       in&nbsp;&nbsp;&nbsp;&nbsp;{" "}
                       <b>
-                        South America, &nbsp;the USA, &nbsp;&nbsp;Asia,
-                        Europe&nbsp;&nbsp; & &nbsp;&nbsp;Australia
+                        South America, the USA, Asia, Europe&nbsp;&nbsp; &
+                        &nbsp;&nbsp;Australia
                       </b>{" "}
                       over the last 8 years.
                     </Animator>
@@ -223,8 +221,7 @@ class About extends React.Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graduating
                     from &nbsp;
                     <b>Wimbledon College of Art </b>
-                    in 2013, studying{" "}
-                    <b>&nbsp;&nbsp;&nbsp;&nbsp;Print & Time Based Media.</b>
+                    in 2013, studying <b>Print & Time Based Media.</b>
                   </Animator>
                 </span>
               </div>
