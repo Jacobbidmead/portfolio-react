@@ -206,7 +206,7 @@ class About extends React.Component {
             <ScrollPage>
               <div
                 style={{
-                  textAlign: "left",
+                  textAlign: "right",
                   padding: "80px 50px 80px 50px",
                   color: "white",
                   fontSize: "60px",
