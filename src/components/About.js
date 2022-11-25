@@ -25,7 +25,7 @@ class About extends React.Component {
       "black",
       "#23C4FF",
       "#FF10F0",
-      "#FFFD77",
+      "#35FF69",
       "#FE5F55",
       "#10FFCB",
       "#CB04A5",
@@ -144,26 +144,27 @@ class About extends React.Component {
                   textAlign: "left",
                   margin: "100px 50px 0px 80px",
                   fontSize: "55px",
-                  width: "40%",
+                  width: "60%",
+                  color: "black",
                 }}
               >
                 <span>
                   <Animator
                     animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                   >
-                    After three months of self study, &nbsp;&nbsp;&nbsp;&nbsp;I
-                    completed Tortuga Coders 11 week fullstack coding bootcamp
+                    After three months of self study, I completed{" "}
+                    <b>Tortuga Coders 11 week fullstack coding bootcamp</b>{" "}
                     &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand
                     &nbsp;&nbsp;&nbsp;&nbsp;in mid October 2022.
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <div style={{ marginTop: "50px", fontSize: "26px" }}>
                       <a
-                        style={{ textDecoration: "none", color: " black" }}
+                        style={{ textDecoration: "none", color: "black" }}
                         href="https://tortugacoders.com/certificates/08/jacob-bidmead"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Click me.
+                        <b>Click me.</b>
                       </a>
                     </div>
                   </Animator>
@@ -175,25 +176,21 @@ class About extends React.Component {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "center",
-                  marginTop: "150px",
+                  justifyContent: "right",
+                  margin: "150px 80px 0px 0px",
                 }}
               >
                 <div
                   style={{
-                    textAlign: "center",
+                    textAlign: "right",
                     fontSize: "50px",
-                    width: "80%",
-                    height: " 500px",
-                    backgroundColor: "black",
-                    color: "#FE5F55",
-                    padding: "10px 20px",
-                    borderRadius: "30px",
+                    width: "40%",
+                    color: "black",
                   }}
                 >
                   <span className="about-paragraph ">
                     <Animator
-                      animation={batch(Move(0, 1000, 0, 1100), FadeOut(1, 0))}
+                      animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
                     >
                       <b>&nbsp;A passionate photographer,</b>
                       &nbsp;Ive documentend my travels

@@ -119,9 +119,16 @@ class AirBnB extends React.Component {
               </Tilt>
             </div>
             <div
-              style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
+              style={{
+                color: "white",
+                marginLeft: "40%",
+                textAlign: "right",
+                width: "50%",
+              }}
             >
-              <h1>some text here</h1>
+              Once a house is selected user is taken to the 'house' page, where
+              they can interact with the house gallery.
+              <p></p>
             </div>
 
             <div style={{ color: "white" }}>
