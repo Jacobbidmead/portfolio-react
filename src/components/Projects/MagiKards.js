@@ -32,7 +32,7 @@ class MagiKards extends React.Component {
           }}
         >
           <div className="header" style={{ marginBottom: "170px" }}>
-            <h1 style={{ margin: "0" }}>MagiKards</h1>
+            <h1 style={{ margin: "0" }}>MagiKards.</h1>
           </div>
           <div
             style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}

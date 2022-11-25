@@ -47,10 +47,14 @@
 .change-photos {
   font-family: Futura;
   font-size: 20px;
-  color: white;
+  color: rgba(247, 243, 234, 0.7);
   cursor: pointer;
   padding: 10px 50px;
   text-align: center;
+}
+
+.change-photos:hover {
+  color: white;
 }
 
 .photo-nav {

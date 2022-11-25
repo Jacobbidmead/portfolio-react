@@ -40,7 +40,7 @@ class Google extends React.Component {
       <>
         <div style={style}>
           <div className="header" style={style}>
-            <h1 style={{ margin: "0" }}>Google Search</h1>
+            <h1 style={{ margin: "0" }}>Google Search.</h1>
           </div>
           <div
             style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}

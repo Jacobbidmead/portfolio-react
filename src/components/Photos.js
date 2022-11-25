@@ -15,12 +15,29 @@ class Photos extends React.Component {
             <h5>2014 - 2019</h5>
           </div>
           <div
-            style={{ color: "white", marginRight: "100px", textAlign: "right" }}
+            style={{
+              color: "white",
+              marginRight: "100px",
+              textAlign: "right",
+              marginBottom: "100px",
+              fontSize: "30px",
+            }}
           >
-            "Travel changes you, As you move through this life and this world
+            "Travel changes you, as you move through this life and this world
             you change things slightly, you leave marks behind, however small.
-            And in return, life — and travel — leaves marks on you." -{" "}
-            <p>Anthony Bourdain</p> <p></p>
+            And in return, life — and travel — leaves marks on you."{" "}
+            <p>- Anthony Bourdain</p>{" "}
+            <p>
+              Over the last 10 years, I've been shooting street photography.
+              Capturing moments from my life & travels; cultures, experiences,
+              landscapes and compositions.
+            </p>
+            <p>
+              {" "}
+              Through my work, I attempt to describe my love of anthropology &
+              discovering new cultures.
+            </p>
+            <small style={{ fontSize: "15px" }}>Shot on Contax TVS III</small>
           </div>
         </div>
         <div className="photo-bg">
