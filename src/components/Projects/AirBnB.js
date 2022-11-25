@@ -125,7 +125,7 @@ class AirBnB extends React.Component {
                 textAlign: "right",
                 marginBottom: "80px",
                 width: "50%",
-                fontSize: "30px",
+                fontSize: "25px",
               }}
             >
               Once a house is selected user is taken to the 'house' page, where
@@ -138,7 +138,7 @@ class AirBnB extends React.Component {
                 color: "white",
                 marginTop: "40px",
                 width: "50%",
-                fontSize: "30px",
+                fontSize: "25px",
               }}
             >
               Users are able to 'Request booking' and leave reviews after
@@ -212,7 +212,7 @@ class AirBnB extends React.Component {
                 textAlign: "right",
                 width: "50%",
                 marginLeft: "40%",
-                fontSize: "30px",
+                fontSize: "25px",
               }}
             >
               Users can log in and access thier 'Profile' page, where they can

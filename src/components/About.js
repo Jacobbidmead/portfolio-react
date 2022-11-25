@@ -92,7 +92,7 @@ class About extends React.Component {
                   <Animator animation={batch(MoveIn(0, 1000, 0, 1100), Fade())}>
                     Im looking for a junior position as
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <b> a React/Front End Web Developer</b>,
+                    <b> a Front End/Full Stack Web Developer</b>,
                     &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
                     &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
                     freelance projects,
@@ -179,13 +179,16 @@ class About extends React.Component {
                   style={{ fontSize: "40px", color: "black" }}
                 >
                   <Animator
-                    animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
+                    animation={batch(MoveIn(0, 2000, 0, 2100), FadeOut(1, 0))}
                   >
-                    I have a creative background;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graduating
-                    from &nbsp;
-                    <b>Wimbledon College of Art </b>
-                    in 2013, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>I have a creative background;</b>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p>
+                      Graduating from
+                      <b>Wimbledon College of Art </b>
+                      in 2013,
+                    </p>{" "}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;studying{" "}
                     <b>BA:Hons - Print & Time Based Media.</b>
                   </Animator>
@@ -200,16 +203,17 @@ class About extends React.Component {
                 >
                   <span className="about-paragraph ">
                     <Animator
-                      animation={batch(MoveIn(0, 1000, 0, 1100), FadeOut(1, 0))}
+                      animation={batch(MoveIn(0, 2000, 0, 2100), FadeOut(1, 0))}
                     >
                       <b>&nbsp;A passionate photographer,</b>
-                      &nbsp;Ive documentend my travels
-                      in&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-                      <b>
-                        South America, the USA, Asia, Europe&nbsp;&nbsp; &
-                        &nbsp;&nbsp;Australia
-                      </b>{" "}
-                      over the last 8 years.
+                      &nbsp; Ive documentend my travels in{" "}
+                      <p>
+                        <b>
+                          South America, the USA, Asia, Europe&nbsp;&nbsp; &
+                          &nbsp;&nbsp;Australia
+                        </b>{" "}
+                        over the last 8 years.
+                      </p>
                     </Animator>
                   </span>
                 </div>
