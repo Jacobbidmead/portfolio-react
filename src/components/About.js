@@ -127,8 +127,8 @@ class About extends React.Component {
                     &nbsp;&nbsp;practicing, watching and reading; &nbsp; to
                     advance my skills with the&nbsp;
                     <b>
-                      React library, Vanilla JavaScript & advanced CSS, among
-                      others.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought
+                      React, Vanilla JavaScript, advanced CSS and Next.js.
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought
                       these are my primary langauges, I am open to learning any
                       tech stack required.
                     </b>
@@ -153,8 +153,8 @@ class About extends React.Component {
                   >
                     After three months of self study, I completed{" "}
                     <b>Tortuga Coders 11 week fullstack coding bootcamp</b>{" "}
-                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand in mid October
-                    2022. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand. Graduating in
+                    mid-October 2022. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <div style={{ marginTop: "50px", fontSize: "26px" }}>
                       <a
                         style={{ textDecoration: "none", color: "black" }}

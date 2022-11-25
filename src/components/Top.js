@@ -9,7 +9,7 @@ class Top extends React.Component {
           className="home-button name-reveal"
           onClick={(e) => this.props.toggleShowHome(e)}
         >
-          [+]
+          +
         </div>
       </>
     );

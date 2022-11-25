@@ -19,6 +19,7 @@ class App extends React.Component {
     showAirBnb: false,
     showMagiKards: false,
     showGoogle: false,
+    showTop: true,
   };
 
   toggleShowHome = () => {

@@ -123,6 +123,7 @@ class AirBnB extends React.Component {
                 color: "white",
                 marginLeft: "40%",
                 textAlign: "right",
+                marginBottom: "80px",
                 width: "50%",
               }}
             >

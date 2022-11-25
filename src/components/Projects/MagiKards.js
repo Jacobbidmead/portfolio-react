@@ -7,7 +7,7 @@ class MagiKards extends React.Component {
   };
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 2000, 3000];
-    const colorsList = ["black", "#A2D6F9"];
+    const colorsList = ["black", "#FFBFBF"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -58,10 +58,11 @@ class MagiKards extends React.Component {
               and class mates Joshua Peoples & Mohammed Hammuri during the final
               two weeks of Tortuga Coders bootcamp.
               <p>
-                The concept was top create a game using React that would take
-                two classes of cards, each with unique attributes that would
-                affect one another, with the strongest removing health from the
-                opposition player.
+                The concept was to create a game using React that would take two
+                classes of cards, each with unique attributes, that would affect
+                one another, with the strongest removing health from the
+                opposition player. We took influence from online card games such
+                as Yu-Gi-Oh & Gwent from The Witcher game series.
               </p>
               Tecnhologies used - React, JavaScript, HTML, CSS.
             </div>
