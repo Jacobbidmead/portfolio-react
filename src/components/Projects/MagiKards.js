@@ -117,6 +117,7 @@ class MagiKards extends React.Component {
                 textAlign: "right",
                 width: "50%",
                 marginLeft: "40%",
+                fontSize: "27px",
               }}
             >
               The view above is the home screen; players are able to select
@@ -133,7 +134,12 @@ class MagiKards extends React.Component {
             </div>
 
             <div
-              style={{ marginTop: "70px", width: "50%", marginTop: " 100px" }}
+              style={{
+                marginTop: "70px",
+                width: "50%",
+                marginTop: " 100px",
+                fontSize: "18px",
+              }}
             >
               This view below shows the Battlefield, the hand of cards is
               randomly generated to the player. Once the player runs out of

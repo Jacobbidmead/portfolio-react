@@ -56,7 +56,7 @@ class Google extends React.Component {
           >
             <img
               src="./images/project-img/google.png"
-              style={{ width: "80%", borderRadius: "5px" }}
+              style={{ width: "80%", borderRadius: "5px", cursor: "pointer" }}
               alt=""
               onMouseEnter={this.onMouseEnter}
             />
@@ -73,7 +73,11 @@ class Google extends React.Component {
                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                   <img
                     src="./images/project-img/google2.png"
-                    style={{ width: "100%", borderRadius: "5px" }}
+                    style={{
+                      width: "100%",
+                      borderRadius: "5px",
+                      cursor: "pointer",
+                    }}
                     alt=""
                   />
                 </Tilt>

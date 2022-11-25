@@ -125,6 +125,7 @@ class AirBnB extends React.Component {
                 textAlign: "right",
                 marginBottom: "80px",
                 width: "50%",
+                fontSize: "30px",
               }}
             >
               Once a house is selected user is taken to the 'house' page, where
@@ -132,7 +133,14 @@ class AirBnB extends React.Component {
               <p></p>
             </div>
 
-            <div style={{ color: "white", marginTop: "40px", width: "50%" }}>
+            <div
+              style={{
+                color: "white",
+                marginTop: "40px",
+                width: "50%",
+                fontSize: "30px",
+              }}
+            >
               Users are able to 'Request booking' and leave reviews after
               booking is complete.
             </div>
@@ -205,6 +213,7 @@ class AirBnB extends React.Component {
                 textAlign: "right",
                 width: "50%",
                 marginLeft: "40%",
+                fontSize: "30px",
               }}
             >
               Users can log in and access thier 'Profile' page, where they can
@@ -212,7 +221,7 @@ class AirBnB extends React.Component {
               currently listed house.
             </div>
 
-            <div style={{ color: "white", width: "50%" }}>
+            <div style={{ color: "white", width: "50%", fontSize: "30px" }}>
               List a house form that creates house in the database and populates
               data into 'houses' and 'profile' pages.
             </div>
