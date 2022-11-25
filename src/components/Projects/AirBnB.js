@@ -1,10 +1,12 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 
 class AirBnB extends React.Component {
   state = {
     bgColor: "black",
   };
+
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 2000, 3000];
     const colorsList = ["black", "#00A699"];
@@ -80,7 +82,10 @@ class AirBnB extends React.Component {
             }}
           >
             {" "}
-            <img
+            <motion.img
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{ type: "tween", duration: "1s" }}
               style={{
                 width: "90%",
                 zIndex: "5",
