@@ -131,8 +131,9 @@ class AirBnB extends React.Component {
               <p></p>
             </div>
 
-            <div style={{ color: "white" }}>
-              <h1>some text here</h1>
+            <div style={{ color: "white", marginTop: "40px", width: "50%" }}>
+              Users are able to 'Request booking' and leave reviews after
+              booking is complete.
             </div>
             <div style={{ marginTop: "50px" }}>
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
@@ -197,13 +198,22 @@ class AirBnB extends React.Component {
               </Tilt>
             </div>
             <div
-              style={{ color: "white", marginLeft: "40px", textAlign: "right" }}
+              style={{
+                color: "white",
+                marginLeft: "40px",
+                textAlign: "right",
+                width: "50%",
+                marginLeft: "40%",
+              }}
             >
-              <h1>some text here</h1>
+              Users can log in and access thier 'Profile' page, where they can
+              update their data, created a house to be listed and edit a
+              currently listed house.
             </div>
 
-            <div style={{ color: "white" }}>
-              <h1>some text here</h1>
+            <div style={{ color: "white", width: "50%" }}>
+              List a house form that creates house in the database and populates
+              data into 'houses' and 'profile' pages.
             </div>
             <div style={{ marginTop: "50px" }}>
               {" "}
