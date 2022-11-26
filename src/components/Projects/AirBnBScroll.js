@@ -1,19 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
 import { useAnimation } from "framer-motion";
+import styles from "../../styles/Projects.css";
 
 const Scroll = () => {
   const myRef = useRef();
+  const [onVisible, setOnVisible] = useState();
+  console.log("onVisible", onVisible);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      console.log("entry", entry);
+      setOnVisible(entry.isIntersecting);
     });
     observer.observe(myRef.current);
   }, []);
 
+  const animate = useAnimation();
   return (
     <>
       {" "}
@@ -26,14 +29,14 @@ const Scroll = () => {
         ref={myRef}
       >
         {" "}
-        <motion.img
+        <img
           style={{
             width: "90%",
             borderRadius: "5px",
             boxShadow:
               "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
           }}
-          className="airbnb-img"
+          className={`${styles.airbnb} ${onVisible ? styles.grow : " "}`}
           src="./images/project-img/abnb4.png"
           alt=""
         />
@@ -162,7 +165,7 @@ const Scroll = () => {
           }}
         >
           Users can log in and access thier 'Profile' page, where they can
-          update their data, created a house to be listed and edit a currently
+          update their data, create a house to be listed and edit a currently
           listed house.
         </div>
 
