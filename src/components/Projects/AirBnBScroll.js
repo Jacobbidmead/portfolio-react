@@ -1,35 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
 import { useAnimation } from "framer-motion";
 
 const Scroll = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-  });
-  const animation = useAnimation();
-
+  const myRef = useRef();
   useEffect(() => {
-    if (inView) {
-      animation.start({
-        scale: 0.5,
-        transition: {
-          type: "tween",
-          duration: "1s",
-        },
-      });
-    }
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      console.log("entry", entry);
+    });
+    observer.observe(myRef.current);
+  }, []);
 
-    if (!inView) {
-      animation.start({
-        scale: 1,
-      });
-    }
-
-    console.log("use effect hook, inView = ", inView);
-  }, [inView]);
   return (
     <>
       {" "}
@@ -39,23 +23,20 @@ const Scroll = () => {
           justifyContent: "center",
           marginTop: "300px",
         }}
-        ref={ref}
+        ref={myRef}
       >
         {" "}
-        <motion.div animate={animation}>
-          <img
-            style={{
-              width: "90%",
-              zIndex: "5",
-              borderRadius: "5px",
-              boxShadow:
-                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-            }}
-            className="airbnb-img"
-            src="./images/project-img/abnb4.png"
-            alt=""
-          />
-        </motion.div>
+        <motion.img
+          style={{
+            width: "90%",
+            borderRadius: "5px",
+            boxShadow:
+              "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+          }}
+          className="airbnb-img"
+          src="./images/project-img/abnb4.png"
+          alt=""
+        />
       </div>
       <div
         style={{
@@ -163,6 +144,7 @@ const Scroll = () => {
                 marginBottom: "80px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                cursor: "pointer",
               }}
               className="airbnb-img"
               src="./images/project-img/abnb6.png"
@@ -197,6 +179,7 @@ const Scroll = () => {
                 borderRadius: "5px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                cursor: "pointer",
               }}
               className="airbnb-img"
               src="./images/project-img/abnb7.png"
