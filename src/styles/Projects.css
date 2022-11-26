@@ -62,14 +62,20 @@
 
 @keyframes grow {
   0% {
-    transform: scale(0.1);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
 
-.grow {
-  transition: 1s;
-  animation: grow ease 1s;
+.airbnb {
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.animateAirbnb {
+  animation-name: grow;
+  animation-duration: 1s;
 }
