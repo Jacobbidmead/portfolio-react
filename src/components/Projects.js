@@ -84,6 +84,7 @@ class Projects extends React.Component {
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
+                viewport={{ once: false }}
               >
                 MagiKards
               </motion.div>
@@ -111,6 +112,7 @@ class Projects extends React.Component {
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
+                viewport={{ once: false }}
               >
                 AIRBNB
               </motion.div>
@@ -138,6 +140,7 @@ class Projects extends React.Component {
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
+                viewport={{ once: false }}
               >
                 Google Search
               </motion.div>
