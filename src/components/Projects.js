@@ -3,7 +3,7 @@ import MagiKards from "../components/Projects/MagiKards.js";
 import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
 
@@ -84,7 +84,7 @@ class Projects extends React.Component {
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
-                viewport={{ once: false }}
+                viewport={{ once: false, amount: 0.1 }}
               >
                 MagiKards
               </motion.div>
@@ -112,7 +112,7 @@ class Projects extends React.Component {
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
-                viewport={{ once: false }}
+                viewport={{ once: false, amount: 0.1 }}
               >
                 AIRBNB
               </motion.div>
@@ -140,7 +140,7 @@ class Projects extends React.Component {
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
-                viewport={{ once: false }}
+                viewport={{ once: false, amount: 0.1 }}
               >
                 Google Search
               </motion.div>

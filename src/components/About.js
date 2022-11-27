@@ -1,15 +1,18 @@
 import React from "react";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeOut,
-  MoveIn,
-  MoveOut,
-} from "react-scroll-motion";
+import { motion } from "framer-motion";
 import "../styles/About.css";
+
+const textAnimate = {
+  offscreen: { y: 600 },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
 
 class About extends React.Component {
   state = {
@@ -51,7 +54,7 @@ class About extends React.Component {
             transition: "background-color 0.5s ease",
           }}
         >
-          <div
+          <motion.div
             style={{
               marginLeft: "30px",
               marginTop: "20px",
@@ -68,9 +71,13 @@ class About extends React.Component {
               &nbsp;Photography,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based in
               &nbsp;&nbsp;South London.
             </span>
-          </div>
+          </motion.div>
 
-          <div
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={textAnimate}
+            viewport={{ once: false, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "right",
@@ -80,6 +87,7 @@ class About extends React.Component {
               width: "50%",
               padding: "40px",
               marginLeft: "40%",
+              marginTop: "300px",
             }}
           >
             <span className="about-paragraph">
@@ -92,7 +100,7 @@ class About extends React.Component {
               viewed in the projects section of this site and on my&nbsp;
               <b>GitHub</b> repository.{" "}
             </span>
-          </div>
+          </motion.div>
 
           <div
             style={{
@@ -102,13 +110,13 @@ class About extends React.Component {
               gridTemplateColumns: "1fr 1fr",
             }}
           >
-            <div className="about-text">
+            <motion.div className="about-text">
               After three months of self study, I completed{" "}
               <b>Tortuga Coders 11 week fullstack coding bootcamp</b>{" "}
               &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand.
               &nbsp;&nbsp;&nbsp;&nbsp;Graduating in mid-October 2022.
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <div>
+              <motion.div>
                 <a
                   style={{
                     textDecoration: "none",
@@ -121,10 +129,10 @@ class About extends React.Component {
                 >
                   <b>Click me.</b>
                 </a>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div
+            <motion.div
               style={{
                 textAlign: "right",
                 color: "white",
@@ -146,7 +154,7 @@ class About extends React.Component {
                   stack required.
                 </b>
               </span>
-            </div>
+            </motion.div>
           </div>
 
           <div
@@ -155,7 +163,7 @@ class About extends React.Component {
               gridTemplateColumns: "1fr 1fr",
             }}
           >
-            <div
+            <motion.div
               className="about-text"
               style={{ fontSize: "40px", color: "black" }}
             >
@@ -169,8 +177,8 @@ class About extends React.Component {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;studying{" "}
               <b>BA:Hons - Print & Time Based Media.</b>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
               className="about-text"
               style={{
                 fontSize: "40px",
@@ -189,10 +197,10 @@ class About extends React.Component {
                   over the last 8 years.
                 </p>
               </span>
-            </div>
+            </motion.div>
           </div>
 
-          <div
+          <motion.div
             style={{
               textAlign: "left",
               fontSize: "100px",
@@ -206,9 +214,9 @@ class About extends React.Component {
             }}
           >
             <span className="about-paragraph last-right">Get in touch.</span>
-          </div>
+          </motion.div>
 
-          <div
+          <motion.div
             style={{
               fontSize: "40px",
               textAlign: "center",
@@ -218,9 +226,9 @@ class About extends React.Component {
           >
             <i className="fa-solid fa-envelope"></i>
             jacob.bidmead.fullstack@outlook.com
-          </div>
+          </motion.div>
           <div>
-            <div className="gitlink">
+            <motion.div className="gitlink">
               <a
                 href="https://github.com/Jacobbidmead"
                 className="gitlink"
@@ -230,7 +238,7 @@ class About extends React.Component {
                 <i className="fa-brands fa-github"></i>
                 github.com/Jacobbidmead
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>
