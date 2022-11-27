@@ -2,6 +2,18 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
+const scaleImg = {
+  offscreen: { scale: 1 },
+  onscreen: {
+    scale: 1.2,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 0.5,
+    },
+  },
+};
+
 class AirBnB extends React.Component {
   state = {
     bgColor: "black",
@@ -73,7 +85,11 @@ class AirBnB extends React.Component {
               </p>
             </div>
           </div>
-          <div
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={scaleImg}
+            viewport={{ once: false, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -87,7 +103,7 @@ class AirBnB extends React.Component {
               className="airbnb"
               on
             />
-          </div>
+          </motion.div>
           <div
             style={{
               display: "grid",
@@ -156,7 +172,11 @@ class AirBnB extends React.Component {
               </Tilt>
             </div>
           </div>
-          <div
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={scaleImg}
+            viewport={{ once: false, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -166,7 +186,7 @@ class AirBnB extends React.Component {
             {" "}
             <img
               style={{
-                width: "90%",
+                width: "70%",
                 borderRadius: "5px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
@@ -175,7 +195,7 @@ class AirBnB extends React.Component {
               src="./images/project-img/abnb3.png"
               alt=""
             />
-          </div>
+          </motion.div>
           <div
             style={{
               display: "grid",

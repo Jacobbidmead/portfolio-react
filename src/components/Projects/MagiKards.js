@@ -1,12 +1,25 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
+
+const scaleImg = {
+  offscreen: { scale: 1 },
+  onscreen: {
+    scale: 1.2,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 0.5,
+    },
+  },
+};
 
 class MagiKards extends React.Component {
   state = {
     bgColor: "black",
   };
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [0, 2000, 3000];
+    const backgroundBreakpoints = [0, 900, 3000];
     const colorsList = ["black", "#870058"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
@@ -67,7 +80,11 @@ class MagiKards extends React.Component {
               Technologies used - React, JavaScript, HTML, CSS.
             </div>
           </div>
-          <div
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={scaleImg}
+            viewport={{ once: false, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -77,8 +94,7 @@ class MagiKards extends React.Component {
             {" "}
             <img
               style={{
-                width: "90%",
-                zIndex: "5",
+                width: "60%",
                 borderRadius: "5px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
@@ -87,7 +103,7 @@ class MagiKards extends React.Component {
               src="./images/project-img/MK1.png"
               alt=""
             />
-          </div>
+          </motion.div>
           <div
             style={{
               display: "grid",
@@ -171,21 +187,27 @@ class MagiKards extends React.Component {
               </Tilt>
             </div>
           </div>
+
           <div
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "50px",
             }}
           >
-            <img
+            {" "}
+            <motion.img
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={scaleImg}
+              viewport={{ once: false, amount: 0.1 }}
               style={{
-                width: "80%",
+                width: "60%",
                 borderRadius: "5px",
-                marginBottom: "40px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                marginBottom: "100px",
               }}
+              className="airbnb-img"
               src="./images/project-img/MK4.png"
               alt=""
             />
