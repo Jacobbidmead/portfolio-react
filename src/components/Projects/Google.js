@@ -71,7 +71,7 @@ class Google extends React.Component {
                 MongoDB database.
               </p>
               <p>
-                Tecnhologies used - React, Axios, Passport, HTML, CSS,
+                Technologies used - React, Axios, Passport, HTML, CSS,
                 Express.js, Node.js, MongoDB.
               </p>
               <small style={{ fontSize: "15px" }}>

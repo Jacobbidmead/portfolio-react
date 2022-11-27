@@ -55,6 +55,12 @@ class About extends React.Component {
           }}
         >
           <motion.div
+            initial={{ y: "600", opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { type: "tween", duration: 0.8 },
+            }}
             style={{
               marginLeft: "30px",
               marginTop: "20px",
@@ -77,7 +83,7 @@ class About extends React.Component {
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={textAnimate}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "right",
@@ -87,7 +93,7 @@ class About extends React.Component {
               width: "50%",
               padding: "40px",
               marginLeft: "40%",
-              marginTop: "300px",
+              marginTop: "100px",
             }}
           >
             <span className="about-paragraph">

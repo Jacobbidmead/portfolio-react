@@ -64,7 +64,7 @@ class MagiKards extends React.Component {
                 opposition player. We took influence from online card games such
                 as Yu-Gi-Oh & Gwent from The Witcher game series.
               </p>
-              Tecnhologies used - React, JavaScript, HTML, CSS.
+              Technologies used - React, JavaScript, HTML, CSS.
             </div>
           </div>
           <div

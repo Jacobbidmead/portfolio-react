@@ -68,7 +68,7 @@ class AirBnB extends React.Component {
                 Express.js.
               </p>
               <p>
-                Tecnhologies used - JavaScript, HTML, CSS, Bootstrap,
+                Technologies used - JavaScript, HTML, CSS, Bootstrap,
                 Express.js, Node.js, MongoDB.
               </p>
             </div>
