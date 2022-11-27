@@ -3,12 +3,25 @@ import MagiKards from "../components/Projects/MagiKards.js";
 import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
 import "../styles/Projects.css";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
 
 const random = () => {
   return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+};
+
+const linkAnimate = {
+  offscreen: { y: 200, scale: 1 },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.6,
+      duration: 1,
+      scale: 2,
+    },
+  },
 };
 
 class Projects extends React.Component {
@@ -56,6 +69,8 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
                 whileHover={{
                   scale: 1.1,
                 }}
@@ -68,6 +83,7 @@ class Projects extends React.Component {
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
+                variants={linkAnimate}
               >
                 MagiKards
               </motion.div>
@@ -80,6 +96,8 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
                 whileHover={{
                   scale: 1.1,
                 }}
@@ -92,6 +110,7 @@ class Projects extends React.Component {
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
+                variants={linkAnimate}
               >
                 AIRBNB
               </motion.div>
@@ -104,6 +123,8 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
                 whileHover={{
                   scale: 1.1,
                 }}
@@ -116,6 +137,7 @@ class Projects extends React.Component {
                 onClick={(e) => this.props.toggleShowGoogle(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
+                variants={linkAnimate}
               >
                 Google Search
               </motion.div>
