@@ -9,7 +9,43 @@ const scaleImg = {
     transition: {
       type: "tween",
       bounce: 0.6,
-      duration: 0.5,
+      duration: 0.7,
+    },
+  },
+};
+
+const moveLeft = {
+  offscreen: { x: 200 },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 0.7,
+    },
+  },
+};
+
+const moveRight = {
+  offscreen: { x: -200 },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 0.7,
+    },
+  },
+};
+
+const textAnimate = {
+  offscreen: { y: 200 },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
     },
   },
 };
@@ -42,6 +78,7 @@ class MagiKards extends React.Component {
           style={{
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
+            color: "white",
           }}
         >
           <div className="header" style={{ marginBottom: "170px" }}>
@@ -112,7 +149,12 @@ class MagiKards extends React.Component {
               margin: "200px 70px 0px 70px",
             }}
           >
-            <div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
+            >
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
                   style={{
@@ -127,8 +169,12 @@ class MagiKards extends React.Component {
                   alt=""
                 />
               </Tilt>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
                 textAlign: "right",
                 width: "50%",
@@ -147,9 +193,13 @@ class MagiKards extends React.Component {
                 the top right of the home screen and disapears when clicking
                 'info'.
               </p>
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "50%",
                 marginTop: " 100px",
@@ -168,9 +218,15 @@ class MagiKards extends React.Component {
                 relevent players. This project is still in the development phase
                 that we contintue to work on as a group.
               </p>
-            </div>
+            </motion.div>
 
-            <div style={{ marginTop: "100px" }}>
+            <motion.div
+              style={{ marginTop: "100px" }}
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveLeft}
+              viewport={{ once: true, amount: 0.1 }}
+            >
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
@@ -185,7 +241,7 @@ class MagiKards extends React.Component {
                   alt=""
                 />
               </Tilt>
-            </div>
+            </motion.div>
           </div>
 
           <div

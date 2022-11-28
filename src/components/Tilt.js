@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 import "../styles/Tilt.css";
 

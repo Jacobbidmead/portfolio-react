@@ -9,7 +9,7 @@ const scaleImg = {
     transition: {
       type: "tween",
       bounce: 0.6,
-      duration: 0.5,
+      duration: 0.7,
     },
   },
 };
@@ -20,7 +20,7 @@ class AirBnB extends React.Component {
   };
 
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [0, 2000, 3000];
+    const backgroundBreakpoints = [0, 900, 3000];
     const colorsList = ["black", "#00A699"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
