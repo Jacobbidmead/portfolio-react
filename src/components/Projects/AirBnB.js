@@ -121,11 +121,7 @@ class AirBnB extends React.Component {
               </p>
             </div>
           </div>
-          <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={scaleImg}
-            viewport={{ once: true, amount: 0.1 }}
+          <div
             style={{
               display: "flex",
               justifyContent: "center",
@@ -133,13 +129,17 @@ class AirBnB extends React.Component {
             }}
           >
             {" "}
-            <img
+            <motion.img
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={scaleImg}
+              viewport={{ once: true, amount: 0.1 }}
               src="./images/project-img/abnb4.png"
               alt=""
               className="airbnb"
               on
             />
-          </motion.div>
+          </div>
           <div
             style={{
               display: "grid",
@@ -193,7 +193,6 @@ class AirBnB extends React.Component {
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={textAnimate}
-              viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 marginTop: "40px",
@@ -227,11 +226,7 @@ class AirBnB extends React.Component {
               </Tilt>
             </motion.div>
           </div>
-          <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={scaleImg}
-            viewport={{ once: true, amount: 0.1 }}
+          <div
             style={{
               display: "flex",
               justifyContent: "center",
@@ -239,7 +234,11 @@ class AirBnB extends React.Component {
             }}
           >
             {" "}
-            <img
+            <motion.img
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={scaleImg}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
                 borderRadius: "5px",
@@ -250,7 +249,7 @@ class AirBnB extends React.Component {
               src="./images/project-img/abnb3.png"
               alt=""
             />
-          </motion.div>
+          </div>
           <div
             style={{
               display: "grid",

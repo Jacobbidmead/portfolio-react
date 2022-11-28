@@ -1,5 +1,54 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
+
+const scaleImg = {
+  offscreen: { scale: 1 },
+  onscreen: {
+    scale: 1.2,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 1,
+    },
+  },
+};
+
+const moveLeft = {
+  offscreen: { x: 200 },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 0.8,
+    },
+  },
+};
+
+const moveRight = {
+  offscreen: { x: -200 },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 1,
+    },
+  },
+};
+
+const textAnimate = {
+  offscreen: { y: 400 },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
 
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
 
@@ -84,9 +133,18 @@ class Google extends React.Component {
             onMouseEnter={this.onMouseEnter}
             style={style}
           >
-            <img
+            <motion.img
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={scaleImg}
+              viewport={{ once: true, amount: 0.5 }}
               src="./images/project-img/google.png"
-              style={{ width: "80%", borderRadius: "5px", cursor: "pointer" }}
+              style={{
+                width: "70%",
+                borderRadius: "5px",
+                cursor: "pointer",
+                marginTop: "100px",
+              }}
               alt=""
               onMouseEnter={this.onMouseEnter}
             />
@@ -99,7 +157,11 @@ class Google extends React.Component {
                 marginLeft: "145px",
               }}
             >
-              <div
+              <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={moveRight}
+                viewport={{ once: true, amount: 0.1 }}
                 onMouseEnter={this.onMouseEnter}
                 style={{ marginBottom: "50px" }}
               >
@@ -110,11 +172,12 @@ class Google extends React.Component {
                       width: "100%",
                       borderRadius: "5px",
                       cursor: "pointer",
+                      marginTop: "100px",
                     }}
                     alt=""
                   />
                 </Tilt>
-              </div>
+              </motion.div>
               <div
                 style={{
                   color: "white",

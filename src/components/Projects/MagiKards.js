@@ -116,11 +116,7 @@ class MagiKards extends React.Component {
               Technologies used - React, JavaScript, HTML, CSS.
             </div>
           </div>
-          <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={scaleImg}
-            viewport={{ once: true, amount: 0.1 }}
+          <div
             style={{
               display: "flex",
               justifyContent: "center",
@@ -128,7 +124,11 @@ class MagiKards extends React.Component {
             }}
           >
             {" "}
-            <img
+            <motion.img
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={scaleImg}
+              viewport={{ once: false, amount: 0.1 }}
               style={{
                 width: "60%",
                 borderRadius: "5px",
@@ -139,7 +139,7 @@ class MagiKards extends React.Component {
               src="./images/project-img/MK1.png"
               alt=""
             />
-          </motion.div>
+          </div>
           <div
             style={{
               display: "grid",
