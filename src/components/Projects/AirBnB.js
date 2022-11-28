@@ -9,7 +9,43 @@ const scaleImg = {
     transition: {
       type: "tween",
       bounce: 0.6,
-      duration: 0.7,
+      duration: 1,
+    },
+  },
+};
+
+const moveLeft = {
+  offscreen: { x: 200 },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 0.8,
+    },
+  },
+};
+
+const moveRight = {
+  offscreen: { x: -200 },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.6,
+      duration: 0.8,
+    },
+  },
+};
+
+const textAnimate = {
+  offscreen: { y: 400 },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
     },
   },
 };
@@ -89,7 +125,7 @@ class AirBnB extends React.Component {
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={scaleImg}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -108,11 +144,16 @@ class AirBnB extends React.Component {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gridTemplateRows: " 1fr 1fr",
+              gridTemplateRows: "1fr 1fr",
               margin: "200px 70px 100px 70px",
             }}
           >
-            <div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
+            >
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
@@ -128,8 +169,12 @@ class AirBnB extends React.Component {
                   alt=""
                 />
               </Tilt>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveLeft}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 marginLeft: "40%",
@@ -142,9 +187,13 @@ class AirBnB extends React.Component {
               Once a house is selected user is taken to the 'house' page, where
               they can interact with the house gallery.
               <p></p>
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 marginTop: "40px",
@@ -154,8 +203,14 @@ class AirBnB extends React.Component {
             >
               Users are able to 'Request booking' and leave reviews after
               booking is complete.
-            </div>
-            <div style={{ marginTop: "50px" }}>
+            </motion.div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveLeft}
+              viewport={{ once: true, amount: 0.1 }}
+              style={{ marginTop: "50px" }}
+            >
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
                   style={{
@@ -170,13 +225,13 @@ class AirBnB extends React.Component {
                   alt=""
                 />
               </Tilt>
-            </div>
+            </motion.div>
           </div>
           <motion.div
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={scaleImg}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -204,7 +259,12 @@ class AirBnB extends React.Component {
               margin: "200px 70px 100px 70px",
             }}
           >
-            <div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
+            >
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
@@ -221,8 +281,12 @@ class AirBnB extends React.Component {
                   alt=""
                 />{" "}
               </Tilt>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 textAlign: "right",
@@ -234,12 +298,18 @@ class AirBnB extends React.Component {
               Users can log in and access thier 'Profile' page, where they can
               update their data, create a house to be listed and edit a
               currently listed house.
-            </div>
+            </motion.div>
 
-            <div style={{ color: "white", width: "50%", fontSize: "30px" }}>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
+              style={{ color: "white", width: "50%", fontSize: "30px" }}
+            >
               List a house form that creates house in the database and populates
               data into 'houses' and 'profile' pages.
-            </div>
+            </motion.div>
             <div style={{ marginTop: "50px" }}>
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>

@@ -39,7 +39,7 @@ const moveRight = {
 };
 
 const textAnimate = {
-  offscreen: { y: 200 },
+  offscreen: { y: 400 },
   onscreen: {
     y: 0,
     transition: {
@@ -56,7 +56,7 @@ class MagiKards extends React.Component {
   };
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 3000];
-    const colorsList = ["black", "#870058"];
+    const colorsList = ["black", "#CB04A5"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -78,7 +78,6 @@ class MagiKards extends React.Component {
           style={{
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
-            color: "white",
           }}
         >
           <div className="header" style={{ marginBottom: "170px" }}>
@@ -121,7 +120,7 @@ class MagiKards extends React.Component {
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={scaleImg}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -158,11 +157,12 @@ class MagiKards extends React.Component {
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
                   style={{
-                    width: "100%",
+                    width: "80%",
                     borderRadius: "5px",
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     cursor: "pointer",
+                    marginLeft: "100px",
                   }}
                   className="airbnb-img"
                   src="./images/project-img/MK3.png"
@@ -178,8 +178,8 @@ class MagiKards extends React.Component {
               style={{
                 textAlign: "right",
                 width: "50%",
-                marginLeft: "40%",
-                fontSize: "27px",
+                marginLeft: "25%",
+                fontSize: "20px",
               }}
             >
               The view above is the home screen; players are able to select
@@ -204,6 +204,7 @@ class MagiKards extends React.Component {
                 width: "50%",
                 marginTop: " 100px",
                 fontSize: "18px",
+                marginLeft: "60px",
               }}
             >
               This view below shows the Battlefield, the hand of cards is
@@ -261,7 +262,8 @@ class MagiKards extends React.Component {
                 borderRadius: "5px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                marginBottom: "100px",
+                marginBottom: "130px",
+                marginTop: "150px",
               }}
               className="airbnb-img"
               src="./images/project-img/MK4.png"
