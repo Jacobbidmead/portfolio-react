@@ -176,11 +176,13 @@ class MagiKards extends React.Component {
               variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                textAlign: "right",
                 width: "50%",
                 marginLeft: "25%",
                 fontSize: "20px",
+                color: "white",
+                height: "60%",
               }}
+              className="text-box"
             >
               The view above is the home screen; players are able to select
               either Ice or Fire, then enter thier name into the input above.
@@ -205,7 +207,10 @@ class MagiKards extends React.Component {
                 marginTop: " 100px",
                 fontSize: "18px",
                 marginLeft: "60px",
+                color: "white",
+                height: "62%",
               }}
+              className="text-box"
             >
               This view below shows the Battlefield, the hand of cards is
               randomly generated to the player. Once the player runs out of

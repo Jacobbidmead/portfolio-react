@@ -178,11 +178,12 @@ class AirBnB extends React.Component {
               style={{
                 color: "white",
                 marginLeft: "40%",
-                textAlign: "right",
                 marginBottom: "80px",
                 width: "50%",
                 fontSize: "25px",
+                height: "30%",
               }}
+              className="text-box"
             >
               Once a house is selected user is taken to the 'house' page, where
               they can interact with the house gallery.
@@ -193,12 +194,15 @@ class AirBnB extends React.Component {
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={textAnimate}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 marginTop: "40px",
                 width: "50%",
                 fontSize: "25px",
+                height: "25%",
               }}
+              className="text-box"
             >
               Users are able to 'Request booking' and leave reviews after
               booking is complete.
@@ -288,11 +292,12 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-                textAlign: "right",
                 width: "50%",
                 marginLeft: "40%",
                 fontSize: "25px",
+                height: "34%",
               }}
+              className="text-box"
             >
               Users can log in and access thier 'Profile' page, where they can
               update their data, create a house to be listed and edit a
@@ -304,7 +309,13 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={moveRight}
               viewport={{ once: true, amount: 0.1 }}
-              style={{ color: "white", width: "50%", fontSize: "30px" }}
+              style={{
+                color: "white",
+                width: "50%",
+                fontSize: "30px",
+                height: "40%",
+              }}
+              className="text-box"
             >
               List a house form that creates house in the database and populates
               data into 'houses' and 'profile' pages.

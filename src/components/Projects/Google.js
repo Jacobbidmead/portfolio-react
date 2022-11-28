@@ -39,7 +39,7 @@ const moveRight = {
 };
 
 const textAnimate = {
-  offscreen: { y: 400 },
+  offscreen: { y: 50 },
   onscreen: {
     y: 0,
     transition: {
@@ -178,15 +178,25 @@ class Google extends React.Component {
                   />
                 </Tilt>
               </motion.div>
-              <div
+              <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={textAnimate}
+                viewport={{ once: true, amount: 0.1 }}
                 style={{
                   color: "white",
-                  marginRight: "160px",
                   textAlign: "right",
+                  marginTop: "100px",
+                  marginLeft: "90px",
+                  width: "50%",
+                  fontSize: "30px",
                 }}
               >
-                <p>Some txt here</p>
-              </div>
+                <p className="text-box">
+                  Google search home page & results; users can search for the
+                  above data in the search bar.
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
