@@ -9,7 +9,7 @@ const TiltComponent = () => {
       tiltMaxAngleX={10}
       tiltMaxAngleY={10}
       perspective={1000}
-      glareColor={"red"}
+      glareColor={"lime"}
     >
       <div className="tiltComponent">
         <div style={{ paddingTop: "140px" }}>JACOB </div>
