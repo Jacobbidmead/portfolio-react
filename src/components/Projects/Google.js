@@ -14,18 +14,6 @@ const scaleImg = {
   },
 };
 
-const moveLeft = {
-  offscreen: { x: 200 },
-  onscreen: {
-    x: 0,
-    transition: {
-      type: "tween",
-      bounce: 0.6,
-      duration: 0.8,
-    },
-  },
-};
-
 const moveRight = {
   offscreen: { x: -200 },
   onscreen: {
@@ -164,6 +152,7 @@ class Google extends React.Component {
                 viewport={{ once: true, amount: 0.1 }}
                 onMouseEnter={this.onMouseEnter}
                 style={{ marginBottom: "50px" }}
+                className="projects-img"
               >
                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                   <img
@@ -172,7 +161,7 @@ class Google extends React.Component {
                       width: "100%",
                       borderRadius: "5px",
                       cursor: "pointer",
-                      marginTop: "100px",
+                      marginTop: "80px",
                     }}
                     alt=""
                   />
@@ -184,15 +173,15 @@ class Google extends React.Component {
                 variants={textAnimate}
                 viewport={{ once: true, amount: 0.1 }}
                 style={{
-                  color: "white",
                   textAlign: "right",
-                  marginTop: "100px",
+                  marginTop: "150px",
                   marginLeft: "90px",
                   width: "50%",
-                  fontSize: "30px",
+                  fontSize: "25px",
+                  height: "30%",
                 }}
               >
-                <p className="text-box">
+                <p style={{ color: "white" }} className="text-box">
                   Google search home page & results; users can search for the
                   above data in the search bar.
                 </p>

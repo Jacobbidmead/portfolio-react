@@ -164,7 +164,7 @@ class MagiKards extends React.Component {
                     cursor: "pointer",
                     marginLeft: "100px",
                   }}
-                  className="airbnb-img"
+                  className="projects-img"
                   src="./images/project-img/MK3.png"
                   alt=""
                 />
@@ -180,7 +180,7 @@ class MagiKards extends React.Component {
                 marginLeft: "25%",
                 fontSize: "20px",
                 color: "white",
-                height: "60%",
+                height: "45%",
               }}
               className="text-box"
             >
@@ -204,25 +204,24 @@ class MagiKards extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "50%",
-                marginTop: " 100px",
                 fontSize: "18px",
                 marginLeft: "60px",
                 color: "white",
-                height: "62%",
               }}
               className="text-box"
             >
               This view below shows the Battlefield, the hand of cards is
               randomly generated to the player. Once the player runs out of
-              cards, seven more cards will be randomly selected from the deck.
-              the view to the right is showing the selected cards of the two
-              players, when a card is selected it will be displayed as the main
-              card in the center of the screen. There is also a pass option.
+              cards, seven more cards will be randomly selected from the deck
+              and given to the player. The view to the right is showing the
+              selected cards of the two players, when a card is selected it will
+              be displayed as the main card in the center of the screen. There
+              is also a pass option.
               <p>
                 Once both players have selected a card, the resulting card
                 effects will take place and health will be subtracked from the
                 relevent players. This project is still in the development phase
-                that we contintue to work on as a group.
+                that we continue to work on as a group.
               </p>
             </motion.div>
 
@@ -243,6 +242,7 @@ class MagiKards extends React.Component {
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     cursor: "pointer",
                   }}
+                  className="projects-img"
                   src="./images/project-img/MK2.png"
                   alt=""
                 />
@@ -270,7 +270,6 @@ class MagiKards extends React.Component {
                 marginBottom: "130px",
                 marginTop: "150px",
               }}
-              className="airbnb-img"
               src="./images/project-img/MK4.png"
               alt=""
             />

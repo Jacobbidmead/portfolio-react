@@ -56,7 +56,7 @@ class AirBnB extends React.Component {
   };
 
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [0, 900, 3000];
+    const backgroundBreakpoints = [0, 900, 1000];
     const colorsList = ["black", "#00A699"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
@@ -136,7 +136,7 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               src="./images/project-img/abnb4.png"
               alt=""
-              className="airbnb"
+              className="airbnb "
               on
             />
           </div>
@@ -164,7 +164,7 @@ class AirBnB extends React.Component {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
-                  className="airbnb-img"
+                  className="projects-img"
                   src="./images/project-img/abnb1.png"
                   alt=""
                 />
@@ -177,15 +177,15 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-                marginLeft: "40%",
-                marginBottom: "80px",
+
+                margin: "250px 40px 80px 25%",
                 width: "50%",
                 fontSize: "25px",
-                height: "30%",
+                height: "20%",
               }}
               className="text-box"
             >
-              Once a house is selected user is taken to the 'house' page, where
+              Once a house is selected, user is taken to the 'house' page, where
               they can interact with the house gallery.
               <p></p>
             </motion.div>
@@ -197,10 +197,10 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-                marginTop: "40px",
                 width: "50%",
                 fontSize: "25px",
-                height: "25%",
+                height: "15%",
+                marginLeft: "80px",
               }}
               className="text-box"
             >
@@ -223,7 +223,7 @@ class AirBnB extends React.Component {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}
-                  className="airbnb-img"
+                  className="projects-img"
                   src="./images/project-img/abnb2.png"
                   alt=""
                 />
@@ -249,7 +249,6 @@ class AirBnB extends React.Component {
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
               }}
-              className="airbnb-img"
               src="./images/project-img/abnb3.png"
               alt=""
             />
@@ -279,7 +278,7 @@ class AirBnB extends React.Component {
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     cursor: "pointer",
                   }}
-                  className="airbnb-img"
+                  className="projects-img"
                   src="./images/project-img/abnb6.png"
                   alt=""
                 />{" "}
@@ -293,9 +292,9 @@ class AirBnB extends React.Component {
               style={{
                 color: "white",
                 width: "50%",
-                marginLeft: "40%",
+                marginLeft: "30%",
                 fontSize: "25px",
-                height: "34%",
+                height: "24%",
               }}
               className="text-box"
             >
@@ -313,14 +312,21 @@ class AirBnB extends React.Component {
                 color: "white",
                 width: "50%",
                 fontSize: "30px",
-                height: "40%",
+                height: "30%",
+                marginLeft: "80px",
               }}
               className="text-box"
             >
-              List a house form that creates house in the database and populates
-              data into 'houses' and 'profile' pages.
+              List a house form that creates a house in the database and
+              populates data into 'houses' and 'profile' pages.
             </motion.div>
-            <div style={{ marginTop: "50px" }}>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveLeft}
+              viewport={{ once: true, amount: 0.1 }}
+              style={{ marginTop: "50px" }}
+            >
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
@@ -331,12 +337,12 @@ class AirBnB extends React.Component {
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     cursor: "pointer",
                   }}
-                  className="airbnb-img"
+                  className="projects-img"
                   src="./images/project-img/abnb7.png"
                   alt=""
                 />
               </Tilt>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>
