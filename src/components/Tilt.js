@@ -13,7 +13,7 @@ const TiltComponent = () => {
     >
       <motion.div
         animate={{
-          scale: [1, 1.5, 1.5, 1, 1],
+          scale: [1, 1.3, 1.3, 1, 1],
           rotate: [0, 0, 360, 360, 0],
         }}
         transition={{

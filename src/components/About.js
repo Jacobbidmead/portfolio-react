@@ -71,9 +71,9 @@ class About extends React.Component {
             }}
           >
             <span>
-              Hi. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Front End Developer
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
-              in Web/UI Design and
+              Hi. I'm Jake.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Front End
+              Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an
+              interest in Web/UI Design and
               &nbsp;Photography,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based in
               &nbsp;&nbsp;South London.
             </span>
@@ -97,8 +97,6 @@ class About extends React.Component {
             }}
           >
             <span className="about-paragraph">
-              Im looking for a junior position as &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <b> a Front End/Full Stack Web Developer</b>,
               &nbsp;&nbsp;&nbsp;&nbsp;Im currenlty
               &nbsp;&nbsp;&nbsp;&nbsp;working on a number of personal and
               freelance projects,

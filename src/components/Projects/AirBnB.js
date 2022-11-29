@@ -146,6 +146,9 @@ class AirBnB extends React.Component {
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: "1fr 1fr",
               margin: "200px 70px 100px 70px",
+              backgroundColor: "#FE5F55",
+              padding: "50px",
+              borderRadius: "20px",
             }}
           >
             <motion.div
@@ -179,7 +182,7 @@ class AirBnB extends React.Component {
                 color: "white",
                 width: "50%",
                 fontSize: "25px",
-                height: "30%",
+                height: "35%",
               }}
               className="text-box"
             >
@@ -241,7 +244,7 @@ class AirBnB extends React.Component {
               variants={scaleImg}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                width: "70%",
+                width: "82%",
                 borderRadius: "5px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
@@ -256,6 +259,10 @@ class AirBnB extends React.Component {
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: " 1fr 1fr",
               margin: "200px 70px 100px 70px",
+              backgroundColor: " #10FFCB",
+              padding: "50px",
+              borderRadius: "20px",
+              marginBottom: "80px",
             }}
           >
             <motion.div
@@ -306,7 +313,7 @@ class AirBnB extends React.Component {
                 color: "white",
                 width: "50%",
                 fontSize: "26px",
-                height: "38%",
+                height: "43%",
               }}
               className="text-box"
             >
