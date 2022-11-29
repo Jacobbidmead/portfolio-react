@@ -11,8 +11,19 @@ const TiltComponent = () => {
       tiltMaxAngleY={10}
       perspective={1000}
     >
-      <motion.div className="tiltComponent">
-        <div className="name" style={{ paddingTop: "200px" }}>
+      <motion.div
+        animate={{
+          scale: [1, 1.5, 1.5, 1, 1],
+          rotate: [0, 0, 360, 360, 0],
+        }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+        }}
+        className="tiltComponent"
+      >
+        <div className="name" style={{ paddingTop: "150px" }}>
           JACOB{" "}
         </div>
         <div className="name">BIDMEAD</div>
