@@ -57,7 +57,7 @@ class AirBnB extends React.Component {
 
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 1000];
-    const colorsList = ["black", "#00A699"];
+    const colorsList = ["black", "#23C4FF"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -177,11 +177,9 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-
-                margin: "250px 40px 80px 25%",
                 width: "50%",
                 fontSize: "25px",
-                height: "20%",
+                height: "30%",
               }}
               className="text-box"
             >
@@ -193,14 +191,13 @@ class AirBnB extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={textAnimate}
+              variants={moveRight}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 width: "50%",
                 fontSize: "25px",
-                height: "15%",
-                marginLeft: "80px",
+                height: "22%",
               }}
               className="text-box"
             >
@@ -287,22 +284,19 @@ class AirBnB extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={textAnimate}
+              variants={moveLeft}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 width: "50%",
-                marginLeft: "30%",
-                fontSize: "25px",
-                height: "24%",
+                fontSize: "28px",
+                height: "38%",
               }}
               className="text-box"
             >
-              Users can log in and access thier 'Profile' page, where they can
-              update their data, create a house to be listed and edit a
-              currently listed house.
+              List a house form that creates a house in the database and
+              populates data into 'houses' and 'profile' pages.
             </motion.div>
-
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -311,15 +305,16 @@ class AirBnB extends React.Component {
               style={{
                 color: "white",
                 width: "50%",
-                fontSize: "30px",
-                height: "30%",
-                marginLeft: "80px",
+                fontSize: "26px",
+                height: "38%",
               }}
               className="text-box"
             >
-              List a house form that creates a house in the database and
-              populates data into 'houses' and 'profile' pages.
+              Users can log in and access thier 'Profile' page, where they can
+              update their data, create a house to be listed and edit a
+              currently listed house.
             </motion.div>
+
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}

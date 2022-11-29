@@ -173,15 +173,13 @@ class Google extends React.Component {
                 variants={textAnimate}
                 viewport={{ once: true, amount: 0.1 }}
                 style={{
-                  textAlign: "right",
-                  marginTop: "150px",
-                  marginLeft: "90px",
                   width: "50%",
                   fontSize: "25px",
                   height: "30%",
                 }}
+                className="text-box"
               >
-                <p style={{ color: "white" }} className="text-box">
+                <p style={{ color: "white" }}>
                   Google search home page & results; users can search for the
                   above data in the search bar.
                 </p>

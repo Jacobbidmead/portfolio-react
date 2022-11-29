@@ -180,7 +180,7 @@ class MagiKards extends React.Component {
                 marginLeft: "25%",
                 fontSize: "20px",
                 color: "white",
-                height: "45%",
+                height: "60%",
               }}
               className="text-box"
             >
@@ -207,6 +207,7 @@ class MagiKards extends React.Component {
                 fontSize: "18px",
                 marginLeft: "60px",
                 color: "white",
+                height: "65%",
               }}
               className="text-box"
             >

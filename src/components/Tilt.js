@@ -1,22 +1,22 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import "../styles/Tilt.css";
+import { motion } from "framer-motion";
 
 const TiltComponent = () => {
   return (
     <Tilt
-      glareEnable={true}
+      glareEnable={false}
       tiltMaxAngleX={10}
       tiltMaxAngleY={10}
       perspective={1000}
-      glareColor={"lime"}
     >
-      <div className="tiltComponent">
-        <div style={{ paddingTop: "140px" }}>JACOB </div>
-        <div>BIDMEAD</div>
-        <div>WEB</div>
-        <div>DEVELOPER</div>
-      </div>
+      <motion.div className="tiltComponent">
+        <div className="name" style={{ paddingTop: "200px" }}>
+          JACOB{" "}
+        </div>
+        <div className="name">BIDMEAD</div>
+      </motion.div>
     </Tilt>
   );
 };
