@@ -157,6 +157,22 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={moveRight}
               viewport={{ once: true, amount: 0.1 }}
+              style={{
+                color: "white",
+                width: "70%",
+                fontSize: "28px",
+                height: "56%",
+              }}
+              className="text-box"
+            >
+              List a house form that creates a house in the database and
+              populates data into 'houses' and 'profile' pages.
+            </motion.div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
             >
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
@@ -173,23 +189,6 @@ class AirBnB extends React.Component {
                   alt=""
                 />
               </Tilt>
-            </motion.div>
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={moveLeft}
-              viewport={{ once: true, amount: 0.1 }}
-              style={{
-                color: "white",
-                width: "70%",
-                fontSize: "25px",
-                height: "55%",
-              }}
-              className="text-box"
-            >
-              Once a house is selected, user is taken to the 'house' page, where
-              they can interact with the house gallery.
-              <p></p>
             </motion.div>
 
             <motion.div
@@ -308,22 +307,6 @@ class AirBnB extends React.Component {
               update their data, create a house to be listed and edit a
               currently listed house.
             </motion.div>
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={moveRight}
-              viewport={{ once: true, amount: 0.1 }}
-              style={{
-                color: "white",
-                width: "70%",
-                fontSize: "28px",
-                height: "51%",
-              }}
-              className="text-box"
-            >
-              List a house form that creates a house in the database and
-              populates data into 'houses' and 'profile' pages.
-            </motion.div>
 
             <motion.div
               initial={"offscreen"}
@@ -347,6 +330,22 @@ class AirBnB extends React.Component {
                   alt=""
                 />
               </Tilt>
+            </motion.div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
+              style={{
+                color: "white",
+                width: "70%",
+                fontSize: "28px",
+                height: "51%",
+              }}
+              className="text-box"
+            >
+              List a house form that creates a house in the database and
+              populates data into 'houses' and 'profile' pages.
             </motion.div>
           </div>
         </div>

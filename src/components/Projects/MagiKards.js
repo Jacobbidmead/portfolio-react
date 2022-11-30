@@ -144,8 +144,11 @@ class MagiKards extends React.Component {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gridTemplateRows: " 1fr 1fr",
               margin: "200px 70px 0px 70px",
+              backgroundColor: "rgba(0,0,0,0.4)",
+              padding: "50px",
+              borderRadius: "20px",
+              border: "1px white solid",
             }}
           >
             <motion.div
@@ -162,7 +165,7 @@ class MagiKards extends React.Component {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     cursor: "pointer",
-                    marginLeft: "100px",
+                    marginLeft: "35px",
                   }}
                   className="projects-img"
                   src="./images/project-img/MK3.png"
@@ -180,7 +183,7 @@ class MagiKards extends React.Component {
                 marginLeft: "25%",
                 fontSize: "20px",
                 color: "white",
-                height: "60%",
+                height: "77%",
               }}
               className="text-box"
             >
@@ -195,59 +198,6 @@ class MagiKards extends React.Component {
                 the top right of the home screen and disapears when clicking
                 'info'.
               </p>
-            </motion.div>
-
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={moveRight}
-              viewport={{ once: true, amount: 0.1 }}
-              style={{
-                width: "50%",
-                fontSize: "18px",
-                marginLeft: "60px",
-                color: "white",
-                height: "65%",
-              }}
-              className="text-box"
-            >
-              This view below shows the Battlefield, the hand of cards is
-              randomly generated to the player. Once the player runs out of
-              cards, seven more cards will be randomly selected from the deck
-              and given to the player. The view to the right is showing the
-              selected cards of the two players, when a card is selected it will
-              be displayed as the main card in the center of the screen. There
-              is also a pass option.
-              <p>
-                Once both players have selected a card, the resulting card
-                effects will take place and health will be subtracked from the
-                relevent players. This project is still in the development phase
-                that we continue to work on as a group.
-              </p>
-            </motion.div>
-
-            <motion.div
-              style={{ marginTop: "100px" }}
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={moveLeft}
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              {" "}
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-                <img
-                  style={{
-                    width: "100%",
-                    borderRadius: "5px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                    cursor: "pointer",
-                  }}
-                  className="projects-img"
-                  src="./images/project-img/MK2.png"
-                  alt=""
-                />
-              </Tilt>
             </motion.div>
           </div>
 
@@ -274,6 +224,62 @@ class MagiKards extends React.Component {
               src="./images/project-img/MK4.png"
               alt=""
             />
+          </div>
+          <div style={{ display: "grid", gridTemplateRows: "1fr 1fr" }}>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveRight}
+              viewport={{ once: true, amount: 0.1 }}
+              style={{
+                width: "50%",
+                fontSize: "18px",
+                marginLeft: "60px",
+                color: "white",
+                height: "65%",
+                display: "grid",
+                justifyContent: "center",
+              }}
+              className="text-box"
+            >
+              <section>
+                This view above shows the Battlefield, the hand of cards is
+                randomly generated to the player. Once the player runs out of
+                cards, seven more cards will be randomly selected from the deck
+                and given to the player. The view below is showing the selected
+                cards of the two players, when a card is selected it will be
+                displayed as the main card in the center of the screen. There is
+                also a pass option.
+                <p>
+                  Once both players have selected a card, the resulting card
+                  effects will take place and health will be subtracked from the
+                  relevent players. This project is still in the development
+                  phase that we continue to work on as a group.
+                </p>
+              </section>
+            </motion.div>
+
+            <motion.div
+              style={{ marginTop: "100px" }}
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={moveLeft}
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              {" "}
+              <img
+                style={{
+                  width: "50%",
+                  borderRadius: "5px",
+                  boxShadow:
+                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  cursor: "pointer",
+                }}
+                className="projects-img"
+                src="./images/project-img/MK2.png"
+                alt=""
+              />
+            </motion.div>
           </div>
         </div>
       </>
