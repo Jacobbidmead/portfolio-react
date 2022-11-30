@@ -1,6 +1,19 @@
 import React from "react";
 import Photo from "./Photo.js";
 import "../styles/Photos.css";
+import { motion } from "framer-motion";
+
+const boxAnimate = {
+  offscreen: { y: 600 },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
 
 class Photos extends React.Component {
   render() {
@@ -40,9 +53,15 @@ class Photos extends React.Component {
             <small style={{ fontSize: "15px" }}>Shot on Contax TVS III</small>
           </div>
         </div>
-        <div className="photo-bg">
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={boxAnimate}
+          viewport={{ once: true, amount: 0.1 }}
+          className="photo-bg"
+        >
           <Photo changePic={this.props.changePic} />
-        </div>
+        </motion.div>
       </>
     );
   }
