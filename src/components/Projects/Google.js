@@ -128,7 +128,7 @@ class Google extends React.Component {
               viewport={{ once: true, amount: 0.5 }}
               src="./images/project-img/google.png"
               style={{
-                width: "70%",
+                width: "80%",
                 borderRadius: "5px",
                 cursor: "pointer",
                 marginTop: "100px",
@@ -142,7 +142,10 @@ class Google extends React.Component {
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
-                marginLeft: "145px",
+                backgroundColor: " rgba(0,0,0,0.4)",
+                marginTop: "300px",
+                paddingTop: "80px",
+                borderTop: "solid white 1px",
               }}
             >
               <motion.div
@@ -162,6 +165,7 @@ class Google extends React.Component {
                       borderRadius: "5px",
                       cursor: "pointer",
                       marginTop: "80px",
+                      marginLeft: "100px",
                     }}
                     alt=""
                   />
@@ -175,11 +179,12 @@ class Google extends React.Component {
                 style={{
                   width: "50%",
                   fontSize: "25px",
-                  height: "30%",
+                  height: "56%",
+                  marginTop: "80px",
                 }}
                 className="text-box"
               >
-                <p style={{ color: "white" }}>
+                <p style={{ color: "white", paddingTop: "60px" }}>
                   Google search home page & results; users can search for the
                   above data in the search bar.
                 </p>

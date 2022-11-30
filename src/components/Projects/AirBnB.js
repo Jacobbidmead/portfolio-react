@@ -38,18 +38,6 @@ const moveRight = {
   },
 };
 
-const textAnimate = {
-  offscreen: { y: 400 },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: "tween",
-      bounce: 0.5,
-      duration: 1,
-    },
-  },
-};
-
 class AirBnB extends React.Component {
   state = {
     bgColor: "black",
@@ -146,7 +134,7 @@ class AirBnB extends React.Component {
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: "1fr 1fr",
               margin: "200px 70px 100px 70px",
-              backgroundColor: "rgba(254, 95, 85, 0.7) ",
+
               padding: "50px",
               borderRadius: "20px",
               border: "1px solid white",
@@ -155,18 +143,18 @@ class AirBnB extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={moveLeft}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
                 width: "70%",
-                fontSize: "28px",
-                height: "56%",
+                fontSize: "25px",
+                height: "55%",
               }}
               className="text-box"
             >
-              List a house form that creates a house in the database and
-              populates data into 'houses' and 'profile' pages.
+              Once a house is selected, user is taken to the 'house' page, where
+              they can interact with the house gallery.
             </motion.div>
             <motion.div
               initial={"offscreen"}
@@ -263,7 +251,6 @@ class AirBnB extends React.Component {
               backgroundColor: "rgba(16, 255 ,203, 0.5)",
               padding: "50px",
               borderRadius: "20px",
-              marginBottom: "80px",
               border: "1px solid white",
             }}
           >

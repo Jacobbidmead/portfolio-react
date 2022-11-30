@@ -56,7 +56,7 @@ class MagiKards extends React.Component {
   };
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 3000];
-    const colorsList = ["black", "#CB04A5"];
+    const colorsList = ["black", "#5978BF"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -128,12 +128,13 @@ class MagiKards extends React.Component {
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}
-              viewport={{ once: false, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
-                width: "84%",
+                width: "80%",
                 borderRadius: "5px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                marginBottom: "200px",
               }}
               className="airbnb-img"
               src="./images/project-img/MK1.png"
@@ -144,7 +145,7 @@ class MagiKards extends React.Component {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              margin: "200px 70px 0px 70px",
+              margin: "150px 70px 0px 70px",
               backgroundColor: "rgba(0,0,0,0.4)",
               padding: "50px",
               borderRadius: "20px",
@@ -212,20 +213,28 @@ class MagiKards extends React.Component {
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}
-              viewport={{ once: false, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.1 }}
               style={{
-                width: "84%",
+                width: "80%",
                 borderRadius: "5px",
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                marginBottom: "130px",
-                marginTop: "150px",
+                marginBottom: "330px",
+                marginTop: "350px",
               }}
               src="./images/project-img/MK4.png"
               alt=""
             />
           </div>
-          <div style={{ display: "grid", gridTemplateRows: "1fr 1fr" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateRows: "1fr 1fr",
+              backgroundColor: "rgba(0,0,0,0.4)",
+              padding: "120px",
+              borderTop: "1px solid white",
+            }}
+          >
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -233,12 +242,11 @@ class MagiKards extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "50%",
-                fontSize: "18px",
-                marginLeft: "60px",
+                fontSize: "20px",
+                marginLeft: "auto",
+                marginRight: "auto",
                 color: "white",
-                height: "65%",
-                display: "grid",
-                justifyContent: "center",
+                height: "55%",
               }}
               className="text-box"
             >
@@ -260,7 +268,11 @@ class MagiKards extends React.Component {
             </motion.div>
 
             <motion.div
-              style={{ marginTop: "100px" }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                margin: "0px 0px 70px 0px",
+              }}
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={moveLeft}
@@ -269,7 +281,7 @@ class MagiKards extends React.Component {
               {" "}
               <img
                 style={{
-                  width: "50%",
+                  width: "60%",
                   borderRadius: "5px",
                   boxShadow:
                     "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
