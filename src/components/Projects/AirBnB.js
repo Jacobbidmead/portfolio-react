@@ -146,9 +146,10 @@ class AirBnB extends React.Component {
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: "1fr 1fr",
               margin: "200px 70px 100px 70px",
-              backgroundColor: "#FE5F55",
+              backgroundColor: "rgba(254, 95, 85, 0.7) ",
               padding: "50px",
               borderRadius: "20px",
+              border: "1px solid white",
             }}
           >
             <motion.div
@@ -180,9 +181,9 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-                width: "50%",
+                width: "70%",
                 fontSize: "25px",
-                height: "35%",
+                height: "55%",
               }}
               className="text-box"
             >
@@ -198,9 +199,10 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-                width: "50%",
+                width: "70%",
                 fontSize: "25px",
-                height: "22%",
+                height: "55%",
+                marginTop: "50px",
               }}
               className="text-box"
             >
@@ -259,10 +261,11 @@ class AirBnB extends React.Component {
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: " 1fr 1fr",
               margin: "200px 70px 100px 70px",
-              backgroundColor: " #10FFCB",
+              backgroundColor: "rgba(16, 255 ,203, 0.5)",
               padding: "50px",
               borderRadius: "20px",
               marginBottom: "80px",
+              border: "1px solid white",
             }}
           >
             <motion.div
@@ -295,14 +298,15 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-                width: "50%",
-                fontSize: "28px",
-                height: "38%",
+                width: "70%",
+                fontSize: "26px",
+                height: "52%",
               }}
               className="text-box"
             >
-              List a house form that creates a house in the database and
-              populates data into 'houses' and 'profile' pages.
+              Users can log in and access thier 'Profile' page, where they can
+              update their data, create a house to be listed and edit a
+              currently listed house.
             </motion.div>
             <motion.div
               initial={"offscreen"}
@@ -311,15 +315,14 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "white",
-                width: "50%",
-                fontSize: "26px",
-                height: "43%",
+                width: "70%",
+                fontSize: "28px",
+                height: "51%",
               }}
               className="text-box"
             >
-              Users can log in and access thier 'Profile' page, where they can
-              update their data, create a house to be listed and edit a
-              currently listed house.
+              List a house form that creates a house in the database and
+              populates data into 'houses' and 'profile' pages.
             </motion.div>
 
             <motion.div
@@ -327,7 +330,6 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={moveLeft}
               viewport={{ once: true, amount: 0.1 }}
-              style={{ marginTop: "50px" }}
             >
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
@@ -338,6 +340,7 @@ class AirBnB extends React.Component {
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     cursor: "pointer",
+                    marginRight: "10px",
                   }}
                   className="projects-img"
                   src="./images/project-img/abnb7.png"
