@@ -153,6 +153,14 @@ class Google extends React.Component {
                 whileInView={"onscreen"}
                 variants={moveRight}
                 viewport={{ once: true, amount: 0.1 }}
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
                 onMouseEnter={this.onMouseEnter}
                 style={{ marginBottom: "50px" }}
                 className="projects-img"

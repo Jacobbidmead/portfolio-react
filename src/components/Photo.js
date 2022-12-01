@@ -55,7 +55,7 @@ class Photo extends React.Component {
             Far East
           </span>
           <span onClick={(e) => this.changeToSa(e)} className="change-photos">
-            South America
+            Americas
           </span>
           <span
             onClick={(e) => this.changeToEurope(e)}

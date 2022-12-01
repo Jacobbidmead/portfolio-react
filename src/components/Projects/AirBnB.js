@@ -161,6 +161,14 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={moveRight}
               viewport={{ once: true, amount: 0.1 }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 10,
+              }}
             >
               {" "}
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
@@ -201,6 +209,14 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={moveLeft}
               viewport={{ once: true, amount: 0.1 }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 10,
+              }}
               style={{ marginTop: "50px" }}
             >
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
@@ -255,6 +271,14 @@ class AirBnB extends React.Component {
             }}
           >
             <motion.div
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 10,
+              }}
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={moveRight}
@@ -296,6 +320,14 @@ class AirBnB extends React.Component {
             </motion.div>
 
             <motion.div
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 10,
+              }}
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={moveLeft}

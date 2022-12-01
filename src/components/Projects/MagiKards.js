@@ -157,6 +157,14 @@ class MagiKards extends React.Component {
               whileInView={"onscreen"}
               variants={moveRight}
               viewport={{ once: true, amount: 0.1 }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 10,
+              }}
             >
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
@@ -266,32 +274,41 @@ class MagiKards extends React.Component {
                 </p>
               </section>
             </motion.div>
-
-            <motion.div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                margin: "0px 0px 70px 0px",
-              }}
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={moveLeft}
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              {" "}
-              <img
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+              <motion.div
                 style={{
-                  width: "60%",
-                  borderRadius: "5px",
-                  boxShadow:
-                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "center",
+                  margin: "0px 0px 70px 0px",
                 }}
-                className="projects-img"
-                src="./images/project-img/MK2.png"
-                alt=""
-              />
-            </motion.div>
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={moveLeft}
+                viewport={{ once: true, amount: 0.1 }}
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
+              >
+                {" "}
+                <img
+                  style={{
+                    width: "60%",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    cursor: "pointer",
+                  }}
+                  className="projects-img"
+                  src="./images/project-img/MK2.png"
+                  alt=""
+                />
+              </motion.div>
+            </Tilt>
           </div>
         </div>
       </>
