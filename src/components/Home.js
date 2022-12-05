@@ -10,7 +10,7 @@ const random = () => {
 
 const animateCircle = {
   clicked: {
-    scale: [1, 1.3, 1.3, 1, 1],
+    scale: [0.6, 1.4, 1.3, 1.2, 1],
     rotate: [0, 0, 360, 360, 0],
     transition: {
       ease: "easeInOut",
@@ -50,7 +50,7 @@ class Home extends React.Component {
             whileTap={"clicked"}
             variants={animateCircle}
             animate={{
-              scale: [1, 1.3, 1.3, 1, 1],
+              scale: [1, 1.4, 1.3, 1.2, 1],
               rotate: [0, 0, 360, 360, 0],
             }}
             transition={{
@@ -61,10 +61,17 @@ class Home extends React.Component {
             className="circle"
           >
             {" "}
-            <div style={{ paddingTop: "60px" }}>
+            <div
+              style={{
+                paddingTop: "58px",
+                transform: "rotate(36deg)",
+                paddingLeft: "38px",
+              }}
+            >
               <span> Click me</span>
             </div>
           </motion.div>
+          <div className="lastname">BIDMEAD</div>
         </div>
       </>
     );

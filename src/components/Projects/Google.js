@@ -158,14 +158,14 @@ class Google extends React.Component {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
+                  stiffness: 300,
                   damping: 10,
                 }}
                 onMouseEnter={this.onMouseEnter}
                 style={{ marginBottom: "50px" }}
                 className="projects-img"
               >
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
+                <Tilt tiltMaxAngleX={7} tiltMaxAngleY={7} perspective={1000}>
                   <img
                     src="./images/project-img/google2.png"
                     style={{
