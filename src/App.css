@@ -19,22 +19,6 @@ body {
   background: lime;
 }
 
-.home {
-  display: flex;
-  justify-content: center;
-}
-
-.home-containter {
-  background-image: url("/public/images/whitenoise.png");
-}
-
-.home-img {
-  object-fit: contain;
-  width: 70%;
-  margin-top: 45px;
-  margin-bottom: 45px;
-}
-
 /* reveal name effect */
 
 .name-reveal {
@@ -106,29 +90,29 @@ body {
   padding-bottom: 20px;
 }
 
-#background {
-  display: grid;
-  grid-template-columns: 7fr 1fr;
-  width: 100%;
-  height: 100%;
-
-  cursor: pointer;
-}
-
 /* spinning button */
 
 .circle {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: red;
+  background-color: rgb(0, 34, 255);
   color: white;
   text-align: center;
 }
 
 .name {
   text-align: center;
-  font-size: 40px;
+  font-size: 300px;
   color: white;
-  display: none;
+  text-align: left;
+  margin: 20px;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
 }
