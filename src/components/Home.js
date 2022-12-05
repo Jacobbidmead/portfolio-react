@@ -72,6 +72,7 @@ class Home extends React.Component {
             </div>
           </motion.div>
           <div className="lastname">BIDMEAD</div>
+          <div className="webdev">WEB DEVELOPER</div>
         </div>
       </>
     );
