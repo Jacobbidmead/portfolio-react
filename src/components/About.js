@@ -76,7 +76,7 @@ class About extends React.Component {
               fontSize: "70px",
               textAlign: "center",
               width: "80%",
-              color: "rgba(247, 243, 234, 0.5)",
+              color: "rgba(247, 243, 234, 0.6)",
             }}
           >
             <span>
