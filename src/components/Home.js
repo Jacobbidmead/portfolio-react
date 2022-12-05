@@ -61,13 +61,7 @@ class Home extends React.Component {
             className="circle"
           >
             {" "}
-            <div
-              style={{
-                paddingTop: "58px",
-                transform: "rotate(36deg)",
-                paddingLeft: "38px",
-              }}
-            >
+            <div className="clickme">
               <span> Click me</span>
             </div>
           </motion.div>
