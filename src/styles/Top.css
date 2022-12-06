@@ -17,8 +17,3 @@
   animation: fade-in-down 3s;
   color: white;
 }
-
-@media screen and (min-width: 375px) {
-  .top-bar {
-  }
-}

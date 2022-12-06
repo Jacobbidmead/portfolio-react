@@ -24,12 +24,14 @@ class Home extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
+    fontFamily: "Futura",
   };
 
   toggleColorChange = () => {
     this.setState({
       changeColor: true,
       backgroundColor: random(),
+      fontFamily: "Helvetica",
     });
   };
 
@@ -65,8 +67,12 @@ class Home extends React.Component {
               <span> Click me</span>
             </div>
           </motion.div>
-          <div className="lastname">BIDMEAD</div>
-          <div className="webdev">WEB DEVELOPER</div>
+          <div className="lastname" style={{ fontFamily: this.fontFamily }}>
+            BIDMEAD
+          </div>
+          <div className="webdev" style={{ fontFamily: this.fontFamily }}>
+            WEB DEVELOPER
+          </div>
         </div>
       </>
     );
