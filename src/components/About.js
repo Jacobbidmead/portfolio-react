@@ -14,11 +14,15 @@ const textAnimate = {
   },
 };
 
-const boxAnimate = {
-  offscreen: { y: 200 },
+const textAnimate2 = {
+  offscreen: { y: 300 },
   onscreen: {
     y: 0,
-    transition: { type: "tween", duraion: 0.5 },
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
   },
 };
 
@@ -72,7 +76,7 @@ class About extends React.Component {
             style={{
               marginLeft: "auto",
               marginRight: "auto",
-              marginTop: "15%",
+              marginTop: "8%",
               fontSize: "70px",
               textAlign: "center",
               width: "80%",
@@ -80,11 +84,10 @@ class About extends React.Component {
             }}
           >
             <span>
-              Hi. I'm Jake.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Front End
-              Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an
-              interest in Web/UI Design and
-              &nbsp;Photography,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; based in
-              &nbsp;&nbsp;South London.
+              Hi.&nbsp;&nbsp;I'm a Front End Developer
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
+              in Web Desing, UI Design and
+              &nbsp;Photography,&nbsp;&nbsp;&nbsp;based in South London.
             </span>
           </motion.div>
 
@@ -104,38 +107,25 @@ class About extends React.Component {
             style={{
               fontSize: "50px",
               textAlign: "center",
-              width: "auto",
-              padding: "200px",
+              padding: "100px",
               marginTop: "23%",
               backgroundColor: "rgba(247, 243, 234, 0.3)",
               border: "1px solid white",
             }}
+            className="about-paragraph"
           >
-            <span className="about-paragraph">
-              &nbsp;&nbsp;&nbsp;&nbsp;Im currently working on a number of
-              personal and freelance projects,
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these can be
-              viewed in the projects section of this site and on my&nbsp;
-              <b>GitHub</b> repository.{" "}
+            <span>
+              Im currently working on a number of personal and freelance
+              projects.{" "}
+              <p>
+                These can be viewed in the projects section of this site and on
+                my <b>GitHub</b> repository.{" "}
+              </p>
             </span>
           </motion.div>
 
           <motion.div
-            style={{
-              fontSize: "30px",
-              color: "black",
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              marginTop: "23%",
-              backgroundColor: "rgba(247, 243, 234, 0.4)",
-              padding: "140px",
-              width: "auto",
-              border: "1px solid white",
-            }}
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={boxAnimate}
-            viewport={{ once: true, amount: 0.05 }}
+            className="about-article"
             whileHover={{
               scale: 1.1,
             }}
@@ -150,7 +140,6 @@ class About extends React.Component {
               whileInView={"onscreen"}
               variants={textAnimate}
               viewport={{ once: true, amount: 0.01 }}
-              className="about-text"
             >
               After three months of self study, I completed{" "}
               <b>Tortuga Coders 11 week fullstack coding bootcamp</b>{" "}
@@ -161,7 +150,7 @@ class About extends React.Component {
                 <a
                   style={{
                     textDecoration: "none",
-                    color: "white",
+                    color: "black",
                     fontSize: "20px",
                   }}
                   href="https://tortugacoders.com/certificates/08/jacob-bidmead"
@@ -176,16 +165,14 @@ class About extends React.Component {
             <motion.div
               style={{
                 textAlign: "right",
-                color: "white",
                 width: "auto",
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={textAnimate}
+              variants={textAnimate2}
               viewport={{ once: true, amount: 0.01 }}
-              className="about-text"
             >
-              <span className="about-paragraph right">
+              <span>
                 <b>
                   I build my projects using React &
                   &nbsp;&nbsp;&nbsp;&nbsp;Node.js
@@ -203,15 +190,12 @@ class About extends React.Component {
             </motion.div>
           </motion.div>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-            }}
-          >
+          <div className="about-article">
             <motion.div
-              className="about-text"
-              style={{ fontSize: "40px", color: "black", marginTop: "33%" }}
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.01 }}
             >
               <b>I have a creative background;</b>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -225,7 +209,10 @@ class About extends React.Component {
               <b>BA:Hons - Print & Time Based Media.</b>
             </motion.div>
             <motion.div
-              className="about-text"
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate2}
+              viewport={{ once: true, amount: 0.01 }}
               style={{
                 fontSize: "40px",
                 color: "black",
@@ -233,7 +220,7 @@ class About extends React.Component {
                 marginTop: "33%",
               }}
             >
-              <span className="about-paragraph ">
+              <span>
                 <b>&nbsp;A passionate photographer,</b>
                 &nbsp; Ive documentend my travels in{" "}
                 <p>
@@ -260,7 +247,7 @@ class About extends React.Component {
               color: "black",
             }}
           >
-            <span className="about-paragraph last-right">Get in touch.</span>
+            <span>Get in touch.</span>
           </motion.div>
 
           <motion.div
