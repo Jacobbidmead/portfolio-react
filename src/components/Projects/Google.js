@@ -38,6 +38,16 @@ const textAnimate = {
   },
 };
 
+const boxAnimate = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
 
 const random = () => {
@@ -138,7 +148,11 @@ class Google extends React.Component {
             />
           </div>
           <div style={style}>
-            <div
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={boxAnimate}
+              viewport={{ once: true, amount: 0.3 }}
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
@@ -197,7 +211,7 @@ class Google extends React.Component {
                   above data in the search bar.
                 </p>
               </motion.div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>

@@ -38,6 +38,16 @@ const moveRight = {
   },
 };
 
+const boxAnimate = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 class AirBnB extends React.Component {
   state = {
     bgColor: "black",
@@ -128,7 +138,7 @@ class AirBnB extends React.Component {
               on
             />
           </div>
-          <div
+          <motion.div
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
@@ -139,6 +149,10 @@ class AirBnB extends React.Component {
               borderRadius: "20px",
               border: "1px solid white",
             }}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={boxAnimate}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <motion.div
               initial={"offscreen"}
@@ -233,7 +247,7 @@ class AirBnB extends React.Component {
                 />
               </Tilt>
             </motion.div>
-          </div>
+          </motion.div>
           <div
             style={{
               display: "flex",
@@ -257,7 +271,7 @@ class AirBnB extends React.Component {
               alt=""
             />
           </div>
-          <div
+          <motion.div
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
@@ -270,6 +284,10 @@ class AirBnB extends React.Component {
               borderTopLeftRadius: "20px",
               borderBottom: "none",
             }}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={boxAnimate}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <motion.div
               whileHover={{
@@ -365,7 +383,7 @@ class AirBnB extends React.Component {
               List a house form that creates a house in the database and
               populates data into 'houses' and 'profile' pages.
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </>
     );

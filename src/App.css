@@ -19,36 +19,6 @@ body {
   background: lime;
 }
 
-/* reveal name effect */
-
-.name-reveal {
-  cursor: pointer;
-  display: flex;
-  transition: all 3s;
-}
-
-.name-reveal:hover span {
-  display: inline-block;
-  max-width: 300px;
-  animation: reveal 1s;
-}
-
-.revealed-text {
-  opacity: 0;
-  max-width: 0;
-  transition: ease-in-out 0.5s;
-}
-
-@keyframes reveal {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .main-layout {
   display: grid;
   background-color: black;
@@ -125,6 +95,36 @@ body {
   padding-top: 58px;
   transform: rotate(36deg);
   padding-left: 38px;
+}
+
+/* reveal name effect */
+
+.name-reveal {
+  cursor: pointer;
+  display: flex;
+  transition: all 3s;
+}
+
+.name-reveal:hover span {
+  display: inline-block;
+  max-width: 300px;
+  animation: reveal 1s;
+}
+
+.revealed-text {
+  opacity: 0;
+  max-width: 0;
+  transition: ease-in-out 0.5s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* media */

@@ -28,13 +28,11 @@ const textAnimate2 = {
   },
 };
 
-const textAnimate3 = {
+const boxAnimate = {
   offscreen: { opacity: 0 },
   onscreen: {
     opacity: 1,
     transition: {
-      type: "tween",
-      bounce: 0.5,
       duration: 1,
     },
   },
@@ -54,7 +52,7 @@ class About extends React.Component {
   };
 
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [0, 500, 1500, 2000, 2700, 3800, 5500, 7000];
+    const backgroundBreakpoints = [0, 1000, 2000, 2700, 3700, 4800, 5500, 7000];
     const colorsList = [
       "black",
       "#FF10F0",
@@ -123,6 +121,10 @@ class About extends React.Component {
               stiffness: 400,
               damping: 10,
             }}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={boxAnimate}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <motion.div
               initial={"offscreen"}
@@ -190,6 +192,10 @@ class About extends React.Component {
               stiffness: 400,
               damping: 10,
             }}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={boxAnimate}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <motion.div
               initial={"offscreen"}
@@ -274,6 +280,10 @@ class About extends React.Component {
               stiffness: 400,
               damping: 10,
             }}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={boxAnimate}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <motion.div
               initial={"offscreen"}
@@ -283,7 +293,7 @@ class About extends React.Component {
               style={{ textAlign: "right" }}
             >
               <b>Im extremly motivated to learn and progress;</b>{" "}
-              &nbsp;&nbsp;and am always looking for new oppertunities.
+              &nbsp;&nbsp;and am always looking for new opportunities.
               &nbsp;&nbsp;
             </motion.div>
 
@@ -310,8 +320,8 @@ class About extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={textAnimate2}
-              viewport={{ once: true, amount: 0.01 }}
+              variants={boxAnimate}
+              viewport={{ once: true, amount: 0.3 }}
               whileHover={{
                 scale: 1.1,
               }}
@@ -327,7 +337,6 @@ class About extends React.Component {
                 textAlignLast: "center",
                 marginLeft: "auto",
                 marginRight: "auto",
-
                 color: "black",
                 cursor: "pointer",
               }}
@@ -374,9 +383,10 @@ class About extends React.Component {
                   stiffness: 400,
                   damping: 10,
                 }}
-                exit={{ opacity: 1 }}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={boxAnimate}
+                viewport={{ once: true, amount: 0.3 }}
               >
                 <a
                   href="https://github.com/Jacobbidmead"

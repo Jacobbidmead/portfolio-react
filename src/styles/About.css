@@ -1,7 +1,7 @@
 .gitlink {
   text-decoration: none;
   color: black;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   margin: 100px 10px 0px 10px;
   cursor: pointer;
@@ -31,6 +31,8 @@
   text-align: center;
   background-color: rgba(247, 243, 234, 0.4);
   color: black;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
+    0 6px 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .about-article {
@@ -47,4 +49,6 @@
   border-radius: 20px;
   width: 70%;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
+    0 6px 20px 0 rgba(255, 255, 255, 0.3);
 }
