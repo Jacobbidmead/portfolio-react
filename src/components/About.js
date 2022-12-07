@@ -323,10 +323,11 @@ class About extends React.Component {
               style={{
                 textAlign: "left",
                 fontSize: "100px",
-                padding: "350px 30px 0px 30px",
+                padding: "450px 30px 350px 30px",
                 textAlignLast: "center",
                 marginLeft: "auto",
                 marginRight: "auto",
+
                 color: "black",
                 cursor: "pointer",
               }}
@@ -341,19 +342,42 @@ class About extends React.Component {
                 style={{
                   fontSize: "40px",
                   textAlign: "center",
-                  margin: "450px 10px 0px 10px",
+                  margin: "300px 10px 0px 10px",
                   color: "black",
+                  cursor: "pointer",
                 }}
                 initial={"offscreen"}
                 whileInView={"onscreen"}
                 variants={textAnimate}
                 viewport={{ once: true, amount: 0.01 }}
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
               >
                 <i className="fa-solid fa-envelope"></i>
                 jacob.bidmead.fullstack@outlook.com
               </motion.div>
 
-              <motion.div className="gitlink">
+              <motion.div
+                className="gitlink"
+                style={{ paddingBottom: "250px" }}
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
+                exit={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
                 <a
                   href="https://github.com/Jacobbidmead"
                   className="gitlink"
