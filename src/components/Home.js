@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
@@ -42,6 +41,7 @@ class Home extends React.Component {
           className="home-container"
           style={{
             backgroundColor: this.state.backgroundColor,
+
             transition: "background-color 0.5s ease",
           }}
         >

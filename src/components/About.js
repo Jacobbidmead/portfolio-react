@@ -85,6 +85,7 @@ class About extends React.Component {
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
           }}
+          className="about-bg"
         >
           <motion.div
             initial={{ y: "600", opacity: 0 }}
@@ -97,17 +98,17 @@ class About extends React.Component {
               marginLeft: "auto",
               marginRight: "auto",
               marginTop: "8%",
-              fontSize: "70px",
+
               textAlign: "center",
               width: "80%",
               color: "rgba(247, 243, 234, 0.6)",
             }}
           >
-            <span>
+            <span className="about-intro">
               Hi.&nbsp;&nbsp;I'm a Front End Developer
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
-              in Web Desing, UI Design and
-              &nbsp;Photography,&nbsp;&nbsp;&nbsp;based in South London.
+              in Web Desing, UI Design and &nbsp;Photography, based in South
+              London.
             </span>
           </motion.div>
 
@@ -219,7 +220,6 @@ class About extends React.Component {
               variants={textAnimate2}
               viewport={{ once: true, amount: 0.01 }}
               style={{
-                fontSize: "40px",
                 color: "black",
                 textAlign: "right",
                 marginTop: "33%",
@@ -252,7 +252,6 @@ class About extends React.Component {
               damping: 10,
             }}
             style={{
-              fontSize: "50px",
               textAlign: "center",
               padding: "100px",
               marginTop: "23%",
@@ -332,7 +331,7 @@ class About extends React.Component {
               }}
               style={{
                 textAlign: "left",
-                fontSize: "100px",
+
                 padding: "450px 30px 350px 30px",
                 textAlignLast: "center",
                 marginLeft: "auto",
@@ -349,7 +348,6 @@ class About extends React.Component {
             <div>
               <motion.div
                 style={{
-                  fontSize: "40px",
                   textAlign: "center",
                   margin: "300px 10px 0px 10px",
                   color: "black",
