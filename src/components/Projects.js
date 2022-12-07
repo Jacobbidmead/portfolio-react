@@ -57,7 +57,9 @@ class Projects extends React.Component {
     return (
       <>
         <div className="header" style={style}>
-          <h1 style={{ margin: "0" }}>Things I've made.</h1>
+          <h1 style={{ margin: "0 0 0px 50px", position: "fixed" }}>
+            Things I've made.
+          </h1>
         </div>
 
         <div className="bg-fill" style={style}>
