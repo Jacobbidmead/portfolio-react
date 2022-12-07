@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "../styles/About.css";
 
 const textAnimate = {
-  offscreen: { y: 600 },
+  offscreen: { y: 500 },
   onscreen: {
     y: 0,
     transition: {
@@ -166,6 +166,7 @@ class About extends React.Component {
               style={{
                 textAlign: "right",
                 width: "auto",
+                marginTop: "33%",
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -190,7 +191,17 @@ class About extends React.Component {
             </motion.div>
           </motion.div>
 
-          <div className="about-article">
+          <motion.div
+            className="about-article"
+            whileHover={{
+              scale: 1.1,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 10,
+            }}
+          >
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -232,36 +243,38 @@ class About extends React.Component {
                 </p>
               </span>
             </motion.div>
-          </div>
+          </motion.div>
 
           <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={textAnimate2}
+            viewport={{ once: true, amount: 0.01 }}
             style={{
               textAlign: "left",
               fontSize: "100px",
-
               padding: "350px 30px 0px 30px",
               textAlignLast: "center",
               marginLeft: "auto",
               marginRight: "auto",
-
               color: "black",
             }}
           >
             <span>Get in touch.</span>
           </motion.div>
-
-          <motion.div
-            style={{
-              fontSize: "40px",
-              textAlign: "center",
-              margin: "250px 10px 0px 10px",
-              color: "black",
-            }}
-          >
-            <i className="fa-solid fa-envelope"></i>
-            jacob.bidmead.fullstack@outlook.com
-          </motion.div>
           <div>
+            <motion.div
+              style={{
+                fontSize: "40px",
+                textAlign: "center",
+                margin: "250px 10px 0px 10px",
+                color: "black",
+              }}
+            >
+              <i className="fa-solid fa-envelope"></i>
+              jacob.bidmead.fullstack@outlook.com
+            </motion.div>
+
             <motion.div className="gitlink">
               <a
                 href="https://github.com/Jacobbidmead"

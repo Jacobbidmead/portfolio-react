@@ -129,13 +129,13 @@ body {
 
 /* media */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
   .name {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .lastname {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .webdev {
@@ -146,7 +146,7 @@ body {
   .circle {
     width: 35px;
     height: 35px;
-    margin-left: 300px;
+    margin-left: 200px;
   }
   .clickme {
     padding: 0;
@@ -154,25 +154,31 @@ body {
     padding-left: 6px;
     padding-top: 8px;
   }
-}
-
-@media screen and (max-width: 390px) {
   .home-container {
     display: flex;
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 390px) {
   .top-bar {
     height: 70px;
+    width: 100%;
+    padding: 0px;
   }
   .home-button {
     display: none;
   }
 
   .button-style {
-    font-size: 5px;
+    font-size: 10px;
+    animation: none;
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .top-bar {
+    height: 70px;
+    width: 100%;
   }
 }
 

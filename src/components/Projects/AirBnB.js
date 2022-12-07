@@ -45,7 +45,7 @@ class AirBnB extends React.Component {
 
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 1000];
-    const colorsList = ["black", "#23C4FF"];
+    const colorsList = ["black", "#43BCCD"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -146,7 +146,7 @@ class AirBnB extends React.Component {
               variants={moveLeft}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                color: "white",
+                color: "black",
                 width: "70%",
                 fontSize: "25px",
                 height: "55%",
@@ -193,7 +193,6 @@ class AirBnB extends React.Component {
               variants={moveRight}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                color: "white",
                 width: "70%",
                 fontSize: "25px",
                 height: "55%",
@@ -264,10 +263,12 @@ class AirBnB extends React.Component {
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: " 1fr 1fr",
               margin: "200px 70px 100px 70px",
-              backgroundColor: "rgba(16, 255 ,203, 0.5)",
               padding: "50px",
-              borderRadius: "20px",
+
               border: "1px solid white",
+              borderTopRightRadius: "20px",
+              borderTopLeftRadius: "20px",
+              borderBottom: "none",
             }}
           >
             <motion.div
@@ -307,7 +308,6 @@ class AirBnB extends React.Component {
               variants={moveLeft}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                color: "white",
                 width: "70%",
                 fontSize: "26px",
                 height: "52%",
@@ -330,7 +330,7 @@ class AirBnB extends React.Component {
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveLeft}
+              variants={moveRight}
               viewport={{ once: true, amount: 0.1 }}
             >
               {" "}
@@ -353,10 +353,9 @@ class AirBnB extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={moveLeft}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                color: "white",
                 width: "70%",
                 fontSize: "28px",
                 height: "51%",
