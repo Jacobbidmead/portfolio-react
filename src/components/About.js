@@ -94,17 +94,9 @@ class About extends React.Component {
               opacity: 1,
               transition: { type: "tween", duration: 0.8 },
             }}
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              marginTop: "8%",
-
-              textAlign: "center",
-              width: "80%",
-              color: "rgba(247, 243, 234, 0.6)",
-            }}
+            className="about-intro"
           >
-            <span className="about-intro">
+            <span>
               Hi.&nbsp;&nbsp;I'm a Front End Developer
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
               in Web Desing, UI Design and &nbsp;Photography, based in South
@@ -329,16 +321,7 @@ class About extends React.Component {
                 stiffness: 400,
                 damping: 10,
               }}
-              style={{
-                textAlign: "left",
-
-                padding: "450px 30px 350px 30px",
-                textAlignLast: "center",
-                marginLeft: "auto",
-                marginRight: "auto",
-                color: "black",
-                cursor: "pointer",
-              }}
+              className="contacts-link"
             >
               <span onClick={(e) => this.toggleShowContact(e)}>
                 Get in touch.
@@ -365,8 +348,9 @@ class About extends React.Component {
                   stiffness: 400,
                   damping: 10,
                 }}
+                className="email"
               >
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope "></i>
                 jacob.bidmead.fullstack@outlook.com
               </motion.div>
 
