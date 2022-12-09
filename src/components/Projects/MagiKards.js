@@ -125,6 +125,7 @@ class MagiKards extends React.Component {
           >
             {" "}
             <motion.img
+              className="magikards"
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}
@@ -132,11 +133,9 @@ class MagiKards extends React.Component {
               style={{
                 width: "80%",
                 borderRadius: "5px",
-                boxShadow:
-                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+
                 marginBottom: "200px",
               }}
-              className="airbnb-img"
               src="./images/project-img/MK1.png"
               alt=""
             />
@@ -145,12 +144,9 @@ class MagiKards extends React.Component {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              margin: "150px 70px 0px 70px",
               backgroundColor: "rgba(0,0,0,0.4)",
-              padding: "50px",
-              borderRadius: "20px",
-              border: "1px white solid",
             }}
+            className="text-container"
           >
             <motion.div
               initial={"offscreen"}
@@ -171,12 +167,11 @@ class MagiKards extends React.Component {
                   style={{
                     width: "80%",
                     borderRadius: "5px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+
                     cursor: "pointer",
                     marginLeft: "35px",
                   }}
-                  className="projects-img"
+                  className="magikards"
                   src="./images/project-img/MK3.png"
                   alt=""
                 />
@@ -225,11 +220,11 @@ class MagiKards extends React.Component {
               style={{
                 width: "80%",
                 borderRadius: "5px",
-                boxShadow:
-                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+
                 marginBottom: "330px",
                 marginTop: "350px",
               }}
+              className="magikards"
               src="./images/project-img/MK4.png"
               alt=""
             />
@@ -239,9 +234,8 @@ class MagiKards extends React.Component {
               display: "grid",
               gridTemplateRows: "1fr 1fr",
               backgroundColor: "rgba(0,0,0,0.4)",
-              padding: "120px",
-              borderTop: "1px solid white",
             }}
+            className="text-container"
           >
             <motion.div
               initial={"offscreen"}
@@ -299,11 +293,9 @@ class MagiKards extends React.Component {
                   style={{
                     width: "60%",
                     borderRadius: "5px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     cursor: "pointer",
                   }}
-                  className="projects-img"
+                  className="magikards"
                   src="./images/project-img/MK2.png"
                   alt=""
                 />

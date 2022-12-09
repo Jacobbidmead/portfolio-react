@@ -134,7 +134,7 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               src="./images/project-img/abnb4.png"
               alt=""
-              className="airbnb "
+              className="airbnb"
               on
             />
           </div>
@@ -261,12 +261,7 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={scaleImg}
               viewport={{ once: true, amount: 0.1 }}
-              style={{
-                width: "82%",
-                borderRadius: "5px",
-                boxShadow:
-                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-              }}
+              className="airbnb"
               src="./images/project-img/abnb3.png"
               alt=""
             />
@@ -276,18 +271,13 @@ class AirBnB extends React.Component {
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: " 1fr 1fr",
-              margin: "200px 70px 100px 70px",
-              padding: "50px",
-
-              border: "1px solid white",
-              borderTopRightRadius: "20px",
-              borderTopLeftRadius: "20px",
               borderBottom: "none",
             }}
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={boxAnimate}
             viewport={{ once: true, amount: 0.3 }}
+            className="text-container"
           >
             <motion.div
               whileHover={{
