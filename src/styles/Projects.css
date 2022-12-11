@@ -2,6 +2,11 @@
   width: 15%;
   color: white;
   cursor: pointer;
+  transition: text-shadow, 0.2s ease;
+}
+
+.return-projects:hover {
+  text-shadow: 1px 1px 10px white, -1px -1px 10px white;
 }
 
 .project-links {
@@ -29,8 +34,11 @@
 .project-link:hover {
   background-color: black;
   transition: background-color ease 0.9s;
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
-    0 6px 20px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 10px white, -1px -1px 10px white;
+}
+
+.white-shadow:hover {
+  box-shadow: 1px 1px 10px white, -1px -1px 10px white;
 }
 
 .gitlink {

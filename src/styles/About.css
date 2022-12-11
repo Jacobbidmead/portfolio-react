@@ -65,8 +65,9 @@
 }
 
 .contacts-link {
-  padding: 450px 30px 350px 30px;
   text-align: center;
+  margin-top: 300px;
+  margin-bottom: 300px;
   margin-left: auto;
   margin-right: auto;
   color: black;

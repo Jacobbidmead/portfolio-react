@@ -125,7 +125,7 @@ class About extends React.Component {
               variants={textAnimate}
               viewport={{ once: true, amount: 0.01 }}
             >
-              After three months of self study, I took and completed{" "}
+              After three months of self study, I took part in & completed{" "}
               <b>Tortuga Coders 11 week fullstack coding bootcamp, </b>{" "}
               &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand.
               &nbsp;&nbsp;&nbsp;&nbsp;Graduating in mid-October 2022.
@@ -323,9 +323,12 @@ class About extends React.Component {
               }}
               className="contacts-link"
             >
-              <span onClick={(e) => this.toggleShowContact(e)}>
+              <div
+                style={{ paddingBottom: "200px" }}
+                onClick={(e) => this.toggleShowContact(e)}
+              >
                 Get in touch.
-              </span>
+              </div>
             </motion.div>
           ) : (
             <div>
@@ -344,7 +347,7 @@ class About extends React.Component {
                   scale: 1.1,
                 }}
                 transition={{
-                  type: "spring",
+                  type: "tween",
                   stiffness: 400,
                   damping: 10,
                 }}
@@ -356,12 +359,12 @@ class About extends React.Component {
 
               <motion.div
                 className="gitlink"
-                style={{ paddingBottom: "250px" }}
+                style={{ marginBottom: "250px" }}
                 whileHover={{
                   scale: 1.1,
                 }}
                 transition={{
-                  type: "spring",
+                  type: "tween",
                   stiffness: 400,
                   damping: 10,
                 }}

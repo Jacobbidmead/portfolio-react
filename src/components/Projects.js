@@ -28,6 +28,7 @@ class Projects extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
+    textShadow: "none",
   };
 
   onMouseEnter = () => {
