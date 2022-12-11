@@ -11,7 +11,18 @@ let backgroundColors = [
 ];
 
 const random = () => {
-  return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+  const randomizedArray = [];
+
+  for (let i = 0; i < backgroundColors.length; i++) {
+    let randomIndex = Math.floor(Math.random() * backgroundColors.length);
+    while (randomizedArray.includes(backgroundColors[randomIndex])) {
+      randomIndex = Math.floor(Math.random() * backgroundColors.length);
+    }
+    randomizedArray.push(backgroundColors[randomIndex]);
+  }
+
+  const randomIndex = Math.floor(Math.random() * randomizedArray.length);
+  return randomizedArray[randomIndex];
 };
 
 const animateCircle = {

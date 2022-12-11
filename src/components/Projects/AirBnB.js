@@ -80,7 +80,7 @@ class AirBnB extends React.Component {
             paddingBottom: "1px",
           }}
         >
-          <div className="header" style={{ marginBottom: "170px" }}>
+          <div className="header" style={{ marginBottom: "220px" }}>
             <h1 style={{ margin: "0" }}>AirBnB Clone.</h1>
           </div>
           <motion.div
