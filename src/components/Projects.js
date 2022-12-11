@@ -31,6 +31,12 @@ class Projects extends React.Component {
     textShadow: "none",
   };
 
+  lightupText = () => {
+    this.setState({
+      textShadow: "1px 1px 10px white, -1px -1px 10px white",
+    });
+  };
+
   onMouseEnter = () => {
     this.setState({
       changeColor: true,
@@ -41,6 +47,7 @@ class Projects extends React.Component {
   onMouseLeave = () => {
     this.setState({
       changeColor: false,
+      textShadow: "none",
     });
   };
 
@@ -58,7 +65,13 @@ class Projects extends React.Component {
     return (
       <>
         <div className="header" style={style}>
-          <h1 style={{ margin: "0 0 0px 50px", position: "fixed" }}>
+          <h1
+            style={{
+              margin: "0 0 0px 50px",
+              position: "fixed",
+              textShadow: this.state.textShadow,
+            }}
+          >
             Things I've made.
           </h1>
         </div>
@@ -84,6 +97,7 @@ class Projects extends React.Component {
                 }}
                 className="box project-link"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
+                onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
@@ -112,6 +126,7 @@ class Projects extends React.Component {
                 }}
                 className="project-link"
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
+                onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
@@ -140,6 +155,7 @@ class Projects extends React.Component {
                 }}
                 className="project-link"
                 onClick={(e) => this.props.toggleShowGoogle(e)}
+                onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 variants={linkAnimate}
