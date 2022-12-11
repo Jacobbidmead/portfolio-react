@@ -1,6 +1,6 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { motion, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 
 const scaleImg = {
   offscreen: { scale: 1 },
