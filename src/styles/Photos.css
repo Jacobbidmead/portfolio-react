@@ -11,6 +11,10 @@
   border-radius: 5px;
 }
 
+.photo-bg {
+  padding-bottom: 60px;
+}
+
 .photo:hover {
   opacity: 1;
   cursor: pointer;

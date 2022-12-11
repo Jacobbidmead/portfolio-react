@@ -15,6 +15,16 @@ const boxAnimate = {
   },
 };
 
+const fadeOut = {
+  onscreen: { opacity: 1 },
+  offscreen: {
+    opactiy: 0,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
 class Photos extends React.Component {
   render() {
     return (
@@ -22,7 +32,12 @@ class Photos extends React.Component {
         <div className="header" style={{ marginBottom: "170px" }}>
           <h1 style={{ margin: "0" }}>Photos.</h1>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+        <motion.div
+          style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 1 }}
+        >
           <div style={{ color: "white", marginLeft: "100px" }}>
             <h1>Analogue photography</h1>
             <h5>2014 - 2019</h5>
@@ -52,7 +67,7 @@ class Photos extends React.Component {
             </p>
             <small style={{ fontSize: "15px" }}>Shot on Contax TVS III</small>
           </div>
-        </div>
+        </motion.div>
         <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}
