@@ -11,9 +11,9 @@ let backgroundColors = [
 ];
 
 const random = () => {
-  const randomizedArray = [];
+  let randomizedArray = [];
 
-  for (let i = 0; i < backgroundColors.length; i++) {
+  for (let i = 0; i < backgroundColors.length; i+++) {
     let randomIndex = Math.floor(Math.random() * backgroundColors.length);
     while (randomizedArray.includes(backgroundColors[randomIndex])) {
       randomIndex = Math.floor(Math.random() * backgroundColors.length);
@@ -21,7 +21,7 @@ const random = () => {
     randomizedArray.push(backgroundColors[randomIndex]);
   }
 
-  const randomIndex = Math.floor(Math.random() * randomizedArray.length);
+  let randomIndex = Math.floor(Math.random() * randomizedArray.length);
   return randomizedArray[randomIndex];
 };
 
