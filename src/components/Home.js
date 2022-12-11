@@ -13,7 +13,7 @@ let backgroundColors = [
 const random = () => {
   let randomizedArray = [];
 
-  for (let i = 0; i < backgroundColors.length; i+++) {
+  for (let i = 0; i < backgroundColors.length; i++) {
     let randomIndex = Math.floor(Math.random() * backgroundColors.length);
     while (randomizedArray.includes(backgroundColors[randomIndex])) {
       randomIndex = Math.floor(Math.random() * backgroundColors.length);
