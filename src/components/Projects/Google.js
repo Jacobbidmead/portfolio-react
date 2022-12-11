@@ -1,6 +1,6 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
 
 const scaleImg = {
   offscreen: { scale: 1 },
@@ -48,7 +48,26 @@ const boxAnimate = {
   },
 };
 
-let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
+const containerAnimate = {
+  offscreen: { y: 600 },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
+
+let backgroundColors = [
+  "#23C4FF",
+  "#FF10F0",
+  "#FE5F55",
+  "#10FFCB",
+  "#CB04A5",
+  "#FB5012",
+];
 
 const random = () => {
   return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
@@ -87,49 +106,63 @@ class Google extends React.Component {
       <>
         <div className="google-bg" style={style}>
           <div className="header" style={style}>
-            <h1 style={{ margin: "0" }}>Google Search.</h1>
+            <h1 style={{ marginBottom: "200px" }}>Google Search.</h1>
           </div>
-          <div
-            style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
-            className="return-projects"
-            onClick={(e) => this.props.toggleShowProjects(e)}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 1 }}
           >
-            <h4>Back to Projects</h4>
-          </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-            }}
-          >
-            <div style={{ color: "white", marginLeft: "100px" }}>
-              <h1>Google Seach App</h1>
-              <h5>October 2022</h5>
-            </div>
-
             <div
-              style={{ color: "white", fontSize: "30px", marginRight: "100px" }}
+              style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
+              className="return-projects"
+              onClick={(e) => this.props.toggleShowProjects(e)}
             >
-              Google Search style app, first made in MVC style, then using React
-              for the front end while creating our own API and connecting to the
-              backend using Axios.{" "}
-              <p>
-                Users are able to search for limited data contained in the
-                MongoDB database.
-              </p>
-              <p>
-                Technologies used - React, Axios, Passport, HTML, CSS,
-                Express.js, Node.js, MongoDB.
-              </p>
-              <small style={{ fontSize: "15px" }}>
-                Scroll over images to change colour
-              </small>
+              <h4>Back to Projects</h4>
             </div>
-          </div>
-          <div
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+              }}
+            >
+              <div style={{ color: "white", marginLeft: "100px" }}>
+                <h1>Google Seach App</h1>
+                <h5>October 2022</h5>
+              </div>
+
+              <div
+                style={{
+                  color: "white",
+                  fontSize: "30px",
+                  marginRight: "100px",
+                }}
+              >
+                Google Search style app, first made in MVC style, then using
+                React for the front end while creating our own API and
+                connecting to the backend using Axios.{" "}
+                <p>
+                  Users are able to search for limited data contained in the
+                  MongoDB database.
+                </p>
+                <p>
+                  Technologies used - React, Axios, Passport, HTML, CSS,
+                  Express.js, Node.js, MongoDB.
+                </p>
+                <small style={{ fontSize: "15px" }}>
+                  Scroll over images to change colour
+                </small>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
             className="google-img"
             onMouseEnter={this.onMouseEnter}
             style={style}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={containerAnimate}
+            viewport={{ once: true, amount: 0.1 }}
           >
             <motion.img
               initial={"offscreen"}
@@ -138,7 +171,7 @@ class Google extends React.Component {
               viewport={{ once: true, amount: 0.5 }}
               src="./images/project-img/google.png"
               style={{
-                width: "80%",
+                width: "76%",
                 borderRadius: "5px",
                 cursor: "pointer",
                 marginTop: "100px",
@@ -148,7 +181,7 @@ class Google extends React.Component {
               alt=""
               onMouseEnter={this.onMouseEnter}
             />
-          </div>
+          </motion.div>
           <div style={style}>
             <motion.div
               initial={"offscreen"}
@@ -157,7 +190,6 @@ class Google extends React.Component {
               viewport={{ once: true, amount: 0.3 }}
               style={{
                 display: "grid",
-
                 gridTemplateRows: "1fr 1fr",
               }}
               className="text-container"

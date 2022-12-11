@@ -1,7 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#10FFCB", "#CB04A5"];
+let backgroundColors = [
+  "#23C4FF",
+  "#FF10F0",
+  "#FE5F55",
+  "#10FFCB",
+  "#CB04A5",
+  "#FB5012",
+];
 
 const random = () => {
   return backgroundColors[Math.floor(Math.random() * backgroundColors.length)];

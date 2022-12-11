@@ -84,7 +84,7 @@ class About extends React.Component {
           style={{
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
-            paddingBottom: "1px",
+            paddingBottom: "350px",
           }}
           className="about-bg"
         >
@@ -314,7 +314,7 @@ class About extends React.Component {
               variants={boxAnimate}
               viewport={{ once: true, amount: 0.3 }}
               whileHover={{
-                scale: 1.1,
+                scale: 1.4,
               }}
               transition={{
                 type: "tween",
@@ -323,10 +323,7 @@ class About extends React.Component {
               }}
               className="contacts-link"
             >
-              <div
-                style={{ paddingBottom: "400px" }}
-                onClick={(e) => this.toggleShowContact(e)}
-              >
+              <div onClick={(e) => this.toggleShowContact(e)}>
                 Get in touch.
               </div>
             </motion.div>
@@ -340,7 +337,7 @@ class About extends React.Component {
                   cursor: "pointer",
                 }}
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.3,
                 }}
                 transition={{
                   type: "tween",
@@ -357,7 +354,7 @@ class About extends React.Component {
                 className="gitlink"
                 style={{ marginBottom: "250px" }}
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.3,
                 }}
                 transition={{
                   type: "tween",
@@ -369,7 +366,7 @@ class About extends React.Component {
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <div style={{ paddingBottom: "200px" }}>
+                <div>
                   <a
                     href="https://github.com/Jacobbidmead"
                     className="gitlink"

@@ -15,16 +15,6 @@ const boxAnimate = {
   },
 };
 
-const fadeOut = {
-  onscreen: { opacity: 1 },
-  offscreen: {
-    opactiy: 0,
-    transition: {
-      duration: 0.2,
-    },
-  },
-};
-
 class Photos extends React.Component {
   render() {
     return (

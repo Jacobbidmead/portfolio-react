@@ -3,7 +3,7 @@
   color: black;
   font-size: 60px;
   text-align: center;
-  margin: 100px 10px 0px 10px;
+  margin: 200px 10px 0px 10px;
   cursor: pointer;
 }
 
@@ -71,7 +71,7 @@
   margin-right: auto;
   color: black;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 90px;
 }
 
 .email {

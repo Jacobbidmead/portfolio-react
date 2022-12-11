@@ -50,6 +50,19 @@ const textAnimate = {
   },
 };
 
+const containerAnimate = {
+  offscreen: { y: 600, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
+
 class MagiKards extends React.Component {
   state = {
     bgColor: "black",
@@ -57,7 +70,7 @@ class MagiKards extends React.Component {
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 3000];
 
-    const colorsList = ["black", "#10FFCB"];
+    const colorsList = ["black", "#FB5012"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -85,40 +98,55 @@ class MagiKards extends React.Component {
           <div className="header" style={{ marginBottom: "170px" }}>
             <h1 style={{ margin: "0" }}>MagiKards.</h1>
           </div>
-          <div
-            style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
-            className="return-projects"
-            onClick={(e) => this.props.toggleShowProjects(e)}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 1 }}
           >
-            <h4>Back to Projects</h4>
-          </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-            }}
-          >
-            <div style={{ color: "white", marginLeft: "100px" }}>
-              <h1>MagiKards battle style card game</h1>
-              <h5>October 2022</h5>
+            <div
+              style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
+              className="return-projects"
+              onClick={(e) => this.props.toggleShowProjects(e)}
+            >
+              <h4>Back to Projects</h4>
             </div>
             <div
-              style={{ color: "white", fontSize: "30px", marginRight: "100px" }}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+              }}
             >
-              Magikards is a fantasy based battle card game created by myself
-              and class mates Joshua Peoples & Mohammed Hammuri during the final
-              two weeks of Tortuga Coders bootcamp.
-              <p>
-                The concept was to create a game using React that would take two
-                classes of cards, each with unique attributes, that would affect
-                one another, with the strongest removing health from the
-                opposition player. We took influence from online card games such
-                as Yu-Gi-Oh & Gwent from The Witcher game series.
-              </p>
-              Technologies used - React, JavaScript, HTML, CSS.
+              <div style={{ color: "white", marginLeft: "100px" }}>
+                <h1>MagiKards battle style card game</h1>
+                <h5>October 2022</h5>
+              </div>
+              <div
+                style={{
+                  color: "white",
+                  fontSize: "30px",
+                  marginRight: "100px",
+                }}
+              >
+                Magikards is a fantasy based battle card game created by myself
+                and class mates Joshua Peoples & Mohammed Hammuri during the
+                final two weeks of Tortuga Coders bootcamp.
+                <p>
+                  The concept was to create a game using React that would take
+                  two classes of cards, each with unique attributes, that would
+                  affect one another, with the strongest removing health from
+                  the opposition player. We took influence from online card
+                  games such as Yu-Gi-Oh & Gwent from The Witcher game series.
+                </p>
+                Technologies used - React, JavaScript, HTML, CSS.
+              </div>
             </div>
-          </div>
-          <div
+          </motion.div>
+
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={containerAnimate}
+            viewport={{ once: true, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -133,16 +161,18 @@ class MagiKards extends React.Component {
               variants={scaleImg}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                width: "80%",
+                width: "76%",
                 borderRadius: "5px",
-
-                marginBottom: "200px",
               }}
               src="./images/project-img/MK1.png"
               alt=""
             />
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={containerAnimate}
+            viewport={{ once: true, amount: 0.1 }}
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
@@ -169,7 +199,6 @@ class MagiKards extends React.Component {
                   style={{
                     width: "80%",
                     borderRadius: "5px",
-
                     cursor: "pointer",
                     marginLeft: "35px",
                   }}
@@ -205,7 +234,7 @@ class MagiKards extends React.Component {
                 'info'.
               </p>
             </motion.div>
-          </div>
+          </motion.div>
 
           <div
             style={{
@@ -223,20 +252,23 @@ class MagiKards extends React.Component {
                 width: "80%",
                 borderRadius: "5px",
 
-                marginBottom: "330px",
-                marginTop: "350px",
+                marginTop: "300px",
               }}
               className="magikards"
               src="./images/project-img/MK4.png"
               alt=""
             />
           </div>
-          <div
+          <motion.div
             style={{
               display: "grid",
               gridTemplateRows: "1fr 1fr",
               backgroundColor: "rgba(0,0,0,0.4)",
             }}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={containerAnimate}
+            viewport={{ once: true, amount: 0.1 }}
             className="text-container"
           >
             <motion.div
@@ -246,11 +278,12 @@ class MagiKards extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "50%",
-                fontSize: "20px",
+
                 marginLeft: "auto",
-                marginRight: "auto",
-                color: "white",
+
                 height: "55%",
+                color: "white",
+                marginTop: "40px",
               }}
               className="text-box"
             >
@@ -303,7 +336,7 @@ class MagiKards extends React.Component {
                 />
               </motion.div>
             </Tilt>
-          </div>
+          </motion.div>
         </div>
       </>
     );
