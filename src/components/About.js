@@ -246,7 +246,7 @@ class About extends React.Component {
             style={{
               textAlign: "center",
               padding: "100px",
-              marginTop: "23%",
+              marginTop: "38%",
               backgroundColor: "rgba(247, 243, 234, 0.3)",
               border: "1px solid white",
               display: "grid",
@@ -255,20 +255,10 @@ class About extends React.Component {
             className="about-paragraph"
           >
             <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={textAnimate}
-              viewport={{ once: true, amount: 0.01 }}
-              style={{ textAlign: "right", marginTop: "33%" }}
-            >
-              These can be viewed in the projects section of this site and on my{" "}
-              <b>GitHub</b> repository.{" "}
-            </motion.div>
-
-            <motion.div
               style={{
                 textAlign: "right",
                 width: "auto",
+                fontSize: "30px",
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -279,6 +269,16 @@ class About extends React.Component {
                 Im currently working on a number of personal and freelance
                 projects.{" "}
               </span>
+            </motion.div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate2}
+              viewport={{ once: true, amount: 0.01 }}
+              style={{ textAlign: "right", marginTop: "33%", fontSize: "30px" }}
+            >
+              These can be viewed in the projects section of this site and on my{" "}
+              <b>GitHub</b> repository.{" "}
             </motion.div>
           </motion.div>
           <motion.div

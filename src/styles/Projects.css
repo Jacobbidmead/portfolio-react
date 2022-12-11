@@ -29,6 +29,7 @@
   color: white;
   border-radius: 10px;
   margin-bottom: 140px;
+  justify-content: center;
 }
 
 .project-link:hover {
@@ -58,6 +59,7 @@
   text-align: center;
   padding: 40px 25px 0px 25px;
   margin: 0;
+  animation: fadein 2s ease;
 }
 
 .google-img {
@@ -104,4 +106,13 @@
 
 .google-bg {
   padding-bottom: 10px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
