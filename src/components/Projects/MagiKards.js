@@ -157,7 +157,7 @@ class MagiKards extends React.Component {
                 scale: 1.1,
               }}
               transition={{
-                type: "spring",
+                type: "tween",
                 stiffness: 400,
                 damping: 10,
               }}
@@ -283,7 +283,7 @@ class MagiKards extends React.Component {
                   scale: 1.1,
                 }}
                 transition={{
-                  type: "spring",
+                  type: "tween",
                   stiffness: 400,
                   damping: 10,
                 }}

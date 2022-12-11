@@ -77,6 +77,7 @@ class AirBnB extends React.Component {
           style={{
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
+            paddingBottom: "1px",
           }}
         >
           <div className="header" style={{ marginBottom: "170px" }}>
@@ -143,12 +144,8 @@ class AirBnB extends React.Component {
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: "1fr 1fr",
-              margin: "200px 70px 100px 70px",
-
-              padding: "50px",
-              borderRadius: "20px",
-              border: "1px solid white",
             }}
+            className="text-container"
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={boxAnimate}
@@ -179,7 +176,7 @@ class AirBnB extends React.Component {
                 scale: 1.1,
               }}
               transition={{
-                type: "spring",
+                type: "tween",
                 stiffness: 400,
                 damping: 10,
               }}
@@ -226,7 +223,7 @@ class AirBnB extends React.Component {
                 scale: 1.1,
               }}
               transition={{
-                type: "spring",
+                type: "tween",
                 stiffness: 400,
                 damping: 10,
               }}
@@ -271,7 +268,6 @@ class AirBnB extends React.Component {
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
               gridTemplateRows: " 1fr 1fr",
-              borderBottom: "none",
             }}
             initial={"offscreen"}
             whileInView={"onscreen"}
@@ -284,7 +280,7 @@ class AirBnB extends React.Component {
                 scale: 1.1,
               }}
               transition={{
-                type: "spring",
+                type: "tween",
                 stiffness: 400,
                 damping: 10,
               }}
@@ -332,7 +328,7 @@ class AirBnB extends React.Component {
                 scale: 1.1,
               }}
               transition={{
-                type: "spring",
+                type: "tween",
                 stiffness: 400,
                 damping: 10,
               }}

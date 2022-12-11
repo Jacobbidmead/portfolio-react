@@ -110,7 +110,7 @@ class About extends React.Component {
               scale: 1.1,
             }}
             transition={{
-              type: "spring",
+              type: "tween",
               stiffness: 400,
               damping: 10,
             }}
@@ -181,7 +181,7 @@ class About extends React.Component {
               scale: 1.1,
             }}
             transition={{
-              type: "spring",
+              type: "tween",
               stiffness: 400,
               damping: 10,
             }}
@@ -239,7 +239,7 @@ class About extends React.Component {
               scale: 1.1,
             }}
             transition={{
-              type: "spring",
+              type: "tween",
               stiffness: 400,
               damping: 10,
             }}
@@ -267,7 +267,7 @@ class About extends React.Component {
               scale: 1.1,
             }}
             transition={{
-              type: "spring",
+              type: "tween",
               stiffness: 400,
               damping: 10,
             }}
@@ -317,14 +317,14 @@ class About extends React.Component {
                 scale: 1.1,
               }}
               transition={{
-                type: "spring",
+                type: "tween",
                 stiffness: 400,
                 damping: 10,
               }}
               className="contacts-link"
             >
               <div
-                style={{ paddingBottom: "200px" }}
+                style={{ paddingBottom: "400px" }}
                 onClick={(e) => this.toggleShowContact(e)}
               >
                 Get in touch.
@@ -335,14 +335,10 @@ class About extends React.Component {
               <motion.div
                 style={{
                   textAlign: "center",
-                  margin: "300px 10px 0px 10px",
+                  margin: "400px 10px 0px 10px",
                   color: "black",
                   cursor: "pointer",
                 }}
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                variants={textAnimate}
-                viewport={{ once: true, amount: 0.01 }}
                 whileHover={{
                   scale: 1.1,
                 }}
@@ -373,15 +369,17 @@ class About extends React.Component {
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <a
-                  href="https://github.com/Jacobbidmead"
-                  className="gitlink"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  github.com/Jacobbidmead
-                </a>
+                <div style={{ paddingBottom: "200px" }}>
+                  <a
+                    href="https://github.com/Jacobbidmead"
+                    className="gitlink"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                    github.com/Jacobbidmead
+                  </a>
+                </div>
               </motion.div>
             </div>
           )}

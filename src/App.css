@@ -52,6 +52,7 @@ body {
   text-align: center;
   border: 1px white solid;
   margin: 60px 100px 0px 0px;
+  box-shadow: 1px 1px 20px white, -1px -1px 20px white;
 }
 
 .name {
@@ -95,6 +96,7 @@ body {
   padding-top: 58px;
   transform: rotate(36deg);
   padding-left: 38px;
+  color: #f7f3ea;
 }
 
 /* reveal name effect */
