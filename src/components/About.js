@@ -233,7 +233,7 @@ class About extends React.Component {
           <motion.div
             initial={"offscreen"}
             whileInView={"onscreen"}
-            variants={textAnimate}
+            variants={textAnimate2}
             viewport={{ once: true, amount: 0.05 }}
             whileHover={{
               scale: 1.1,
@@ -249,17 +249,38 @@ class About extends React.Component {
               marginTop: "23%",
               backgroundColor: "rgba(247, 243, 234, 0.3)",
               border: "1px solid white",
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
             }}
             className="about-paragraph"
           >
-            <span>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.01 }}
+              style={{ textAlign: "right" }}
+            >
               Im currently working on a number of personal and freelance
               projects.{" "}
-              <p>
+            </motion.div>
+
+            <motion.div
+              style={{
+                textAlign: "right",
+                width: "auto",
+                marginTop: "33%",
+              }}
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate2}
+              viewport={{ once: true, amount: 0.01 }}
+            >
+              <span>
                 These can be viewed in the projects section of this site and on
                 my <b>GitHub</b> repository.{" "}
-              </p>
-            </span>
+              </span>
+            </motion.div>
           </motion.div>
           <motion.div
             className="about-article"
