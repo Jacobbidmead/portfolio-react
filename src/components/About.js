@@ -259,17 +259,16 @@ class About extends React.Component {
               whileInView={"onscreen"}
               variants={textAnimate}
               viewport={{ once: true, amount: 0.01 }}
-              style={{ textAlign: "right" }}
+              style={{ textAlign: "right", marginTop: "33%" }}
             >
-              Im currently working on a number of personal and freelance
-              projects.{" "}
+              These can be viewed in the projects section of this site and on my{" "}
+              <b>GitHub</b> repository.{" "}
             </motion.div>
 
             <motion.div
               style={{
                 textAlign: "right",
                 width: "auto",
-                marginTop: "33%",
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -277,8 +276,8 @@ class About extends React.Component {
               viewport={{ once: true, amount: 0.01 }}
             >
               <span>
-                These can be viewed in the projects section of this site and on
-                my <b>GitHub</b> repository.{" "}
+                Im currently working on a number of personal and freelance
+                projects.{" "}
               </span>
             </motion.div>
           </motion.div>

@@ -39,10 +39,13 @@ const moveRight = {
 };
 
 const boxAnimate = {
-  offscreen: { opacity: 0 },
+  offscreen: { y: 300, opacity: 0 },
   onscreen: {
+    y: 0,
     opacity: 1,
     transition: {
+      type: "tween",
+      bounce: 0.5,
       duration: 1,
     },
   },

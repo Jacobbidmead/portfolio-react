@@ -249,7 +249,7 @@ class MagiKards extends React.Component {
               variants={scaleImg}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                width: "80%",
+                width: "76%",
                 borderRadius: "5px",
 
                 marginTop: "300px",
