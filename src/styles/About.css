@@ -74,10 +74,6 @@
   font-size: 50px;
 }
 
-.contacts-link:hover {
-  text-shadow: 1px 1px 10px white, -1px -1px 10px white;
-}
-
 .email {
   font-size: 40px;
 }

@@ -56,7 +56,8 @@ class MagiKards extends React.Component {
   };
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 3000];
-    const colorsList = ["black", "#5978BF"];
+
+    const colorsList = ["black", "#10FFCB"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -78,6 +79,7 @@ class MagiKards extends React.Component {
           style={{
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
+            paddingBottom: "1px",
           }}
         >
           <div className="header" style={{ marginBottom: "170px" }}>

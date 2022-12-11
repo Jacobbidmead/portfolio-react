@@ -84,6 +84,7 @@ class About extends React.Component {
           style={{
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
+            paddingBottom: "1px",
           }}
           className="about-bg"
         >
@@ -99,8 +100,7 @@ class About extends React.Component {
             <span>
               Hi.&nbsp;&nbsp;I'm a Front End Developer
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
-              in Web Desing, UI Design and &nbsp;Photography, based in South
-              London.
+              in Web Design, UI Design and Photography, based in South London.
             </span>
           </motion.div>
 
@@ -166,7 +166,7 @@ class About extends React.Component {
                 &nbsp;&nbsp;practicing, watching and reading; &nbsp; to advance
                 my skills with{" "}
                 <b>
-                  modern React, Vanilla JavaScript, advanced CSS and Next.js.
+                  modern React & JavaScript, advanced CSS and Next.js.
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought
                   these are my primary langauges, I am open to learning any tech
                   stack required.

@@ -85,7 +85,7 @@ class Google extends React.Component {
         };
     return (
       <>
-        <div style={style}>
+        <div className="google-bg" style={style}>
           <div className="header" style={style}>
             <h1 style={{ margin: "0" }}>Google Search.</h1>
           </div>
@@ -142,6 +142,8 @@ class Google extends React.Component {
                 borderRadius: "5px",
                 cursor: "pointer",
                 marginTop: "100px",
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
               }}
               alt=""
               onMouseEnter={this.onMouseEnter}
@@ -155,12 +157,10 @@ class Google extends React.Component {
               viewport={{ once: true, amount: 0.3 }}
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                backgroundColor: " rgba(0,0,0,0.4)",
-                marginTop: "300px",
-                paddingTop: "80px",
-                borderTop: "solid white 1px",
+
+                gridTemplateRows: "1fr 1fr",
               }}
+              className="text-container"
             >
               <motion.div
                 initial={"offscreen"}
@@ -171,23 +171,25 @@ class Google extends React.Component {
                   scale: 1.1,
                 }}
                 transition={{
-                  type: "spring",
+                  type: "tween",
                   stiffness: 300,
                   damping: 10,
                 }}
                 onMouseEnter={this.onMouseEnter}
                 style={{ marginBottom: "50px" }}
-                className="projects-img"
               >
                 <Tilt tiltMaxAngleX={7} tiltMaxAngleY={7} perspective={1000}>
                   <img
                     src="./images/project-img/google2.png"
                     style={{
-                      width: "100%",
+                      width: "50%",
                       borderRadius: "5px",
                       cursor: "pointer",
                       marginTop: "80px",
-                      marginLeft: "100px",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     }}
                     alt=""
                   />
@@ -199,14 +201,14 @@ class Google extends React.Component {
                 variants={textAnimate}
                 viewport={{ once: true, amount: 0.1 }}
                 style={{
-                  width: "50%",
+                  width: "40%",
                   fontSize: "25px",
-                  height: "56%",
                   marginTop: "80px",
+                  height: " 30%",
                 }}
                 className="text-box"
               >
-                <p style={{ color: "white", paddingTop: "60px" }}>
+                <p style={{ color: "white" }}>
                   Google search home page & results; users can search for the
                   above data in the search bar.
                 </p>
