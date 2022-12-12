@@ -116,3 +116,14 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .project-link {
+    font-size: 20px;
+  }
+}

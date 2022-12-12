@@ -181,6 +181,10 @@ body {
     background-color: black;
     margin: 50px 0px 0px 30%;
   }
+
+  a {
+    font-size: 20px;
+  }
 }
 
 img {

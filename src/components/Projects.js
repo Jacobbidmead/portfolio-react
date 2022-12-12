@@ -85,7 +85,6 @@ class Projects extends React.Component {
         <div animate={{}} className="header" style={style}>
           <h1
             style={{
-              margin: "0 0 0px 50px",
               position: "fixed",
               textShadow: this.state.textShadow,
             }}
