@@ -148,7 +148,7 @@ class MagiKards extends React.Component {
           >
             {" "}
             <motion.img
-              className="magikards"
+              className="magikards-large"
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}
@@ -166,12 +166,7 @@ class MagiKards extends React.Component {
             whileInView={"onscreen"}
             variants={containerAnimate}
             viewport={{ once: true, amount: 0.1 }}
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              backgroundColor: "rgba(0,0,0,0.4)",
-            }}
-            className="text-container"
+            className="text-container dual-col"
           >
             <motion.div
               initial={"offscreen"}
@@ -189,7 +184,7 @@ class MagiKards extends React.Component {
             >
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
-                  className="magikards"
+                  className="magikards-img1"
                   src="./images/project-img/MK3.png"
                   alt=""
                 />
@@ -200,14 +195,7 @@ class MagiKards extends React.Component {
               whileInView={"onscreen"}
               variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
-              style={{
-                width: "50%",
-                marginLeft: "25%",
-                fontSize: "20px",
-                color: "white",
-                height: "77%",
-              }}
-              className="text-box"
+              className="text-box magikards-text"
             >
               The view above is the home screen; players are able to select
               either Ice or Fire, then enter thier name into the input above.
@@ -241,7 +229,6 @@ class MagiKards extends React.Component {
 
                 marginTop: "300px",
               }}
-              className="magikards"
               src="./images/project-img/MK4.png"
               alt=""
             />
@@ -272,7 +259,7 @@ class MagiKards extends React.Component {
                 color: "white",
                 marginTop: "40px",
               }}
-              className="text-box"
+              className="text-box magikards-text"
             >
               <section>
                 This view above shows the Battlefield, the hand of cards is
@@ -297,6 +284,7 @@ class MagiKards extends React.Component {
                   justifyContent: "center",
                   margin: "0px 0px 70px 0px",
                 }}
+                className="magikards-img1"
                 initial={"offscreen"}
                 whileInView={"onscreen"}
                 variants={moveLeft}
@@ -312,12 +300,7 @@ class MagiKards extends React.Component {
               >
                 {" "}
                 <img
-                  style={{
-                    width: "60%",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                  }}
-                  className="magikards"
+                  className="magikards-img2"
                   src="./images/project-img/MK2.png"
                   alt=""
                 />

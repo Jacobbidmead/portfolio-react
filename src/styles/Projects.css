@@ -23,9 +23,9 @@
   font-family: Futura;
   font-size: 60px;
   background-color: rgba(247, 243, 234, 0.1);
-  width: 25%;
+  width: 20%;
   text-align: center;
-  height: 40px;
+  height: 30px;
   padding-top: 100px;
   display: flex;
   color: white;
@@ -105,10 +105,19 @@
   box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.3),
     0 6px 20px 0 rgba(255, 255, 255, 0.3);
 
-  width: 80%;
+  width: 100%;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 35px;
+}
+
+.magikards-text {
+  width: 60%;
+}
+
+.magikards-img2 {
+  width: 60%;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .google-bg {
@@ -125,6 +134,11 @@
   color: white;
 }
 
+.dual-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -136,8 +150,9 @@
 
 @media screen and (max-width: 600px) {
   .header {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    font-family: Futura;
   }
 
   .project-link {
@@ -158,11 +173,30 @@
   }
 
   .text-container {
-    max-width: 50%;
+    max-width: 60%;
   }
 
   .magikards {
     max-width: 50%;
+  }
+  .dual-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .magikards-img1 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .magikards-img2 {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .magikards-text {
+    width: 100%;
+    padding: 40px;
   }
 
   .text-box {
