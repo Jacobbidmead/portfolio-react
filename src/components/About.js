@@ -141,7 +141,7 @@ class About extends React.Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <b>Click me.</b>
+                  <b className="tortuga-certificate">Click me.</b>
                 </a>
               </motion.div>
             </motion.div>
@@ -243,22 +243,12 @@ class About extends React.Component {
               stiffness: 400,
               damping: 10,
             }}
-            style={{
-              textAlign: "center",
-              padding: "100px",
-              marginTop: "38%",
-              backgroundColor: "rgba(247, 243, 234, 0.3)",
-              border: "1px solid white",
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-            }}
-            className="about-paragraph"
+            className="about-article"
           >
             <motion.div
               style={{
                 textAlign: "right",
                 width: "auto",
-                fontSize: "30px",
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -275,7 +265,7 @@ class About extends React.Component {
               whileInView={"onscreen"}
               variants={textAnimate2}
               viewport={{ once: true, amount: 0.01 }}
-              style={{ textAlign: "right", marginTop: "33%", fontSize: "30px" }}
+              style={{ textAlign: "right", marginTop: "33%" }}
             >
               These can be viewed in the projects section of this site and on my{" "}
               <b>GitHub</b> repository.{" "}
@@ -366,7 +356,7 @@ class About extends React.Component {
                 }}
                 className="email"
               >
-                <i className="fa-solid fa-envelope "></i>
+                <i className="fa-solid fa-envelope"></i>
                 jacob.bidmead.fullstack@outlook.com
               </motion.div>
 
@@ -386,7 +376,7 @@ class About extends React.Component {
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <div>
+                <div className="gitlink">
                   <a
                     href="https://github.com/Jacobbidmead"
                     className="gitlink"

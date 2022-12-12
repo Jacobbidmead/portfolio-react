@@ -134,7 +134,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .name {
-    font-size: 22px;
+    font-size: 28px;
+    margin-left: 120px;
   }
 
   .lastname {
@@ -147,15 +148,16 @@ body {
     padding: 30px 0 0 100px;
   }
   .circle {
-    width: 40px;
-    height: 40px;
-    margin-left: 200px;
+    width: 35px;
+    height: 35px;
+    margin-left: 50px;
   }
   .clickme {
     padding: 0;
-    font-size: 7px;
-    padding-left: 13px;
-    padding-top: 12px;
+    font-size: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: none;
   }
   .home-container {
     display: flex;
@@ -177,36 +179,6 @@ body {
     background-color: black;
     margin: 50px 0px 0px 30%;
   }
-
-  /* about view */
-  .about-article {
-    min-height: 100%;
-    min-width: 100%;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-paragraph {
-    width: 100%;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  .about-intro {
-    font-size: 20px;
-  }
-  .about-bg {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-/* min-wdith for larger screens */
-@media screen and (min-width: 601px) {
-}
-
-@media screen and (max-width: 600px) {
 }
 
 img {

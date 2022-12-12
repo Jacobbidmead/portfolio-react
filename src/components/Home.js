@@ -9,9 +9,8 @@ let backgroundColors = [
   "#CB04A5",
   "#FB5012",
 ];
-
 const random = () => {
-  let randomizedArray = [];
+  const randomizedArray = [];
 
   for (let i = 0; i < backgroundColors.length; i++) {
     let randomIndex = Math.floor(Math.random() * backgroundColors.length);
@@ -21,7 +20,7 @@ const random = () => {
     randomizedArray.push(backgroundColors[randomIndex]);
   }
 
-  let randomIndex = Math.floor(Math.random() * randomizedArray.length);
+  const randomIndex = Math.floor(Math.random() * randomizedArray.length);
   return randomizedArray[randomIndex];
 };
 
