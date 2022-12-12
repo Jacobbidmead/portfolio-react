@@ -376,7 +376,7 @@ class About extends React.Component {
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <div className="gitlink">
+                <div>
                   <a
                     href="https://github.com/Jacobbidmead"
                     className="gitlink"
@@ -384,7 +384,7 @@ class About extends React.Component {
                     rel="noreferrer"
                   >
                     <i className="fa-brands fa-github"></i>
-                    github.com/Jacobbidmead
+                    <span className="email"> github.com/Jacobbidmead</span>
                   </a>
                 </div>
               </motion.div>
