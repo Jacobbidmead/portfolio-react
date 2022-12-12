@@ -3,7 +3,7 @@
   color: white;
   cursor: pointer;
   transition: text-shadow, 0.2s ease;
-  margin: 100px 0px 0px 100px;
+  margin: 0px 0px 0px 100px;
   padding-bottom: 80px;
 }
 
@@ -26,7 +26,7 @@
   width: 20%;
   text-align: center;
   height: 30px;
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
   color: white;
   border-radius: 10px;
@@ -55,13 +55,21 @@
   height: 100vh;
 }
 
+h1 {
+  margin: 0;
+}
+
+.projects-head {
+  padding: 200px;
+}
+
 .header {
   color: rgba(247, 243, 234, 0.5);
   font-size: 90px;
   text-align: center;
-  padding: 40px 25px 0px 25px;
+  padding: 0px 25px 0px 25px;
   animation: fadein 2s ease;
-  margin: 0px;
+  margin: 100px 0px 400px 0px;
 }
 
 .google-img {
@@ -89,6 +97,7 @@
   margin-right: auto;
   padding: 60px;
   width: 100%;
+  font-size: 20px;
 }
 
 .text-container {
@@ -113,7 +122,9 @@
 .magikards-text {
   width: 60%;
 }
-
+.magikards-img1 {
+  border-radius: 5px;
+}
 .magikards-img2 {
   width: 60%;
   border-radius: 5px;

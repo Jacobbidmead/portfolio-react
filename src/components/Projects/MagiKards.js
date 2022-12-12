@@ -237,7 +237,6 @@ class MagiKards extends React.Component {
             style={{
               display: "grid",
               gridTemplateRows: "1fr 1fr",
-              backgroundColor: "rgba(0,0,0,0.4)",
             }}
             initial={"offscreen"}
             whileInView={"onscreen"}

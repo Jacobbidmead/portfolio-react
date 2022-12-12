@@ -82,7 +82,7 @@ class Projects extends React.Component {
         };
     return (
       <>
-        <div className="header" style={style}>
+        <div className="header projects-head" style={style}>
           <h1
             style={{
               position: "fixed",
