@@ -6,7 +6,9 @@
 html {
   height: 100vh;
 }
-
+b {
+  font-family: Futura, Arial, Helvetica, sans-serif;
+}
 body {
   margin: 0;
   background-color: black;
