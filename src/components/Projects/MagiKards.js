@@ -101,10 +101,9 @@ class MagiKards extends React.Component {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: 0.8 }}
           >
             <div
-              style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
               className="return-projects"
               onClick={(e) => this.props.toggleShowProjects(e)}
             >
@@ -116,17 +115,11 @@ class MagiKards extends React.Component {
                 gridTemplateColumns: "1fr 1fr",
               }}
             >
-              <div style={{ color: "white", marginLeft: "100px" }}>
+              <div className="project-name">
                 <h1>MagiKards battle style card game</h1>
                 <h5>October 2022</h5>
               </div>
-              <div
-                style={{
-                  color: "white",
-                  fontSize: "30px",
-                  marginRight: "100px",
-                }}
-              >
+              <div className="project-description">
                 Magikards is a fantasy based battle card game created by myself
                 and class mates Joshua Peoples & Mohammed Hammuri during the
                 final two weeks of Tortuga Coders bootcamp.
@@ -196,12 +189,6 @@ class MagiKards extends React.Component {
             >
               <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                 <img
-                  style={{
-                    width: "80%",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                    marginLeft: "35px",
-                  }}
                   className="magikards"
                   src="./images/project-img/MK3.png"
                   alt=""

@@ -82,10 +82,12 @@ class Projects extends React.Component {
         };
     return (
       <>
-        <div animate={{}} className="header" style={style}>
+        <div className="header" style={style}>
           <h1
             style={{
               position: "fixed",
+              marginLeft: "40px",
+
               textShadow: this.state.textShadow,
             }}
           >

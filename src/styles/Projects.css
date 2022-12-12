@@ -3,6 +3,8 @@
   color: white;
   cursor: pointer;
   transition: text-shadow, 0.2s ease;
+  margin: 100px 0px 0px 100px;
+  padding-bottom: 80px;
 }
 
 .return-projects:hover {
@@ -58,8 +60,8 @@
   font-size: 90px;
   text-align: center;
   padding: 40px 25px 0px 25px;
-  margin: 0;
   animation: fadein 2s ease;
+  margin: 0px;
 }
 
 .google-img {
@@ -102,10 +104,25 @@
 .magikards {
   box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.3),
     0 6px 20px 0 rgba(255, 255, 255, 0.3);
+
+  width: 80%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 35px;
 }
 
 .google-bg {
   padding-bottom: 10px;
+}
+.project-description {
+  color: white;
+  font-size: 30px;
+  margin: 100px;
+}
+
+.project-name {
+  margin-left: 100px;
+  color: white;
 }
 
 @keyframes fadein {
@@ -119,11 +136,37 @@
 
 @media screen and (max-width: 600px) {
   .header {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 
   .project-link {
     font-size: 20px;
+  }
+  .project-description {
+    font-size: 10px;
+    width: 50%;
+    margin: 0px 0px 5px 70px;
+  }
+  .project-name {
+    margin: 0px 20px 0px 15px;
+    font-size: 10px;
+  }
+  .return-projects {
+    font-size: 10px;
+    margin: 100px 0px 0px 20px;
+  }
+
+  .text-container {
+    max-width: 50%;
+  }
+
+  .magikards {
+    max-width: 50%;
+  }
+
+  .text-box {
+    max-width: 40%;
+    font-size: 5px;
   }
 }
