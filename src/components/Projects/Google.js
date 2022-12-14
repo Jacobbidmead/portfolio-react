@@ -1,23 +1,10 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 const scaleImg = {
   offscreen: { scale: 1 },
   onscreen: {
     scale: 1.2,
-    transition: {
-      type: "tween",
-      bounce: 0.6,
-      duration: 1,
-    },
-  },
-};
-
-const moveRight = {
-  offscreen: { x: -200 },
-  onscreen: {
-    x: 0,
     transition: {
       type: "tween",
       bounce: 0.6,
@@ -117,7 +104,7 @@ class Google extends React.Component {
       <>
         <div className="google-bg" style={style}>
           <div className="header" style={style}>
-            <h1 style={{ marginBottom: "200px" }}>Google Search.</h1>
+            <h1> Google Search</h1>
           </div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -137,7 +124,12 @@ class Google extends React.Component {
                 gridTemplateColumns: "1fr 1fr",
               }}
             >
-              <div style={{ color: "white", marginLeft: "100px" }}>
+              <div
+                style={{
+                  color: "white",
+                  marginLeft: "100px",
+                }}
+              >
                 <h1>Google Seach App</h1>
                 <h5>October 2022</h5>
               </div>
@@ -168,8 +160,6 @@ class Google extends React.Component {
           </motion.div>
           <motion.div
             className="google-img"
-            onMouseEnter={this.onMouseEnter}
-            style={style}
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={containerAnimate}
@@ -208,35 +198,25 @@ class Google extends React.Component {
               <motion.div
                 initial={"offscreen"}
                 whileInView={"onscreen"}
-                variants={moveRight}
+                variants={textAnimate}
                 viewport={{ once: true, amount: 0.1 }}
-                whileHover={{
-                  scale: 1.1,
-                }}
-                transition={{
-                  type: "tween",
-                  stiffness: 300,
-                  damping: 10,
-                }}
                 onMouseEnter={this.onMouseEnter}
                 style={{ marginBottom: "50px" }}
               >
-                <Tilt tiltMaxAngleX={7} tiltMaxAngleY={7} perspective={1000}>
-                  <img
-                    src="./images/project-img/google2.png"
-                    style={{
-                      width: "50%",
-                      borderRadius: "5px",
-                      cursor: "pointer",
-                      marginTop: "80px",
-                      marginLeft: "auto",
-                      marginRight: "auto",
-                      boxShadow:
-                        "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                    }}
-                    alt=""
-                  />
-                </Tilt>
+                <img
+                  src="./images/project-img/google2.png"
+                  style={{
+                    width: "50%",
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                    marginTop: "80px",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  }}
+                  alt=""
+                />
               </motion.div>
               <motion.div
                 initial={"offscreen"}

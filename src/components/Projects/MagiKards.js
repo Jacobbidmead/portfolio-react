@@ -1,35 +1,10 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 const scaleImg = {
   offscreen: { scale: 1 },
   onscreen: {
     scale: 1.2,
-    transition: {
-      type: "tween",
-      bounce: 0.6,
-      duration: 0.7,
-    },
-  },
-};
-
-const moveLeft = {
-  offscreen: { x: 200 },
-  onscreen: {
-    x: 0,
-    transition: {
-      type: "tween",
-      bounce: 0.6,
-      duration: 0.7,
-    },
-  },
-};
-
-const moveRight = {
-  offscreen: { x: -200 },
-  onscreen: {
-    x: 0,
     transition: {
       type: "tween",
       bounce: 0.6,
@@ -171,7 +146,7 @@ class MagiKards extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               whileHover={{
                 scale: 1.1,
@@ -182,13 +157,11 @@ class MagiKards extends React.Component {
                 damping: 10,
               }}
             >
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-                <img
-                  className="magikards-img1"
-                  src="./images/project-img/MK3.png"
-                  alt=""
-                />
-              </Tilt>
+              <img
+                className="magikards-img1"
+                src="./images/project-img/MK3.png"
+                alt=""
+              />
             </motion.div>
             <motion.div
               initial={"offscreen"}
@@ -226,7 +199,6 @@ class MagiKards extends React.Component {
               style={{
                 width: "76%",
                 borderRadius: "5px",
-
                 marginTop: "300px",
               }}
               src="./images/project-img/MK4.png"
@@ -247,7 +219,7 @@ class MagiKards extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "50%",
@@ -276,35 +248,34 @@ class MagiKards extends React.Component {
                 </p>
               </section>
             </motion.div>
-            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-              <motion.div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  margin: "0px 0px 70px 0px",
-                }}
-                className="magikards-img1"
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                variants={moveLeft}
-                viewport={{ once: true, amount: 0.1 }}
-                whileHover={{
-                  scale: 1.1,
-                }}
-                transition={{
-                  type: "tween",
-                  stiffness: 400,
-                  damping: 10,
-                }}
-              >
-                {" "}
-                <img
-                  className="magikards-img2"
-                  src="./images/project-img/MK2.png"
-                  alt=""
-                />
-              </motion.div>
-            </Tilt>
+
+            <motion.div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                margin: "0px 0px 70px 0px",
+              }}
+              className="magikards-img1"
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.1 }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{
+                type: "tween",
+                stiffness: 400,
+                damping: 10,
+              }}
+            >
+              {" "}
+              <img
+                className="magikards-img2"
+                src="./images/project-img/MK2.png"
+                alt=""
+              />
+            </motion.div>
           </motion.div>
         </div>
       </>

@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 const scaleImg = {
@@ -14,26 +13,14 @@ const scaleImg = {
   },
 };
 
-const moveLeft = {
-  offscreen: { x: 200 },
+const textAnimate = {
+  offscreen: { y: 400 },
   onscreen: {
-    x: 0,
+    y: 0,
     transition: {
       type: "tween",
-      bounce: 0.6,
-      duration: 0.8,
-    },
-  },
-};
-
-const moveRight = {
-  offscreen: { x: -200 },
-  onscreen: {
-    x: 0,
-    transition: {
-      type: "tween",
-      bounce: 0.6,
-      duration: 0.8,
+      bounce: 0.5,
+      duration: 1,
     },
   },
 };
@@ -168,7 +155,7 @@ class AirBnB extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveLeft}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 color: "black",
@@ -184,7 +171,7 @@ class AirBnB extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               whileHover={{
                 scale: 1.1,
@@ -196,26 +183,24 @@ class AirBnB extends React.Component {
               }}
             >
               {" "}
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-                <img
-                  style={{
-                    width: "100%",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  }}
-                  className="projects-img"
-                  src="./images/project-img/abnb1.png"
-                  alt=""
-                />
-              </Tilt>
+              <img
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                  boxShadow:
+                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                }}
+                className="projects-img"
+                src="./images/project-img/abnb1.png"
+                alt=""
+              />
             </motion.div>
 
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
@@ -231,7 +216,7 @@ class AirBnB extends React.Component {
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveLeft}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               whileHover={{
                 scale: 1.1,
@@ -243,20 +228,18 @@ class AirBnB extends React.Component {
               }}
               style={{ marginTop: "50px" }}
             >
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-                <img
-                  style={{
-                    width: "100%",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  }}
-                  className="projects-img"
-                  src="./images/project-img/abnb2.png"
-                  alt=""
-                />
-              </Tilt>
+              <img
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                  boxShadow:
+                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                }}
+                className="projects-img"
+                src="./images/project-img/abnb2.png"
+                alt=""
+              />
             </motion.div>
           </motion.div>
           <div
@@ -300,30 +283,28 @@ class AirBnB extends React.Component {
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
             >
               {" "}
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-                <img
-                  style={{
-                    width: "100%",
-                    borderRadius: "5px",
-                    marginBottom: "80px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                    cursor: "pointer",
-                  }}
-                  className="projects-img"
-                  src="./images/project-img/abnb6.png"
-                  alt=""
-                />{" "}
-              </Tilt>
+              <img
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  marginBottom: "80px",
+                  boxShadow:
+                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  cursor: "pointer",
+                }}
+                className="projects-img"
+                src="./images/project-img/abnb6.png"
+                alt=""
+              />{" "}
             </motion.div>
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveLeft}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
@@ -348,30 +329,28 @@ class AirBnB extends React.Component {
               }}
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveRight}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
             >
               {" "}
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
-                <img
-                  style={{
-                    width: "100%",
-                    borderRadius: "5px",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                    cursor: "pointer",
-                    marginRight: "10px",
-                  }}
-                  className="projects-img"
-                  src="./images/project-img/abnb7.png"
-                  alt=""
-                />
-              </Tilt>
+              <img
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  boxShadow:
+                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
+                className="projects-img"
+                src="./images/project-img/abnb7.png"
+                alt=""
+              />
             </motion.div>
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={moveLeft}
+              variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",

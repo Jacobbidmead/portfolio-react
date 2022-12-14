@@ -70,6 +70,7 @@ h1 {
   padding: 0px 25px 0px 25px;
   animation: fadein 2s ease;
   margin: 100px 0px 400px 0px;
+  background-color: inherit;
 }
 
 .google-img {
