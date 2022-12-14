@@ -30,15 +30,10 @@
   padding-top: 80px;
   display: flex;
   color: white;
-  border-radius: 10px;
+  border-radius: 60px;
   margin-bottom: 140px;
   justify-content: center;
-}
-
-.project-link:hover {
-  background-color: black;
-  transition: background-color ease 0.9s;
-  box-shadow: 1px 1px 10px white, -1px -1px 10px white;
+  border: 1px white solid;
 }
 
 .gitlink {

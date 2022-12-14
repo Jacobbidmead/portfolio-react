@@ -126,8 +126,10 @@ class About extends React.Component {
               viewport={{ once: true, amount: 0.01 }}
             >
               After three months of self study, I took part in & completed{" "}
-              <b>Tortuga Coders 11 week fullstack coding bootcamp, </b>{" "}
-              &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand.
+              <span>
+                Tortuga Coders 11 week fullstack coding bootcamp,{" "}
+                &nbsp;&nbsp;&nbsp;in Koh Phangan - Thailand.
+              </span>
               &nbsp;&nbsp;&nbsp;&nbsp;Graduating in mid-October 2022.
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <motion.div>
@@ -141,7 +143,9 @@ class About extends React.Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <b className="tortuga-certificate">Click me.</b>
+                  <span className="tortuga-certificate">
+                    Click for certification
+                  </span>
                 </a>
               </motion.div>
             </motion.div>
@@ -158,20 +162,16 @@ class About extends React.Component {
               viewport={{ once: true, amount: 0.01 }}
             >
               <span>
-                <b>
-                  I build my projects using React &
-                  &nbsp;&nbsp;&nbsp;&nbsp;Node.js
-                </b>
-                ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
-                &nbsp;&nbsp;practicing, watching and reading; &nbsp; to advance
-                my skills with{" "}
-                <b>
-                  modern React & JavaScript, advanced CSS and Next.js.
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought
-                  these are my primary langauges, I am open to learning any tech
-                  stack required.
-                </b>
+                I build my projects using React &
+                &nbsp;&nbsp;&nbsp;&nbsp;Node.js ;
               </span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
+              &nbsp;&nbsp;practicing, watching and reading; &nbsp; to advance my
+              skills with{" "}
+              <span>modern React & JavaScript, advanced CSS and Next.js.</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought these
+              are my primary langauges, I am open to learning any tech stack
+              required.
             </motion.div>
           </motion.div>
 
@@ -196,15 +196,15 @@ class About extends React.Component {
               variants={textAnimate}
               viewport={{ once: true, amount: 0.01 }}
             >
-              <b>I have a creative background;</b>
+              <span>I have a creative background;</span>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <p>
                 Graduating from <b>Wimbledon College of Art </b>
                 in 2013,
               </p>{" "}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;studying{" "}
-              <b>BA:Hons - Print & Time Based Media.</b>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>studying BA:Hons - Print & Time Based Media.</span>
             </motion.div>
             <motion.div
               initial={"offscreen"}
@@ -217,17 +217,15 @@ class About extends React.Component {
                 marginTop: "33%",
               }}
             >
-              <span>
-                <b>&nbsp;A passionate photographer,</b>
-                &nbsp; Ive documentend my travels in{" "}
-                <p>
-                  <b>
-                    South America, the USA, Asia, Europe&nbsp;&nbsp; &
-                    &nbsp;&nbsp;Australia
-                  </b>{" "}
-                  over the last 8 years.
-                </p>
-              </span>
+              <span>&nbsp;A passionate photographer,</span>
+              &nbsp; Ive documentend my travels in{" "}
+              <p>
+                <span>
+                  South America, the USA, Asia, Europe&nbsp;&nbsp; &
+                  &nbsp;&nbsp;Australia
+                </span>{" "}
+                over the last 8 years.
+              </p>
             </motion.div>
           </motion.div>
           <motion.div
@@ -268,7 +266,7 @@ class About extends React.Component {
               style={{ textAlign: "right", marginTop: "33%" }}
             >
               These can be viewed in the projects section of this site and on my{" "}
-              <b>GitHub</b> repository.{" "}
+              <span>GitHub</span> repository.{" "}
             </motion.div>
           </motion.div>
           <motion.div
@@ -293,7 +291,7 @@ class About extends React.Component {
               viewport={{ once: true, amount: 0.01 }}
               style={{ textAlign: "right" }}
             >
-              <b>Im extremly motivated to learn and progress;</b>{" "}
+              <span>Im extremly motivated to learn and progress;</span>{" "}
               &nbsp;&nbsp;and am always looking for new opportunities.
               &nbsp;&nbsp;
             </motion.div>
@@ -310,11 +308,11 @@ class About extends React.Component {
               viewport={{ once: true, amount: 0.01 }}
             >
               <span>
-                <b>Im looking for my next step</b> &nbsp;&nbsp;&nbsp;&nbsp;im
-                availble for work - permanent or
-                freelance,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; click the link
-                below for my contact info.{" "}
-              </span>
+                Im looking for my next step &nbsp;&nbsp;&nbsp;&nbsp;im availble
+                for work{" "}
+              </span>{" "}
+              - permanent or freelance,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              click the link below for my contact info.{" "}
             </motion.div>
           </motion.div>
           {this.state.showContact ? (
