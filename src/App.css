@@ -62,12 +62,13 @@ body {
 
 .name {
   text-align: center;
-  font-size: 220px;
+  font-size: 200px;
   color: rgba(247, 243, 234, 0.5);
   text-align: left;
   margin: 180px 0 0 40px;
   letter-spacing: 40px;
   font-family: Dirty;
+  animation: fadein 2s ease;
 }
 
 .lastname {
@@ -79,6 +80,7 @@ body {
   letter-spacing: 29px;
   font-family: Dirty;
   height: 20px;
+  animation: fadein 2s ease;
 }
 
 .home-container {
@@ -138,6 +140,15 @@ body {
   }
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* media */
 /* max-width = small screens */
 
@@ -173,7 +184,6 @@ body {
     font-size: 5px;
     padding-left: 10px;
     padding-top: 10px;
-    display: none;
   }
   .home-container {
     display: flex;

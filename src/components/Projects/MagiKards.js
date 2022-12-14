@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const scaleImg = {
   offscreen: { scale: 1 },
   onscreen: {
-    scale: 1.2,
+    scale: 1.1,
     transition: {
       type: "tween",
       bounce: 0.6,
@@ -109,10 +109,6 @@ class MagiKards extends React.Component {
           </motion.div>
 
           <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={containerAnimate}
-            viewport={{ once: true, amount: 0.1 }}
             style={{
               display: "flex",
               justifyContent: "center",

@@ -35,18 +35,6 @@ const boxAnimate = {
   },
 };
 
-const containerAnimate = {
-  offscreen: { y: 600 },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: "tween",
-      bounce: 0.5,
-      duration: 1,
-    },
-  },
-};
-
 let backgroundColors = [
   "#23C4FF",
   "#FF10F0",
@@ -144,18 +132,12 @@ class Google extends React.Component {
               </div>
             </div>
           </motion.div>
-          <motion.div
-            className="google-img"
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={containerAnimate}
-            viewport={{ once: true, amount: 0.1 }}
-          >
+          <motion.div className="google-img">
             <motion.img
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.1 }}
               src="./images/project-img/google.png"
               style={{
                 width: "76%",

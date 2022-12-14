@@ -22,13 +22,10 @@ class Photos extends React.Component {
         <div className="header" style={{ marginBottom: "170px" }}>
           <h1 style={{ margin: "0" }}>Photos.</h1>
         </div>
-        <motion.div
-          style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 1 }}
-        >
-          <div style={{ color: "white", marginLeft: "100px" }}>
+        <motion.div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+          <div
+            style={{ color: "white", marginLeft: "100px", fontFamily: "Dirty" }}
+          >
             <h1>Analogue photography</h1>
             <h5>2014 - 2019</h5>
           </div>
@@ -44,8 +41,8 @@ class Photos extends React.Component {
             "Travel changes you, as you move through this life and this world
             you change things slightly, you leave marks behind, however small.
             And in return, life — and travel — leaves marks on you."{" "}
-            <p>- Anthony Bourdain</p>{" "}
-            <p>
+            <p style={{ fontFamily: "dirty" }}>- Anthony Bourdain</p>{" "}
+            <p style={{ fontFamily: "dirty" }}>
               Over the last 10 years, I've been shooting street photography.
               Capturing moments from my life & travels; cultures, experiences,
               landscapes and compositions.
@@ -55,7 +52,9 @@ class Photos extends React.Component {
               Through my work, I attempt to describe my love of anthropology &
               discovering new cultures.
             </p>
-            <small style={{ fontSize: "15px" }}>Shot on Contax TVS III</small>
+            <small style={{ fontSize: "15px", fontFamily: "dirty" }}>
+              Shot on Contax TVS III
+            </small>
           </div>
         </motion.div>
         <motion.div

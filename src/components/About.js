@@ -199,7 +199,7 @@ class About extends React.Component {
               <span>I have a creative background;</span>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <p>
-                Graduating from <b>Wimbledon College of Art </b>
+                Graduating from <span>Wimbledon College of Art </span>
                 in 2013,
               </p>{" "}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
