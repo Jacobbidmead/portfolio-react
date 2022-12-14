@@ -103,16 +103,11 @@ class Google extends React.Component {
     return (
       <>
         <div className="google-bg" style={style}>
-          <div className="header" style={style}>
+          <div className="google-header" style={style}>
             <h1> Google Search</h1>
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 1 }}
-          >
+          <motion.div>
             <div
-              style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
               className="return-projects"
               onClick={(e) => this.props.toggleShowProjects(e)}
             >
@@ -124,37 +119,28 @@ class Google extends React.Component {
                 gridTemplateColumns: "1fr 1fr",
               }}
             >
-              <div
-                style={{
-                  color: "white",
-                  marginLeft: "100px",
-                }}
-              >
+              <div className="project-name">
                 <h1>Google Seach App</h1>
                 <h5>October 2022</h5>
               </div>
 
-              <div
-                style={{
-                  color: "white",
-                  fontSize: "30px",
-                  marginRight: "100px",
-                }}
-              >
-                Google Search style app, first made in MVC style, then using
-                React for the front end while creating our own API and
-                connecting to the backend using Axios.{" "}
+              <div className="project-description">
+                <span> Google Search style app,</span> first made in MVC style,
+                then using React for the front end while creating our own API
+                and connecting to the backend using Axios.{" "}
                 <p>
                   Users are able to search for limited data contained in the
                   MongoDB database.
                 </p>
                 <p>
-                  Technologies used - React, Axios, Passport, HTML, CSS,
-                  Express.js, Node.js, MongoDB.
+                  <span>
+                    Technologies used - React, Axios, Passport, HTML, CSS,
+                    Express.js, Node.js, MongoDB.
+                  </span>
                 </p>
-                <small style={{ fontSize: "15px" }}>
+                <span style={{ fontSize: "15px" }}>
                   Scroll over images to change colour
-                </small>
+                </span>
               </div>
             </div>
           </motion.div>
@@ -231,10 +217,10 @@ class Google extends React.Component {
                 }}
                 className="text-box"
               >
-                <p style={{ color: "white" }}>
+                <span style={{ color: "white" }}>
                   Google search home page & results; users can search for the
                   above data in the search bar.
-                </p>
+                </span>
               </motion.div>
             </motion.div>
           </div>

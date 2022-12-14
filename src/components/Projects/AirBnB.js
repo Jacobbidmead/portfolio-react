@@ -70,14 +70,10 @@ class AirBnB extends React.Component {
             paddingBottom: "1px",
           }}
         >
-          <div className="header" style={{ marginBottom: "220px" }}>
+          <div className="header">
             <h1 style={{ margin: "0" }}>AirBnB Clone.</h1>
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 1 }}
-          >
+          <motion.div>
             <div
               style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
               className="return-projects"
@@ -92,30 +88,26 @@ class AirBnB extends React.Component {
                 gridTemplateColumns: "1fr 1fr",
               }}
             >
-              <div style={{ color: "white", marginLeft: "100px" }}>
+              <div className="project-name">
                 <h1>AirBnB style site</h1>
                 <h5>October 2022</h5>
               </div>
 
-              <div
-                style={{
-                  color: "white",
-                  fontSize: "30px",
-                  marginRight: "100px",
-                }}
-              >
-                Fully working fullstack MVC AirBnB style web app, this personal
-                project was part of Tortuga Coders coding bootcamp. Users are
-                able to create a profile and upload house data, which is
-                populated onto the main app page.{" "}
+              <div className="project-description">
+                <span>Fully working fullstack MVC AirBnB style web app,</span>{" "}
+                this personal project was part of Tortuga Coders coding
+                bootcamp. Users are able to create a profile and upload house
+                data, which is populated onto the main app page.{" "}
                 <p>
                   Users, while logged in, can also edit house data and leave
                   comments. User data is stored in MongoDB and accessed with
                   Express.js.
                 </p>
                 <p>
-                  Technologies used - JavaScript, HTML, CSS, Bootstrap,
-                  Express.js, Node.js, MongoDB.
+                  <span>
+                    Technologies used - JavaScript, HTML, CSS, Bootstrap,
+                    Express.js, Node.js, MongoDB.
+                  </span>
                 </p>
               </div>
             </div>
@@ -165,22 +157,15 @@ class AirBnB extends React.Component {
               }}
               className="text-box"
             >
-              Once a house is selected, user is taken to the 'house' page, where
-              they can interact with the house gallery.
+              Once a house is selected, user is taken to the{" "}
+              <span>'house'</span> page, where they can interact with the{" "}
+              <span>house gallery.</span>
             </motion.div>
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
-              whileHover={{
-                scale: 1.1,
-              }}
-              transition={{
-                type: "tween",
-                stiffness: 400,
-                damping: 10,
-              }}
             >
               {" "}
               <img
@@ -210,22 +195,14 @@ class AirBnB extends React.Component {
               }}
               className="text-box"
             >
-              Users are able to 'Request booking' and leave reviews after
-              booking is complete.
+              Users are able to <span>'Request booking'</span> and leave reviews
+              after booking is complete.
             </motion.div>
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
-              whileHover={{
-                scale: 1.1,
-              }}
-              transition={{
-                type: "tween",
-                stiffness: 400,
-                damping: 10,
-              }}
               style={{ marginTop: "50px" }}
             >
               <img
@@ -273,14 +250,6 @@ class AirBnB extends React.Component {
             className="text-container"
           >
             <motion.div
-              whileHover={{
-                scale: 1.1,
-              }}
-              transition={{
-                type: "tween",
-                stiffness: 400,
-                damping: 10,
-              }}
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={textAnimate}
@@ -313,20 +282,16 @@ class AirBnB extends React.Component {
               }}
               className="text-box"
             >
-              Users can log in and access thier 'Profile' page, where they can
-              update their data, create a house to be listed and edit a
-              currently listed house.
+              Users can log in and access thier <span>Profile'</span>' page,
+              where they can
+              <span>
+                {" "}
+                update their data, create a house to be listed and edit a
+                currently listed house.
+              </span>
             </motion.div>
 
             <motion.div
-              whileHover={{
-                scale: 1.1,
-              }}
-              transition={{
-                type: "tween",
-                stiffness: 400,
-                damping: 10,
-              }}
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={textAnimate}
@@ -359,8 +324,9 @@ class AirBnB extends React.Component {
               }}
               className="text-box"
             >
-              List a house form that creates a house in the database and
-              populates data into 'houses' and 'profile' pages.
+              List a house form that{" "}
+              <span>creates a house in the database </span>and populates data
+              into <span>'houses' and 'profile' pages.</span>
             </motion.div>
           </motion.div>
         </div>

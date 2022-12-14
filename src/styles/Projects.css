@@ -6,6 +6,7 @@
   margin: 0px 0px 0px 100px;
   padding-bottom: 80px;
   font-family: Dirty;
+  animation: fadein 2s ease;
 }
 
 .return-projects:hover {
@@ -65,7 +66,19 @@ h1 {
   text-align: center;
   padding: 0px 25px 0px 25px;
   animation: fadein 2s ease;
-  margin: 100px 0px 400px 0px;
+  margin: 100px 0px 100px 0px;
+  background-color: inherit;
+  font-family: Dirty;
+  letter-spacing: 20px;
+}
+
+.google-header {
+  color: rgba(247, 243, 234, 0.5);
+  font-size: 70px;
+  text-align: center;
+  padding: 0px 25px 75px 25px;
+  animation: fadein 2s ease;
+
   background-color: inherit;
   font-family: Dirty;
   letter-spacing: 20px;
@@ -131,17 +144,21 @@ h1 {
 }
 
 .google-bg {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 .project-description {
   color: white;
   font-size: 30px;
-  margin: 100px;
+  margin: 0px 100px 80px 20px;
+  animation: fadein 2s ease;
 }
 
 .project-name {
   margin-left: 100px;
   color: white;
+  animation: fadein 2s ease;
+  font-family: Dirty;
 }
 
 .dual-col {
