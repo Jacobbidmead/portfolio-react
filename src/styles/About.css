@@ -34,6 +34,7 @@
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
     0 6px 20px 0 rgba(255, 255, 255, 0.3);
   font-size: 40px;
+  font-family: Dirty;
 }
 
 .about-article {
@@ -52,6 +53,7 @@
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
     0 6px 20px 0 rgba(255, 255, 255, 0.3);
+  font-family: Dirty;
 }
 
 .about-intro {
@@ -62,6 +64,7 @@
   text-align: center;
   width: 80%;
   color: rgba(247, 243, 234, 0.6);
+  font-family: Dirty;
 }
 
 .contacts-link {
@@ -72,10 +75,12 @@
   color: black;
   cursor: pointer;
   font-size: 90px;
+  font-family: Dirty;
 }
 
 .email {
   font-size: 40px;
+  font-family: Dirty;
 }
 
 @media screen and (max-width: 601px) {

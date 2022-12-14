@@ -5,6 +5,7 @@
   transition: text-shadow, 0.2s ease;
   margin: 0px 0px 0px 100px;
   padding-bottom: 80px;
+  font-family: Dirty;
 }
 
 .return-projects:hover {
@@ -20,7 +21,7 @@
 }
 
 .project-link {
-  font-family: Futura;
+  font-family: Dirty;
   font-size: 60px;
   background-color: rgba(247, 243, 234, 0.1);
   width: 20%;
@@ -65,12 +66,14 @@ h1 {
 
 .header {
   color: rgba(247, 243, 234, 0.5);
-  font-size: 90px;
+  font-size: 70px;
   text-align: center;
   padding: 0px 25px 0px 25px;
   animation: fadein 2s ease;
   margin: 100px 0px 400px 0px;
   background-color: inherit;
+  font-family: Dirty;
+  letter-spacing: 20px;
 }
 
 .google-img {

@@ -65,7 +65,7 @@ body {
   font-size: 220px;
   color: rgba(247, 243, 234, 0.5);
   text-align: left;
-  margin: 80px 0 0 40px;
+  margin: 180px 0 0 40px;
   letter-spacing: 40px;
   font-family: Dirty;
 }
@@ -75,9 +75,10 @@ body {
   font-size: 200px;
   color: rgba(247, 243, 234, 0.5);
   text-align: center;
-  margin: 60px 0 0 40px;
+  margin: 60px 0 0 0px;
   letter-spacing: 29px;
   font-family: Dirty;
+  height: 20px;
 }
 
 .home-container {
@@ -96,7 +97,7 @@ body {
   margin: 0px 100px 200px 0px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
 }
 
 .clickme {
