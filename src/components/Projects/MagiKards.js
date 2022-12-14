@@ -45,7 +45,7 @@ class MagiKards extends React.Component {
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 3000];
 
-    const colorsList = ["black", "#FB5012"];
+    const colorsList = ["black", "#35FF69"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -121,7 +121,6 @@ class MagiKards extends React.Component {
           >
             {" "}
             <motion.img
-              className="magikards-large"
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}
@@ -132,6 +131,7 @@ class MagiKards extends React.Component {
               }}
               src="./images/project-img/MK1.png"
               alt=""
+              className="magikards-large"
             />
           </motion.div>
           <motion.div
@@ -185,6 +185,7 @@ class MagiKards extends React.Component {
           >
             {" "}
             <motion.img
+              className="magikards-large"
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}
