@@ -126,7 +126,7 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={scaleImg}
               viewport={{ once: true, amount: 0.1 }}
-              src="./images/project-img/abnb4.png"
+              src="./images/project-img/abnb4.jpeg"
               alt=""
               className="airbnb"
               on
