@@ -45,39 +45,49 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <div
-          className="home-container"
-          style={{
-            backgroundColor: this.state.backgroundColor,
-
-            transition: "background-color 0.5s ease",
-          }}
-        >
-          <div className="name">JACOB</div>
-
-          <motion.div
-            onClick={(e) => this.toggleColorChange(e)}
-            whileTap={"clicked"}
-            variants={animateCircle}
-            animate={{
-              scale: [1, 1.4, 1.3, 1.2, 1],
-              rotate: [0, 0, 360, 360, 0],
+        <div className="home-container">
+          <div
+            className="name-container"
+            style={{
+              backgroundColor: this.state.backgroundColor,
+              transition: "background-color 0.5s ease",
             }}
-            transition={{
-              ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
-              duration: 1,
-            }}
-            className="circle"
           >
-            {" "}
-            <div className="clickme">
-              <span> Change Theme</span>
+            <div className="name">
+              <small
+                style={{
+                  fontSize: "40px",
+                }}
+              >
+                Hi i'm
+              </small>{" "}
+              JACOB.
+              <div style={{ position: "relative" }}>
+                <small>Im a Web Developer</small>
+              </div>
             </div>
-          </motion.div>
 
-          <div className="lastname">BIDMEAD</div>
-          <div className="webdev">WEB DEVELOPER</div>
+            <motion.div
+              onClick={(e) => this.toggleColorChange(e)}
+              whileTap={"clicked"}
+              variants={animateCircle}
+              animate={{
+                scale: [1, 1.4, 1.3, 1.2, 1],
+                rotate: [0, 0, 360, 360, 0],
+              }}
+              transition={{
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                duration: 1,
+              }}
+              className="circle"
+            >
+              {" "}
+              <div className="clickme">
+                <span> Change Theme</span>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </>
     );
