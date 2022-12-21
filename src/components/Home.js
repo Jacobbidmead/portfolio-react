@@ -55,7 +55,7 @@ class Home extends React.Component {
           <div className="name-container">
             <span
               style={{
-                fontSize: "100px",
+                fontSize: "60px",
               }}
               className="hi"
             >
@@ -82,8 +82,11 @@ class Home extends React.Component {
                 <span> Change Theme</span>
               </div>
             </motion.div>
-            <div className="lastname">Im a Web Developer</div>
+            <div className="lastname">I make things for the web. </div>
           </div>
+        </div>
+        <div className="japan-bg">
+          <img src="images/japan.jpeg" />
         </div>
       </>
     );

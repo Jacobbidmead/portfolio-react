@@ -98,6 +98,7 @@ class About extends React.Component {
             className="about-intro"
           >
             <span>
+              {" "}
               I'm a Junior Full Stack Developer
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
               in Web Design, UI Design and Photography, based in South London.

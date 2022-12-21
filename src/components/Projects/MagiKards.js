@@ -135,20 +135,8 @@ class MagiKards extends React.Component {
             whileInView={"onscreen"}
             variants={containerAnimate}
             viewport={{ once: true, amount: 0.1 }}
-            className="text-container dual-col"
+            className="text-container "
           >
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={textAnimate}
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              <img
-                className="magikards-img1"
-                src="./images/project-img/MK3.png"
-                alt=""
-              />
-            </motion.div>
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -161,15 +149,6 @@ class MagiKards extends React.Component {
               into the <span>input</span> above. This allows the start of the
               game. Only when both players have selected their class and entered
               thier name can they enter the <span>'Battlefield'.</span>
-              <p>
-                <span>
-                  The image on the left shows a pop up located on the home
-                  screen
-                </span>{" "}
-                that explains the rules of the game. This button is located in
-                the top right of the home screen and{" "}
-                <span>disapears when 'info' is clicked.</span>
-              </p>
             </motion.div>
           </motion.div>
 
