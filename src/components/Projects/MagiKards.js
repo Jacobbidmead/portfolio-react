@@ -45,7 +45,7 @@ class MagiKards extends React.Component {
   listenScrollEvent = (e) => {
     const backgroundBreakpoints = [0, 900, 3000];
 
-    const colorsList = ["black", "#35FF69"];
+    const colorsList = ["black", "#10FFCB"];
 
     backgroundBreakpoints.forEach((breakpoint, position) => {
       if (
@@ -100,6 +100,8 @@ class MagiKards extends React.Component {
                   affect one another, with the strongest removing health from
                   the opposition player. We took influence from online card
                   games such as Yu-Gi-Oh & Gwent from The Witcher game series.
+                  The game is still in beta, we plan to redesign the UI and card
+                  interaction in 2023.
                 </p>
                 <span>
                   Technologies used - React, JavaScript, HTML, CSS./span>
@@ -112,7 +114,7 @@ class MagiKards extends React.Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "300px",
+              marginTop: "150px",
             }}
           >
             {" "}
@@ -168,17 +170,12 @@ class MagiKards extends React.Component {
               style={{
                 width: "76%",
                 borderRadius: "5px",
-                marginTop: "300px",
               }}
               src="./images/project-img/MK4.png"
               alt=""
             />
           </div>
           <motion.div
-            style={{
-              display: "grid",
-              gridTemplateRows: "1fr 1fr",
-            }}
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={containerAnimate}
@@ -194,7 +191,7 @@ class MagiKards extends React.Component {
                 width: "50%",
                 marginLeft: "auto",
                 height: "55%",
-                marginTop: "40px",
+
                 paddingBottom: "95px",
               }}
               className="text-box "
@@ -221,27 +218,29 @@ class MagiKards extends React.Component {
                 </p>
               </section>
             </motion.div>
-
-            <motion.div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                margin: "0px 0px 70px 0px",
-              }}
-              className="magikards-img1"
+          </motion.div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "200px",
+            }}
+          >
+            {" "}
+            <motion.img
+              className="magikards-large"
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={textAnimate}
+              variants={scaleImg}
               viewport={{ once: true, amount: 0.1 }}
-            >
-              {" "}
-              <img
-                className="magikards-img2"
-                src="./images/project-img/MK2.png"
-                alt=""
-              />
-            </motion.div>
-          </motion.div>
+              style={{
+                width: "76%",
+                borderRadius: "5px",
+              }}
+              src="./images/project-img/MK2.png"
+              alt=""
+            />
+          </div>
         </div>
       </>
     );

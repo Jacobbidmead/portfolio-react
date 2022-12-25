@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Dropdown from "./Dropdown.js";
 
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#CB04A5", "#FB5012"];
 const random = () => {
@@ -55,7 +56,7 @@ class Home extends React.Component {
           <div className="name-container">
             <span
               style={{
-                fontSize: "60px",
+                fontSize: "40px",
               }}
               className="hi"
             >
@@ -79,14 +80,19 @@ class Home extends React.Component {
             >
               {" "}
               <div className="clickme">
-                <span> Change Theme</span>
+                <span> Pick a Color</span>
               </div>
             </motion.div>
             <div className="lastname">I make things for the web. </div>
           </div>
         </div>
         <div className="japan-bg">
-          <img src="images/japan.jpeg" />
+          <div className="skills">
+            <div className="sub-title">
+              I like design, fonts & taking photos.{" "}
+            </div>
+            <Dropdown />
+          </div>
         </div>
       </>
     );
