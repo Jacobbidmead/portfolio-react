@@ -10,8 +10,8 @@ const App = () => {
 
   return (
     <div>
-      <div className="skill" onClick={handleOpen}>
-        <div>
+      <div className="skill">
+        <div onClick={handleOpen}>
           <ArrowButton />
         </div>
         <div className="skills">Skills </div>

@@ -34,6 +34,7 @@ class Home extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
+    color: "white",
   };
 
   toggleColorChange = () => {
@@ -54,14 +55,7 @@ class Home extends React.Component {
           }}
         >
           <div className="name-container">
-            <span
-              style={{
-                fontSize: "40px",
-              }}
-              className="hi"
-            >
-              Hi i'm
-            </span>{" "}
+            <span className="hi">Hi i'm</span>{" "}
             <div className="name">JACOB.</div>
             <motion.div
               onClick={(e) => this.toggleColorChange(e)}
@@ -83,7 +77,7 @@ class Home extends React.Component {
                 <span> Pick a Color</span>
               </div>
             </motion.div>
-            <div className="lastname">I make things for the web. </div>
+            <div className="lastname"> &nbsp;I make things for the web. </div>
           </div>
         </div>
         <div className="japan-bg">

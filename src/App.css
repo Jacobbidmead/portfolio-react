@@ -49,16 +49,22 @@ body {
 /* home page */
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: rgba(247, 243, 234, 0.1);
   color: white;
   text-align: center;
   border: 1px rgba(247, 243, 234, 0.5) solid;
-  margin: 120px 100px 0px 60px;
-  box-shadow: 1px 1px 20px rgba(247, 243, 234, 0.5),
-    -1px -1px 20px rgba(247, 243, 234, 0.5);
+  margin: 190px 100px 0px 60px;
+}
+.clickme {
+  padding-top: 24px;
+  transform: rotate(36deg);
+  padding-left: 18px;
+  color: rgba(247, 243, 234, 0.7);
+  font-family: Dirty;
+  font-size: 13px;
 }
 
 .name {
@@ -76,17 +82,22 @@ body {
 .hi {
   margin: 100px 0px 0px 130px;
   color: rgba(247, 243, 234, 0.5);
+  font-size: 27px;
 }
 
 .lastname {
   text-align: right;
-  font-size: 80px;
+  font-size: 35px;
   color: rgba(247, 243, 234, 0.5);
   text-align: center;
-  margin: 100px 290px 0px 0px;
+  margin: 70px 430px 0px 0px;
   letter-spacing: 30px;
   font-family: Dirty;
   animation: fadein 2s ease;
+  border-bottom: solid 1px white;
+  border-top: solid 1px white;
+  padding-bottom: 70px;
+  padding-top: 70px;
 }
 
 .home-container {
@@ -122,6 +133,7 @@ body {
   animation: fadein 1s ease;
   color: rgba(247, 243, 234, 0.9);
   font-family: Dirty;
+  margin-right: 40px;
 }
 
 .skill {
@@ -137,13 +149,14 @@ body {
 }
 
 .skills {
-  margin: 0px 40px 100px 0px;
+  margin: 0px 40px 60px 0px;
+  color: deeppink;
 }
 
 .down-arrow {
   width: 10%;
   margin-left: 920px;
-  background-color: white;
+  background-color: deeppink;
   border-radius: 50%;
   padding: 10px;
 }
@@ -151,7 +164,7 @@ body {
 .name-container {
   display: grid;
   grid-template-columns: 7fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
+
   cursor: pointer;
   max-width: 100%;
 }
@@ -162,14 +175,6 @@ body {
   color: rgba(247, 243, 234, 0.5);
   text-align: center;
   letter-spacing: 20px;
-}
-
-.clickme {
-  padding-top: 32px;
-  transform: rotate(36deg);
-  padding-left: 18px;
-  color: rgba(247, 243, 234, 0.7);
-  font-family: Dirty;
 }
 
 /* reveal name effect */
