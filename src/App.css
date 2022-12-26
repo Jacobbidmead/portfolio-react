@@ -121,7 +121,7 @@ body {
   padding: 30px;
   cursor: pointer;
   animation: fadein 1s ease;
-  color: deeppink;
+  color: rgba(247, 243, 234, 0.9);
 }
 
 .skill {
@@ -132,6 +132,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-right: 40px;
+  color: rgba(247, 243, 234, 0.9);
 }
 
 .down-arrow {
@@ -140,6 +141,9 @@ body {
   background-color: white;
   border-radius: 50%;
   padding: 10px;
+}
+
+.down-arrow {
 }
 
 .name-container {

@@ -1,4 +1,5 @@
 import React from "react";
+import ArrowButton from "./ArrowButton";
 
 const App = () => {
   const [open, setOpen] = React.useState(false);
@@ -11,7 +12,7 @@ const App = () => {
     <div>
       <div className="skill" onClick={handleOpen}>
         <div>
-          <img className="down-arrow" src="images/down-arrow.png" alt="" />
+          <ArrowButton />
         </div>
         <div>Skills </div>
       </div>
