@@ -12,7 +12,7 @@ const ArrowButton = () => {
       <img
         className="down-arrow"
         onClick={handleClick}
-        style={{ transform: `rotate(${rotation}deg)` }}
+        style={{ transform: `rotate(${rotation}deg)`, transition: "0.3s ease" }}
         src="images/down-arrow.png"
         alt=""
       />

@@ -87,12 +87,12 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="japan-bg">
-          <div className="skills">
+          <div className="japan-text">
             <div className="sub-title">
               I like design, fonts & taking photos.{" "}
             </div>
-            <Dropdown />
           </div>
+          <Dropdown />
         </div>
       </>
     );

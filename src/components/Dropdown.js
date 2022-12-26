@@ -14,10 +14,10 @@ const App = () => {
         <div>
           <ArrowButton />
         </div>
-        <div>Skills </div>
+        <div className="skills">Skills </div>
       </div>
 
-      {open ? null : (
+      {!open ? null : (
         <div className="my-skills">
           <div>&bull; Object Oriented Programming</div>
           <div>&bull; MVC</div>
