@@ -4,7 +4,9 @@
   font-family: Futura;
   width: 100vw;
   padding-bottom: 20px;
-  background-color: rgba(247, 243, 234, 0.061);
+  background-color: rgba(247, 243, 234, 0.2);
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .home-button {

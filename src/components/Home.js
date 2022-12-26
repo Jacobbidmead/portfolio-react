@@ -83,7 +83,7 @@ class Home extends React.Component {
         <div className="japan-bg">
           <div className="japan-text">
             <div className="sub-title">
-              I like design, fonts & taking photos.{" "}
+              I like design, coding & taking photos.{" "}
             </div>
           </div>
           <Dropdown />

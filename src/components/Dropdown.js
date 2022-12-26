@@ -27,6 +27,7 @@ const App = () => {
           <div>&bull; MongoDB</div>
           <div>&bull; Framer Motion</div>
           <div>&bull; HTML & CSS</div>
+          <div>&bull; GitHub</div>
           <div>&bull; Project Managemenrt (PRINCE2)</div>
         </div>
       )}
