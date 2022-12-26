@@ -35,63 +35,40 @@ const boxAnimate = {
   },
 };
 
-let backgroundColors = [
-  "#23C4FF",
-  "#FF10F0",
-  "#FE5F55",
-  "#10FFCB",
-  "#CB04A5",
-  "#FB5012",
-];
-
-const random = () => {
-  const randomizedArray = [];
-
-  for (let i = 0; i < backgroundColors.length; i++) {
-    let randomIndex = Math.floor(Math.random() * backgroundColors.length);
-    while (randomizedArray.includes(backgroundColors[randomIndex])) {
-      randomIndex = Math.floor(Math.random() * backgroundColors.length);
-    }
-    randomizedArray.push(backgroundColors[randomIndex]);
-  }
-
-  const randomIndex = Math.floor(Math.random() * randomizedArray.length);
-  return randomizedArray[randomIndex];
-};
-
 class Google extends React.Component {
   state = {
-    changeColor: false,
-    backgroundColor: "black",
+    bgColor: "black",
   };
+  listenScrollEvent = (e) => {
+    const backgroundBreakpoints = [0, 500, 3000];
 
-  onMouseEnter = () => {
-    this.setState({
-      changeColor: true,
-      backgroundColor: random(),
+    const colorsList = ["black", "#FE5F55"];
+
+    backgroundBreakpoints.forEach((breakpoint, position) => {
+      if (
+        window.scrollY > breakpoint &&
+        window.scrollY < backgroundBreakpoints[position + 1]
+      ) {
+        this.setState({ bgColor: colorsList[position] });
+      }
     });
   };
 
-  onMouseLeave = () => {
-    this.setState({
-      changeColor: false,
-    });
-  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
   render() {
-    const { changeColor } = this.state;
-    const style = changeColor
-      ? {
-          transition: "background-color 0.5s ease",
-          backgroundColor: this.state.backgroundColor,
-        }
-      : {
-          backgroundColor: "black",
-          transition: "background-color 0.5s ease",
-        };
     return (
       <>
-        <div className="google-bg" style={style}>
-          <div className="google-header" style={style}>
+        <div
+          className="google-bg"
+          style={{
+            backgroundColor: this.state.bgColor,
+            transition: "background-color 0.5s ease",
+            paddingBottom: "1px",
+          }}
+        >
+          <div className="google-header">
             <h1> Google Search</h1>
           </div>
           <motion.div>
@@ -126,32 +103,11 @@ class Google extends React.Component {
                     Express.js, Node.js, MongoDB.
                   </span>
                 </p>
-                <span style={{ fontSize: "15px" }}>
-                  Scroll over images to change colour
-                </span>
               </div>
             </div>
           </motion.div>
-          <motion.div className="google-img">
-            <motion.img
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={scaleImg}
-              viewport={{ once: true, amount: 0.1 }}
-              src="./images/project-img/google.png"
-              style={{
-                width: "76%",
-                borderRadius: "5px",
-                cursor: "pointer",
-                marginTop: "100px",
-                boxShadow:
-                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-              }}
-              alt=""
-              onMouseEnter={this.onMouseEnter}
-            />
-          </motion.div>
-          <div style={style}>
+
+          <div>
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
@@ -159,7 +115,7 @@ class Google extends React.Component {
               viewport={{ once: true, amount: 0.3 }}
               style={{
                 display: "grid",
-                gridTemplateRows: "1fr 1fr",
+                gridTemplateColumns: "1fr 1fr",
               }}
               className="text-container"
             >
@@ -168,13 +124,12 @@ class Google extends React.Component {
                 whileInView={"onscreen"}
                 variants={textAnimate}
                 viewport={{ once: true, amount: 0.1 }}
-                onMouseEnter={this.onMouseEnter}
                 style={{ marginBottom: "50px" }}
               >
                 <img
                   src="./images/project-img/google2.png"
                   style={{
-                    width: "50%",
+                    width: "90%",
                     borderRadius: "5px",
                     cursor: "pointer",
                     marginTop: "80px",
@@ -193,19 +148,39 @@ class Google extends React.Component {
                 viewport={{ once: true, amount: 0.1 }}
                 style={{
                   width: "40%",
-                  fontSize: "25px",
-                  marginTop: "80px",
+                  fontSize: "30px",
+                  marginTop: "40px",
                   height: " 30%",
+                  marginLeft: "190px",
                 }}
                 className="text-box"
               >
                 <span style={{ color: "white" }}>
                   Google search home page & results; users can search for the
-                  above data in the search bar.
+                  data in image below via the search bar.
                 </span>
               </motion.div>
             </motion.div>
           </div>
+          <motion.div className="google-img">
+            <motion.img
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={scaleImg}
+              viewport={{ once: true, amount: 0.1 }}
+              src="./images/project-img/google.png"
+              style={{
+                width: "76%",
+                borderRadius: "5px",
+                cursor: "pointer",
+                marginTop: "80px",
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                marginBottom: "200px",
+              }}
+              alt=""
+            />
+          </motion.div>
         </div>
       </>
     );

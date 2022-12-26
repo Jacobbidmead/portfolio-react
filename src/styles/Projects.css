@@ -87,7 +87,7 @@ h1 {
 .google-img {
   display: flex;
   justify-content: center;
-  margin-block: 80px;
+  margin-bottom: 80px;
 }
 
 .airbnb {
