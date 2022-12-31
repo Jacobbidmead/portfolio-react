@@ -9,7 +9,7 @@
 .home-button {
   font-size: 15px;
   cursor: pointer;
-  margin: 32px 40px 0px 0px;
+  margin: 36px 40px 0px 0px;
   color: white;
   animation: fadein 1s ease;
 }

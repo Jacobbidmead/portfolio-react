@@ -133,48 +133,60 @@ class App extends React.Component {
       <>
         {this.state.showNav ? (
           <div
-            className="top-bar"
             style={{
               backgroundColor: this.state.backgroundColor,
               color: this.state.color,
               transition: "background-color 0.5s ease",
             }}
           >
-            <div style={{ color: "white" }} onClick={this.toggleShowNav}>
-              <img
-                src="images/down-arrow.png"
-                style={{
-                  backgroundColor: "white",
-                  width: "30px",
-                  borderRadius: "50%",
-                  padding: "6px",
-                  margin: "20px",
-                }}
-                alt=""
+            <div className="top-bar">
+              <div style={{ color: "white" }} onClick={this.toggleShowNav}>
+                <img
+                  src="images/down-arrow.png"
+                  style={{
+                    backgroundColor: "white",
+                    width: "30px",
+                    borderRadius: "50%",
+                    padding: "6px",
+                    margin: "20px",
+                  }}
+                  alt=""
+                />
+              </div>
+
+              <Sidebar
+                toggleShowLinks={this.toggleShowLinks}
+                toggleShowAbout={this.toggleShowAbout}
+                toggleShowHome={this.toggleShowHome}
+                toggleShowProjects={this.toggleShowProjects}
+                toggleShowPhotos={this.toggleShowPhotos}
               />
             </div>
-
-            <Sidebar
-              toggleShowLinks={this.toggleShowLinks}
-              toggleShowAbout={this.toggleShowAbout}
-              toggleShowHome={this.toggleShowHome}
-              toggleShowProjects={this.toggleShowProjects}
-              toggleShowPhotos={this.toggleShowPhotos}
-            />
           </div>
         ) : (
-          <img
-            onClick={this.toggleShowNav}
-            src="images/down-arrow.png"
+          <div
             style={{
-              backgroundColor: "white",
-              width: "30px",
-              borderRadius: "50%",
-              padding: "6px",
-              margin: "20px",
+              backgroundColor: this.state.backgroundColor,
+              color: this.state.color,
+              transition: "background-color 0.5s ease",
+              height: "100%",
             }}
-            alt=""
-          />
+            div
+            className="top-bar"
+          >
+            <img
+              onClick={this.toggleShowNav}
+              src="images/down-arrow.png"
+              style={{
+                backgroundColor: "rgba(247, 243, 234, 0.5)",
+                width: "30px",
+                borderRadius: "50%",
+                padding: "6px",
+                margin: "20px",
+              }}
+              alt=""
+            />
+          </div>
         )}
 
         {this.state.showHome && (

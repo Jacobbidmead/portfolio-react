@@ -32,17 +32,15 @@ body {
 .button-style {
   font-family: Dirty;
   font-size: 15px;
-  color: #f7f3ea;
+  color: rgba(247, 243, 234, 0.4);
   text-align: center;
-  margin: 20px 0px 20px 35%;
+  margin: 28px 0px 20px 35%;
   cursor: pointer;
   letter-spacing: 6px;
   padding: 10px 0px 10px 7px;
   display: flex;
   justify-content: center;
   width: 34%;
-  border-radius: 5px;
-  background-color: black;
   animation: fadein 1s ease;
 }
 
