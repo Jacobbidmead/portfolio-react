@@ -57,6 +57,7 @@ body {
   text-align: center;
   border: 1px rgba(247, 243, 234, 0.5) solid;
   margin: 150px 100px 0px 60px;
+  font-family: Futura;
 }
 
 .menu-circle {
@@ -71,11 +72,10 @@ body {
   cursor: pointer;
 }
 .clickme {
-  padding-top: 24px;
+  padding-top: 20px;
   transform: rotate(36deg);
   padding-left: 18px;
   color: rgba(247, 243, 234, 0.7);
-  font-family: Dirty;
   font-size: 13px;
 }
 
@@ -95,6 +95,7 @@ body {
   margin: 100px 0px 0px 60px;
   color: rgba(247, 243, 234, 0.5);
   font-size: 27px;
+  font-family: Futura;
 }
 
 .lastname {
@@ -104,7 +105,7 @@ body {
   text-align: center;
   margin: 70px 430px 0px 0px;
   letter-spacing: 30px;
-  font-family: Dirty;
+  font-family: Futura;
   animation: fadein 2s ease;
   border-bottom: solid 1px white;
   border-top: solid 1px white;

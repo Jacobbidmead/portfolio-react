@@ -2,22 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Dropdown from "./Dropdown.js";
 
-let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#CB04A5", "#FB5012"];
-const random = () => {
-  const randomizedArray = [];
-
-  for (let i = 0; i < backgroundColors.length; i++) {
-    let randomIndex = Math.floor(Math.random() * backgroundColors.length);
-    while (randomizedArray.includes(backgroundColors[randomIndex])) {
-      randomIndex = Math.floor(Math.random() * backgroundColors.length);
-    }
-    randomizedArray.push(backgroundColors[randomIndex]);
-  }
-
-  const randomIndex = Math.floor(Math.random() * randomizedArray.length);
-  return randomizedArray[randomIndex];
-};
-
 const animateCircle = {
   clicked: {
     scale: [0.6, 1.4, 1.3, 1.2, 1],
@@ -34,13 +18,23 @@ class Home extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
+    color: "white",
+    borderColor: "white",
   };
 
   toggleColorChange = () => {
-    this.setState({
-      changeColor: true,
-      backgroundColor: random(),
-    });
+    if (this.state.backgroundColor === "green") {
+      this.setState({
+        backgroundColor: "black",
+        color: "white",
+      });
+    } else {
+      this.setState({
+        backgroundColor: "green",
+        color: "black",
+        borderColor: "black",
+      });
+    }
   };
 
   render() {
@@ -50,13 +44,19 @@ class Home extends React.Component {
           className="home-container"
           style={{
             backgroundColor: this.state.backgroundColor,
+            color: this.state.color,
             transition: "background-color 0.5s ease",
           }}
         >
           <div className="name-container">
-            <span className="hi">Hi i'm</span>{" "}
-            <div className="name">JACOB.</div>
+            <span className="hi" style={{ color: this.state.color }}>
+              Hi i'm
+            </span>{" "}
+            <div className="name" style={{ color: this.state.color }}>
+              JACOB.
+            </div>
             <motion.div
+              style={{ borderColor: this.state.borderColor }}
               onClick={(e) => this.toggleColorChange(e)}
               whileTap={"clicked"}
               variants={animateCircle}
@@ -72,11 +72,32 @@ class Home extends React.Component {
               className="circle"
             >
               {" "}
-              <div className="clickme">
-                <span> Pick a Color</span>
+              <div
+                className="clickme"
+                style={{
+                  color: this.state.color,
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "Futura",
+                  }}
+                >
+                  {" "}
+                  Change theme
+                </span>
               </div>
             </motion.div>
-            <div className="lastname"> &nbsp;I make things for the web. </div>
+            <div
+              className="lastname"
+              style={{
+                color: this.state.color,
+                borderColor: this.state.borderColor,
+              }}
+            >
+              {" "}
+              &nbsp;I make things for the web.{" "}
+            </div>
           </div>
         </div>
         <div className="japan-bg">
