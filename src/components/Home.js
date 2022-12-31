@@ -34,7 +34,6 @@ class Home extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
-    color: "white",
   };
 
   toggleColorChange = () => {
@@ -52,8 +51,6 @@ class Home extends React.Component {
           style={{
             backgroundColor: this.state.backgroundColor,
             transition: "background-color 0.5s ease",
-            border: "black 40px solid",
-            borderRadius: "150px",
           }}
         >
           <div className="name-container">

@@ -1,12 +1,10 @@
 .top-bar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
   font-family: Futura;
   width: 100vw;
-  padding-bottom: 20px;
-  background-color: rgba(247, 243, 234, 0.2);
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+
+  transition: 1s ease;
 }
 
 .home-button {

@@ -34,7 +34,7 @@ body {
   font-size: 15px;
   color: #f7f3ea;
   text-align: center;
-  margin: 20px 0px 0px 35%;
+  margin: 20px 0px 20px 35%;
   cursor: pointer;
   letter-spacing: 6px;
   padding: 10px 0px 10px 7px;
@@ -58,6 +58,18 @@ body {
   border: 1px rgba(247, 243, 234, 0.5) solid;
   margin: 150px 100px 0px 60px;
 }
+
+.menu-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(247, 243, 234, 0.1);
+  color: white;
+  text-align: center;
+  border: 1px rgba(247, 243, 234, 0.5) solid;
+  margin: 0px 100px 0px 60px;
+  cursor: pointer;
+}
 .clickme {
   padding-top: 24px;
   transform: rotate(36deg);
@@ -80,7 +92,7 @@ body {
 }
 
 .hi {
-  margin: 100px 0px 0px 130px;
+  margin: 100px 0px 0px 60px;
   color: rgba(247, 243, 234, 0.5);
   font-size: 27px;
 }

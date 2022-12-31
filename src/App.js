@@ -3,12 +3,12 @@ import React from "react";
 import Sidebar from "./components/Sidebar.js";
 import About from "./components/About.js";
 import Home from "./components/Home.js";
-import Top from "./components/Top.js";
 import Projects from "./components/Projects.js";
 import Photos from "./components/Photos.js";
 import AirBnB from "./components/Projects/AirBnB.js";
 import MagiKards from "./components/Projects/MagiKards.js";
 import Google from "./components/Projects/Google.js";
+import "./styles/Top.css";
 
 class App extends React.Component {
   state = {
@@ -19,7 +19,13 @@ class App extends React.Component {
     showAirBnb: false,
     showMagiKards: false,
     showGoogle: false,
-    showTop: true,
+    showNav: false,
+  };
+
+  toggleShowNav = () => {
+    this.setState((state) => ({
+      showNav: !state.showNav,
+    }));
   };
 
   toggleShowHome = () => {
@@ -108,18 +114,55 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className="top-bar">
-          <Sidebar
+        {this.state.showNav ? (
+          <div className="top-bar">
+            <div style={{ color: "white" }} onClick={this.toggleShowNav}>
+              <img
+                src="images/down-arrow.png"
+                style={{
+                  backgroundColor: "white",
+                  width: "30px",
+                  borderRadius: "50%",
+                  padding: "6px",
+                  margin: "20px",
+                }}
+                alt=""
+              />
+            </div>
+
+            <Sidebar
+              toggleShowLinks={this.toggleShowLinks}
+              toggleShowAbout={this.toggleShowAbout}
+              toggleShowHome={this.toggleShowHome}
+              toggleShowProjects={this.toggleShowProjects}
+              toggleShowPhotos={this.toggleShowPhotos}
+            />
+          </div>
+        ) : (
+          <img
+            onClick={this.toggleShowNav}
+            src="images/down-arrow.png"
+            style={{
+              backgroundColor: "white",
+              width: "30px",
+              borderRadius: "50%",
+              padding: "6px",
+              margin: "20px",
+            }}
+            alt=""
+          />
+        )}
+
+        {this.state.showHome && (
+          <Home
+            toggleShowNav={this.toggleShowNav}
             toggleShowLinks={this.toggleShowLinks}
             toggleShowAbout={this.toggleShowAbout}
             toggleShowHome={this.toggleShowHome}
             toggleShowProjects={this.toggleShowProjects}
             toggleShowPhotos={this.toggleShowPhotos}
           />
-          <Top toggleShowHome={this.toggleShowHome} />
-        </div>
-
-        {this.state.showHome && <Home />}
+        )}
 
         {this.state.showAbout && <About />}
 

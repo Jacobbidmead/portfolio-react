@@ -23,6 +23,12 @@ class Sidebar extends React.Component {
         >
           [03<span className="revealed-text">Photo</span>]
         </div>
+        <div
+          className="home-button name-reveal"
+          onClick={(e) => this.props.toggleShowHome(e)}
+        >
+          +
+        </div>
       </>
     );
   }
