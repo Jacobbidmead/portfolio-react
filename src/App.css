@@ -43,6 +43,7 @@ body {
   width: 34%;
   border-radius: 5px;
   background-color: black;
+  animation: fadein 1s ease;
 }
 
 /* spinning button */

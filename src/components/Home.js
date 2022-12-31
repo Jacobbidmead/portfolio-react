@@ -18,7 +18,7 @@ class Home extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
-    color: "white",
+    color: "rgba(247, 243, 234, 0.5);",
     borderColor: "white",
   };
 
@@ -26,7 +26,8 @@ class Home extends React.Component {
     if (this.state.backgroundColor === "green") {
       this.setState({
         backgroundColor: "black",
-        color: "white",
+        color: "rgba(247, 243, 234, 0.5)",
+        borderColor: "white",
       });
     } else {
       this.setState({
@@ -57,7 +58,10 @@ class Home extends React.Component {
             </div>
             <motion.div
               style={{ borderColor: this.state.borderColor }}
-              onClick={(e) => this.toggleColorChange(e)}
+              onClick={(e) => {
+                this.toggleColorChange(e);
+                this.props.toggleNavColorChange(e);
+              }}
               whileTap={"clicked"}
               variants={animateCircle}
               animate={{

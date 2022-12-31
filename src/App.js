@@ -20,12 +20,29 @@ class App extends React.Component {
     showMagiKards: false,
     showGoogle: false,
     showNav: false,
+    backgroundColor: "black",
+    color: "white",
   };
 
   toggleShowNav = () => {
-    this.setState((state) => ({
-      showNav: !state.showNav,
-    }));
+    this.setState({
+      showNav: this.state.showNav ? false : true,
+    });
+  };
+
+  toggleNavColorChange = () => {
+    console.log("working");
+    if (this.state.backgroundColor === "green") {
+      this.setState({
+        backgroundColor: "black",
+        color: "white",
+      });
+    } else {
+      this.setState({
+        backgroundColor: "green",
+        color: "black",
+      });
+    }
   };
 
   toggleShowHome = () => {
@@ -115,7 +132,14 @@ class App extends React.Component {
     return (
       <>
         {this.state.showNav ? (
-          <div className="top-bar">
+          <div
+            className="top-bar"
+            style={{
+              backgroundColor: this.state.backgroundColor,
+              color: this.state.color,
+              transition: "background-color 0.5s ease",
+            }}
+          >
             <div style={{ color: "white" }} onClick={this.toggleShowNav}>
               <img
                 src="images/down-arrow.png"
@@ -156,11 +180,7 @@ class App extends React.Component {
         {this.state.showHome && (
           <Home
             toggleShowNav={this.toggleShowNav}
-            toggleShowLinks={this.toggleShowLinks}
-            toggleShowAbout={this.toggleShowAbout}
-            toggleShowHome={this.toggleShowHome}
-            toggleShowProjects={this.toggleShowProjects}
-            toggleShowPhotos={this.toggleShowPhotos}
+            toggleNavColorChange={this.toggleNavColorChange}
           />
         )}
 
