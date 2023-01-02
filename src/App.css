@@ -32,7 +32,6 @@ body {
 .button-style {
   font-family: Dirty;
   font-size: 15px;
-  color: white;
   text-align: center;
   margin: 28px 0px 20px 35%;
   cursor: pointer;
@@ -120,7 +119,7 @@ body {
   background-image: url("/public/images/japan.jpeg");
   background-size: cover;
   height: 1180px;
-  margin-top: 400px;
+  margin-top: 0px;
 }
 
 .japan-text {
@@ -133,7 +132,7 @@ body {
 
 .sub-title {
   font-size: 200px;
-  color: lime;
+  color: #35ff69;
   padding: 30px;
 }
 
@@ -283,7 +282,6 @@ body {
   .button-style {
     font-size: 6px;
     animation: none;
-    background-color: black;
     margin: 50px 0px 0px 30%;
   }
 

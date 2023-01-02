@@ -9,34 +9,33 @@ class Sidebar extends React.Component {
             this.props.toggleShowAbout(e);
             this.props.makeBlack(e);
           }}
-          className=" button-style  name-reveal"
+          className=" button-style "
         >
           [01
-          <span className="revealed-text">About</span>]
+          <span>About</span>]
         </div>
         <div
           onClick={(e) => {
             this.props.toggleShowProjects(e);
             this.props.makeBlack(e);
           }}
-          className="button-style  name-reveal"
+          className="button-style  "
         >
-          [02<span className="revealed-text">Projects</span>]
+          [02<span>Projects</span>]
         </div>
         <div
           onClick={(e) => {
             this.props.toggleShowPhotos(e);
             this.props.makeBlack(e);
           }}
-          className="button-style name-reveal"
+          className="button-style "
         >
-          [03<span className="revealed-text">Photo</span>]
+          [03<span>Photo</span>]
         </div>
         <div
-          className="home-button name-reveal"
+          className="home-button "
           onClick={(e) => {
             this.props.toggleShowHome(e);
-            this.props.makeBlack(e);
           }}
         >
           +

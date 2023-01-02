@@ -51,6 +51,8 @@ class App extends React.Component {
     });
   };
 
+  toggleButtonColor = () => {};
+
   toggleShowHome = () => {
     this.setState({
       showHome: true,
@@ -145,7 +147,10 @@ class App extends React.Component {
             }}
           >
             <div className="top-bar">
-              <div style={{ color: "white" }} onClick={this.toggleShowNav}>
+              <div
+                style={{ color: this.state.color }}
+                onClick={this.toggleShowNav}
+              >
                 <img
                   src="images/down-arrow.png"
                   style={{
