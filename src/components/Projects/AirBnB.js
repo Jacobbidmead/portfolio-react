@@ -14,7 +14,7 @@ const scaleImg = {
 };
 
 const textAnimate = {
-  offscreen: { y: 400 },
+  offscreen: { y: 100 },
   onscreen: {
     y: 0,
     transition: {
@@ -26,7 +26,7 @@ const textAnimate = {
 };
 
 const boxAnimate = {
-  offscreen: { y: 300, opacity: 0 },
+  offscreen: { y: 100, opacity: 0 },
   onscreen: {
     y: 0,
     opacity: 1,

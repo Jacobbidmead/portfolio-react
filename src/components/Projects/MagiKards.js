@@ -26,7 +26,7 @@ const textAnimate = {
 };
 
 const containerAnimate = {
-  offscreen: { y: 600, opacity: 0 },
+  offscreen: { y: 100, opacity: 0 },
   onscreen: {
     y: 0,
     opacity: 1,
@@ -111,76 +111,11 @@ class MagiKards extends React.Component {
           </motion.div>
 
           <motion.div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "150px",
-            }}
-          >
-            {" "}
-            <motion.img
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={scaleImg}
-              viewport={{ once: true, amount: 0.1 }}
-              style={{
-                width: "76%",
-                borderRadius: "5px",
-              }}
-              src="./images/project-img/MK1.png"
-              alt=""
-              className="magikards-large"
-            />
-          </motion.div>
-          <motion.div
             initial={"offscreen"}
             whileInView={"onscreen"}
             variants={containerAnimate}
             viewport={{ once: true, amount: 0.1 }}
-            className="text-container "
-          >
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={textAnimate}
-              viewport={{ once: true, amount: 0.1 }}
-              className="text-box magikards-text"
-            >
-              The view above is the <span>home screen;</span> players are able
-              to select either <span>Ice or Fire,</span> then enter thier name
-              into the <span>input</span> above. This allows the start of the
-              game. Only when both players have selected their class and entered
-              thier name can they enter the <span>'Battlefield'.</span>
-            </motion.div>
-          </motion.div>
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            {" "}
-            <motion.img
-              className="magikards-large"
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={scaleImg}
-              viewport={{ once: true, amount: 0.1 }}
-              style={{
-                width: "76%",
-                borderRadius: "5px",
-              }}
-              src="./images/project-img/MK4.png"
-              alt=""
-            />
-          </div>
-          <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={containerAnimate}
-            viewport={{ once: true, amount: 0.1 }}
-            className="text-container"
+            className="text-container magikards-container"
           >
             <motion.div
               initial={"offscreen"}
@@ -188,10 +123,7 @@ class MagiKards extends React.Component {
               variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
               style={{
-                width: "50%",
                 marginLeft: "auto",
-                height: "55%",
-
                 paddingBottom: "95px",
               }}
               className="text-box "
@@ -218,6 +150,21 @@ class MagiKards extends React.Component {
                 </p>
               </section>
             </motion.div>
+            <div>
+              {" "}
+              <motion.img
+                className="magikards-large"
+                variants={textAnimate}
+                viewport={{ once: true, amount: 0.1 }}
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                style={{
+                  borderRadius: "5px",
+                }}
+                src="./images/project-img/MK4.png"
+                alt=""
+              />
+            </div>
           </motion.div>
           <div
             style={{
@@ -228,7 +175,6 @@ class MagiKards extends React.Component {
           >
             {" "}
             <motion.img
-              className="magikards-large"
               initial={"offscreen"}
               whileInView={"onscreen"}
               variants={scaleImg}

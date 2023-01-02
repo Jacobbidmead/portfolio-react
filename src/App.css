@@ -21,7 +21,7 @@ body {
 
 ::selection {
   color: black;
-  background: lime;
+  background: white;
 }
 
 .main-layout {
@@ -145,7 +145,7 @@ body {
   cursor: pointer;
   animation: fadein 1s ease;
   color: rgba(247, 243, 234, 0.9);
-  font-family: Dirty;
+  font-family: Futura;
   margin-right: 40px;
 }
 
@@ -159,10 +159,12 @@ body {
   margin-right: 40px;
   color: rgba(247, 243, 234, 0.9);
   font-family: Dirty;
+  border-top: 1px solid white;
+  margin-top: 100px;
 }
 
 .skills {
-  margin: 0px 40px 60px 0px;
+  margin: 0px 40px 00px 0px;
   color: rgba(247, 243, 234, 0.9);
 }
 

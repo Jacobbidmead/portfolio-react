@@ -19,16 +19,9 @@ const App = () => {
 
       {!open ? null : (
         <div className="my-skills">
-          <div>&bull; Object Oriented Programming</div>
-          <div>&bull; MVC</div>
-          <div>&bull; Functional React</div>
-          <div>&bull; JavaScript</div>
-          <div>&bull; Node.js</div>
-          <div>&bull; MongoDB</div>
-          <div>&bull; Framer Motion</div>
-          <div>&bull; HTML & CSS</div>
-          <div>&bull; GitHub</div>
-          <div>&bull; Project Managemenrt (PRINCE2)</div>
+          &bull; Object Oriented Programming &bull; MVC &bull; Functional React
+          &bull; JavaScript &bull; Node.js &bull; MongoDB &bull; Framer Motion
+          &bull; HTML & CSS &bull; GitHub &bull; Project Managemenrt (PRINCE2)
         </div>
       )}
     </div>

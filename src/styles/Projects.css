@@ -111,7 +111,7 @@ h1 {
 .text-container {
   box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.3),
     0 6px 20px 0 rgba(255, 255, 255, 0.3);
-  margin: 350px 70px 350px 70px;
+  margin: 150px 70px 300px 70px;
   padding: 50px;
   border: 1px solid white;
   border-radius: 20px;
@@ -128,6 +128,17 @@ h1 {
 
 .magikards-text {
   width: 60%;
+}
+
+.magikards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px;
+}
+
+.magikards-large {
+  margin: 0px;
+  padding-top: 70px;
 }
 
 .google-bg {

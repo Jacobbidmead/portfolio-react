@@ -21,7 +21,7 @@ class App extends React.Component {
     showGoogle: false,
     showNav: false,
     backgroundColor: "black",
-    color: "white",
+    color: "rgba(247, 243, 234, 0.5)",
   };
 
   toggleShowNav = () => {
@@ -34,7 +34,7 @@ class App extends React.Component {
     if (this.state.backgroundColor === "#35FF69") {
       this.setState({
         backgroundColor: "black",
-        color: "white",
+        color: "rgba(247, 243, 234, 0.5)",
       });
     } else {
       this.setState({
@@ -47,11 +47,14 @@ class App extends React.Component {
   makeBlack = () => {
     this.setState({
       backgroundColor: "black ",
-      color: "white",
+      color: "rgba(247, 243, 234, 0.5)",
     });
   };
 
-  toggleButtonColor = () => {};
+  rotateArrow = (e) => {
+    let arrow = document.getElementById("arrow");
+    arrow.style.transform = "rotate(180deg)";
+  };
 
   toggleShowHome = () => {
     this.setState({
@@ -161,6 +164,7 @@ class App extends React.Component {
                     margin: "20px",
                   }}
                   alt=""
+                  id="arrow"
                 />
               </div>
 
