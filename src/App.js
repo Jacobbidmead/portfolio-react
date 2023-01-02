@@ -31,18 +31,24 @@ class App extends React.Component {
   };
 
   toggleNavColorChange = () => {
-    console.log("working");
-    if (this.state.backgroundColor === "green") {
+    if (this.state.backgroundColor === "#35FF69") {
       this.setState({
         backgroundColor: "black",
         color: "white",
       });
     } else {
       this.setState({
-        backgroundColor: "green",
+        backgroundColor: "#35FF69",
         color: "black",
       });
     }
+  };
+
+  makeBlack = () => {
+    this.setState({
+      backgroundColor: "black ",
+      color: "white",
+    });
   };
 
   toggleShowHome = () => {
@@ -136,7 +142,6 @@ class App extends React.Component {
             style={{
               backgroundColor: this.state.backgroundColor,
               color: this.state.color,
-              transition: "background-color 0.5s ease",
             }}
           >
             <div className="top-bar">
@@ -160,6 +165,7 @@ class App extends React.Component {
                 toggleShowHome={this.toggleShowHome}
                 toggleShowProjects={this.toggleShowProjects}
                 toggleShowPhotos={this.toggleShowPhotos}
+                makeBlack={this.makeBlack}
               />
             </div>
           </div>
@@ -168,7 +174,6 @@ class App extends React.Component {
             style={{
               backgroundColor: this.state.backgroundColor,
               color: this.state.color,
-              transition: "background-color 0.5s ease",
               height: "100%",
             }}
             div
