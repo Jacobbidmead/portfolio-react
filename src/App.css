@@ -131,12 +131,10 @@ body {
 }
 
 .sub-title {
-  font-size: 200px;
+  font-size: 250px;
   color: #35ff69;
   padding: 100px 30px 30px 30px;
 }
-
-/* skills drop down */
 
 .my-skills {
   text-align: right;
@@ -144,28 +142,27 @@ body {
   padding: 30px;
   cursor: pointer;
   animation: fadein 1s ease;
-  color: #35ff69;
-
   font-family: Futura;
   margin-right: 40px;
+  color: #35ff69;
 }
 
 .skill {
   font-size: 100px;
   text-align: right;
-  padding-top: 50px;
+  padding-top: 20px;
   cursor: pointer;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-right: 40px;
-  color: #35ff69;
   font-family: Dirty;
+  color: rgba(247, 243, 234, 0.9);
 }
 
 .skills {
   margin: 20px 160px 0px 0px;
-  color: rgba(247, 243, 234, 0.9);
   font-size: 70px;
+  color: rgba(247, 243, 234, 0.9);
 }
 
 .qualification {

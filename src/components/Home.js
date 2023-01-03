@@ -30,7 +30,8 @@ class Home extends React.Component {
         color: "rgba(247, 243, 234, 0.5)",
         borderColor: "white",
       });
-    } else {
+    }
+    if (this.state.backgroundColor === "black") {
       this.setState({
         backgroundColor: "#35FF69",
         color: "black",
@@ -108,6 +109,8 @@ class Home extends React.Component {
           <div className="japan-text">
             <div className="sub-title">I code, design & take photos. </div>
           </div>
+        </div>
+        <div>
           <Dropdown />
           <Qualification />
         </div>

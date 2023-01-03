@@ -19,8 +19,8 @@ const Qualification = () => {
 
       {!open ? null : (
         <div className="my-skills">
-          &bull;Tortuga Coders Full Stack Web Development &bull; BA Hons: Print
-          & Time Based Media - UAL &bull; PRINCE2 Foundation & Practioner
+          Tortuga Coders Full Stack Web Development Bootcamp&bull; BA Hons:
+          Print & Time Based Media - UAL &bull; PRINCE2 Foundation & Practioner
         </div>
       )}
     </div>
