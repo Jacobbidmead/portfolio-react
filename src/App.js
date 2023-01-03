@@ -22,6 +22,7 @@ class App extends React.Component {
     showNav: false,
     backgroundColor: "black",
     color: "rgba(247, 243, 234, 0.5)",
+    burger: "rgba(247, 243, 234, 0.5)",
   };
 
   toggleShowNav = () => {
@@ -35,11 +36,13 @@ class App extends React.Component {
       this.setState({
         backgroundColor: "black",
         color: "rgba(247, 243, 234, 0.5)",
+        burger: "white",
       });
     } else {
       this.setState({
         backgroundColor: "#35FF69",
         color: "black",
+        burger: "rgba(247, 243, 234, 0.5)",
       });
     }
   };
@@ -155,16 +158,10 @@ class App extends React.Component {
                 onClick={this.toggleShowNav}
               >
                 <img
-                  src="images/down-arrow.png"
-                  style={{
-                    backgroundColor: "white",
-                    width: "30px",
-                    borderRadius: "50%",
-                    padding: "6px",
-                    margin: "15px",
-                  }}
+                  src="images/menu-bar.png"
+                  className="nav-arrow"
+                  style={{ backgroundColor: this.state.burger }}
                   alt=""
-                  id="arrow"
                 />
               </div>
 
@@ -188,18 +185,14 @@ class App extends React.Component {
             div
             className="top-bar"
           >
-            <img
-              onClick={this.toggleShowNav}
-              src="images/down-arrow.png"
-              style={{
-                backgroundColor: "rgba(247, 243, 234, 0.5)",
-                width: "30px",
-                borderRadius: "50%",
-                padding: "6px",
-                margin: "15px",
-              }}
-              alt=""
-            />
+            <span onClick={this.toggleShowNav}>
+              <img
+                src="images/menu-bar.png"
+                className="nav-arrow"
+                alt=""
+                style={{ backgroundColor: this.state.burger }}
+              />
+            </span>
           </div>
         )}
 
