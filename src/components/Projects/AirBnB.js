@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const scaleImg = {
   offscreen: { scale: 1 },
   onscreen: {
-    scale: 1.2,
+    scale: 1.08,
     transition: {
       type: "tween",
       bounce: 0.6,
@@ -117,7 +117,7 @@ class AirBnB extends React.Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "300px",
+              marginTop: "100px",
             }}
           >
             {" "}
@@ -223,7 +223,6 @@ class AirBnB extends React.Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "200px",
             }}
           >
             {" "}

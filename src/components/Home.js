@@ -110,7 +110,7 @@ class Home extends React.Component {
             </div>
           </div>
           <Dropdown />
-          <div style={{ color: "white" }}>New section</div>
+          {/* <div style={{ color: "white" }}>New section</div> */}
         </div>
       </>
     );

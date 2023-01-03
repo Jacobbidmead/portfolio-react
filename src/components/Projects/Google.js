@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const scaleImg = {
   offscreen: { scale: 1 },
   onscreen: {
-    scale: 1.2,
+    scale: 1.08,
     transition: {
       type: "tween",
       bounce: 0.6,
