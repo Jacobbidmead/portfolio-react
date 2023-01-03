@@ -133,7 +133,7 @@ body {
 .sub-title {
   font-size: 200px;
   color: #35ff69;
-  padding: 30px;
+  padding: 100px 30px 30px 30px;
 }
 
 /* skills drop down */
@@ -144,27 +144,33 @@ body {
   padding: 30px;
   cursor: pointer;
   animation: fadein 1s ease;
-  color: rgba(247, 243, 234, 0.9);
+  color: #35ff69;
+
   font-family: Futura;
   margin-right: 40px;
 }
 
 .skill {
-  font-size: 120px;
+  font-size: 100px;
   text-align: right;
-  padding-top: 80px;
+  padding-top: 50px;
   cursor: pointer;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-right: 40px;
-  color: rgba(247, 243, 234, 0.9);
+  color: #35ff69;
   font-family: Dirty;
-  border-top: 1px solid white;
-  margin-top: 100px;
 }
 
 .skills {
-  margin: 0px 40px 00px 0px;
+  margin: 20px 160px 0px 0px;
+  color: rgba(247, 243, 234, 0.9);
+  font-size: 70px;
+}
+
+.qualification {
+  font-size: 60px;
+  margin: 30px 45px 0px 0px;
   color: rgba(247, 243, 234, 0.9);
 }
 
@@ -179,7 +185,6 @@ body {
 .name-container {
   display: grid;
   grid-template-columns: 7fr 1fr;
-
   cursor: pointer;
   max-width: 100%;
 }

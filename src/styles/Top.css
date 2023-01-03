@@ -1,6 +1,6 @@
 .top-bar {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
   font-family: Futura;
   width: 100vw;
 }

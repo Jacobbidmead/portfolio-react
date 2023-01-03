@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Dropdown from "./Dropdown.js";
+import Qualification from "./Qualification";
 
 const animateCircle = {
   clicked: {
@@ -70,7 +71,7 @@ class Home extends React.Component {
               transition={{
                 ease: "easeInOut",
                 times: [0, 0.2, 0.5, 0.8, 1],
-                duration: 1,
+                duration: 1.2,
               }}
               className="circle"
             >
@@ -105,12 +106,10 @@ class Home extends React.Component {
         </div>
         <div className="japan-bg">
           <div className="japan-text">
-            <div className="sub-title">
-              I like to code, design & take photos.{" "}
-            </div>
+            <div className="sub-title">I code, design & take photos. </div>
           </div>
           <Dropdown />
-          {/* <div style={{ color: "white" }}>New section</div> */}
+          <Qualification />
         </div>
       </>
     );

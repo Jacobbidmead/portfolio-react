@@ -33,12 +33,12 @@ class Sidebar extends React.Component {
           [03<span>Photo</span>]
         </div>
         <div
-          className="home-button "
+          className="button-style"
           onClick={(e) => {
             this.props.toggleShowHome(e);
           }}
         >
-          +
+          [04<span>Home</span>]
         </div>
       </>
     );
