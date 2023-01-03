@@ -103,7 +103,7 @@ class Home extends React.Component {
                   }}
                 >
                   {" "}
-                  Change theme
+                  Change Theme
                 </span>
               </div>
             </motion.div>

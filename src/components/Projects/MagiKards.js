@@ -14,7 +14,7 @@ const scaleImg = {
 };
 
 const textAnimate = {
-  offscreen: { y: 400 },
+  offscreen: { y: 100 },
   onscreen: {
     y: 0,
     transition: {
