@@ -161,7 +161,7 @@ class App extends React.Component {
                     width: "30px",
                     borderRadius: "50%",
                     padding: "6px",
-                    margin: "20px",
+                    margin: "15px",
                   }}
                   alt=""
                   id="arrow"
@@ -196,7 +196,7 @@ class App extends React.Component {
                 width: "30px",
                 borderRadius: "50%",
                 padding: "6px",
-                margin: "20px",
+                margin: "15px",
               }}
               alt=""
             />

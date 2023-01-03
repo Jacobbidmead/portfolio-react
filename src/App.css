@@ -17,6 +17,7 @@ body {
   background-color: black;
   font-family: Futura;
   height: 100vh;
+  overflow: none;
 }
 
 ::selection {
@@ -33,7 +34,7 @@ body {
   font-family: Dirty;
   font-size: 15px;
   text-align: center;
-  margin: 28px 0px 20px 35%;
+  margin: 22px 0px 0px 35%;
   cursor: pointer;
   letter-spacing: 6px;
   padding: 10px 0px 10px 7px;
@@ -120,20 +121,21 @@ body {
   background-size: cover;
   height: 1180px;
   margin-top: 0px;
+  margin-bottom: 150px;
 }
 
 .japan-text {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-row: 1fr 1fr 1fr 1fr 1fr;
   font-family: dirty;
   color: white;
 }
 
 .sub-title {
-  font-size: 250px;
+  font-size: 120px;
   color: #35ff69;
-  padding: 100px 30px 30px 30px;
+  padding: 90px 30px 30px 70px;
 }
 
 .my-skills {
@@ -171,10 +173,16 @@ body {
   color: rgba(247, 243, 234, 0.9);
 }
 
+.experience {
+  font-size: 55px;
+  margin: 30px 35px 0px 70px;
+  color: rgba(247, 243, 234, 0.9);
+}
+
 .down-arrow {
   width: 10%;
   margin-left: 920px;
-  background-color: white;
+  background-color: rgba(247, 243, 234, 0.5);
   border-radius: 50%;
   padding: 10px;
 }

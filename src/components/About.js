@@ -52,7 +52,7 @@ class About extends React.Component {
   };
 
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [0, 1000, 2000, 2700, 3700, 4800, 5500, 7000];
+    const backgroundBreakpoints = [0, 800, 2000, 2700, 3700, 4800, 5500, 7000];
     const colorsList = [
       "black",
       "#FF10F0",
@@ -97,12 +97,7 @@ class About extends React.Component {
             }}
             className="about-intro"
           >
-            <span>
-              {" "}
-              I'm a Junior Full Stack Developer
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
-              in Web Design & UI Design, based in South London.
-            </span>
+            <span> a bit about me</span>
           </motion.div>
 
           <motion.div

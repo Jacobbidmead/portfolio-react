@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Dropdown from "./Dropdown.js";
 import Qualification from "./Qualification";
+import Experience from "./Experience";
 
 const animateCircle = {
   clicked: {
@@ -10,6 +11,19 @@ const animateCircle = {
     transition: {
       ease: "easeInOut",
       times: [0, 0.2, 0.5, 0.8, 1],
+      duration: 1,
+    },
+  },
+};
+
+const textAnimate = {
+  offscreen: { y: 200, opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
       duration: 1,
     },
   },
@@ -106,14 +120,31 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="japan-bg">
-          <div className="japan-text">
-            <div className="sub-title">I code, design & take photos. </div>
-          </div>
+          <motion.div
+            className="japan-text"
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={textAnimate}
+            viewport={{ once: true, amount: 0.01 }}
+          >
+            <div className="sub-title">
+              I'm a Junior Full Stack Developer
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
+              in Web Design & UI Design, based in South London.
+            </div>
+          </motion.div>
         </div>
-        <div>
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={textAnimate}
+          viewport={{ once: true, amount: 0.01 }}
+          style={{ paddingBottom: "100px" }}
+        >
           <Dropdown />
           <Qualification />
-        </div>
+          <Experience />
+        </motion.div>
       </>
     );
   }
