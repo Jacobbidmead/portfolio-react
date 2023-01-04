@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "../styles/About.css";
 
 const textAnimate = {
-  offscreen: { y: 500, opacity: 0 },
+  offscreen: { y: 300, opacity: 0 },
   onscreen: {
     opacity: 1,
     y: 0,
