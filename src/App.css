@@ -254,26 +254,36 @@ body {
 /* media */
 /* max-width = small screens */
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .home-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
   }
   .name {
-    font-size: 18px;
-    margin: 0px;
-    width: 50%;
+    font-size: 55px;
+    margin: 50px 0px 0px 0px;
+    width: 20%;
+    text-align: left;
+    letter-spacing: 0px;
+  }
+
+  .lastname {
+    font-size: 33px;
+    margin: 50px 0px 0px 0px;
+    max-width: 100%;
+    padding: 20px 0px 30px 0px;
+    letter-spacing: 12px;
+    text-align: left;
   }
 
   .hi {
-    font-size: 18px;
-    margin: 10px 0px 0px 10px;
+    font-size: 35px;
+    margin: 30px 0px 0px 30px;
   }
 
   .name-container {
     width: 50px;
-    overflow: none;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
   }
 
   .sub-title {
@@ -314,35 +324,27 @@ body {
     font-size: 20px;
   }
 
-  .lastname {
-    font-size: 22px;
-    margin: 0;
-    width: 50px;
-    padding: 0px;
-  }
-
   .webdev {
     font-size: 15px;
     margin: none;
     padding: 30px 0 0 100px;
   }
   .circle {
-    width: 30px;
-    height: 30px;
-
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: rgba(247, 243, 234, 0.1);
     color: white;
     text-align: center;
     border: 1px white solid;
-    margin: 60px 100px 0px 0px;
+    margin: 190px 100px 0px 0px;
     margin-left: 50px;
   }
   .clickme {
     padding: 0;
-    font-size: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
+    font-size: 9px;
+    padding-left: 13px;
+    padding-top: 14px;
   }
   .home-container {
     display: flex;
@@ -359,9 +361,9 @@ body {
   }
 
   .button-style {
-    font-size: 6px;
+    font-size: 8px;
     animation: none;
-    margin: 15px 0px 0px 30%;
+    margin: 12px 0px 0px 30%;
   }
 
   a {
