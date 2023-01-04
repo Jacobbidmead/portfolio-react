@@ -201,24 +201,17 @@ h1 {
 
   .text-container {
     max-width: 60%;
+    display: flex;
+    flex-direction: column;
   }
 
   .magikards {
     max-width: 50%;
   }
+
   .dual-col {
     display: flex;
     flex-direction: column;
-  }
-
-  .magikards-img1 {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .magikards-img2 {
-    width: 100%;
-    margin-top: 40px;
   }
 
   .magikards-text {
@@ -226,8 +219,15 @@ h1 {
     padding: 40px;
   }
 
+  .magikards-large {
+    width: 100%;
+  }
+
   .text-box {
     max-width: 40%;
     font-size: 5px;
+
+    margin: 0px;
+    text-align: center;
   }
 }
