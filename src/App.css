@@ -298,6 +298,7 @@ body {
 
   .nav-arrow {
     width: 10px;
+    margin-right: 25px;
   }
 
   .skills {
@@ -346,6 +347,7 @@ body {
     font-size: 9px;
     padding-left: 13px;
     padding-top: 14px;
+    font-family: Futura;
   }
   .home-container {
     display: flex;
@@ -364,11 +366,15 @@ body {
   .button-style {
     font-size: 6px;
     animation: none;
-    margin: 12px 0px 0px 30%;
+    margin: 14px 0px 0px 10px;
   }
 
   a {
     font-size: 20px;
+  }
+
+  .japan-bg {
+    margin-bottom: 0px;
   }
 }
 
