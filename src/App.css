@@ -41,6 +41,7 @@ body {
   display: flex;
   justify-content: center;
   width: 34%;
+  animation: fadein 1s ease;
 }
 
 /* spinning button */
@@ -253,14 +254,71 @@ body {
 /* media */
 /* max-width = small screens */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
+  .home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .name {
-    font-size: 28px;
-    margin-left: 120px;
+    font-size: 18px;
+    margin: 0px;
+    width: 50%;
+  }
+
+  .hi {
+    font-size: 18px;
+    margin: 10px 0px 0px 10px;
+  }
+
+  .name-container {
+    width: 50px;
+    overflow: none;
+  }
+
+  .sub-title {
+    font-size: 56px;
+    overflow: none;
+  }
+
+  .down-arrow {
+    margin: 0px 0px 0px 25px;
+  }
+
+  .nav-arrow {
+    width: 10px;
+  }
+
+  .skills {
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+    padding-top: 8px;
+  }
+
+  .qualification {
+    font-size: 20px;
+    text-align: left;
+    margin: 0px;
+    padding-top: 8px;
+  }
+
+  .experience {
+    font-size: 20px;
+    text-align: left;
+    margin: 0px;
+    padding-top: 8px;
+  }
+
+  .my-skills {
+    font-size: 20px;
   }
 
   .lastname {
     font-size: 22px;
+    margin: 0;
+    width: 50px;
+    padding: 0px;
   }
 
   .webdev {
@@ -293,7 +351,7 @@ body {
 
   .top-bar {
     height: 70px;
-    width: 100%;
+    width: 350px;
     padding: 0px;
   }
   .home-button {
@@ -303,7 +361,7 @@ body {
   .button-style {
     font-size: 6px;
     animation: none;
-    margin: 50px 0px 0px 30%;
+    margin: 15px 0px 0px 30%;
   }
 
   a {

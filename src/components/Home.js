@@ -145,6 +145,7 @@ class Home extends React.Component {
           <Qualification />
           <Experience />
         </motion.div>
+        <div></div>
       </>
     );
   }
