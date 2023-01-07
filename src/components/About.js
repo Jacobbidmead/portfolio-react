@@ -328,7 +328,7 @@ class About extends React.Component {
               className="contacts-link"
             >
               <div onClick={(e) => this.toggleShowContact(e)}>
-                Get in touch.
+                Discuss a project
               </div>
             </motion.div>
           ) : (

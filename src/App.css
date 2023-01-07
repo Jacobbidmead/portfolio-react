@@ -84,7 +84,7 @@ body {
   font-size: 250px;
   color: white;
   text-align: left;
-  margin: 90px 400px 0 0px;
+  margin: 90px 170px 0 0px;
   letter-spacing: 40px;
   font-family: Dirty;
   animation: fadein 2s ease;
@@ -103,7 +103,7 @@ body {
   font-size: 35px;
   color: rgba(247, 243, 234, 0.5);
   text-align: center;
-  margin: 70px 430px 0px 0px;
+  margin: 70px 200px 0px 0px;
   letter-spacing: 30px;
   font-family: Futura;
   animation: fadein 2s ease;
@@ -136,19 +136,28 @@ body {
 
 .sub-title {
   font-size: 120px;
-  color: #35ff69;
   padding: 90px 30px 30px 70px;
+  color: rgb(175, 225, 175);
 }
 
 .my-skills {
   text-align: right;
   font-size: 70px;
-  padding: 30px;
+  padding: 20px;
   cursor: pointer;
   animation: fadein 1s ease;
   font-family: Futura;
   margin-right: 40px;
-  color: #35ff69;
+  background-image: linear-gradient(
+    30deg,
+    rgb(33, 66, 30) 10%,
+    rgb(0, 153, 0) 20%,
+    rgb(175, 225, 175)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 20px;
 }
 
 .skill {

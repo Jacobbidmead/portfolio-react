@@ -32,7 +32,7 @@ class App extends React.Component {
   };
 
   toggleNavColorChange = () => {
-    if (this.state.backgroundColor === "#35FF69") {
+    if (this.state.backgroundColor === "rgb(175, 225, 175)") {
       this.setState({
         backgroundColor: "black",
         color: "rgba(247, 243, 234, 0.5)",
@@ -40,7 +40,7 @@ class App extends React.Component {
       });
     } else {
       this.setState({
-        backgroundColor: "#35FF69",
+        backgroundColor: "rgb(175, 225, 175)",
         color: "black",
         burger: "rgba(247, 243, 234, 0.5)",
       });

@@ -38,7 +38,7 @@ class Home extends React.Component {
   };
 
   toggleColorChange = () => {
-    if (this.state.backgroundColor === "#35FF69") {
+    if (this.state.backgroundColor === "rgb(175, 225, 175)") {
       this.setState({
         backgroundColor: "black",
         color: "rgba(247, 243, 234, 0.5)",
@@ -47,7 +47,7 @@ class Home extends React.Component {
     }
     if (this.state.backgroundColor === "black") {
       this.setState({
-        backgroundColor: "#35FF69",
+        backgroundColor: "rgb(175, 225, 175)",
         color: "black",
         borderColor: "black",
       });
@@ -69,7 +69,7 @@ class Home extends React.Component {
               Hi i'm
             </span>{" "}
             <div className="name" style={{ color: this.state.color }}>
-              JACOB.
+              JACOB
             </div>
             <motion.div
               style={{ borderColor: this.state.borderColor }}
