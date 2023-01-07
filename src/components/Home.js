@@ -57,7 +57,11 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <div
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={textAnimate}
+          viewport={{ once: true, amount: 0.01 }}
           className="home-container"
           style={{
             backgroundColor: this.state.backgroundColor,
@@ -111,7 +115,7 @@ class Home extends React.Component {
               &nbsp;I make things for the web.{" "}
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="japan-bg">
           <motion.div
             className="japan-text"
