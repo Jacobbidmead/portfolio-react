@@ -71,7 +71,9 @@ class MagiKards extends React.Component {
           }}
         >
           <div className="header">
-            <h1 style={{ margin: "0" }}>MagiKards.</h1>
+            <h1 style={{ margin: "0" }} className="magikards-head">
+              MagiKards.
+            </h1>
           </div>
           <motion.div>
             <div
@@ -124,13 +126,12 @@ class MagiKards extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 marginLeft: "auto",
-                paddingBottom: "95px",
               }}
               className="text-box "
             >
               <section>
-                <span>This view above shows the Battlefield, </span>the hand of
-                cards is
+                <span>This view shows the Battlefield, </span>the hand of cards
+                is
                 <span>
                   {" "}
                   randomly generated to the player. Once the player runs out of
@@ -170,8 +171,8 @@ class MagiKards extends React.Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginBottom: "200px",
             }}
+            className="mkard-cont"
           >
             {" "}
             <motion.img
