@@ -97,14 +97,7 @@ class Home extends React.Component {
                   color: this.state.color,
                 }}
               >
-                <span
-                  style={{
-                    fontFamily: "Futura",
-                  }}
-                >
-                  {" "}
-                  Change Theme
-                </span>
+                <span> Change Theme</span>
               </div>
             </motion.div>
             <div
