@@ -67,7 +67,7 @@
 }
 
 span {
-  font-family: dirty;
+  font-family: PolySans;
 }
 
 .contacts-link {
@@ -78,12 +78,12 @@ span {
   color: black;
   cursor: pointer;
   font-size: 90px;
-  font-family: Dirty;
+  font-family: PolySans;
 }
 
 .email {
   font-size: 40px;
-  font-family: Dirty;
+  font-family: PolySans;
 }
 
 @media screen and (max-width: 601px) {

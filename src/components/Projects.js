@@ -179,7 +179,7 @@ class Projects extends React.Component {
                 variants={linkAnimate}
                 viewport={{ once: false, amount: 0.1 }}
               >
-                Google Search
+                Google
               </motion.div>
             )}
           </div>
