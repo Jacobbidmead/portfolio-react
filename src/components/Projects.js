@@ -83,18 +83,18 @@ class Projects extends React.Component {
     return (
       <>
         <div className="bg-fill" style={style}>
-          <div className="header projects-head" style={style}>
-            <h1
-              style={{
-                position: "fixed",
-                marginLeft: "40px",
+          <h1
+            style={{
+              position: "fixed",
+              marginLeft: "40px",
+              textShadow: this.state.textShadow,
+              fontSize: "60px",
+            }}
+            className="header"
+          >
+            Things I've made.
+          </h1>
 
-                textShadow: this.state.textShadow,
-              }}
-            >
-              Things I've made.
-            </h1>
-          </div>
           <div className="project-links" style={style}>
             {this.props.showMagiKards ? (
               <MagiKards
