@@ -88,7 +88,6 @@ class Projects extends React.Component {
               position: "fixed",
               marginLeft: "40px",
               textShadow: this.state.textShadow,
-              fontSize: "60px",
             }}
             className="header"
           >
