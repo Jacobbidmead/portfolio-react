@@ -117,7 +117,7 @@ class Google extends React.Component {
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
               }}
-              className="text-container"
+              className="text-container google-container"
             >
               <motion.div
                 initial={"offscreen"}
