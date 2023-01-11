@@ -75,7 +75,6 @@ class AirBnB extends React.Component {
           </div>
           <motion.div>
             <div
-              style={{ margin: "100px 0px 0px 100px", paddingBottom: "80px" }}
               className="return-projects"
               onClick={(e) => this.props.toggleShowProjects(e)}
             >
@@ -152,7 +151,6 @@ class AirBnB extends React.Component {
               style={{
                 color: "black",
                 width: "70%",
-                fontSize: "25px",
                 height: "55%",
               }}
               className="text-box"
@@ -189,7 +187,6 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
-                fontSize: "25px",
                 height: "55%",
                 marginTop: "50px",
               }}
@@ -276,7 +273,7 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
-                fontSize: "26px",
+
                 height: "52%",
               }}
               className="text-box"
@@ -318,7 +315,7 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
-                fontSize: "28px",
+
                 height: "51%",
               }}
               className="text-box"

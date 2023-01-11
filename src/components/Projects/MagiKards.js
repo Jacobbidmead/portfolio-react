@@ -105,9 +105,7 @@ class MagiKards extends React.Component {
                   The game is still in beta, we plan to redesign the UI and card
                   interaction in 2023.
                 </p>
-                <span>
-                  Technologies used - React, JavaScript, HTML, CSS./span>
-                </span>
+                <span>Technologies used - React, JavaScript, HTML, CSS.</span>
               </div>
             </div>
           </motion.div>
