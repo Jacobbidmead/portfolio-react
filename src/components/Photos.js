@@ -23,25 +23,11 @@ class Photos extends React.Component {
           <h1 style={{ margin: "0" }}>Photos.</h1>
         </div>
         <motion.div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
-          <div
-            style={{
-              color: "white",
-              marginLeft: "100px",
-              fontFamily: "PolySans",
-            }}
-          >
+          <div className="photo-subtitle">
             <h1>Analogue photography</h1>
             <h5>2014 - 2019</h5>
           </div>
-          <div
-            style={{
-              color: "white",
-              marginRight: "100px",
-              textAlign: "right",
-              marginBottom: "100px",
-              fontSize: "30px",
-            }}
-          >
+          <div className="quote">
             "Travel changes you, as you move through this life and this world
             you change things slightly, you leave marks behind, however small.
             And in return, life — and travel — leaves marks on you."{" "}
