@@ -167,13 +167,6 @@ class AirBnB extends React.Component {
             >
               {" "}
               <img
-                style={{
-                  width: "100%",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                  boxShadow:
-                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                }}
                 className="projects-img"
                 src="./images/project-img/abnb1.png"
                 alt=""
@@ -188,7 +181,6 @@ class AirBnB extends React.Component {
               style={{
                 width: "70%",
                 height: "55%",
-                marginTop: "50px",
               }}
               className="text-box"
             >
@@ -200,16 +192,8 @@ class AirBnB extends React.Component {
               whileInView={"onscreen"}
               variants={textAnimate}
               viewport={{ once: true, amount: 0.1 }}
-              style={{ marginTop: "50px" }}
             >
               <img
-                style={{
-                  width: "100%",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                  boxShadow:
-                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                }}
                 className="projects-img"
                 src="./images/project-img/abnb2.png"
                 alt=""
@@ -253,14 +237,6 @@ class AirBnB extends React.Component {
             >
               {" "}
               <img
-                style={{
-                  width: "100%",
-                  borderRadius: "5px",
-                  marginBottom: "80px",
-                  boxShadow:
-                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  cursor: "pointer",
-                }}
                 className="projects-img"
                 src="./images/project-img/abnb6.png"
                 alt=""
@@ -273,10 +249,9 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
-
                 height: "52%",
               }}
-              className="text-box"
+              className="text-box air-p"
             >
               Users can log in and access thier <span>Profile'</span>' page,
               where they can
@@ -295,14 +270,6 @@ class AirBnB extends React.Component {
             >
               {" "}
               <img
-                style={{
-                  width: "100%",
-                  borderRadius: "5px",
-                  boxShadow:
-                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  cursor: "pointer",
-                  marginRight: "10px",
-                }}
                 className="projects-img"
                 src="./images/project-img/abnb7.png"
                 alt=""
@@ -315,10 +282,9 @@ class AirBnB extends React.Component {
               viewport={{ once: true, amount: 0.1 }}
               style={{
                 width: "70%",
-
                 height: "51%",
               }}
-              className="text-box"
+              className="text-box air-p"
             >
               List a house form that{" "}
               <span>creates a house in the database </span>and populates data

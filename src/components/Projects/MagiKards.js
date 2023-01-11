@@ -43,7 +43,7 @@ class MagiKards extends React.Component {
     bgColor: "black",
   };
   listenScrollEvent = (e) => {
-    const backgroundBreakpoints = [0, 900, 3000];
+    const backgroundBreakpoints = [0, 700, 3000];
 
     const colorsList = ["black", "#10FFCB"];
 
