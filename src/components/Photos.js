@@ -20,7 +20,7 @@ class Photos extends React.Component {
     return (
       <>
         <div className="header" style={{ marginBottom: "170px" }}>
-          <h1 style={{ margin: "0" }}>Photos.</h1>
+          <h1 className="photo-head">Photos.</h1>
         </div>
         <motion.div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
           <div className="photo-subtitle">
@@ -42,9 +42,7 @@ class Photos extends React.Component {
               Through my work, I attempt to describe my love of anthropology &
               discovering new cultures.
             </p>
-            <small style={{ fontSize: "15px", fontFamily: "PolySans" }}>
-              Shot on Contax TVS III
-            </small>
+            <small>Shot on Contax TVS III</small>
           </div>
         </motion.div>
         <motion.div

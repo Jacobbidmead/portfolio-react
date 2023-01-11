@@ -105,7 +105,7 @@
 @media screen and (max-width: 400px) {
   .quote {
     font-size: 13px;
-    margin: 0;
+    margin: 0px 10px 100px 0px;
   }
   .photo-subtitle {
     font-size: 6px;
@@ -130,13 +130,28 @@
   .change-photos {
     font-size: 8px;
     padding: 20px;
+    margin-bottom: 20px;
   }
   .photo-container {
-    display: flex;
-    flex-direction: row;
+    position: absolute;
+    bottom: -880px;
+    margin-left: 30px;
+    padding-bottom: 20px;
   }
   .photo-bg {
     display: flex;
     flex-direction: column;
+  }
+  .photo {
+    width: 100px;
+    height: 65px;
+  }
+
+  .img-description {
+    font-size: 10px;
+  }
+
+  .photo-head {
+    margin-left: 40px;
   }
 }
