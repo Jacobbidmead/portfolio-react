@@ -128,16 +128,7 @@ class Google extends React.Component {
               >
                 <img
                   src="./images/project-img/google2.png"
-                  style={{
-                    width: "90%",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                    marginTop: "80px",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    boxShadow:
-                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  }}
+                  className="google-searchpage"
                   alt=""
                 />
               </motion.div>
@@ -146,16 +137,9 @@ class Google extends React.Component {
                 whileInView={"onscreen"}
                 variants={textAnimate}
                 viewport={{ once: true, amount: 0.1 }}
-                style={{
-                  width: "40%",
-                  fontSize: "30px",
-                  marginTop: "40px",
-                  height: " 30%",
-                  marginLeft: "190px",
-                }}
-                className="text-box"
+                className="google-text"
               >
-                <span style={{ color: "white" }}>
+                <span>
                   Google search home page & results; users can search for the
                   data in image below via the search bar.
                 </span>

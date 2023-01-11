@@ -162,6 +162,25 @@ h1 {
   padding: 80px 0px 170px 0px;
 }
 
+.google-text {
+  width: 60%;
+  height: 30%;
+  margin-top: 120px;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 130px;
+}
+
+.google-searchpage {
+  width: 90%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -233,6 +252,16 @@ h1 {
     padding: 0px 0px 10px 0px;
   }
 
+  .google-text {
+    font-size: 9px;
+    margin: 70px 0px 0px 40px;
+    padding: 0px;
+  }
+
+  .google-searchpage {
+    width: 100%;
+  }
+
   .mkard-cont {
     padding: 40px 0px;
   }
@@ -240,5 +269,13 @@ h1 {
   .magikards-head {
     font-size: 27px;
     padding-left: 28px;
+  }
+
+  .google-header {
+    font-size: 30px;
+  }
+
+  .google-img {
+    margin-bottom: 0;
   }
 }
