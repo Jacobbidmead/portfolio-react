@@ -135,9 +135,11 @@
   .photo-container {
     position: absolute;
     bottom: -860px;
-    margin-left: 30px;
+    margin-left: 15px;
+    padding-top: 0px;
     padding-bottom: 20px;
     text-align: center;
+    padding-left: 0px;
   }
   .photo-bg {
     display: flex;
@@ -148,6 +150,7 @@
   .photo {
     width: 130px;
     height: 65px;
+    margin: 15px;
   }
 
   .img-description {
