@@ -11,7 +11,7 @@ class Sidebar extends React.Component {
           }}
           className=" button-style "
         >
-          [<span>About</span>]
+          About
         </div>
         <div
           onClick={(e) => {
@@ -20,7 +20,7 @@ class Sidebar extends React.Component {
           }}
           className="button-style  "
         >
-          [<span>Projects</span>]
+          Projects
         </div>
         <div
           onClick={(e) => {
@@ -29,7 +29,7 @@ class Sidebar extends React.Component {
           }}
           className="button-style "
         >
-          [<span>Photo</span>]
+          Photo
         </div>
         <div
           className="button-style"
@@ -37,7 +37,7 @@ class Sidebar extends React.Component {
             this.props.toggleShowHome(e);
           }}
         >
-          [<span>Home</span>]
+          Home
         </div>
       </>
     );

@@ -269,7 +269,7 @@ body {
 /* media */
 /* max-width = small screens */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .home-container {
     width: 100%;
     overflow: none;
