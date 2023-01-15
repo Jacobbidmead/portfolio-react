@@ -113,7 +113,7 @@
   }
 
   .large-photo-container {
-    width: 400px;
+    width: 360px;
     height: 0px;
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@
   }
   .photo-container {
     position: absolute;
-    bottom: -760px;
+    bottom: -860px;
     margin-left: 30px;
     padding-bottom: 20px;
     text-align: center;
