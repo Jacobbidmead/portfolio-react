@@ -13,6 +13,10 @@
   src: url("/public/fonts/PolySans.woff");
 }
 
+.a {
+  text-decoration: none;
+}
+
 html {
   height: 100vh;
 }
@@ -227,6 +231,29 @@ body {
   letter-spacing: 20px;
 }
 
+.contacts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 8fr;
+  justify-content: space-around;
+  margin-top: 150px;
+  color: rgba(247, 243, 234, 0.5);
+  padding-bottom: 100px;
+  background-image: linear-gradient(
+    30deg,
+    rgb(253, 126, 100) 5%,
+    rgb(247, 130, 51) 20%,
+    rgb(139, 212, 5)
+  );
+  border-top: 1px solid rgba(247, 243, 234, 0.8);
+}
+
+.contact {
+  padding-top: 50px;
+  padding-right: 100px;
+  color: rgba(247, 243, 234, 0.5);
+  font-size: 20px;
+}
+
 /* reveal name effect
 
 .name-reveal {
@@ -391,6 +418,18 @@ body {
 
   .japan-bg {
     margin-bottom: 0px;
+  }
+  .contact {
+    padding-left: 15px;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contacts-container {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 60px;
   }
 }
 

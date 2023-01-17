@@ -114,6 +114,7 @@ class Home extends React.Component {
               {" "}
               &nbsp;I make things for the web.{" "}
             </div>
+            <div></div>
           </div>
         </motion.div>
         <div className="japan-bg">
@@ -136,13 +137,51 @@ class Home extends React.Component {
           whileInView={"onscreen"}
           variants={textAnimate}
           viewport={{ once: true, amount: 0.01 }}
-          style={{ paddingBottom: "100px" }}
+          // style={{ paddingBottom: "100px" }}
         >
           <Dropdown />
           <Qualification />
           <Experience />
         </motion.div>
-        <div></div>
+        <div>
+          {" "}
+          <div
+            className="contacts-container"
+            style={{ backgroundColor: "#FF10F0" }}
+          >
+            <div></div>
+            <div className="contact"> jacob.bidmead@fullstack.com</div>
+            <div className="contact">
+              <a
+                href="https://www.instagram.com/camomilehaze/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "rgba(247, 243, 234, 0.5)",
+                }}
+              >
+                Instagram
+              </a>
+            </div>
+            <div className="contact">
+              <a
+                href="https://github.com/Jacobbidmead"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "rgba(247, 243, 234, 0.5)",
+                  cursor: "pointer",
+                }}
+              >
+                {" "}
+                GitHub
+              </a>
+              <div></div>
+            </div>
+          </div>
+        </div>
       </>
     );
   }
