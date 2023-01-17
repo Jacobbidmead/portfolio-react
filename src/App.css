@@ -134,13 +134,28 @@ body {
   margin-bottom: 150px;
 }
 
+.japan-bg2 {
+  background-image: url("/public/images/japan2.jpeg");
+  background-size: cover;
+  height: 1580px;
+  margin-top: 100px;
+}
+
 .japan-text {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-row: 1fr 1fr 1fr 1fr 1fr;
-  font-family: dirty;
   color: white;
   margin-bottom: 60px;
+}
+
+.japan-text2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: white;
+  margin-bottom: 60px;
+  text-align: right;
+  font-size: 1000px;
 }
 
 .sub-title {
@@ -148,6 +163,13 @@ body {
   padding: 50px 30px 0px 70px;
   font-family: PolySans;
   color: rgb(170, 255, 14);
+}
+
+.sub-title2 {
+  font-size: 120px;
+  padding: 50px 30px 0px 70px;
+  font-family: PolySans;
+  color: rgb(243, 111, 23);
 }
 
 .my-skills {
@@ -160,9 +182,9 @@ body {
   margin-right: 40px;
   background-image: linear-gradient(
     30deg,
-    rgb(33, 66, 30) 10%,
-    rgb(0, 153, 0) 20%,
-    rgb(170, 255, 14)
+    rgb(253, 126, 100) 5%,
+    rgb(247, 130, 51) 5%,
+    rgb(17, 240, 47)
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -235,22 +257,22 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 8fr;
   justify-content: space-around;
-  margin-top: 150px;
   color: rgba(247, 243, 234, 0.5);
   padding-bottom: 100px;
   background-image: linear-gradient(
     30deg,
     rgb(253, 126, 100) 5%,
-    rgb(247, 130, 51) 20%,
-    rgb(139, 212, 5)
+    rgb(247, 130, 51) 5%,
+    rgb(17, 240, 47)
   );
-  border-top: 1px solid rgba(247, 243, 234, 0.8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact {
   padding-top: 50px;
   padding-right: 100px;
-  color: rgba(247, 243, 234, 0.5);
+  color: black;
   font-size: 20px;
 }
 
@@ -333,6 +355,16 @@ body {
     font-size: 65px;
     overflow: none;
     padding: 30px 10px 0px 10px;
+  }
+
+  .sub-title2 {
+    font-size: 68px;
+    overflow: none;
+    padding: 30px 10px 0px 10px;
+  }
+
+  .japan-bg2 {
+    height: 1040px;
   }
 
   .down-arrow {
@@ -420,7 +452,7 @@ body {
     margin-bottom: 0px;
   }
   .contact {
-    padding-left: 15px;
+    padding-left: 60px;
     font-size: 20px;
     padding-bottom: 20px;
   }
@@ -428,7 +460,7 @@ body {
   .contacts-container {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
     margin-top: 60px;
   }
 }

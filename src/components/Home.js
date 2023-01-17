@@ -132,19 +132,30 @@ class Home extends React.Component {
             </div>
           </motion.div>
         </div>
-        <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          variants={textAnimate}
-          viewport={{ once: true, amount: 0.01 }}
-          // style={{ paddingBottom: "100px" }}
-        >
+        <motion.div>
+          {" "}
           <Dropdown />
           <Qualification />
           <Experience />
         </motion.div>
         <div>
-          {" "}
+          <div className="japan-bg2">
+            <motion.div
+              className="japan-text2"
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.01 }}
+            >
+              <div></div>
+              <div className="sub-title2">
+                I like to travel, take photos,
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ride a
+                skateboard, climb rocks and make websites. Check out my page and
+                get in touch.
+              </div>
+            </motion.div>
+          </div>
           <div
             className="contacts-container"
             style={{ backgroundColor: "#FF10F0" }}
@@ -158,7 +169,7 @@ class Home extends React.Component {
                 rel="noreferrer"
                 style={{
                   textDecoration: "none",
-                  color: "rgba(247, 243, 234, 0.5)",
+                  color: "black",
                 }}
               >
                 Instagram
@@ -171,7 +182,7 @@ class Home extends React.Component {
                 rel="noreferrer"
                 style={{
                   textDecoration: "none",
-                  color: "rgba(247, 243, 234, 0.5)",
+                  color: "black",
                   cursor: "pointer",
                 }}
               >
