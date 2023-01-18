@@ -30,7 +30,7 @@ body {
 }
 
 ::selection {
-  color: black;
+  color: lime;
   background: white;
 }
 
@@ -270,7 +270,7 @@ body {
 }
 
 .contact {
-  padding-top: 50px;
+  padding-top: 84px;
   padding-right: 100px;
   color: black;
   font-size: 20px;

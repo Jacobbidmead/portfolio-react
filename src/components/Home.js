@@ -161,7 +161,7 @@ class Home extends React.Component {
             style={{ backgroundColor: "#FF10F0" }}
           >
             <div></div>
-            <div className="contact"> jacob.bidmead@fullstack.com</div>
+            <div className="contact"> jacob.bidmead.fullstack@outlook.com</div>
             <div className="contact">
               <a
                 href="https://www.instagram.com/camomilehaze/?hl=en"
