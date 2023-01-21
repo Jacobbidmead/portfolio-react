@@ -318,7 +318,7 @@ body {
 /* media */
 /* max-width = small screens */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1280px) {
   .home-container {
     width: 100%;
     overflow: none;
@@ -452,7 +452,7 @@ body {
     margin-bottom: 0px;
   }
   .contact {
-    padding-left: 60px;
+    padding-left: 40px;
     font-size: 20px;
     padding-bottom: 20px;
   }
