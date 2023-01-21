@@ -38,7 +38,7 @@ class Home extends React.Component {
   };
 
   toggleColorChange = () => {
-    if (this.state.backgroundColor === "rgb(175, 225, 175)") {
+    if (this.state.backgroundColor === "rgb(17, 240, 47)") {
       this.setState({
         backgroundColor: "black",
         color: "rgba(247, 243, 234, 0.5)",
@@ -47,7 +47,7 @@ class Home extends React.Component {
     }
     if (this.state.backgroundColor === "black") {
       this.setState({
-        backgroundColor: "rgb(175, 225, 175)",
+        backgroundColor: "rgb(17, 240, 47)",
         color: "black",
         borderColor: "black",
       });
