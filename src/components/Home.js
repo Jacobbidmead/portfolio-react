@@ -69,12 +69,23 @@ class Home extends React.Component {
           }}
         >
           <div className="name-container">
-            <span className="hi" style={{ color: this.state.color }}>
-              Hi i'm
-            </span>{" "}
-            <div className="name" style={{ color: this.state.color }}>
-              JACOB
+            <div id="text">
+              <div class="line" style={{ color: this.state.color }}>
+                <p class="word">HI </p>
+                <p class="word">IM JACOB</p>
+              </div>
+
+              <div class="line" style={{ color: this.state.color }}>
+                <p class="word">I </p>
+                <p class="word">MAKE THINGS</p>
+              </div>
+
+              <div class="line" style={{ color: this.state.color }}>
+                <p class="word">FOR THE</p>
+                <p class="word">WEB</p>
+              </div>
             </div>
+
             <motion.div
               style={{ borderColor: this.state.borderColor }}
               onClick={(e) => {
@@ -104,16 +115,7 @@ class Home extends React.Component {
                 <span> Change Theme</span>
               </div>
             </motion.div>
-            <div
-              className="lastname"
-              style={{
-                color: this.state.color,
-                borderColor: this.state.borderColor,
-              }}
-            >
-              {" "}
-              &nbsp;I make things for the web.{" "}
-            </div>
+
             <div></div>
           </div>
         </motion.div>
