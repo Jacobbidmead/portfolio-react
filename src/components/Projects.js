@@ -2,6 +2,7 @@ import React from "react";
 import MagiKards from "../components/Projects/MagiKards.js";
 import AirBnB from "../components/Projects/AirBnB.js";
 import Google from "../components/Projects/Google.js";
+import Claudia from "../components/Projects/Claudia.js";
 import "../styles/Projects.css";
 import { motion } from "framer-motion";
 
@@ -95,7 +96,35 @@ class Projects extends React.Component {
             Things I've made.
           </h1>
 
-          <div className="project-links" style={style}>
+          <div className="project-links" id="text" style={style}>
+            {this.props.showClaudia ? (
+              <Claudia
+                toggleShowClaudia={this.props.toggleShowClaudia}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
+                className="project-link link highlight"
+                onClick={(e) => this.props.toggleShowClaudia(e)}
+                onMouseOver={(e) => this.lightupText(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                viewport={{ once: false, amount: 0.1 }}
+              >
+                Claudia Cantarini
+              </motion.div>
+            )}
+
             {this.props.showMagiKards ? (
               <MagiKards
                 toggleShowMagiKards={this.props.toggleShowMagiKards}
@@ -113,7 +142,7 @@ class Projects extends React.Component {
                   stiffness: 400,
                   damping: 10,
                 }}
-                className="project-link"
+                className="project-link link highlight"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
@@ -141,7 +170,7 @@ class Projects extends React.Component {
                   stiffness: 400,
                   damping: 10,
                 }}
-                className="project-link"
+                className="project-link link highlight"
                 onClick={(e) => this.props.toggleShowAirBnb(e)}
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
@@ -169,7 +198,7 @@ class Projects extends React.Component {
                   stiffness: 400,
                   damping: 10,
                 }}
-                className="project-link"
+                className="project-link link highlight"
                 onClick={(e) => this.props.toggleShowGoogle(e)}
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}

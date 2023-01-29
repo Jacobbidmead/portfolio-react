@@ -9,6 +9,7 @@ import AirBnB from "./components/Projects/AirBnB.js";
 import MagiKards from "./components/Projects/MagiKards.js";
 import Google from "./components/Projects/Google.js";
 import "./styles/Top.css";
+import Claudia from "./components/Projects/Claudia";
 
 class App extends React.Component {
   state = {
@@ -20,6 +21,7 @@ class App extends React.Component {
     showMagiKards: false,
     showGoogle: false,
     showNav: false,
+    showClaudia: false,
     backgroundColor: "black",
     color: "rgba(247, 243, 234, 0.5)",
     burger: "rgba(247, 243, 234, 0.5)",
@@ -68,6 +70,7 @@ class App extends React.Component {
       showAirBnb: false,
       showMagiKards: false,
       showGoogle: false,
+      showClaudia: false,
     });
   };
 
@@ -81,6 +84,7 @@ class App extends React.Component {
       showAirBnb: false,
       showMagiKards: false,
       showGoogle: false,
+      showClaudia: false,
     });
   };
 
@@ -93,6 +97,7 @@ class App extends React.Component {
       showAirBnb: false,
       showMagiKards: false,
       showGoogle: false,
+      showClaudia: false,
     });
   };
 
@@ -106,6 +111,7 @@ class App extends React.Component {
       showAirBnb: false,
       showMagiKards: false,
       showGoogle: false,
+      showClaudia: false,
     });
   };
 
@@ -118,6 +124,7 @@ class App extends React.Component {
       showAirBnb: false,
       showMagiKards: false,
       showGoogle: false,
+      showClaudia: false,
     });
   };
 
@@ -139,6 +146,14 @@ class App extends React.Component {
     this.setState({
       showProjects: false,
       showGoogle: true,
+    });
+  };
+
+  toggleShowClaudia = (e) => {
+    console.log("working");
+    this.setState({
+      showProjects: false,
+      showClaudia: true,
     });
   };
 
@@ -210,6 +225,7 @@ class App extends React.Component {
             toggleShowAirBnb={this.toggleShowAirBnb}
             toggleShowMagiKards={this.toggleShowMagiKards}
             toggleShowGoogle={this.toggleShowGoogle}
+            toggleShowClaudia={this.toggleShowClaudia}
           />
         )}
 
@@ -223,6 +239,10 @@ class App extends React.Component {
 
         {this.state.showGoogle ? (
           <Google toggleShowProjects={this.toggleShowProjects} />
+        ) : null}
+
+        {this.state.showClaudia ? (
+          <Claudia toggleShowProjects={this.toggleShowProjects} />
         ) : null}
         {this.state.showPhotos && <Photos />}
       </>

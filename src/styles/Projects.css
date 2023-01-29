@@ -19,6 +19,7 @@
   overflow: scroll;
   height: 60%;
   text-align: left;
+  border-right: 1px white solid;
 }
 
 .project-link {
@@ -27,12 +28,14 @@
   width: 100%;
   display: flex;
   color: white;
+  text-align: center;
   margin-bottom: 40px;
   justify-content: center;
 }
 
 #text:has(.highlight:hover) .link:not(.highlight:hover) {
-  opacity: 0.4;
+  color: rgba(247, 243, 234, 0.5);
+  transition: 0.2s ease-in-out;
 }
 
 .gitlink {
@@ -61,7 +64,7 @@ h1 {
   text-align: center;
   padding: 0px 25px 0px 25px;
   animation: fadein 2s ease;
-  margin: 100px 0px 100px 0px;
+  margin: 150px 0px 100px 0px;
   background-color: inherit;
   font-family: PolySans;
   letter-spacing: 10px;
@@ -207,9 +210,15 @@ h1 {
     padding: 0;
   }
 
+  .project-links {
+    border: none;
+    margin-left: 100px;
+  }
+
   .project-link {
     font-size: 20px;
     border-radius: 13px;
+    padding-bottom: 40px;
   }
   .project-description {
     font-size: 10px;
