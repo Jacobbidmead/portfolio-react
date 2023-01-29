@@ -33,7 +33,7 @@ class Home extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
-    color: "rgba(247, 243, 234, 0.5);",
+    color: "rgba(247, 243, 234, 0.5)",
     borderColor: "white",
   };
 
@@ -65,24 +65,33 @@ class Home extends React.Component {
           className="home-container"
           style={{
             backgroundColor: this.state.backgroundColor,
-            color: this.state.color,
           }}
         >
           <div className="name-container">
-            <div id="text">
-              <div class="line" style={{ color: this.state.color }}>
-                <p class="word">HI </p>
-                <p class="word">IM JACOB</p>
+            <div id="home-text">
+              <div
+                className="line"
+                style={{
+                  color: this.state.color,
+                }}
+              >
+                <div className="word">HI </div>
+                <p className="word">IM JACOB</p>
               </div>
 
-              <div class="line" style={{ color: this.state.color }}>
-                <p class="word">I </p>
-                <p class="word">MAKE THINGS</p>
+              <div className="line" style={{ color: this.state.color }}>
+                <p className="word">I </p>
+                <p className="word">MAKE THINGS</p>
               </div>
 
-              <div class="line" style={{ color: this.state.color }}>
-                <p class="word">FOR THE</p>
-                <p class="word">WEB</p>
+              <div
+                className="line"
+                style={{
+                  color: this.state.color,
+                }}
+              >
+                <p className="word">FOR THE</p>
+                <p className="word">WEB</p>
               </div>
             </div>
 
