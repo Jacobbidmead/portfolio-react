@@ -4,7 +4,15 @@ class Claudia extends React.Component {
   render() {
     return (
       <>
-        <div>In production</div>
+        <div className="header" style={{ paddingBottom: "200px" }}>
+          In production, come back soon.
+        </div>
+        <div
+          className="return-projects"
+          onClick={(e) => this.props.toggleShowProjects(e)}
+        >
+          <h4>Back to Projects</h4>
+        </div>
       </>
     );
   }

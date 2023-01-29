@@ -17,9 +17,9 @@
   margin-top: auto;
   margin-bottom: auto;
   overflow: scroll;
-  height: 60%;
+  height: 55%;
   text-align: left;
-  border-right: 1px white solid;
+  border-right: 1px rgba(247, 243, 234, 0.5) solid;
 }
 
 .project-link {
@@ -30,12 +30,12 @@
   color: white;
   text-align: center;
   margin-bottom: 40px;
-  justify-content: center;
+  padding-left: 10px;
 }
 
 #text:has(.highlight:hover) .link:not(.highlight:hover) {
   color: rgba(247, 243, 234, 0.5);
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .gitlink {

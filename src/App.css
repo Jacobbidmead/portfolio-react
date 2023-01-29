@@ -30,7 +30,7 @@ body {
 }
 
 ::selection {
-  color: lime;
+  color: rgb(249, 132, 59);
   background: white;
 }
 

@@ -6,14 +6,7 @@ import Claudia from "../components/Projects/Claudia.js";
 import "../styles/Projects.css";
 import { motion } from "framer-motion";
 
-let backgroundColors = [
-  "#23C4FF",
-  "#FF10F0",
-  "#FE5F55",
-  "#10FFCB",
-  "#CB04A5",
-  "#FB5012",
-];
+let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#CB04A5", "#FB5012"];
 
 const random = () => {
   const randomizedArray = [];
@@ -97,6 +90,24 @@ class Projects extends React.Component {
           </h1>
 
           <div className="project-links" id="text" style={style}>
+            {this.props.showAirBnb ? (
+              <AirBnB
+                toggleShowAirBnb={this.props.toggleShowAirBnb}
+                toggleShowProjects={this.props.toggleShowProjects}
+              />
+            ) : (
+              <motion.div
+                className="project-link link highlight"
+                onClick={(e) => this.props.toggleShowAirBnb(e)}
+                onMouseOver={(e) => this.lightupText(e)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                viewport={{ once: false, amount: 0.1 }}
+              >
+                AirBNB
+              </motion.div>
+            )}
+
             {this.props.showClaudia ? (
               <Claudia
                 toggleShowClaudia={this.props.toggleShowClaudia}
@@ -104,22 +115,13 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                whileHover={{
-                  scale: 1.1,
-                }}
-                transition={{
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 10,
-                }}
                 className="project-link link highlight"
                 onClick={(e) => this.props.toggleShowClaudia(e)}
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 viewport={{ once: false, amount: 0.1 }}
+                style={{ fontSize: "78px" }}
               >
                 Claudia Cantarini
               </motion.div>
@@ -132,16 +134,6 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                whileHover={{
-                  scale: 1.1,
-                }}
-                transition={{
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 10,
-                }}
                 className="project-link link highlight"
                 onClick={(e) => this.props.toggleShowMagiKards(e)}
                 onMouseOver={(e) => this.lightupText(e)}
@@ -153,34 +145,6 @@ class Projects extends React.Component {
               </motion.div>
             )}
 
-            {this.props.showAirBnb ? (
-              <AirBnB
-                toggleShowAirBnb={this.props.toggleShowAirBnb}
-                toggleShowProjects={this.props.toggleShowProjects}
-              />
-            ) : (
-              <motion.div
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                whileHover={{
-                  scale: 1.1,
-                }}
-                transition={{
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 10,
-                }}
-                className="project-link link highlight"
-                onClick={(e) => this.props.toggleShowAirBnb(e)}
-                onMouseOver={(e) => this.lightupText(e)}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-                viewport={{ once: false, amount: 0.1 }}
-              >
-                AIRBNB
-              </motion.div>
-            )}
-
             {this.props.showGoogle ? (
               <Google
                 toggleShowGoogle={this.props.toggleShowGoogle}
@@ -188,16 +152,6 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                whileHover={{
-                  scale: 1.1,
-                }}
-                transition={{
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 10,
-                }}
                 className="project-link link highlight"
                 onClick={(e) => this.props.toggleShowGoogle(e)}
                 onMouseOver={(e) => this.lightupText(e)}
