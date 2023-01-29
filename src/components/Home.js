@@ -75,8 +75,8 @@ class Home extends React.Component {
                   color: this.state.color,
                 }}
               >
-                <div className="word">HI </div>
-                <p className="word">IM JACOB</p>
+                <div className="word">HI, </div>
+                <p className="word">IM JACOB.</p>
               </div>
 
               <div className="line" style={{ color: this.state.color }}>
@@ -91,7 +91,7 @@ class Home extends React.Component {
                 }}
               >
                 <p className="word">FOR THE</p>
-                <p className="word">WEB</p>
+                <p className="word">WEB.</p>
               </div>
             </div>
 
