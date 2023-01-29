@@ -13,24 +13,26 @@
   cursor: pointer;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   margin-top: auto;
+  margin-bottom: auto;
+  overflow: scroll;
+  height: 60%;
+  text-align: left;
 }
 
 .project-link {
   font-family: PolySans;
-  font-size: 76px;
-  background-color: rgba(247, 243, 234, 0.1);
-  width: 30%;
-  text-align: center;
-  height: 120px;
-  padding-top: 20px;
+  font-size: 90px;
+  width: 100%;
   display: flex;
   color: white;
-  border-radius: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   justify-content: center;
-  border: 1px white solid;
+}
+
+#text:has(.highlight:hover) .link:not(.highlight:hover) {
+  opacity: 0.4;
 }
 
 .gitlink {
@@ -44,7 +46,8 @@
 
 .bg-fill {
   background-color: black;
-  display: flex;
+  display: grid;
+  grid-template-columns: 5fr 6fr;
   height: 100vh;
 }
 
@@ -61,7 +64,7 @@ h1 {
   margin: 100px 0px 100px 0px;
   background-color: inherit;
   font-family: PolySans;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
 }
 .projects-head {
   margin-left: 100px;

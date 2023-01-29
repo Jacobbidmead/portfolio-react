@@ -29,18 +29,18 @@ const random = () => {
   return randomizedArray[randomIndex];
 };
 
-const linkAnimate = {
-  offscreen: { y: 200, scale: 1 },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.6,
-      duration: 1,
-      scale: 2,
-    },
-  },
-};
+// const linkAnimate = {
+//   offscreen: { y: 200, scale: 1 },
+//   onscreen: {
+//     y: 0,
+//     transition: {
+//       type: "spring",
+//       bounce: 0.6,
+//       duration: 1,
+//       scale: 2,
+//     },
+//   },
+// };
 
 class Projects extends React.Component {
   state = {
@@ -86,8 +86,9 @@ class Projects extends React.Component {
           <h1
             style={{
               position: "fixed",
-              marginLeft: "40px",
+              marginLeft: "740px",
               textShadow: this.state.textShadow,
+              textAlign: "right",
             }}
             className="header"
           >
@@ -117,7 +118,6 @@ class Projects extends React.Component {
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
-                variants={linkAnimate}
                 viewport={{ once: false, amount: 0.1 }}
               >
                 MagiKards
@@ -146,7 +146,6 @@ class Projects extends React.Component {
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
-                variants={linkAnimate}
                 viewport={{ once: false, amount: 0.1 }}
               >
                 AIRBNB
@@ -175,7 +174,6 @@ class Projects extends React.Component {
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
-                variants={linkAnimate}
                 viewport={{ once: false, amount: 0.1 }}
               >
                 Google
