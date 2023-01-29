@@ -115,13 +115,12 @@ class Projects extends React.Component {
               />
             ) : (
               <motion.div
-                className="project-link link highlight"
+                className="project-link link highlight claudia"
                 onClick={(e) => this.props.toggleShowClaudia(e)}
                 onMouseOver={(e) => this.lightupText(e)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 viewport={{ once: false, amount: 0.1 }}
-                style={{ fontSize: "78px" }}
               >
                 Claudia Cantarini
               </motion.div>
