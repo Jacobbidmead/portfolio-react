@@ -213,10 +213,15 @@ h1 {
     padding: 0;
   }
 
+  .bg-fill {
+    overflow-y: hidden;
+  }
+
   .project-links {
     border: none;
     margin-left: 80px;
-    width: 500px;
+    width: 150px;
+    overflow-x: hidden;
   }
 
   .project-link {
