@@ -57,6 +57,7 @@ body {
 
 .button-style {
   font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
   font-size: 15px;
   text-align: center;
   margin: 22px 0px 0px 35%;
