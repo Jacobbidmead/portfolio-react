@@ -97,7 +97,7 @@ class About extends React.Component {
             }}
             className="about-intro"
           >
-            <span> A bit about my journey so far.</span>
+            <span> My journey so far.</span>
           </motion.div>
 
           <motion.div

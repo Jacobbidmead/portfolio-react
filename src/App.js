@@ -20,17 +20,11 @@ class App extends React.Component {
     showAirBnb: false,
     showMagiKards: false,
     showGoogle: false,
-    showNav: false,
+    showNav: true,
     showClaudia: false,
     backgroundColor: "black",
     color: "rgba(247, 243, 234, 0.5)",
     burger: "rgba(247, 243, 234, 0.5)",
-  };
-
-  toggleShowNav = () => {
-    this.setState({
-      showNav: this.state.showNav ? false : true,
-    });
   };
 
   toggleNavColorChange = () => {
@@ -150,7 +144,6 @@ class App extends React.Component {
   };
 
   toggleShowClaudia = (e) => {
-    console.log("working");
     this.setState({
       showProjects: false,
       showClaudia: true,
@@ -168,18 +161,6 @@ class App extends React.Component {
             }}
           >
             <div className="top-bar">
-              <div
-                style={{ color: this.state.color }}
-                onClick={this.toggleShowNav}
-              >
-                <img
-                  src="images/menu-bar.png"
-                  className="nav-arrow"
-                  style={{ backgroundColor: this.state.burger }}
-                  alt=""
-                />
-              </div>
-
               <Sidebar
                 toggleShowLinks={this.toggleShowLinks}
                 toggleShowAbout={this.toggleShowAbout}
