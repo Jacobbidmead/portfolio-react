@@ -19,7 +19,7 @@
   overflow: scroll;
   height: 55%;
   text-align: left;
-  border-right: 1px rgba(247, 243, 234, 0.5) solid;
+  border-right: 1px rgba(247, 243, 234, 0.2) solid;
   scroll-behavior: smooth;
 }
 
@@ -39,7 +39,7 @@
 
 #text:has(.highlight:hover) .link:not(.highlight:hover) {
   color: rgba(247, 243, 234, 0.5);
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .gitlink {
