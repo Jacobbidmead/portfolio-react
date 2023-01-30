@@ -21,6 +21,7 @@
   text-align: left;
   border-right: 1px rgba(247, 243, 234, 0.2) solid;
   scroll-behavior: smooth;
+  padding-right: 80px;
 }
 
 .project-link {
