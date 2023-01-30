@@ -137,7 +137,7 @@ class Home extends React.Component {
             viewport={{ once: true, amount: 0.01 }}
           >
             <div className="sub-title">
-              I'm a Junior Full Stack Developer
+              I'm a Junior Front End Developer
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with an interest
               in Web Design & UI Design, based in South London.
             </div>
