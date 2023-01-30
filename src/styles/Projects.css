@@ -20,6 +20,7 @@
   height: 55%;
   text-align: left;
   border-right: 1px rgba(247, 243, 234, 0.5) solid;
+  scroll-behavior: smooth;
 }
 
 .project-link {
@@ -219,11 +220,11 @@ h1 {
 
   .project-links {
     border: none;
-    margin-left: 120px;
+    margin-left: 20px;
     width: 180px;
     overflow-x: hidden;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 20px;
   }
 
   .project-link {

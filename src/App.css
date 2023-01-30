@@ -426,6 +426,7 @@ body {
     padding-left: 13px;
     padding-top: 14px;
     font-family: Futura;
+    color: rgba(247, 243, 234, 0.1);
   }
   .home-container {
     display: flex;
