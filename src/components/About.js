@@ -85,6 +85,7 @@ class About extends React.Component {
             backgroundColor: this.state.bgColor,
             transition: "background-color 0.5s ease",
             paddingBottom: "350px",
+            scrollBehavior: "smooth",
           }}
           className="about-bg"
         >

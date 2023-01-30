@@ -45,7 +45,7 @@ class Projects extends React.Component {
 
   lightupText = () => {
     this.setState({
-      textShadow: "1px 1px 10px white, -1px -1px 10px white",
+      textShadow: "1px 1px 4px white, -1px -1px 4px white",
     });
   };
 
@@ -80,13 +80,13 @@ class Projects extends React.Component {
           <h1
             style={{
               position: "fixed",
-              marginLeft: "740px",
+              marginLeft: "900px",
               textShadow: this.state.textShadow,
               textAlign: "right",
             }}
             className="header"
           >
-            Things I've made.
+            Projects
           </h1>
 
           <div className="project-links" id="text" style={style}>
