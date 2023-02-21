@@ -19,10 +19,11 @@ const Experience = () => {
 
       {!open ? null : (
         <div className="my-skills">
-          Ive spent the last five years in hospitality management, working for
-          high end resturant groups in London &bull; My duties included -- Team
+          Im currently working as a freelance Front End Developer - Previously
+          I've spend five years in hospitality management, working for high end
+          resturant groups in London &bull; My duties included -- Team
           management &bull; Stock management & accounting &bull; P&L + HR
-          responsibilities &bull; Menu creation.
+          responsibilities &bull; Staff training &bull; Menu creation.
         </div>
       )}
     </div>

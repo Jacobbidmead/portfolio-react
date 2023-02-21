@@ -175,9 +175,11 @@ class Home extends React.Component {
         </div>
         <motion.div>
           {" "}
-          <Dropdown />
-          <Qualification />
-          <Experience />
+          <div className="skills-container">
+            <Dropdown />
+            <Qualification />
+            <Experience />
+          </div>
         </motion.div>
         <div>
           <div className="japan-bg2">
