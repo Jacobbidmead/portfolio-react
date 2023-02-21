@@ -102,7 +102,6 @@ class Projects extends React.Component {
             <Link
               to="/Bookmarker"
               className="project-link link highlight"
-              onClick={(e) => this.props.toggleShowGoogle(e)}
               onMouseOver={(e) => this.lightupText(e)}
               onMouseEnter={this.onMouseEnter}
             >
@@ -111,7 +110,6 @@ class Projects extends React.Component {
             <Link
               to="/AirBnb"
               className="project-link link highlight"
-              onClick={(e) => this.props.toggleShowAirBnb(e)}
               onMouseOver={(e) => this.lightupText(e)}
               onMouseEnter={this.onMouseEnter}
             >
@@ -139,7 +137,6 @@ class Projects extends React.Component {
             <Link
               to="/Google"
               className="project-link link highlight"
-              onClick={(e) => this.props.toggleShowGoogle(e)}
               onMouseOver={(e) => this.lightupText(e)}
               onMouseEnter={this.onMouseEnter}
             >
