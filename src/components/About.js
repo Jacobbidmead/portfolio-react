@@ -184,7 +184,7 @@ class About extends React.Component {
               viewport={{ once: true, amount: 0.01 }}
             >
               <span>
-                I build my projects using React &
+                I build my projects using React, TypeScript &
                 &nbsp;&nbsp;&nbsp;&nbsp;Node.js ;
               </span>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
