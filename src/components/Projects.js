@@ -105,7 +105,7 @@ class Projects extends React.Component {
               onMouseOver={(e) => this.lightupText(e)}
               onMouseEnter={this.onMouseEnter}
             >
-              Bookmark Manager
+              Bookmarks
             </Link>
             <Link
               to="/AirBnb"

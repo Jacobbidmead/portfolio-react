@@ -277,7 +277,7 @@ h1 {
 
   .back-to-projects {
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   .text-container {
@@ -319,6 +319,13 @@ h1 {
     font-size: 9px;
     margin: 70px 0px 0px 40px;
     padding: 0px;
+  }
+
+  .bookmark-text {
+    font-size: 9px;
+    margin: 70px 0px 0px 40px;
+    padding: 0px;
+    color: #74ebd5;
   }
 
   .google-searchpage {

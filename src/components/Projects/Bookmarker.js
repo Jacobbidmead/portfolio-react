@@ -88,11 +88,11 @@ class Bookmarker extends React.Component {
               </div>
 
               <div className="project-description">
-                <span> Bookmark manager app,</span> front end application that
+                <span> Bookmark manager app</span> is front end application that
                 allows the user to save, edit & delete bookmarks from a list.
                 <p>
                   Users can add a maximum of 20 links (urls) with custom names
-                  to the list per page, pagniation at the bottom of the screen
+                  to the list per page. Pagniation at the bottom of the screen
                   allows for easy navigation to next pages.
                 </p>
                 <a
@@ -101,12 +101,12 @@ class Bookmarker extends React.Component {
                   rel="noreferrer"
                   style={{ color: "#74ebd5", textDecoration: "none" }}
                 >
-                  Click here for hosted page.
+                  Click here for the hosted page.
                 </a>
                 <p>
                   <span>
                     Technologies used - TypeScript, React, HTML, Styled
-                    Components.
+                    Components, MUI pagniation.
                   </span>
                 </p>
               </div>
