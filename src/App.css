@@ -348,7 +348,7 @@ body {
   }
 
   #home-text {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 35px;
   }
 
   .word {
@@ -371,7 +371,8 @@ body {
   .sub-title2 {
     font-size: 58px;
     overflow: none;
-    padding: 30px 0px 0px 10px;
+    padding: 70px 0px 0px 10px;
+    letter-spacing: 4px;
   }
 
   .japan-bg2 {
@@ -385,6 +386,10 @@ body {
   .nav-arrow {
     width: 10px;
     margin-right: 25px;
+  }
+
+  .skills-container {
+    margin-top: 0px;
   }
 
   .skills {
@@ -452,8 +457,7 @@ body {
   .button-style {
     font-size: 7px;
     animation: none;
-    margin: 9px 0px 0px 0px;
-    padding-left: 26px;
+    margin: 9px 0px 80px 0px;
   }
 
   a {
@@ -482,7 +486,7 @@ img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 400px;) {
+@media screen and (max-width: 400px) {
   #home-text {
     padding-top: 0px;
   }
