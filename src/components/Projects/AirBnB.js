@@ -76,7 +76,7 @@ class AirBnB extends React.Component {
           </div>
           <motion.div>
             <Link to="/Projects" className="return-projects">
-              <h4 style={{ marginLeft: "100px" }}>Back to Projects</h4>
+              <h4 className="back-to-projects">Back to Projects</h4>
             </Link>
 
             <div

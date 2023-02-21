@@ -9,6 +9,11 @@
   text-decoration: none;
 }
 
+.back-to-projects {
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
 .project-links {
   cursor: pointer;
   width: 50%;
