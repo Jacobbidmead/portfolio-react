@@ -199,6 +199,15 @@ h1 {
   padding-left: 130px;
 }
 
+.bookmark-text {
+  width: 60%;
+  height: 30%;
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 130px;
+}
+
 .google-searchpage {
   width: 90%;
   border-radius: 5px;
