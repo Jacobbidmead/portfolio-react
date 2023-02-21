@@ -2,18 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const scaleImg = {
-  offscreen: { scale: 1 },
-  onscreen: {
-    scale: 1.08,
-    transition: {
-      type: "tween",
-      bounce: 0.6,
-      duration: 1,
-    },
-  },
-};
-
 const textAnimate = {
   offscreen: { y: 50 },
   onscreen: {
