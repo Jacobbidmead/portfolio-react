@@ -83,7 +83,7 @@ h1 {
 
 .photo-header {
   color: rgba(247, 243, 234, 0.5);
-  font-size: 20px;
+
   text-align: center;
   padding: 0px 25px 0px 25px;
   animation: fadein 2s ease;
@@ -91,6 +91,10 @@ h1 {
   background-color: inherit;
   font-family: PolySans;
   letter-spacing: 10px;
+}
+
+.photo-head {
+  font-size: 60px;
 }
 
 .projects-head {
