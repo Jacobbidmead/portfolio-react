@@ -69,7 +69,7 @@ class Google extends React.Component {
             paddingBottom: "1px",
           }}
         >
-          <div className="google-header">
+          <div className="header">
             <h1> Google Search</h1>
           </div>
           <motion.div>

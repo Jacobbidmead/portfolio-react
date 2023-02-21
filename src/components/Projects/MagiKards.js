@@ -72,9 +72,7 @@ class MagiKards extends React.Component {
           }}
         >
           <div className="header">
-            <h1 style={{ margin: "0" }} className="magikards-head">
-              MagiKards.
-            </h1>
+            <h1 className="magikards-head">MagiKards.</h1>
           </div>
           <motion.div>
             <Link to="/Projects" className="return-projects">

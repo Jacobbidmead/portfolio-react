@@ -32,7 +32,7 @@ class Photos extends React.Component {
             Home
           </Link>
         </div>
-        <div className="header" style={{ marginBottom: "170px" }}>
+        <div className="photo-header">
           <h1 className="photo-head">Photos.</h1>
         </div>
         <motion.div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>

@@ -80,6 +80,19 @@ h1 {
   font-family: PolySans;
   letter-spacing: 10px;
 }
+
+.photo-header {
+  color: rgba(247, 243, 234, 0.5);
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 25px 0px 25px;
+  animation: fadein 2s ease;
+  margin: 50px 0px 100px 0px;
+  background-color: inherit;
+  font-family: PolySans;
+  letter-spacing: 10px;
+}
+
 .projects-head {
   margin-left: 100px;
 }
@@ -217,7 +230,7 @@ h1 {
     font-size: 18px;
     text-align: center;
     font-family: PolySans;
-    margin: 0;
+
     padding: 0;
   }
 
@@ -251,7 +264,11 @@ h1 {
 
   .return-projects {
     font-size: 6px;
-    margin: 100px 0px 0px 20px;
+  }
+
+  .back-to-projects {
+    margin-top: 0px;
+    margin-left: 20px;
   }
 
   .text-container {
@@ -345,5 +362,6 @@ h1 {
 
   .header {
     letter-spacing: 5px;
+    margin-bottom: 100px;
   }
 }
