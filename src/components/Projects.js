@@ -1,10 +1,6 @@
 import React from "react";
-import MagiKards from "../components/Projects/MagiKards.js";
-import AirBnB from "../components/Projects/AirBnB.js";
-import Google from "../components/Projects/Google.js";
-import Claudia from "../components/Projects/Claudia.js";
 import "../styles/Projects.css";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 let backgroundColors = ["#23C4FF", "#FF10F0", "#FE5F55", "#CB04A5", "#FB5012"];
 
@@ -23,24 +19,12 @@ const random = () => {
   return randomizedArray[randomIndex];
 };
 
-// const linkAnimate = {
-//   offscreen: { y: 200, scale: 1 },
-//   onscreen: {
-//     y: 0,
-//     transition: {
-//       type: "spring",
-//       bounce: 0.6,
-//       duration: 1,
-//       scale: 2,
-//     },
-//   },
-// };
-
 class Projects extends React.Component {
   state = {
     changeColor: false,
     backgroundColor: "black",
     textShadow: "none",
+    color: "rgba(247, 243, 234, 0.5)",
   };
 
   lightupText = () => {
@@ -77,6 +61,31 @@ class Projects extends React.Component {
     return (
       <>
         <div className="bg-fill" style={style}>
+          <nav className="button-style link-container">
+            <Link
+              to="/About"
+              className="button-style"
+              style={{ color: this.state.color }}
+            >
+              About
+            </Link>
+
+            <Link
+              to="/Photos"
+              className="button-style "
+              style={{ color: this.state.color }}
+            >
+              Photo
+            </Link>
+            <Link
+              className="button-style"
+              to="/"
+              style={{ color: this.state.color }}
+            >
+              Home
+            </Link>
+          </nav>
+
           <h1
             style={{
               position: "fixed",
@@ -90,77 +99,52 @@ class Projects extends React.Component {
           </h1>
 
           <div className="project-links" id="text" style={style}>
-            {this.props.showAirBnb ? (
-              <AirBnB
-                toggleShowAirBnb={this.props.toggleShowAirBnb}
-                toggleShowProjects={this.props.toggleShowProjects}
-              />
-            ) : (
-              <motion.div
-                className="project-link link highlight"
-                onClick={(e) => this.props.toggleShowAirBnb(e)}
-                onMouseOver={(e) => this.lightupText(e)}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-                viewport={{ once: false, amount: 0.1 }}
-              >
-                AirBNB
-              </motion.div>
-            )}
+            <Link
+              to="/Bookmarker"
+              className="project-link link highlight"
+              onClick={(e) => this.props.toggleShowGoogle(e)}
+              onMouseOver={(e) => this.lightupText(e)}
+              onMouseEnter={this.onMouseEnter}
+            >
+              Bookmarker
+            </Link>
+            <Link
+              to="/AirBnb"
+              className="project-link link highlight"
+              onClick={(e) => this.props.toggleShowAirBnb(e)}
+              onMouseOver={(e) => this.lightupText(e)}
+              onMouseEnter={this.onMouseEnter}
+            >
+              AirBNB
+            </Link>
 
-            {this.props.showClaudia ? (
-              <Claudia
-                toggleShowClaudia={this.props.toggleShowClaudia}
-                toggleShowProjects={this.props.toggleShowProjects}
-              />
-            ) : (
-              <motion.div
-                className="project-link link highlight claudia"
-                onClick={(e) => this.props.toggleShowClaudia(e)}
-                onMouseOver={(e) => this.lightupText(e)}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-                viewport={{ once: false, amount: 0.1 }}
-              >
-                Claudia Cantarini
-              </motion.div>
-            )}
+            <Link
+              to="/Claudia"
+              className="project-link link highlight claudia"
+              onMouseOver={(e) => this.lightupText(e)}
+              onMouseEnter={this.onMouseEnter}
+            >
+              Claudia Cantarini
+            </Link>
 
-            {this.props.showMagiKards ? (
-              <MagiKards
-                toggleShowMagiKards={this.props.toggleShowMagiKards}
-                toggleShowProjects={this.props.toggleShowProjects}
-              />
-            ) : (
-              <motion.div
-                className="project-link link highlight"
-                onClick={(e) => this.props.toggleShowMagiKards(e)}
-                onMouseOver={(e) => this.lightupText(e)}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-                viewport={{ once: false, amount: 0.1 }}
-              >
-                MagiKards
-              </motion.div>
-            )}
+            <Link
+              to="/MagiKards"
+              className="project-link link highlight"
+              onMouseOver={(e) => this.lightupText(e)}
+              onMouseEnter={this.onMouseEnter}
+            >
+              MagiKards
+            </Link>
 
-            {this.props.showGoogle ? (
-              <Google
-                toggleShowGoogle={this.props.toggleShowGoogle}
-                toggleShowProjects={this.props.toggleShowProjects}
-              />
-            ) : (
-              <motion.div
-                className="project-link link highlight"
-                onClick={(e) => this.props.toggleShowGoogle(e)}
-                onMouseOver={(e) => this.lightupText(e)}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-                viewport={{ once: false, amount: 0.1 }}
-              >
-                Google
-              </motion.div>
-            )}
+            <Link
+              to="/Google"
+              className="project-link link highlight"
+              onClick={(e) => this.props.toggleShowGoogle(e)}
+              onMouseOver={(e) => this.lightupText(e)}
+              onMouseEnter={this.onMouseEnter}
+            >
+              Google
+            </Link>
           </div>
         </div>
       </>

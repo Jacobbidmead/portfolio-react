@@ -55,19 +55,21 @@ body {
   text-transform: uppercase;
 }
 
+.link-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .button-style {
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   text-align: center;
-  margin: 22px 0px 0px 35%;
   cursor: pointer;
   letter-spacing: 6px;
-  padding: 10px 0px 10px 7px;
-  display: flex;
-  justify-content: center;
-  width: 34%;
+  padding: 10px;
   animation: fadein 1s ease;
+  text-decoration: none;
 }
 
 /* spinning button */

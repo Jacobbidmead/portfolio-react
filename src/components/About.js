@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/About.css";
+import { Link } from "react-router-dom";
 
 const textAnimate = {
   offscreen: { y: 300, opacity: 0 },
@@ -42,6 +43,7 @@ class About extends React.Component {
   state = {
     bgColor: "black",
     showContact: "true",
+    color: "rgba(247, 243, 234, 0.5)",
   };
 
   toggleShowContact = (e) => {
@@ -89,6 +91,29 @@ class About extends React.Component {
           }}
           className="about-bg"
         >
+          <div className="button-style link-container">
+            <Link
+              to="/Projects"
+              className="button-style"
+              style={{ color: this.state.color }}
+            >
+              Projects
+            </Link>
+            <Link
+              to="/Photos"
+              className="button-style "
+              style={{ color: this.state.color }}
+            >
+              Photo
+            </Link>
+            <Link
+              className="button-style"
+              to="/"
+              style={{ color: this.state.color }}
+            >
+              Home
+            </Link>
+          </div>
           <motion.div
             initial={{ y: "600", opacity: 0 }}
             animate={{

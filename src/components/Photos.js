@@ -2,11 +2,36 @@ import React from "react";
 import Photo from "./Photo.js";
 import "../styles/Photos.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 class Photos extends React.Component {
   render() {
     return (
       <>
+        <div className="button-style link-container">
+          <Link
+            to="/About"
+            className="button-style"
+            style={{ color: "rgba(247, 243, 234, 0.7)" }}
+          >
+            About
+          </Link>
+          <Link
+            to="/Projects"
+            className="button-style"
+            style={{ color: "rgba(247, 243, 234, 0.7)" }}
+          >
+            Projects
+          </Link>
+
+          <Link
+            className="button-style"
+            to="/"
+            style={{ color: "rgba(247, 243, 234, 0.7)" }}
+          >
+            Home
+          </Link>
+        </div>
         <div className="header" style={{ marginBottom: "170px" }}>
           <h1 className="photo-head">Photos.</h1>
         </div>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Dropdown from "./Dropdown.js";
 import Qualification from "./Qualification";
 import Experience from "./Experience";
+import { Link } from "react-router-dom";
 
 const animateCircle = {
   clicked: {
@@ -67,6 +68,36 @@ class Home extends React.Component {
             backgroundColor: this.state.backgroundColor,
           }}
         >
+          <div className="button-style link-container">
+            <Link
+              to="/About"
+              className="button-style"
+              style={{ color: this.state.color }}
+            >
+              About
+            </Link>
+            <Link
+              to="/Projects"
+              className="button-style"
+              style={{ color: this.state.color }}
+            >
+              Projects
+            </Link>
+            <Link
+              to="/Photos"
+              className="button-style "
+              style={{ color: this.state.color }}
+            >
+              Photo
+            </Link>
+            <Link
+              className="button-style"
+              to="/"
+              style={{ color: this.state.color }}
+            >
+              Home
+            </Link>
+          </div>
           <div className="name-container">
             <div id="home-text">
               <div
@@ -99,7 +130,6 @@ class Home extends React.Component {
               style={{ borderColor: this.state.borderColor }}
               onClick={(e) => {
                 this.toggleColorChange(e);
-                this.props.toggleNavColorChange(e);
               }}
               whileTap={"clicked"}
               variants={animateCircle}

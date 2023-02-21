@@ -3,21 +3,21 @@
   color: white;
   cursor: pointer;
   transition: text-shadow, 0.2s ease;
-  margin: 0px 0px 0px 100px;
   padding-bottom: 80px;
   font-family: PolySans;
   animation: fadein 2s ease;
+  text-decoration: none;
 }
 
 .project-links {
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   margin-top: auto;
   margin-bottom: auto;
   overflow: scroll;
-  height: 55%;
+  height: 100%;
   text-align: left;
   border-right: 1px rgba(247, 243, 234, 0.2) solid;
   scroll-behavior: smooth;
@@ -26,12 +26,14 @@
 
 .project-link {
   font-family: PolySans;
-  font-size: 90px;
+  font-size: 80px;
   width: 100%;
   display: flex;
   color: white;
   margin-bottom: 40px;
   padding-left: 10px;
+  text-decoration: none;
+  animation: fadein 2s ease;
 }
 
 .claudia {
@@ -55,7 +57,6 @@
 .bg-fill {
   background-color: black;
   display: grid;
-  grid-template-columns: 5fr 6fr;
   height: 100vh;
 }
 
@@ -231,7 +232,7 @@ h1 {
   .project-link {
     font-size: 35px;
     border-radius: 13px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   .project-description {
     font-size: 10px;

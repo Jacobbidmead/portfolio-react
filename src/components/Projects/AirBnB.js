@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const scaleImg = {
   offscreen: { scale: 1 },
@@ -74,12 +75,9 @@ class AirBnB extends React.Component {
             <h1 style={{ margin: "0" }}>AirBnB Clone.</h1>
           </div>
           <motion.div>
-            <div
-              className="return-projects"
-              onClick={(e) => this.props.toggleShowProjects(e)}
-            >
-              <h4>Back to Projects</h4>
-            </div>
+            <Link to="/Projects" className="return-projects">
+              <h4 style={{ marginLeft: "100px" }}>Back to Projects</h4>
+            </Link>
 
             <div
               style={{
