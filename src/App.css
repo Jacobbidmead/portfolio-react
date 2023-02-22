@@ -30,8 +30,8 @@ body {
 }
 
 ::selection {
-  color: rgb(249, 132, 59);
-  background: white;
+  color: rgb(85, 242, 71);
+  background: rgb(6, 6, 6);
 }
 
 .main-layout {

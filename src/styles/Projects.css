@@ -12,6 +12,7 @@
 .back-to-projects {
   margin-left: 100px;
   margin-top: 200px;
+  animation: fadein 0.5s ease;
 }
 
 .project-links {
@@ -83,7 +84,6 @@ h1 {
 
 .photo-header {
   color: rgba(247, 243, 234, 0.5);
-
   text-align: center;
   padding: 0px 25px 0px 25px;
   animation: fadein 2s ease;

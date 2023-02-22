@@ -63,21 +63,6 @@ class Projects extends React.Component {
         <div className="bg-fill" style={style}>
           <nav className="button-style link-container">
             <Link
-              to="/About"
-              className="button-style"
-              style={{ color: this.state.color }}
-            >
-              About
-            </Link>
-
-            <Link
-              to="/Photos"
-              className="button-style "
-              style={{ color: this.state.color }}
-            >
-              Photo
-            </Link>
-            <Link
               className="button-style"
               to="/"
               style={{ color: this.state.color }}
@@ -100,20 +85,20 @@ class Projects extends React.Component {
 
           <div className="project-links" id="text" style={style}>
             <Link
-              to="/Bookmarker"
-              className="project-link link highlight"
-              onMouseOver={(e) => this.lightupText(e)}
-              onMouseEnter={this.onMouseEnter}
-            >
-              Bookmarks
-            </Link>
-            <Link
               to="/AirBnb"
               className="project-link link highlight"
               onMouseOver={(e) => this.lightupText(e)}
               onMouseEnter={this.onMouseEnter}
             >
               AirBNB
+            </Link>
+            <Link
+              to="/Bookmarker"
+              className="project-link link highlight"
+              onMouseOver={(e) => this.lightupText(e)}
+              onMouseEnter={this.onMouseEnter}
+            >
+              Bookmarks
             </Link>
 
             <Link
@@ -122,7 +107,15 @@ class Projects extends React.Component {
               onMouseOver={(e) => this.lightupText(e)}
               onMouseEnter={this.onMouseEnter}
             >
-              Claudia Cantarini
+              Claudia
+            </Link>
+            <Link
+              to="/Google"
+              className="project-link link highlight"
+              onMouseOver={(e) => this.lightupText(e)}
+              onMouseEnter={this.onMouseEnter}
+            >
+              Google
             </Link>
 
             <Link
@@ -132,15 +125,6 @@ class Projects extends React.Component {
               onMouseEnter={this.onMouseEnter}
             >
               MagiKards
-            </Link>
-
-            <Link
-              to="/Google"
-              className="project-link link highlight"
-              onMouseOver={(e) => this.lightupText(e)}
-              onMouseEnter={this.onMouseEnter}
-            >
-              Google
             </Link>
           </div>
         </div>
