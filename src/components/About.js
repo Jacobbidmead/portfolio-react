@@ -123,7 +123,7 @@ class About extends React.Component {
             }}
             className="about-intro"
           >
-            <span> My journey so far.</span>
+            <span> a bit about my journey so far.</span>
           </motion.div>
 
           <motion.div
@@ -184,16 +184,17 @@ class About extends React.Component {
               viewport={{ once: true, amount: 0.01 }}
             >
               <span>
-                I build my projects using React, TypeScript &
-                &nbsp;&nbsp;&nbsp;&nbsp;Node.js ;
+                I build my projects using React, Next.js, TypeScript &
+                &nbsp;&nbsp;&nbsp;&nbsp;Node.js.
               </span>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Im constantly
-              &nbsp;&nbsp;practicing, watching and reading; &nbsp; to advance my
-              skills with{" "}
-              <span>modern React & JavaScript, advanced CSS and Next.js.</span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Althought these
-              are my primary langauges, I am open to learning any tech stack
-              required.
+              &nbsp;&nbsp;practicing, building, watching and reading; &nbsp; to
+              advance my skills with{" "}
+              <span>
+                React, JavaScript and associated frameworks & librarys
+              </span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, I am open
+              to learning any tech stack required.
             </motion.div>
           </motion.div>
 

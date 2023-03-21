@@ -19,9 +19,10 @@ const App = () => {
 
       {!open ? null : (
         <div className="my-skills">
-          JavaScript &bull; React.js &bull;TypeScript &bull; Object Oriented
-          Programming &bull; MVC &bull; Node.js &bull; MongoDB &bull; Framer
-          Motion &bull; Styled Components &bull; HTML & CSS &bull; GitHub
+          JavaScript &bull; React.js &bull;TypeScript &bull; Next.js &bull;
+          Object Oriented Programming &bull; MVC &bull; Node.js &bull; MongoDB
+          &bull; Framer Motion &bull; Styled Components &bull; HTML & CSS &bull;
+          GitHub
         </div>
       )}
     </div>

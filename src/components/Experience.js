@@ -19,7 +19,7 @@ const Experience = () => {
 
       {!open ? null : (
         <div className="my-skills">
-          Im currently working as a freelance Front End Developer - Previously
+          Im currently working as a freelance Front End Developer. Previously,
           I've spend five years in hospitality management, working for high end
           resturant groups in London &bull; My duties included -- Team
           management &bull; Stock management & accounting &bull; P&L + HR
